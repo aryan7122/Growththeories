@@ -1,0 +1,73 @@
+@import "../../styles/Variables/variables.scss";
+.custom-dropdown {
+    position: relative;
+    // min-width:116px;
+    height: fit-content;
+    padding: 5px 10px 5px 12px;
+    gap: 4px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $primary-500;
+    &:hover{
+        background-color: $primary-500;
+        .custom-dropdown__selected {
+                color: #fff;
+        
+                svg {
+                    color: #fff;
+                }
+            }
+    }
+}
+
+.custom-dropdown__selected {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-size: 16px;
+    color: $primary-500;
+    svg{
+        color: $primary-500;
+    }
+   
+}
+.custom-dropdown__icon {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-dropdown__options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid $neutral-50;
+    border-top: none;
+    border-radius: 8px;
+    box-shadow: $box-shadow-md;
+    z-index: 10;
+    padding: 5px;
+}
+
+.custom-dropdown__item {
+    // border: 1px solid red !important;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.custom-dropdown__item:hover {
+    background-color: #f0f0f0;
+}

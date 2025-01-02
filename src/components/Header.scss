@@ -1,0 +1,160 @@
+@import "../styles/Variables/variables.scss";
+
+.header {
+  text-align: center;
+  background: #f8f6f2;
+  //   position: relative;
+  //   top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding-bottom: 50px;
+  &__content {
+    padding-left: 40px;
+    text-align: left;
+    h2 {
+      animation: slideLeft 1s ease-out forwards;
+      width: fit-content;
+      background: #fff;
+      top: 123px;
+      left: 60.06px;
+      padding: 8px 10px 8px 10px;
+      gap: 10px;
+      border-radius: 100px;
+      opacity: 0px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14.4px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      text-decoration-skip-ink: none;
+    }
+    h1 {
+      animation: slideLeft 1s ease-out forwards;
+      font-family: $font-secondary;
+      // font-size: $font-size-lg;
+      color: $primary-500;
+      font-size: $font-size-50;
+      width: 80%;
+      span {
+        color: $secondary-500;
+      }
+    }
+  }
+
+  .header_p {
+    animation: slideLeft 1s ease-out forwards;
+    font-size: $font-size-18;
+    color: $neutral-400;
+    line-height: 30px;
+    width: 78%;
+  }
+
+  .header__buttons {
+    animation: slideOut 1s ease-out forwards;
+    margin-top: 1.5rem;
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      // border-radius: $border-radius;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &.btn-primary {
+        background-color: $primary-500;
+        color: #fff;
+        color: #fff;
+        background: $primary-500;
+        width: 230px;
+        border-radius: 100px;
+        box-shadow: $box-shadow-md;
+        border-radius: 100px;
+        &:hover {
+          background-color: #fff;
+          color: $primary-500;
+          border: 1px solid $primary-500;
+        }
+      }
+
+      &.btn-secondary {
+        width: 230px;
+        background-color: $secondary-500;
+        color: #fff;
+        margin-left: 1rem;
+        background: #fff;
+        border: 1px solid $primary-500;
+        color: $primary-500;
+        border-radius: 100px;
+        box-shadow: $box-shadow-md;
+
+        &:hover {
+          background-color: $primary-500;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .start4 {
+    animation: slideOut 1s ease-out forwards;
+    margin-top: 20px;
+  }
+  h4 {
+    animation: slideOut 1s ease-out forwards;
+    font-size: $font-size-22;
+    font-weight: 500;
+    margin-top: 1px;
+    line-height: 33.6px;
+  }
+  .EmilyR {
+    animation: slideOut 1s ease-out forwards;
+    width: fit-content;
+    height: 61.52px;
+    padding: 12px 0px 0px 0px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    .EmilyR_content {
+      .EmilyR_title {
+        font-size: $font-size-16;
+        font-weight: 600;
+        color: $neutral-800;
+      }
+      .EmilyR_title_p {
+        font-size: $font-size-16;
+        color: $neutral-400;
+      }
+    }
+    img {
+      border-left: 1px solid #bdbdbd;
+      padding-left: 18px;
+    }
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
