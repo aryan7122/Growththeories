@@ -8,7 +8,7 @@
   background-color: #f8f6f2;
   box-shadow: $box-shadow-md;
   z-index: 9999999999999999999;
-//   position: fixed;
+  //   position: fixed;
   &__logo {
     display: flex;
     align-items: center;
@@ -107,7 +107,7 @@
 
     .navbar__language {
       font-family: $font-primary;
-      font-size: $font-size-16;
+      font-size: $font-size-14;
       padding: 0.5rem;
       border: $border-width solid $neutral-300;
       border-radius: $border-radius-sm;
@@ -119,12 +119,12 @@
         border-color: $border-focus-color;
       }
     }
-
+    
     .btn-secondary {
      position: relative;
         // min-width:116px;
         height: fit-content;
-        padding: 7px 10px 7px 12px;
+        padding: 7px 22px 7px 22px;
         gap: 4px;
         border-radius: 100px;
         cursor: pointer;
@@ -136,7 +136,7 @@
         border: 1px solid $primary-500;
         color: #fff;
         background:$primary-500;
-        
+              font-size: $font-size-14;
       &:hover {
         background-color: #fff;
         color: $primary-500;

@@ -5,6 +5,7 @@
   padding: 2rem;
   background-color: #f8f6f2;
   .background-container {
+    margin-top: -10px;
     width: 621px;
     height: 596px;
     background-color: $secondary-100;
@@ -30,10 +31,14 @@
       gap: 1rem;
       background: #ffffff83;
       padding: 0.5rem 1rem;
-      border-radius: 12px;
+      border-radius: 112px;
       box-shadow: $box-shadow-lg;
       border: 1px solid #fff;
-
+&:hover {
+    scale: 1.02 !important;
+    transition: 0.3s ease-in-out;
+    z-index: 999899988;
+  }
       span {
         display: flex;
         align-items: center;
@@ -44,18 +49,23 @@
       }
     }
     .cardPirateMetrics {
-      // border: 1px solid red !important;
       position: absolute;
       width: 208.43px;
       height: 166.45px;
       gap: 0px;
       border-radius: 10px;
       opacity: 0px;
-      margin-top: 75px;
+      margin-top: 85px;
       margin-left: -50px;
       background: #ffffffbc;
       box-shadow: $box-shadow-lg;
       animation: slideIn 1s ease-out forwards;
+      &:hover{
+        scale: 1.02 !important;
+        transition: 0.3s ease-in-out;
+        z-index: 999899988;
+      }
+      
     }
     .cardLeanStarUp {
       animation: slideOut 1s ease-out forwards;
@@ -75,14 +85,22 @@
       padding: 10px;
       overflow: hidden;
       box-shadow: $box-shadow-lg;
+      &:hover {
+          scale: 1.02 !important;
+          transition: 0.3s ease-in-out;
+          z-index: 999899988;
+        } 
       h3 {
         font-size: $font-size-18;
         color: $secondary-800;
+        margin-top: -4px;
       }
       p {
         font-size: $font-size-14;
         line-height: 20px;
-        color: $neutral-700;
+        color: $neutral-900;
+        opacity: 0.7;
+        font-weight: 300;
       }
       img {
         width: 101.75px;
@@ -105,6 +123,19 @@
       box-shadow: $box-shadow-lg;
       background: #fff;
       padding: 10px;
+      &:hover {
+          scale: 1.02 !important;
+          transition: 0.3s ease-in-out;
+          z-index: 999899988;
+        }
+      h3 {
+        text-align: left;
+        padding-left: 30px;
+      }
+      img {
+        width: 245px;
+        height: 232px;
+      }
     }
   }
 

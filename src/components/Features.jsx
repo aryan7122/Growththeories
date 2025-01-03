@@ -42,7 +42,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="cardProductLedImg">
-                    <h3>Pirate Metrics</h3>
+                    <h3>Product led growth</h3>
                     <img src={productLedImg} alt="Pirate Metrics" />
                 </div>
 

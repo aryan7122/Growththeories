@@ -18,7 +18,7 @@ const Header = () => {
                     Unlock Rapid, Sustainable Growth With <span>Proven Growth Marketing Strategies</span>
                 </h1>
                 <p className='header_p'>
-                    Whether you're a startup or a well-established business, Growththeories delivers growth hacking solutions that fuel both immediate and enduring success                </p>
+                    Whether you're a startup or a well-established business, Growththeories delivers growth hacking solutions that fuel both immediate and enduring success</p>
                 <div className="header__buttons">
                     <button className="btn btn-primary">Start Growing Today</button>
                     <button className="btn btn-secondary">Speak to a Growth Expert</button>

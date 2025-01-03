@@ -13,6 +13,7 @@
   &__content {
     padding-left: 40px;
     text-align: left;
+    margin-top: 15px;
     h2 {
       animation: slideLeft 1s ease-out forwards;
       width: fit-content;
@@ -29,67 +30,86 @@
       letter-spacing: 0.05em;
       text-align: center;
       text-decoration-skip-ink: none;
+      margin-bottom: -20px;
+      margin-top: 30px;
     }
     h1 {
       animation: slideLeft 1s ease-out forwards;
       font-family: $font-secondary;
       // font-size: $font-size-lg;
-      color: $primary-500;
-      font-size: $font-size-50;
-      width: 80%;
+      font-weight: 500;
+      line-height: 59.4px;
+      line-height: 59.4px;
+      color: $primary-800;
+      font-size: $font-size-54;
+      width: 91%;
       span {
+        font-weight: 600;
+        line-height: 64px;
+        font-size: $font-size-60;
         color: $secondary-500;
       }
     }
   }
-
+  
   .header_p {
     animation: slideLeft 1s ease-out forwards;
     font-size: $font-size-18;
-    color: $neutral-400;
+    font-weight: 400;
+    color: $neutral-900;
+    opacity: 0.6 !important;
     line-height: 30px;
-    width: 78%;
+    width: 80%;
   }
 
   .header__buttons {
     animation: slideOut 1s ease-out forwards;
     margin-top: 1.5rem;
-
+    margin-top: 45px;
+    
     .btn {
       padding: 0.75rem 1.5rem;
       // border-radius: $border-radius;
       border: none;
       cursor: pointer;
       transition: all 0.3s;
-
+      
       &.btn-primary {
         background-color: $primary-500;
         color: #fff;
         color: #fff;
         background: $primary-500;
-        width: 230px;
+        font-weight: 600;
+        width: 240px;
+        height: 54px;
         border-radius: 100px;
         box-shadow: $box-shadow-md;
         border-radius: 100px;
+        font-size: $font-size-16;
         &:hover {
           background-color: #fff;
           color: $primary-500;
+          transition: 0.3s linear;
           border: 1px solid $primary-500;
         }
       }
-
+      
       &.btn-secondary {
-        width: 230px;
+        width: 240px;
+        height: 54px;
         background-color: $secondary-500;
         color: #fff;
         margin-left: 1rem;
+        font-weight: 500;
+        font-size: $font-size-16;
         background: #fff;
         border: 1px solid $primary-500;
-        color: $primary-500;
+        color: $neutral-500;
         border-radius: 100px;
         box-shadow: $box-shadow-md;
-
+        
         &:hover {
+          transition: 0.3s linear;
           background-color: $primary-500;
           color: #fff;
         }
@@ -98,13 +118,14 @@
   }
   .start4 {
     animation: slideOut 1s ease-out forwards;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   h4 {
     animation: slideOut 1s ease-out forwards;
     font-size: $font-size-22;
     font-weight: 500;
     margin-top: 1px;
+    margin-bottom: 5px;
     line-height: 33.6px;
   }
   .EmilyR {
@@ -120,7 +141,6 @@
     .EmilyR_content {
       .EmilyR_title {
         font-size: $font-size-16;
-        font-weight: 600;
         color: $neutral-800;
       }
       .EmilyR_title_p {
