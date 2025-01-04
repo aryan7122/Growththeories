@@ -3,6 +3,7 @@ import './App.scss'
 import Features from './components/Features'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
+import ImpactsBenefits from './pages/Impactsandbenefits/ImpactsBenefits'
 import Industry from './pages/Industry/Industry'
 import Slider from './pages/OurGrowthServices/Slider'
 import OverApproach from './pages/OverApproach/OverApproach'
@@ -22,6 +23,7 @@ function App() {
         <OverApproach />
         <Suitability />
         <Industry />
+        <ImpactsBenefits />
       </div>
     </>
   )
