@@ -3,7 +3,7 @@ $bg-color: #f8f6f2;
 $card-bg: #fff;
 $button-active-bg: #5e1d26;
 $button-active-color: #fff;
-@import "../../styles//Variables/variables.scss";
+@use "../../styles//Variables/variables.scss" as *;
 .over-approach {
   font-family: "Arial", sans-serif;
   background-color: $bg-color;
@@ -15,6 +15,7 @@ $button-active-color: #fff;
     .ourApproach {
       border-bottom: 1px dashed $neutral-100;
       h4 {
+        // border: 1px solid red !important;
         width: 143px;
         height: 25px;
         display: flex;
@@ -63,7 +64,6 @@ $button-active-color: #fff;
     justify-content: space-between;
     padding: 0 5px;
     .nav-button-approach {
-      // border: 1px solid red !important;
       //   border: 2px solid $primary-color;
       color: $primary-color;
       cursor: pointer;
@@ -94,7 +94,32 @@ $button-active-color: #fff;
 
   .content {
     text-align: left;
+    .content_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .cta-button {
+        border: none;
+        width: fit-content;
+        padding: 0 20px;
+        height: 54px;
+        border-radius: 100px;
+        opacity: 0px;
+        cursor: pointer;
+        font-size: $font-size-14;
+        color: #fff;
+        background: $primary-500;
+        font-weight: 500;
+        line-height: 20px;
 
+        &:hover {
+          background-color: #fff;
+          color: $primary-500;
+          transition: 0.3s linear;
+          border: 1px solid $primary-500;
+        }
+      }
+    }
     .title {
       font-weight: 500px;
       font-size: $font-size-34;
@@ -121,19 +146,19 @@ $button-active-color: #fff;
       gap: 2rem;
       align-items: start;
 
-      .cards .card:nth-child(5) {
+      .cards .card:last-child {
         grid-column: span 2;
-        .p-icon2{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: -40px;
-            .card-content{
-                width: 70%;
-            }
-            img{
-                width: 122px;
-            }
+        .p-icon2 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: -10px;
+          .card-content {
+            width: 130%;
+          }
+          img {
+            width: 122px;
+          }
         }
       }
 
@@ -150,6 +175,10 @@ $button-active-color: #fff;
           padding: 1.5rem;
           text-align: left;
           background: #f6e8eaa1;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: space-between;
           img {
             width: 26px;
           }
@@ -168,6 +197,28 @@ $button-active-color: #fff;
             line-height: 17px;
             opacity: 0.7;
           }
+          .cta-button {
+            border: none;
+            width: fit-content;
+            min-width: 190px;
+            padding: 0 20px;
+            height: 36px;
+            border-radius: 100px;
+            opacity: 0px;
+            cursor: pointer;
+            font-size: $font-size-14;
+            margin-top: 50px;
+            font-weight: 500;
+            line-height: 20px;
+            background-color: #fff;
+            color: $primary-500;
+            border: 1px solid $primary-500;
+            &:hover {
+              color: #fff;
+              background: $primary-500;
+              transition: 0.3s linear;
+            }
+          }
         }
       }
 
@@ -177,7 +228,6 @@ $button-active-color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
-        
       }
     }
   }

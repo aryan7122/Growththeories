@@ -8,8 +8,9 @@ const CustomDropdown = ({ options, defaultValue, onChange }) => {
 
     const handleSelect = (option) => {
         setSelected(option);
-        servicesDropdown.setIsOpen(false);
+        servicesDropdown.setIsOpen(false)
         if (onChange) {
+            // servicesDropdown.handleToggle;
             onChange(option);
         }
     };

@@ -36,7 +36,7 @@
     svg{
         color: $primary-500;
     }
-   
+    
 }
 .custom-dropdown__icon {
     margin-left: 10px;
@@ -45,6 +45,7 @@
 }
 
 .custom-dropdown__options {
+       
     position: absolute;
     top: 100%;
     left: 0;
@@ -59,6 +60,9 @@
     z-index: 999999999999 !important;
     padding: 5px;
     // border: 1px solid red !important;
+    max-height: 200px;
+        // border: 1px solid red;
+        overflow-y: scroll;
 }
 
 .custom-dropdown__item {
