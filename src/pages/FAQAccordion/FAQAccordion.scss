@@ -41,7 +41,10 @@
 
 .faq-list {
     border-top: 1px solid #ddd;
-    margin: 0 40px;
+    margin: 0 auto;
+    // border: 1px solid red !important;
+    max-width: 1300px;
+    padding-top: 30px;
     padding-bottom: 80px;
     .hr-line{
         width: 100%;
@@ -54,7 +57,6 @@
 }
 
 .faq-item {
-    // border: 1px solid red !important;
 //   border-bottom: 1px solid #ddd;
   padding: 15px;
   cursor: pointer;
