@@ -6,6 +6,11 @@
   align-items: center;
   padding: 1rem 2rem;
   background-color: #f8f6f2;
+  // 
+ 
+    // backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  // 
   box-shadow: $box-shadow-md;
   z-index: 9999999999999999999;
   //   position: fixed;

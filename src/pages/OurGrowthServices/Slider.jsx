@@ -69,13 +69,13 @@ const Slider = () => {
         }
     };
 
-    useEffect(() => {
-        const autoSlide = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-        }, 5000);
+    // useEffect(() => {
+    //     const autoSlide = setInterval(() => {
+    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    //     }, 5000);
 
-        return () => clearInterval(autoSlide);
-    }, [cards.length]);
+    //     return () => clearInterval(autoSlide);
+    // }, [cards.length]);
 
     return (
         <div className="slider-container">
