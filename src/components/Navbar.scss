@@ -8,10 +8,9 @@
   background-color: #f8f6f2;
   // 
  
-    // backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+  ;
   // 
-  box-shadow: $box-shadow-md;
+  // box-shadow: $box-shadow-md;
   z-index: 9999999999999999999;
   //   position: fixed;
   &__logo {
@@ -151,6 +150,12 @@
 }
 //
 .isFixedNav{
+  // background-color: #676560;
+    // 
+      box-shadow: $box-shadow-md;
+  
+    // backdrop-filter: blur(12px);
+    // -webkit-backdrop-filter: blur(12px);
     width: 96%;
     position: fixed;
     transition: 0.3s linear;

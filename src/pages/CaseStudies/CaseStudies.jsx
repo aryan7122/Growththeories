@@ -21,26 +21,25 @@ const CaseStudies = () => {
                         >
 
                             <div>
-                                <h1>Growth Marketing</h1>
-                                <h2 className='h1-2'>Growth Marketing</h2>
+                                <h1>Real Success Stories:</h1>
+                                <h2 className='h1-2'> See How We Drive Growth</h2>
                             </div>
 
                         </motion.div>
 
                         <div className='CaseStudies_right_top'>
                             <motion.p
-                                initial={{ opacity: 0, x: 130 }}
+                                initial={{ opacity: 0, x: -130 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true, amount: 0.3 }}
                                 className='right_p'
                             >
-                                This is why Growth Marketing is the preferred strategy for businesses looking to position themselves on the market and
-                                scale quickly as it delivers performance-based ROI.
+                                See how our tailored strategies helped businesses achieve rapid growth. Each case study highlights our approach and real-world results
                             </motion.p>
                             <motion.button
-                                initial={{ opacity: 0, x: 130 }}
-                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, y: -130 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true, amount: 0.3 }}
                                 className='All_Studies_btn'

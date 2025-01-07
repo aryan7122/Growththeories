@@ -18,6 +18,7 @@
       animation: slideLeft 1s ease-out forwards;
       width: fit-content;
       background: #fff;
+      color: $secondary-500;
       top: 123px;
       left: 60.06px;
       padding: 8px 10px 8px 10px;
@@ -39,14 +40,13 @@
       // font-size: $font-size-lg;
       font-weight: 500;
       line-height: 59.4px;
-      line-height: 59.4px;
       color: $primary-800;
-      font-size: $font-size-54;
-      width: 91%;
+      font-size: $font-size-50;
+      width: 80%;
       span {
         font-weight: 600;
         line-height: 64px;
-        font-size: $font-size-60;
+        font-size: $font-size-54;
         color: $secondary-500;
       }
     }
@@ -59,13 +59,17 @@
     color: $neutral-900;
     opacity: 0.6 !important;
     line-height: 30px;
-    width: 80%;
+    width: 74%;
+    text-transform: capitalize;
+    margin-top: -12px;
+    // border: 1px solid $primary-500;
   }
-
+  
   .header__buttons {
     animation: slideOut 1s ease-out forwards;
     margin-top: 1.5rem;
     margin-top: 45px;
+    // border: 1px solid red;
     
     .btn {
       padding: 0.75rem 1.5rem;
@@ -90,7 +94,7 @@
           background-color: #fff;
           color: $primary-500;
           transition: 0.3s linear;
-          border: 1px solid $primary-500;
+                  border: 1px solid $primary-500;
         }
       }
       
@@ -132,7 +136,7 @@
     animation: slideOut 1s ease-out forwards;
     width: fit-content;
     height: 61.52px;
-    padding: 12px 0px 0px 0px;
+    padding: 4px 0px 0px 0px;
     gap: 20px;
     display: flex;
     align-items: center;

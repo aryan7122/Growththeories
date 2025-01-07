@@ -5,7 +5,7 @@
   background-color: #f4f4f9;
   margin: 0 auto;
   .title_header {
-    background: $secondary-100;
+    background: #DEDEFA;;
     width: 100%;
     padding: 40px 0;
     .badge {
@@ -40,33 +40,32 @@
 }
 
 .faq-list {
-    border-top: 1px solid #ddd;
+    // border-top: 1px solid #ddd;
     margin: 0 auto;
-    // border: 1px solid red !important;
     max-width: 1300px;
     padding-top: 30px;
     padding-bottom: 80px;
     .hr-line{
         width: 100%;
         height: 1px;
-        background: #0000003c;
+        background:#dedfe2;
         &:last-child{
-            display: none;
+          display: none;
         }
     }
 }
 
 .faq-item {
 //   border-bottom: 1px solid #ddd;
-  padding: 15px;
-  cursor: pointer;
-  margin: 20px 0;
+padding: 15px;
+cursor: pointer;
+margin: 20px 0;
   border-radius: 10px;
 }
 
 .faq-item.active {
   background-color: #e6e6fa;
-//   border-left: 5px solid #6a5acd;
+  //   border-left: 5px solid #6a5acd;
 }
 
 .faq-question {
@@ -93,4 +92,5 @@
   margin-top: 1rem;
   font-size: 1rem;
   color:$neutral-400;
+  // border: 1px solid red !important;
 }

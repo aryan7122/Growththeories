@@ -1,5 +1,5 @@
 // Import React and required libraries
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Slider.scss';
 import SliderImg1 from '../../assets/slider/Business-inequality-cuate1.svg'
 import SliderImg2 from '../../assets/slider/Consulting-cuate2.svg'
@@ -77,6 +77,29 @@ const Slider = () => {
     //     return () => clearInterval(autoSlide);
     // }, [cards.length]);
 
+
+    const scrollContainerRef = useRef(null);
+
+    const handleMouseDown = (e) => {
+        const container = scrollContainerRef.current;
+        container.isDragging = true;
+        container.startX = e.pageX - container.offsetLeft;
+        container.scrollLeftStart = container.scrollLeft;
+    };
+
+    const handleMouseMove = (e) => {
+        const container = scrollContainerRef.current;
+        if (!container.isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const walk = (x - container.startX) * 2; // Adjust scrolling speed
+        container.scrollLeft = container.scrollLeftStart - walk;
+    };
+
+    const handleMouseUp = () => {
+        const container = scrollContainerRef.current;
+        container.isDragging = false;
+    };
     return (
         <div className="slider-container">
 
@@ -110,7 +133,13 @@ const Slider = () => {
                 </div>
             </motion.div>
 
-            <div className="slider">
+            <div className="slider"
+                ref={scrollContainerRef}
+                onMouseDown={handleMouseDown}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseUp}
+                onMouseUp={handleMouseUp}
+            >
                 <div
                     className="slider-track"
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}

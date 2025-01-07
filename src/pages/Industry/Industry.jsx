@@ -10,7 +10,7 @@ const Industry = () => {
     const [activeCategory, setActiveCategory] = useState('all');
 
     const data = [
-        { img: gooo,name: "Google", category: "SaaS" },
+        { img: gooo, name: "Google", category: "SaaS" },
         { img: noImg, name: "Gen - General Enterprise", category: "Real Estate" },
         { img: aplex, name: "Apex - Apex Enterprise", category: "Fintech" },
         { img: img1, name: "accenture", category: "SaaS" },
@@ -60,7 +60,14 @@ const Industry = () => {
                 <tbody>
                     {filteredData.map((item, index) => (
                         <tr key={index}>
-                            <td><img src={item.img } alt="" />  {item.name}</td>
+                            <td>
+                                <div className='td1'>
+                                    <div className='tdImg'>
+                                        <img src={item.img} alt="" />
+                                    </div>
+                                    {item.name}
+                                </div>
+                            </td>
                             <td id='categoryTd'>{item.category}</td>
                             <td><a href="#" className="read-story">Read Story</a></td>
                         </tr>

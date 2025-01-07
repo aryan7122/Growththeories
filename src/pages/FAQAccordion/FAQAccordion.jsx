@@ -44,7 +44,6 @@ const FAQAccordion = () => {
             <div className="faq-list">
                 {faqs.map((faq, index) => (
                     <>
-
                         <div
                             key={index}
                             className={`faq-item ${activeIndex === index ? 'active' : ''}`}

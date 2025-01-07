@@ -1,121 +1,134 @@
 @use "../../styles//Variables/variables.scss" as *;
 
-
 .ImpactsBenefits-container {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    padding: 40px 20px;
-    background: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+  background: #fff;
 
-    .header {
-        background: #fff;
-        margin-bottom: 40px;
+  .header {
+    background: #fff;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .suitability {
+      width: 180px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $font-size-14;
+      font-weight: 500;
+      border-radius: 100px;
+      color: $secondary-700;
+      text-transform: uppercase;
+      background: $secondary-50;
+      margin-top: 10px;
+    }
+    
+    .h1-1 {
+      width: 60%;
+      margin-top: 15px;
+      font-size: $font-size-48;
+      line-height: 57px;
+      font-weight: 600;
+      // color: $neutral-500;
+      background: linear-gradient(95.89deg, #721121 30.63%, #2b2b8c 78.47%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: capitalize;
+    }
+    
+    p {
+      text-transform: capitalize;
+      font-size: $font-size-18;
+      line-height: 27px;
+      width: 62%;
+      // border: 1px solid red !important;
+      margin-top: -1px;
+      font-weight: 400;
+      color: $neutral-900;
+      opacity: 0.5;
+    }
+  }
+  img {
+    margin-top: -40px;
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+
+    .feature-card {
+      background-color: #fff;
+      border-radius: 10px;
+      // box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: $box-shadow-md;
+      }
+
+      .icon-container {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        background: linear-gradient(
+          145deg,
+          rgba(235, 228, 229, 0.2),
+          rgba(209, 179, 158, 0.2)
+        );
+        box-shadow: 0 0 0px 12px rgba(195, 195, 195, 0.12);
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      h3 {
+        font-size: $font-size-24;
+        color: $primary-600;
+        font-weight: 600;
+        line-height: 30px;
+      }
+
+      p {
+        font-size: $font-size-16;
+        color: $neutral-500;
+        font-weight: 400;
+        line-height: 24px;
+        opacity: 0.6;
+      }
+
+      a {
+        color: $primary-600;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
         align-items: center;
         justify-content: center;
-
-        // border: 1px solid red !important;
-        .suitability {
-            width: 203px;
-            height: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: $font-size-14;
-            font-weight: 500;
-            border-radius: 100px;
-            color: $secondary-700;
-            text-transform: uppercase;
-            background: $secondary-50;
+        svg {
+          padding-left: 2px;
         }
-
-        .h1-1 {
-            width: 60%;
-            font-size: $font-size-48;
-            line-height: 57px;
-            font-weight: 600;
-            // color: $neutral-500;
-            background: linear-gradient(95.89deg, #721121 30.63%, #2B2B8C 78.47%);
-            -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+        &:after {
+          content: "";
+          margin-left: 5px;
+          color: $secondary-700;
         }
-
-        p {
-            font-size: $font-size-18;
-            line-height: 27px;
-            width: 60%;
-            font-weight: 400;
-            color: $neutral-900;
-            opacity: 0.5;
-        }
+      }
     }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            padding: 40px;
-            justify-content: center;
-            text-align: center;
-    
-            .feature-card {
-                background-color: #fff;
-                border-radius: 10px;
-                // box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                padding: 30px;
-                transition: transform 0.3s ease;
-    
-                &:hover {
-                    transform: translateY(-10px);
-                }
-    
-                .icon-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50px;
-                    height: 50px;
-                    margin: 0 auto 20px;
-                    border-radius: 50%;
-                    background: linear-gradient(145deg, rgba(235, 228, 229, 0.2), rgba(209, 179, 158, 0.2));
-                    box-shadow: 0 0 10px 12px rgba(168, 157, 144, 0.088);
-    
-                    img {
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
-    
-                h3 {
-                    font-size: $font-size-24;
-                    color:$primary-600;
-                    font-weight: 600;
-                    line-height: 30px;
-                }
-    
-                p {
-                    font-size: $font-size-16;
-                        color: $neutral-500;
-                        font-weight: 400;
-                        line-height: 24px;
-                        opacity: 0.6;
-                }
-    
-                a {
-                    color: $primary-600;
-                    font-weight: 600;
-                    text-decoration: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-    
-                    &:after {
-                        content: '➡';
-                        margin-left: 5px;
-                        color: $secondary-700;
-                    }
-                }
-            }
-        }
+  }
 }

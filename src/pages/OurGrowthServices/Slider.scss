@@ -53,11 +53,11 @@
         &:hover {
           background: #f5f5f5;
         }
-
+        
         &:nth-of-type(1) {
           left: 1rem;
         }
-
+        
         &:nth-of-type(2) {
           right: 1rem;
         }
@@ -66,31 +66,46 @@
   }
   .slider {
     transition: 0.4s linear;
-    padding-left: 40px;
-    // position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 12px;
-    margin: 0 auto;
-    margin-top: -20px;
-    .slider-track {
-      display: flex;
-      width: 1174px;
-      height: 460px;
-      gap: 30px;
-      padding-bottom: 20px;
-      .slider-card {
-        border: 1px solid $neutral-50;
-        flex: 0 0 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari ke liye */
+    -moz-user-select: none;
+    /* Firefox ke liye */
+      -ms-user-select: none;
+      cursor: grab;
+          scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+          display: none;
+        }
+      
+        user-select: none;
+      
+        &:active {
+          cursor: grabbing;
+        }
+        padding-left: 40px;
+        // position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: -20px;
+        .slider-track {
+          display: flex;
+          width: 1174px;
+          height: 460px;
+          gap: 30px;
+          padding-bottom: 20px;
+          .slider-card {
+            border: 1px solid $neutral-50;
+            flex: 0 0 100%;
         padding: 10px 0px 30px 30px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
+        border-radius: 20px;
         text-align: left;
         display: flex;
         justify-content: center;
         align-items: flex-start;
-
         h3 {
           font-size: $font-size-32;
           margin-bottom: 1rem;
@@ -115,10 +130,10 @@
           border-radius: 100px;
           border: 1px  solid $primary-500;
           color: $primary-500;
-         background: transparent;
+          background: transparent;
           transition: 0.3s linear;
           opacity: 0px;
-         cursor: pointer;
+          cursor: pointer;
           &:hover {
             background: $primary-500;
             color: #fff;
@@ -128,3 +143,5 @@
     }
   }
 }
+
+        // border: 1px solid red !important;

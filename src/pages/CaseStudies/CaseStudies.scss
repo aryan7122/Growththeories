@@ -1,7 +1,7 @@
 @use "../../styles//Variables/variables.scss" as *;
 
 .CaseStudies_3_card {
-  background: linear-gradient(167.93deg, #0f093bcd 8.81%, #34224f81 129.61%),
+  background: linear-gradient(167.93deg, #090529cd 8.81%, #34224f81 129.61%),
     url("../../assets/Rectangle_bg.svg");
   object-fit: cover;
   align-items: center;
@@ -46,8 +46,7 @@
         width: 600px;
         font-size: $font-size-46;
         line-height: 55px;
-        // clear: $neutral-50;
-
+        margin-top: -10px;
         background: linear-gradient(109.7deg, #ffffff 6.74%, #b4e2ff 45.08%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -61,11 +60,16 @@
       }
       .CaseStudies_right_top {
         text-align: right;
-
+        display: flex;
+        flex-direction: column;
+        align-items: end;
         p {
+          // padding-left: 150px;
           font-size: $font-size-20;
-          // float: right;
+          float: right;
           font-weight: 400;
+          width: 60%;
+          text-align: right;
           line-height: 30px;
           color: #fff;
           opacity: 0.8 !important;
@@ -75,19 +79,21 @@
         .All_Studies_btn {
           border: 1px solid rgb(0, 0, 0);
           width: 197px;
+          // border: 1px solid red;
           height: 54px;
           cursor: pointer;
           left: 1190.61px;
           border-radius: 100px;
           border: 0.5px 0px 0px 0px;
           font-weight: 5 00;
-          box-shadow: $box-shadow-md;
+          // box-shadow: $box-shadow-md;
           color: $primary-500;
           font-size: $font-size-16;
           &:hover {
             background-color: $primary-500;
             color: #fff;
             transition: 0.3s linear;
+            box-shadow:0px 0px 8px 0.3px #ffffff61;
           }
         }
       }
@@ -172,8 +178,9 @@
     margin: 60px 0;
 
     .badge {
-      display: inline-block;
       // background: rgba(255, 255, 255, 0.1);
+      display: inline-block;
+      margin-top: 25px;
       background: linear-gradient(
         151.41deg,
         rgba(255, 255, 255, 0.2) 16%,
@@ -189,6 +196,7 @@
 
     h2 {
       font-size: $font-size-66;
+      margin-top: 20px;
       line-height: 60px;
       padding-bottom: 8px;
       background: linear-gradient(109.7deg, #ffffff 6.74%, #b4e2ff 45.08%);
@@ -200,12 +208,14 @@
       font-size: $font-size-20;
       // float: right;
       font-weight: 400;
+      margin-top: -20px;
       line-height: 30px;
       color: #fff;
       opacity: 0.7 !important;
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
       padding: 0 21%;
+      margin-bottom: 60px;
     }
 
     .reviews {
@@ -216,89 +226,88 @@
 
       .testimonial {
         width: 650px;
-          height: 400px;
+        height: 400px;
         // background: #292929;
         border-radius: 12px;
         text-align: left;
         // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-         
-        background-image: url('../../assets//card/bgEfect.svg');
-              filter: sepia(10%) saturate(20%) hue-rotate(190deg);
+
+        background-image: url("../../assets//card/bgEfect.svg");
+        filter: sepia(10%) saturate(20%) hue-rotate(190deg);
 
         .testimonial-slider {
           width: 650px;
-            height: 400px;
-            border-radius: 14px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        -webkit-backdrop-filter: blur(10px);
+          height: 400px;
+          border-radius: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(2px);
-            .slider-content {
-              position: relative;
-             
-              background-size: cover;
-              background-position: center;
-              color: white;
-              text-align: center;
-              border-radius: 12px;
-              img{
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-                object-fit: cover;
-              }
-              .quote {
-                font-size: $font-size-16;
-                line-height: 30px;
-                font-weight: 500;
-                text-align: left;
-                width: 78%;
-                margin-left: -10%;
-              }
-        
-              .author {
-                font-size: 1rem;
-                font-weight: 600;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-               
-              }
-        
-              .prev,
-              .next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: rgba(255, 255, 255, 0);
-                border: 2px solid #fff !important;
-                border: none;
-                font-size: 17px;
-                width: 30px;
-                height: 30px;
-                cursor: pointer;
-                // padding: 10px;
-                border-radius: 50%;
-                transition: background 0.3s;
-                display: flex;
-                color: #fff;
-                align-items: center;
-                justify-content: center;
-                &:hover {
-                  background: rgba(0, 0, 0, 0.352);
-                }
-              }
-        
-              .prev {
-                left: 20px;
-              }
-        
-              .next {
-                right: 20px;
+          .slider-content {
+            position: relative;
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-radius: 12px;
+            img {
+              width: 36px;
+              height: 36px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            .quote {
+              font-size: $font-size-16;
+              line-height: 30px;
+              font-weight: 500;
+              text-align: left;
+              width: 78%;
+              margin-left: -10%;
+            }
+
+            .author {
+              font-size: 1rem;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+
+            .prev,
+            .next {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              background: rgba(255, 255, 255, 0);
+              border: 2px solid #fff !important;
+              border: none;
+              font-size: 17px;
+              width: 30px;
+              height: 30px;
+              cursor: pointer;
+              // padding: 10px;
+              border-radius: 50%;
+              transition: background 0.3s;
+              display: flex;
+              color: #fff;
+              align-items: center;
+              justify-content: center;
+              &:hover {
+                background: rgba(0, 0, 0, 0.352);
               }
             }
+
+            .prev {
+              left: 20px;
+            }
+
+            .next {
+              right: 20px;
+            }
           }
+        }
       }
 
       .award {
