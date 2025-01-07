@@ -1,6 +1,7 @@
 // TestimonialSlider.jsx
 import React, { useState } from 'react';
 import './CaseStudies.scss';
+import { motion } from 'framer-motion';
 
 const testimonials = [
     {
@@ -39,7 +40,12 @@ const TestimonialSlider = () => {
 
     return (
         <div className="testimonial-slider">
-            <div className="slider-content" style={{ backgroundImage: `url('/path/to/background.jpg')` }}>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="slider-content" style={{ backgroundImage: `url('/path/to/background.jpg')` }}>
                 <img src={testimonials[current].logo} alt="" />
                 <p className="quote">{testimonials[current].quote}</p>
                 <p className="author">
@@ -48,7 +54,7 @@ const TestimonialSlider = () => {
                 </p>
                 <button className="prev" onClick={prevSlide}>&#x2039;</button>
                 <button className="next" onClick={nextSlide}>&#x203A;</button>
-            </div>
+            </motion.div>
         </div>
     );
 };

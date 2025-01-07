@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import './Process.scss';
 import handImg from '../../assets/hand.svg'
+import { motion } from 'framer-motion';
 
 const stepsData = [
     {
@@ -45,24 +46,39 @@ const Process = () => {
     };
     return (
         <section className="process">
-            <div className="process-header">
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                whileHover={{ scale: 1.01, }}
+                className="process-header">
                 {/* <h1>
                     <span className="highlight">oh</span> & the process <br /> is simple.
                 </h1>
                 <p className="swear">We Swear!</p> */}
-            </div>
+            </motion.div>
 
             <div className='card-processes'>
 
 
-                <div className="process-navigation">
+                <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    className="process-navigation">
                     <p>DRAG OR SWIPE TO GO THROUGH THE PROCESS.</p>
                     <div>
                         <span className="swipe-icon">↔</span>
                         <img src={handImg} alt="" />
                     </div>
-                </div>
-                <div
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    transition={{ duration: 0.2, ease: "easeOut" }}
                     className="process-steps"
                     ref={scrollContainerRef}
                     onMouseDown={handleMouseDown}
@@ -78,13 +94,18 @@ const Process = () => {
                             <div className="rightBorder"></div>
                         </div>
                     ))}
-                </div>
+                </motion.div>
 
             </div>
-                <div className="process-footer">
-                    <p>A PROCESS THAT LEAVES OUT POTENTIAL MISTAKES.</p>
-                    <button className="btn-start">Start your project here</button>
-                </div>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="process-footer">
+                <p>A PROCESS THAT LEAVES OUT POTENTIAL MISTAKES.</p>
+                <button className="btn-start">Start your project here</button>
+            </motion.div>
         </section>
     );
 };

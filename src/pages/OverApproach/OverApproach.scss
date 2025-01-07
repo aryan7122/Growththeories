@@ -12,7 +12,7 @@ $button-active-color: #fff;
     background: #fff;
     padding: 20px 40px;
     border-radius: 20px;
-    
+     scroll-behavior: smooth;
     .ourApproach {
       border-bottom: 1px dashed $neutral-100;
       h4 {

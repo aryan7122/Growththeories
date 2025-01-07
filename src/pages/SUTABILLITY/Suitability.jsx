@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Suitability.scss';
 import CustomDropdown from '../../utils/common/CustomDropdown';
 import imgOk from '../../assets/ok.svg'
+import { motion } from 'framer-motion';
+
 const cardsData = [
   {
     title: 'Lean Startup',
@@ -68,16 +70,53 @@ const Suitability = () => {
   const handleLanguageChange = (selected) => {
     console.log("Selected Language:", selected);
   };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 100, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.7,
+        type: "spring",
+        stiffness: 120,
+        damping: 20
+      }
+    }
+  };
+
+  const staggerContainer = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,  // Delay between each card
+      }
+    }
+  };
+
   return (
     <div className="container">
-      <div className="header">
+      <motion.div
+        initial={{ opacity: 0, y: 130 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="header">
         <span className="suitability">SUITABILITY</span>
         <h1>Know Theories Are Suitables In Seconds</h1>
         <p>Just Select Your business size, industry or goals, will let you know how Helps businesses visualize the customization potential of each theory in real-time.</p>
-      </div>
+      </motion.div>
 
-      <div className="selectors-range">
-        <div className="business-size" style={{ '--min-val': minVal, '--max-val': maxVal }}>
+      <motion.div
+        initial={{ opacity: 0, y: 130 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="selectors-range">
+        <div className="business-size"
+          style={{ '--min-val': minVal, '--max-val': maxVal }}>
           <label>Business Size</label>
           <div className="slider-container-range">
             <div className='slider-track-range'></div>
@@ -116,24 +155,31 @@ const Suitability = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="cards">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+        className="cards">
         {cardsData.map((card, index) => (
           <div className="card" key={index}>
             <h3>{card.title}</h3>
             <p>{card.description}</p>
-            <ul>
+            <motion.ul
+              variants={cardVariants} 
+            >
               {card.points.map((point, i) => (
                 <div className='li_okCard' key={i}>
                   <img src={imgOk} alt="" />
                   <li>{point}</li>
                 </div>
               ))}
-            </ul>
+            </motion.ul>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react'
 import './ImpactsBenefits.scss';
 import bannerImg from '../../assets/Holding the arrow-bro 1.svg'
+import { motion } from 'framer-motion';
 
 const iconMail = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#7f56d9" fill="none">
     <path d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
@@ -53,15 +54,31 @@ const featuresData = [
 const ImpactsBenefits = () => {
     return (
         <div className="ImpactsBenefits-container">
-            <div className="header">
+            <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                className="header">
                 <span className="suitability">IMPACTS & BENEFITS</span>
                 <h1 className='h1-1'>Maximize Your Growth Potential with Proven Strategies</h1>
                 <p>Discover how our tailored growth strategies deliver results. From rapid testing to scalable solutions, we help you achieve sustainable growth—without breaking the bank. Whether it's boosting retention, increasing revenue, or scaling fast, our data-driven approach optimizes every stage for maximum impact.</p>
-            </div>
-            <img src={bannerImg} alt="" />
+            </motion.div>
+            <motion.img
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                whileHover={{ scale: 1.02 }}
+                src={bannerImg} alt="" />
             <div className="features-grid">
                 {featuresData.map((feature, index) => (
-                    <div className="feature-card" key={index}>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true, amount: 0.4 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        className="feature-card" key={index}>
                         <div className="icon-container">
                             {feature.icon}
                         </div>
@@ -71,7 +88,7 @@ const ImpactsBenefits = () => {
                             <path d="M20.0001 11.9998L4.00012 11.9998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg></a>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>

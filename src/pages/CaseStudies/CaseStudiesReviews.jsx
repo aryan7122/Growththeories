@@ -7,11 +7,17 @@ import icon2 from '../../assets/card/Vector.svg'
 import icon1 from '../../assets/card/Frame (7).svg'
 import award from '../../assets/card/Frame 1000007833.svg'
 import TestimonialSlider from './TestimonialSlider';
+import { motion } from 'framer-motion';
 
 const CaseStudiesReviews = () => {
     return (
         <div className="case-studies-reviews">
-            <div className="case-studies">
+            <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                className="case-studies">
                 <div className="case-study-card">
                     <img src={cardImg1} alt="Google" />
                     <div className="content">
@@ -44,7 +50,7 @@ const CaseStudiesReviews = () => {
                         <div className='hart_cards'> <img src={icon2} alt="" />Growth Loop Theory</div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div className="reviews-section">
                 <div className='badge'>REVIEWS</div>
                 <h2>People Love Using Growththeories</h2>
