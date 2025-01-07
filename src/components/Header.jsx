@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__content">
-                <h2>GROWTH WITHOUT GUESSWORK</h2>
+                <h3>GROWTH WITHOUT GUESSWORK</h3>
                 <h1>
                     Unlock Rapid, Sustainable Growth With <span>Proven Growth Marketing Strategies</span>
                 </h1>

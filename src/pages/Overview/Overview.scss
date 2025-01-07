@@ -275,3 +275,36 @@
     }
   }
 }
+
+
+
+
+@media (max-width: 1205px) {
+  .Overview_3_card .growth-section .content{
+    h1{
+      font-size: $font-size-36;
+      line-height: 70px;
+    }
+   .Marketing_card_2_flex{
+    flex-direction: column;
+    img{
+      width: 680px;
+        height: 300px;
+    }
+  }
+}
+
+}
+
+@media (max-width: 1000px) {
+.Overview_3_card .situations-section .situations-list .situation-item p{
+        font-size: $font-size-14;
+}
+.Overview_3_card .situations-section .cta-section .cta-button{
+  height: 45px;
+}
+.Overview_3_card .advantages-section .cards-container{
+  flex-direction: column;
+  align-items: center;
+}
+}

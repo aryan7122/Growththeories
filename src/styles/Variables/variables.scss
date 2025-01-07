@@ -69,6 +69,59 @@ $font-size-60: 60px;
 $font-size-66: 66px;
 
 /*==============================
+RESPONSIVE FONT SIZES 
+==============================*/
+/* Responsive Font Sizes */
+
+// $font-size-30: calc(30px + var(--fontszoom));
+// $font-size-31: calc(31px + var(--fontszoom));
+// $font-size-32: calc(32px + var(--fontszoom));
+// $font-size-34: calc(34px + var(--fontszoom));
+// $font-size-36: calc(36px + var(--fontszoom));
+// $font-size-40: calc(40px + var(--fontszoom));
+// $font-size-42: calc(42px + var(--fontszoom));
+// $font-size-46: calc(46px + var(--fontszoom));
+// $font-size-48: calc(48px + var(--fontszoom));
+// $font-size-50: calc(50px + var(--fontszoom));
+// $font-size-54: calc(54px + var(--fontszoom));
+// $font-size-56: calc(56px + var(--fontszoom));
+// $font-size-60: calc(60px + var(--fontszoom));
+// $font-size-66: calc(66px + var(--fontszoom));
+
+/* Default :root Variable */
+:root {
+    --fontszoom: 0px; // Default adjustment
+}
+
+/* Media Queries for Font Adjustments */
+
+// @media (max-width: 1400px) and (min-width: 1040px) {
+//     :root {
+//         --fontszoom: 0px; // Default size for medium screens
+//     }
+// }
+
+// @media (max-width: 1340px) and (min-width: 800px) {
+//     :root {
+//         --fontszoom: -2px; // Slight decrease for smaller screens
+//     }
+// }
+
+// @media (max-width: 1040px) and (min-width: 800px) {
+//     :root {
+//         --fontszoom: -4px; // Slight decrease for smaller screens
+//     }
+// }
+
+// @media (max-width: 800px) {
+//     :root {
+//         --fontszoom: -3px; // Maximum reduction for mobile screens
+//     }
+// }
+// ==============================
+// ================================
+
+/*==============================
 BORDER & SPACING 
 ==============================*/
 $border-radius-sm: 4px;

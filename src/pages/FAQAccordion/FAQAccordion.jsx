@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './FAQAccordion.scss';
 
+import { motion } from 'framer-motion';
+
 const faqs = [
     {
         question: 'What makes growth hacking different from traditional marketing?',
@@ -35,16 +37,40 @@ const FAQAccordion = () => {
         setActiveIndex(activeIndex === index ? -1 : index);
     };
 
+    const tableRowVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5, ease: "easeOut" }
+        }
+    };
+
+    const staggerTable = {
+        hidden: { opacity: 1 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2  // Row delay
+            }
+        }
+    };
     return (
         <div className="faq-container">
             <div className="title_header">
                 <span className="badge">FAQs</span>
                 <h2 className="faq-title">We Have Got All The Answers <h4>(007)</h4></h2>
             </div>
-            <div className="faq-list">
+            <motion.div
+                variants={staggerTable}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                className="faq-list">
                 {faqs.map((faq, index) => (
                     <>
-                        <div
+                        <motion.div
+                            variants={tableRowVariants}
                             key={index}
                             className={`faq-item ${activeIndex === index ? 'active' : ''}`}
                         >
@@ -58,11 +84,11 @@ const FAQAccordion = () => {
                                 </>
 
                             )}
-                        </div>
+                        </motion.div>
                         <div className='hr-line'></div>
                     </>
                 ))}
-            </div>
+            </motion.div>
         </div>
     );
 };

@@ -42,32 +42,12 @@ const Navbar = () => {
     const handleLanguageChange = (selected) => {
         console.log("Selected Language:", selected);
     };
-
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
-
-    const closeMobileMenu = () => {
-        setIsMobileMenuOpen(false);
-    };
-
     return (
         <nav className={`navbar ${isFixed ? 'isFixedNav' : ''}`} >
-            <div className={`mobile_flex_toggle`} >
-                <div className="navbar__logo">
-                    <img src={logo} alt="GrowthTheories Logo" />
-                </div>
-                <button
-                    className="navbar__toggle"
-                    onClick={toggleMobileMenu}
-                    aria-label="Toggle menu"
-                >
-                    {isMobileMenuOpen ? "✖" : "☰"}
-                </button>
+            <div className="navbar__logo">
+                <img src={logo} alt="GrowthTheories Logo" />
             </div>
-            <ul className={`navbar__links ${isMobileMenuOpen ? "open" : ""}`}>
+            <ul className="navbar__links">
                 <li className="navbar__dropdown" ref={servicesDropdown.ref}>
                     <a href="#services" ref={servicesDropdown.buttonRef} onClick={servicesDropdown.handleToggle}>
                         Services
@@ -138,7 +118,6 @@ const Navbar = () => {
                     )}
                 </li>
             </ul>
-            {/* {!isMobileMenuOpen && */}
             <div className="navbar__actions">
                 <CustomDropdown
                     options={languageOptions}
@@ -147,8 +126,6 @@ const Navbar = () => {
                 />
                 <button className="btn btn-secondary">Contact Us</button>
             </div>
-            {/* } */}
-
         </nav>
     );
 };

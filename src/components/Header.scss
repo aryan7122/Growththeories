@@ -14,7 +14,7 @@
     padding-left: 40px;
     text-align: left;
     margin-top: 15px;
-    h2 {
+    h3 {
       animation: slideLeft 1s ease-out forwards;
       width: fit-content;
       background: #fff;
@@ -181,4 +181,98 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+  .features .background-container {
+      margin-top: -10px;
+      width: 551px;
+      height: 526px;
+     .background-image {
+          width: 459.29px;
+          margin-top: 99px;
+      }
+      .cardLeanStarUp{
+        width: 210px;
+          height: 202.4px;
+      }
+      .cardProductLedImg{
+        width: 226.51px;
+          height: 240.44px;
+          img {
+              width: 205px;
+              height: 200px;
+            }
+      }
+  }
+     .features {
+       padding: 2rem;
+     }
+  
+     .header__content h1 {
+  
+       font-size: $font-size-42;
+       line-height: 50px;
+     }
+  
+     .header__content h1 span {
+       font-size: $font-size-36;
+       line-height: 40px;
+     }
+}
+
+@media (max-width: 1240px) {
+.features .background-container {
+    margin-top: -10px;
+    width: 500px;
+    height: 526px;
+
+    .background-image {
+      width: 459.29px;
+      margin-top: 99px;
+    }
+
+    .cardLeanStarUp {
+      width: 210px;
+      height: 202.4px;
+    }
+
+    .cardProductLedImg {
+      width: 226.51px;
+      height: 240.44px;
+
+      img {
+        width: 205px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1145px) {
+  .header{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .features{
+    display: none;
+  }
+    .header__content h1 {
+  
+      font-size: $font-size-50;
+      line-height: 56px;
+    }
+  
+    .header__content h1 span {
+      font-size: $font-size-56;
+      line-height: 60px;
+    }
 }
