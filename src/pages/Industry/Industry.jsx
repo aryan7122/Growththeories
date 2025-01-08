@@ -63,17 +63,18 @@ const Industry = () => {
                 <p>Tens of thousands of companies use growtheories to grow businesses from zero to infinity</p>
                 <button className="btn-btn-secondary">Start Growing Today</button>
             </motion.div>
-
-            <div className="tabs">
-                {categories.map(category => (
-                    <div
-                        key={category}
-                        className={`tab ${activeCategory === category ? 'active' : ''}`}
-                        onClick={() => setActiveCategory(category)}
-                    >
-                        {category}
-                    </div>
-                ))}
+            <div id='tabs_mobile'>
+                <div className="tabs">
+                    {categories.map(category => (
+                        <div
+                            key={category}
+                            className={`tab ${activeCategory === category ? 'active' : ''}`}
+                            onClick={() => setActiveCategory(category)}
+                        >
+                            {category}
+                        </div>
+                    ))}
+                </div>
             </div>
 
             <motion.table

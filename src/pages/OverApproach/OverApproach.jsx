@@ -132,22 +132,24 @@ const OverApproach = () => {
                     <h2>Tailored Growth Theories for Maximum Impact</h2>
                     <p>Discover proven growth strategies that adapt to your business needs for scalable, sustainable success</p>
                 </motion.div>
-                <motion.div
-                    initial={{ opacity: 0, y: 130 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="navbar_approach">
-                    {Object.keys(data).map((tab) => (
-                        <div
-                            key={tab}
-                            className={`nav-button-approach ${activeTab === tab ? "active-approach" : ""}`}
-                            onClick={() => handleTabChange(tab)}
-                        >
-                            {tab.replace(/([A-Z])/g, " $1").trim()}
-                        </div>
-                    ))}
-                </motion.div>
+                <div id="sro_ll_nav">
+                    <motion.div
+                        initial={{ opacity: 0, y: 130 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="navbar_approach">
+                        {Object.keys(data).map((tab) => (
+                            <div
+                                key={tab}
+                                className={`nav-button-approach ${activeTab === tab ? "active-approach" : ""}`}
+                                onClick={() => handleTabChange(tab)}
+                            >
+                                {tab.replace(/([A-Z])/g, " $1").trim()}
+                            </div>
+                        ))}
+                    </motion.div>
+                </div>
 
                 <div className="content">
                     <motion.div

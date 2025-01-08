@@ -132,3 +132,37 @@
     }
   }
 }
+
+
+
+
+
+@media (max-width: 950px) {
+.ImpactsBenefits-container .header{
+  .suitability{
+    margin-top: -41px;
+  }
+    .h1-1{
+      width: 90%;
+    }
+    p{
+      width: 90%;
+    }
+}
+.ImpactsBenefits-container .features-grid{
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 950px) {
+  .ImpactsBenefits-container img{
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 450px) {
+   .ImpactsBenefits-container .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

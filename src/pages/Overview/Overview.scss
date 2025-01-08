@@ -308,3 +308,73 @@
   align-items: center;
 }
 }
+
+
+@media (max-width: 900px) {
+  .Overview_3_card .situations-section{
+    width: 90%;
+  }
+  .Overview_3_card .situations-section{
+  h2{
+    padding: 0 10px;
+  }
+  
+   .situations-list .situation-item p {
+    font-size: $font-size-14;
+  }
+}
+
+  .Overview_3_card .situations-section .cta-section .cta-button {
+    height: 45px;
+  }
+
+  .Overview_3_card .advantages-section .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+    .Overview_3_card .situations-section .situations-list{
+      padding: 0 10px;
+    }
+}
+
+@media (max-width: 760px) {
+
+.Overview_3_card .growth-section .content .Marketing_card_2_flex img{
+  width: 70%;
+}
+.Overview_3_card .growth-section .content {
+ h4{
+  width: 95%;
+  font-size: 14px;
+}
+p{
+  font-size: 14px;
+}
+}
+
+.Overview_3_card .growth-section .content .Marketing_card_2_flex{
+    // margin-right: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .Overview_3_card .growth-section .content .Marketing_card_2_flex img {
+    width: 70%;
+
+    
+  }
+  .Overview_3_card .growth-section .content .Marketing_card_2_flex {
+    // margin-right: 0px;
+  }
+  .Overview_3_card .growth-section .content h4 {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .Overview_3_card .advantages-section .cards-container .card{
+    width: 350px;
+  }
+}

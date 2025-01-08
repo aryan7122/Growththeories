@@ -12,7 +12,7 @@ $button-active-color: #fff;
     background: #fff;
     padding: 20px 40px;
     border-radius: 20px;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
     .ourApproach {
       border-bottom: 1px dashed $neutral-100;
       h4 {
@@ -146,8 +146,8 @@ $button-active-color: #fff;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       align-items: start;
-
       .cards .card:last-child {
+        // border: 1px solid red !important;
         grid-column: span 2;
         .p-icon2 {
           display: flex;
@@ -181,7 +181,7 @@ $button-active-color: #fff;
           flex-direction: column;
           align-items: start;
           justify-content: space-between;
-          &:hover{
+          &:hover {
             box-shadow: 0px 0px 16px 0.4px #9e96964a;
             transition: 0.3s linear;
             scale: 1.01;
@@ -196,7 +196,7 @@ $button-active-color: #fff;
             color: $neutral-500;
             line-height: 20px;
           }
-          
+
           .card-content {
             font-size: $font-size-12;
             transition: 0.3s linear;
@@ -228,7 +228,7 @@ $button-active-color: #fff;
           }
         }
       }
-      
+
       .image {
         text-align: end;
         height: 100%;
@@ -242,66 +242,141 @@ $button-active-color: #fff;
   }
 }
 
-
-
-
 @media (max-width: 1300px) {
-    .over-approach .content .layout {
-        display: flex !important;
-        flex-direction: column-reverse  !important;
-        .image{
-          margin-left: 0px;
-        }
-        .cards {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr; 
-          gap: 20px;
-        
-          .card:last-child .p-icon2{
-            margin-top: -120px;
-           .card-content {
-              width: fit-content;
-              margin-top: -20px;
-            }
-          }
-          .card-content {
-             margin-top: -10px;
-             margin-bottom: -10px;
-           }
+  .over-approach .content .layout .image {
+    width: 80%;
+    // display: none;
+  }
+  .over-approach .content .layout {
+    margin-bottom: 40px;
+  }
+  .over-approach .content .layout .cards {
+    // height: 100%;
+    .card {
+      min-width: 220px;
+      // height: 100%;
+      &:last-child {
+        // margin-top: 50px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .over-approach .content .layout .cards .card:last-child .p-icon2 img{
+    display: none;
+  }
+  .over-approach .content .layout {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    .image {
+      margin-left: 0px;
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: -40px;
+    }
+    .cards .card:last-child {
+      grid-column: span 1;
+
+      .p-icon2 {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content:start !important;
+        margin-top: -10px;
+      }
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+
+      .card:last-child{
+        display: block;
+       .p-icon2 {
+        margin-top: 0px;
+        .card-content {
+          width: fit-content;
+          margin-top: 10px;
         }
       }
+    }
+      .card-content {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
   }
+}
 @media (max-width: 1190px) {
-  .over-approach .content .content_box{
+  .over-approach .content .content_box {
     flex-direction: column;
     text-align: start;
     align-items: start;
     justify-content: start;
   }
+  .over-approach .navbar_approach .nav-button-approach {
+    font-size: $font-size-12;
+    padding: 5px 8px;
+  }
 }
-    @media (max-width: 900px) {
-      .over-approach .content .layout {
-          display: flex !important;
-          flex-direction: column-reverse !important;
-      
-          .cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr ;
-            gap: 20px;
-      
-            .card:last-child .p-icon2 {
-              margin-top: -51px;
-      
-              .card-content {
-                width: fit-content;
-                margin-top: 20px;
-              }
-            }
-      
-            .card-content {
-              margin-top: -10px;
-              margin-bottom: -10px;
-            }
-          }
+@media (max-width: 990px) {
+  .over-approach {
+    padding: 20px;
+  }
+  .over-approach .content .layout {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      .card:last-child .p-icon2 {
+
+        .card-content {
+          width: fit-content;
+          margin-top: 20px;
         }
+      }
+
+      .card-content {
+        // margin-top: -10px;
+        // margin-bottom: -10px;
+      }
     }
+  }
+}
+
+@media (max-width: 780px) {
+  #sro_ll_nav {
+    // border: 1px solid rgb(255, 0, 0) !important;
+    overflow: scroll;
+    overflow-y: hidden;
+    width: 100%;
+
+    -ms-overflow-style: none;
+  }
+  #sro_ll_nav::-webkit-scrollbar {
+    display: none;
+    /* Scrollbar ko hide karne ka tarika */
+  }
+  .over-approach .navbar_approach {
+    width: 660px;
+  }
+  .over-approach #approach_card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .over-approach .content .layout .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  // .over-approach .content .layout .cards .card-content:
+}

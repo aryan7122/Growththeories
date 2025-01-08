@@ -51,7 +51,7 @@
       }
     }
   }
-  
+
   .header_p {
     animation: slideLeft 1s ease-out forwards;
     font-size: $font-size-18;
@@ -64,20 +64,20 @@
     margin-top: -12px;
     // border: 1px solid $primary-500;
   }
-  
+
   .header__buttons {
     animation: slideOut 1s ease-out forwards;
     margin-top: 1.5rem;
     margin-top: 45px;
     // border: 1px solid red;
-    
+
     .btn {
       padding: 0.75rem 1.5rem;
       // border-radius: $border-radius;
       border: none;
       cursor: pointer;
       transition: all 0.3s;
-      
+
       &.btn-primary {
         background-color: $primary-500;
         color: #fff;
@@ -94,10 +94,10 @@
           background-color: #fff;
           color: $primary-500;
           transition: 0.3s linear;
-                  border: 1px solid $primary-500;
+          border: 1px solid $primary-500;
         }
       }
-      
+
       &.btn-secondary {
         width: 240px;
         height: 54px;
@@ -111,7 +111,7 @@
         color: $neutral-500;
         border-radius: 100px;
         box-shadow: $box-shadow-md;
-        
+
         &:hover {
           transition: 0.3s linear;
           background-color: $primary-500;
@@ -183,52 +183,45 @@
   }
 }
 
-
-
-
-
-
-
 @media (max-width: 1400px) {
   .features .background-container {
-      margin-top: -10px;
-      width: 551px;
-      height: 526px;
-     .background-image {
-          width: 459.29px;
-          margin-top: 99px;
+    margin-top: -10px;
+    width: 551px;
+    height: 526px;
+    .background-image {
+      width: 459.29px;
+      margin-top: 99px;
+    }
+    .cardLeanStarUp {
+      width: 210px;
+      height: 202.4px;
+    }
+    .cardProductLedImg {
+      width: 226.51px;
+      height: 240.44px;
+      img {
+        width: 205px;
+        height: 200px;
       }
-      .cardLeanStarUp{
-        width: 210px;
-          height: 202.4px;
-      }
-      .cardProductLedImg{
-        width: 226.51px;
-          height: 240.44px;
-          img {
-              width: 205px;
-              height: 200px;
-            }
-      }
+    }
   }
-     .features {
-       padding: 2rem;
-     }
-  
-     .header__content h1 {
-  
-       font-size: $font-size-42;
-       line-height: 50px;
-     }
-  
-     .header__content h1 span {
-       font-size: $font-size-36;
-       line-height: 40px;
-     }
+  .features {
+    padding: 2rem;
+  }
+
+  .header__content h1 {
+    font-size: $font-size-42;
+    line-height: 50px;
+  }
+
+  .header__content h1 span {
+    font-size: $font-size-36;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 1240px) {
-.features .background-container {
+  .features .background-container {
     margin-top: -10px;
     width: 500px;
     height: 526px;
@@ -255,24 +248,58 @@
   }
 }
 
-
 @media (max-width: 1145px) {
-  .header{
+  .header {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
-  .features{
+  .features {
     display: none;
   }
-    .header__content h1 {
-  
-      font-size: $font-size-50;
+  .header__content h1 {
+    font-size: $font-size-50;
+    line-height: 56px;
+  }
+
+  .header__content h1 span {
+    font-size: $font-size-56;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 890px) {
+  .header {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 690px) {
+  .header__content{
+    padding-left: 0px;
+    padding: 10px;
+    text-align: center;
+    h3{
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+  .header__content h1 {
+      font-size: $font-size-40;
       line-height: 56px;
+      width: 100%;
+      text-align: center;
     }
   
     .header__content h1 span {
-      font-size: $font-size-56;
+      font-size: $font-size-46;
+      // border: 1px solid red;
       line-height: 60px;
     }
+        .header .header_p{
+          width: 100%;
+        }
+                .header .EmilyR{
+                  margin: 0 auto;
+                }
 }
