@@ -43,7 +43,7 @@ const TestimonialSlider = () => {
             <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, amount: 0.6 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className="slider-content" style={{ backgroundImage: `url('/path/to/background.jpg')` }}>
                 <img src={testimonials[current].logo} alt="" />

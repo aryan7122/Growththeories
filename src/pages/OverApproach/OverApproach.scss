@@ -379,4 +379,27 @@ $button-active-color: #fff;
 
 @media (max-width: 520px) {
   // .over-approach .content .layout .cards .card-content:
+  .over-approach #approach_card .ourApproach h2{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 10px;
+  }
+    .over-approach #approach_card .ourApproach h4{
+          margin: 0 auto;
+    }
+        .over-approach .content .title{
+          font-size: 30px;
+          line-height: 30px;
+          text-align: center;
+        }
+                .over-approach .content .content_box .cta-button{
+                  margin: 0 auto;
+                }
+                                .over-approach .content .layout .image img{
+                                  width: 310px;
+                                }
+                                                                .over-approach .content .layout .cards .card .card-title{
+                                                                  line-height: 10px;
+                                                                }
 }

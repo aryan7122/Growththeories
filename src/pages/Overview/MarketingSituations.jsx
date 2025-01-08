@@ -27,7 +27,7 @@ const MarketingSituations = () => {
                     damping: 25,
                     duration: 0.6
                 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
             >
                 <h2 className=''>Businesses That Need Growth Marketing Will Typically Be In One Of These Situations</h2>
                 <div className="situations-list ">

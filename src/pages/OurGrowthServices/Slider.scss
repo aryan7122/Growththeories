@@ -359,7 +359,6 @@
 
 @media (max-width: 420px) {
   .slider-container .slider .slider-track .slider-card img {
-    // border: 1px solid red;
     display: none;
     width: 70px !important;
     margin-top: 160px;
@@ -374,6 +373,12 @@
       justify-content: space-between;
     }
   }
+  .slider-container .slider .slider-track .slider-card:last-child{
+      //  border: 1px solid red;
+      //  padding-right: 200px !important;
+      //  width: 100px !important;
+
+     }
   .slider-container .slider .slider-track .slider-card p {
     margin-top: -20px !important;
   }

@@ -27,40 +27,40 @@
           151.41deg,
           rgba(255, 255, 255, 0.2) 16%,
           rgba(137, 137, 137, 0.2) 84.26%
-          );
-          color: #e3e3ff;
-          padding: 10px 1rem;
-          border-radius: 30px;
-          font-size: $font-size-12;
-          font-weight: 500;
-          text-transform: uppercase;
+        );
+        color: #e3e3ff;
+        padding: 10px 1rem;
+        border-radius: 30px;
+        font-size: $font-size-12;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .Marketing_card_2_flex {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        justify-content: space-between;
+        margin-top: -20px;
+        img {
+          width: 580px;
+          height: 256px;
         }
-        .Marketing_card_2_flex {
-          display: flex;
-          align-items: center;
-          margin-right: 40px;
-          justify-content: space-between;
-          margin-top: -20px;
-          img {
-            width: 580px;
-            height: 256px;
-          }
-        }
-        
-        h1 {
-          font-size: $font-size-50;
-          clear: $neutral-50;
-        }
-        
-        p {
-          text-transform: capitalize;
-          margin-top: -20px;
-          // width: 50%;
-          font-size: $font-size-20;
-          font-weight: 400 !important;
-          line-height: 30px;
-          text-align: left;
-          color: #fff;
+      }
+
+      h1 {
+        font-size: $font-size-50;
+        clear: $neutral-50;
+      }
+
+      p {
+        text-transform: capitalize;
+        margin-top: -20px;
+        // width: 50%;
+        font-size: $font-size-20;
+        font-weight: 400 !important;
+        line-height: 30px;
+        text-align: left;
+        color: #fff;
         opacity: 0.8 !important;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
@@ -80,16 +80,16 @@
       }
     }
   }
-  
+
   // Responsive Design
   @media (max-width: 768px) {
     .growth-section {
       padding: 3rem 1rem;
-      
+
       .content h1 {
         font-size: 2rem;
       }
-      
+
       .graphics .visuals {
         flex-direction: column;
         align-items: center;
@@ -100,7 +100,7 @@
       }
     }
   }
-  
+
   //AdvantagesCards.scss
   .advantages-section {
     text-align: center;
@@ -114,12 +114,12 @@
       font-weight: 600;
       color: $neutral-50;
     }
-    
+
     .cards-container {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      
+
       .card {
         width: 405.33px;
         padding: 40px 0px 40px 0px;
@@ -132,11 +132,11 @@
         &:hover {
           transform: translateY(-10px);
         }
-        
+
         .icon {
           font-size: $font-size-36;
         }
-        
+
         h3 {
           font-size: $font-size-24;
           font-size: $font-size-24;
@@ -172,13 +172,13 @@
     color: #fff;
     border-radius: 40px;
     overflow: hidden;
-    
+
     margin: 3rem auto;
     width: 80%;
     background-image: url("../../assets/Rectangl_bg3463655.svg");
     background-size: cover;
     box-shadow: $box-shadow-sm;
-    
+
     h2 {
       text-align: left;
       font-size: $font-size-24;
@@ -188,7 +188,7 @@
       margin-top: -1px;
       margin-bottom: 40px;
     }
-    
+
     .situations-list {
       display: flex;
       flex-direction: column;
@@ -234,11 +234,9 @@
         color: #ffffff88;
         font-size: $font-size-20;
         line-height: 20px;
-        
       }
-      
+
       .cta-button {
-        
         border: none;
         width: 243px;
         height: 54px;
@@ -264,7 +262,7 @@
     .situations-section {
       padding: 3rem 1rem;
 
-        // border: 1px solid red !important;
+      // border: 1px solid red !important;
       h2 {
         font-size: 1.5rem;
       }
@@ -276,53 +274,48 @@
   }
 }
 
-
-
-
 @media (max-width: 1205px) {
-  .Overview_3_card .growth-section .content{
-    h1{
+  .Overview_3_card .growth-section .content {
+    h1 {
       font-size: $font-size-36;
       line-height: 70px;
     }
-   .Marketing_card_2_flex{
-    flex-direction: column;
-    img{
-      width: 680px;
+    .Marketing_card_2_flex {
+      flex-direction: column;
+      img {
+        width: 680px;
         height: 300px;
+      }
     }
   }
 }
 
-}
-
 @media (max-width: 1000px) {
-.Overview_3_card .situations-section .situations-list .situation-item p{
-        font-size: $font-size-14;
-}
-.Overview_3_card .situations-section .cta-section .cta-button{
-  height: 45px;
-}
-.Overview_3_card .advantages-section .cards-container{
-  flex-direction: column;
-  align-items: center;
-}
-}
-
-
-@media (max-width: 900px) {
-  .Overview_3_card .situations-section{
-    width: 90%;
-  }
-  .Overview_3_card .situations-section{
-  h2{
-    padding: 0 10px;
-  }
-  
-   .situations-list .situation-item p {
+  .Overview_3_card .situations-section .situations-list .situation-item p {
     font-size: $font-size-14;
   }
+  .Overview_3_card .situations-section .cta-section .cta-button {
+    height: 45px;
+  }
+  .Overview_3_card .advantages-section .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+@media (max-width: 900px) {
+  .Overview_3_card .situations-section {
+    width: 90%;
+  }
+  .Overview_3_card .situations-section {
+    h2 {
+      padding: 0 10px;
+    }
+
+    .situations-list .situation-item p {
+      font-size: $font-size-14;
+    }
+  }
 
   .Overview_3_card .situations-section .cta-section .cta-button {
     height: 45px;
@@ -332,37 +325,33 @@
     flex-direction: column;
     align-items: center;
   }
-    .Overview_3_card .situations-section .situations-list{
-      padding: 0 10px;
-    }
+  .Overview_3_card .situations-section .situations-list {
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 760px) {
+  .Overview_3_card .growth-section .content .Marketing_card_2_flex img {
+    width: 70%;
+  }
+  .Overview_3_card .growth-section .content {
+    h4 {
+      width: 95%;
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
 
-.Overview_3_card .growth-section .content .Marketing_card_2_flex img{
-  width: 70%;
-}
-.Overview_3_card .growth-section .content {
- h4{
-  width: 95%;
-  font-size: 14px;
-}
-p{
-  font-size: 14px;
-}
-}
-
-.Overview_3_card .growth-section .content .Marketing_card_2_flex{
+  .Overview_3_card .growth-section .content .Marketing_card_2_flex {
     // margin-right: 0px;
   }
 }
 
 @media (max-width: 650px) {
-
   .Overview_3_card .growth-section .content .Marketing_card_2_flex img {
     width: 70%;
-
-    
   }
   .Overview_3_card .growth-section .content .Marketing_card_2_flex {
     // margin-right: 0px;
@@ -372,9 +361,42 @@ p{
   }
 }
 
-
 @media (max-width: 450px) {
-  .Overview_3_card .advantages-section .cards-container .card{
+  .Overview_3_card .advantages-section .cards-container .card {
     width: 350px;
+  }
+  .Overview_3_card .growth-section .content h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .Overview_3_card .growth-section .content .Marketing_card_2_flex {
+    margin-right: 0px;
+  }
+  .Overview_3_card .growth-section .content .Marketing_card_2_flex img {
+    width: 90%;
+  }
+  .Overview_3_card .growth-section .content h4 {
+    width: 100%;
+  }
+  .Overview_3_card .advantages-section .cards-container .card {
+    width: 330px;
+    h3 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    p {
+      margin: 0 3%;
+    }
+  }
+  .Overview_3_card .situations-section {
+    // padding: 10px;
+    // border-radius: 2 0px;
+
+    h2 {
+      font-size: 17px;
+    }
+  }
+  .Overview_3_card .situations-section .cta-section {
+    flex-direction: column;
   }
 }

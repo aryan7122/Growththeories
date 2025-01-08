@@ -283,3 +283,35 @@ button:active{
 
   }
 }
+
+@media (max-width: 440px) {
+  .process .process-header {
+    height: 140px;
+
+  }
+    .card-processes .process-steps .step {
+      border: 1px solid red;
+      h3{
+        font-size: 30px;
+        width: 210px;
+        line-height: 50px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+        .process-footer{
+          flex-direction: column;
+          p{
+            margin-bottom: 0;
+            width: 90%;
+            text-align: center;
+          }
+        }
+}
+@media (max-width: 400px) {
+  .process .process-header {
+    height: 130px;
+
+  }
+}

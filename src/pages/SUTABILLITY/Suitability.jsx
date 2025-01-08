@@ -91,7 +91,7 @@ const Suitability = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,  // Delay between each card
+        staggerChildren: 0.2,  // Delay between each card
       }
     }
   };
@@ -102,7 +102,7 @@ const Suitability = () => {
         initial={{ opacity: 0, y: 130 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}
         className="header">
         <span className="suitability">SUITABILITY</span>
         <h1>Know Theories Are Suitables In Seconds</h1>
@@ -113,7 +113,7 @@ const Suitability = () => {
         initial={{ opacity: 0, y: 130 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="selectors-range">
         <div className="business-size"
           style={{ '--min-val': minVal, '--max-val': maxVal }}>
@@ -161,7 +161,7 @@ const Suitability = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="cards">
         {cardsData.map((card, index) => (
           <div className="card" key={index}>

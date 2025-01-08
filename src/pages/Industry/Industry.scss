@@ -232,5 +232,13 @@ $text-color: #ffffff;
   display: none;
   /* Scrollbar ko hide karne ka tarika */
 }
- 
+ .Industry_content .header-Industry h1{
+  line-height: 30px;
+ }
+ .Industry_content .header-Industry{
+  padding: 20px;
+ }
+.Industry_content .table td .td1 .tdImg{
+ display: none;
+}
 }

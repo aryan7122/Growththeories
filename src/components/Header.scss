@@ -275,31 +275,85 @@
 }
 
 @media (max-width: 690px) {
-  .header__content{
+  .header__content {
     padding-left: 0px;
     padding: 10px;
     text-align: center;
-    h3{
+    h3 {
       margin: 0 auto;
       margin-top: 10px;
     }
   }
   .header__content h1 {
-      font-size: $font-size-40;
-      line-height: 56px;
+    font-size: $font-size-40;
+    line-height: 56px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__content h1 span {
+    font-size: $font-size-46;
+    // border: 1px solid red;
+    line-height: 60px;
+  }
+  .header .header_p {
+    width: 100%;
+  }
+  .header .EmilyR {
+    margin: 0 auto;
+  }
+}
+
+
+
+@media (max-width: 590px) {
+ 
+
+  .header__content h1 {
+    font-size: $font-size-36;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__content h1 span {
+    font-size: $font-size-40;
+    line-height: 45px;
+  }
+
+  .header .header_p {
+    width: 100%;
+  }
+
+  
+}
+
+@media (max-width: 590px) {
+  .header__buttons{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+  .btn.btn-secondary{
+      margin-left: 0px !important;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header__content h1 {
+      font-size: $font-size-30;
+      line-height: 36px;
       width: 100%;
       text-align: center;
     }
   
     .header__content h1 span {
-      font-size: $font-size-46;
-      // border: 1px solid red;
-      line-height: 60px;
+      font-size: $font-size-36;
+      line-height: 40px;
     }
         .header .header_p{
-          width: 100%;
+          font-size: 16px;
         }
-                .header .EmilyR{
-                  margin: 0 auto;
-                }
 }
