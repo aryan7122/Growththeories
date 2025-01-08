@@ -391,4 +391,10 @@
     .slider-container .containerTop h2{
       font-size: 20px;
     }
+    .slider-container .slider{
+      scale: 0.7;
+      width: 134%;
+      margin-left: -70px;
+      overflow: scroll;
+    }
 }
