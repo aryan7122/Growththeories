@@ -565,6 +565,9 @@
     }
     margin-top: 0 auto;
   }
+    .case-studies-reviews .reviews-section{
+      margin: 0px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -598,7 +601,6 @@
           width: 70%;
           line-height: 14px;
           font-size: 9px;
-          // border: 1px solid red;
         }
       }
     }
@@ -607,9 +609,9 @@
       img {
         width: 340px;
           height: 280px;
+        }
       }
     }
-  }
     .CaseStudies_3_card .CaseStudies-section{
       padding: 20px;
       align-items: center;
