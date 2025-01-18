@@ -75,8 +75,10 @@ const Navbar = () => {
                 </button>
             </div>
             <ul className={`navbar__links ${isMobileMenuOpen ? "open" : ""}`}>
-                <li className="navbar__dropdown" ref={servicesDropdown.ref}>
-                    <a href="#services" ref={servicesDropdown.buttonRef} onClick={servicesDropdown.handleToggle}>
+                <li
+                    className="navbar__dropdown" ref={servicesDropdown.ref}>
+                    <a className={` ${servicesDropdown.isOpen ? "a_openClass" : ""}`}
+                        href="#services" ref={servicesDropdown.buttonRef} onClick={servicesDropdown.handleToggle}>
                         Services
                         {servicesDropdown.isOpen ? (
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
@@ -90,53 +92,60 @@ const Navbar = () => {
                     </a>
 
                     {servicesDropdown.isOpen && (
-                        <div className="dropdown dropdownS">
-
-                            <div className="right_drop">
-                                <div className="dropdown__item">
-                                    <div className='oneNavBar'>
-                                        <div>
-                                            <h4>Growth Tracks</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <>
+                            <div className="dropdown dropdownS">
+                                <div className="right_drop">
+                                    <div className="dropdown__item">
+                                        <div className='oneNavBar'>
+                                            <div>
+                                                <h4>Growth Tracks</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <img src={grothImg} alt="" />
                                         </div>
-                                        <img src={grothImg} alt="" />
+                                    </div>
+                                    <div className="dropdown__item">
+                                        <div className='oneNavBar'>
+                                            <div>
+                                                <h4>Growth Prediction Modelling</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <img className='imgAbout' src={gpmImg} alt="" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="dropdown__item">
-                                    <div className='oneNavBar'>
-                                        <div>
-                                            <h4>Growth Prediction Modelling</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div className="two_list">
+                                        <div className="firstNavbar">
+                                            <div>
+                                                <h4>Validation As A Servivce</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <img src={vaImg} alt="" />
                                         </div>
-                                        <img className='imgAbout' src={gpmImg} alt="" />
+                                        <div className="firstNavbar">
+                                            <div>
+                                                <h4>Growth Audit</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <img src={gtImg} alt="" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="dropdown__item">
-                                <div className="two_list">
-                                    <div className="firstNavbar">
-                                        <div>
-                                            <h4>Validation As A Servivce</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                        <img src={vaImg} alt="" />
-                                    </div>
-                                    <div className="firstNavbar">
-                                        <div>
-                                            <h4>Growth Audit</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                        <img src={gtImg} alt="" />
-                                    </div>
-                                </div>
+                            <div className="mobile_dropdown">
+                                <div className="div_item_m">Growth Tracks</div>
+                                <div className="div_item_m">Growth Prediction Modelling</div>
+                                <div className="div_item_m">Validation As A Servivce</div>
+                                <div className="div_item_m">Growth Audit</div>
                             </div>
-                        </div>
+                        </>
                     )}
                 </li>
                 <li className="navbar__dropdown" ref={productsDropdown.ref}>
-                    <a href="#company" ref={productsDropdown.buttonRef} onClick={productsDropdown.handleToggle}>
+                    <a href="" ref={productsDropdown.buttonRef} onClick={productsDropdown.handleToggle}>
                         Products
-                        {productsDropdown.isOpen ? (
+                        {/* {productsDropdown.isOpen ? (
 
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
                                 <path d="M17.9998 15C17.9998 15 13.5809 9.00001 11.9998 9C10.4187 8.99999 5.99985 15 5.99985 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -145,7 +154,7 @@ const Navbar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
                                 <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        )}
+                        )} */}
                     </a>
                     {/* {productsDropdown.isOpen && (
                         <div className="dropdown">
@@ -156,9 +165,11 @@ const Navbar = () => {
                         </div>
                     )} */}
                 </li>
-                <li><a href="#customer">Customer</a></li>
+                <li className="navbar__dropdown"><a href="">Customer</a></li>
                 <li className="navbar__dropdown" ref={companyDropdown.ref}>
-                    <a href="#company" ref={companyDropdown.buttonRef} onClick={companyDropdown.handleToggle}>
+                    <a
+                        className={` ${companyDropdown.isOpen ? "a_openClass" : ""}`}
+                        href="#Company" ref={companyDropdown.buttonRef} onClick={companyDropdown.handleToggle}>
                         Company
                         {companyDropdown.isOpen ? (
 
@@ -172,46 +183,54 @@ const Navbar = () => {
                         )}
                     </a>
                     {companyDropdown.isOpen && (
-                        <div className="dropdown">
-                            <div className="dropdown__item">
-                                <div className="two_list">
-                                    <div className="firstNavbar">
-                                        <div>
-                                            <h4>Blog</h4>
-                                            <p>Read Recent Blogs</p>
+                        <>
+                            <div className="dropdown">
+                                <div className="dropdown__item">
+                                    <div className="two_list">
+                                        <div className="firstNavbar">
+                                            <div>
+                                                <h4>Blog</h4>
+                                                <p>Read Recent Blogs</p>
+                                            </div>
+                                            <img src={BlogImg} alt="" />
                                         </div>
-                                        <img src={BlogImg} alt="" />
+                                        <div className="firstNavbar">
+                                            <div>
+                                                <h4>Career</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <img src={CareerImg} alt="" />
+                                        </div>
                                     </div>
-                                    <div className="firstNavbar">
-                                        <div>
-                                            <h4>Career</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                                <div className="right_drop">
+                                    <div className="dropdown__item">
+                                        <div className='oneNavBar'>
+                                            <div>
+                                                <h4>Contact us</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <img src={ContactImg} alt="" />
                                         </div>
-                                        <img src={CareerImg} alt="" />
+                                    </div>
+                                    <div className="dropdown__item">
+                                        <div className='oneNavBar'>
+                                            <div>
+                                                <h4>About us</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <img className='imgAbout' src={aboutImg} alt="" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="right_drop">
-                                <div className="dropdown__item">
-                                    <div className='oneNavBar'>
-                                        <div>
-                                            <h4>Contact us</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                        <img src={ContactImg} alt="" />
-                                    </div>
-                                </div>
-                                <div className="dropdown__item">
-                                    <div className='oneNavBar'>
-                                        <div>
-                                            <h4>About us</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                        <img className='imgAbout' src={aboutImg} alt="" />
-                                    </div>
-                                </div>
+                            <div className="mobile_dropdown">
+                                <div className="div_item_m">Blog</div>
+                                <div className="div_item_m">Career</div>
+                                <div className="div_item_m">Contact us</div>
+                                <div className="div_item_m">About us</div>
                             </div>
-                        </div>
+                        </>
                     )}
                 </li>
             </ul>
@@ -231,3 +250,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+////
