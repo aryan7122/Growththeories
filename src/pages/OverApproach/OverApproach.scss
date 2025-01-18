@@ -262,7 +262,7 @@ $button-active-color: #fff;
   }
 }
 @media (max-width: 1200px) {
-  .over-approach .content .layout .cards .card:last-child .p-icon2 img{
+  .over-approach .content .layout .cards .card:last-child .p-icon2 img {
     display: none;
   }
   .over-approach .content .layout {
@@ -281,7 +281,7 @@ $button-active-color: #fff;
         display: block;
         flex-direction: column;
         align-items: center;
-        justify-content:start !important;
+        justify-content: start !important;
         margin-top: -10px;
       }
     }
@@ -290,16 +290,16 @@ $button-active-color: #fff;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
 
-      .card:last-child{
+      .card:last-child {
         display: block;
-       .p-icon2 {
-        margin-top: 0px;
-        .card-content {
-          width: fit-content;
-          margin-top: 10px;
+        .p-icon2 {
+          margin-top: 0px;
+          .card-content {
+            width: fit-content;
+            margin-top: 10px;
+          }
         }
       }
-    }
       .card-content {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -333,7 +333,6 @@ $button-active-color: #fff;
       gap: 20px;
 
       .card:last-child .p-icon2 {
-
         .card-content {
           width: fit-content;
           margin-top: 20px;
@@ -379,30 +378,30 @@ $button-active-color: #fff;
 
 @media (max-width: 520px) {
   // .over-approach .content .layout .cards .card-content:
-  .over-approach #approach_card .ourApproach h2{
+  .over-approach #approach_card .ourApproach h2 {
     font-size: 30px;
     line-height: 35px;
     text-align: center;
     margin-top: 10px;
   }
-    .over-approach #approach_card .ourApproach h4{
-          margin: 0 auto;
-    }
-        .over-approach .content .title{
-          font-size: 30px;
-          line-height: 30px;
-          text-align: center;
-        }
-                .over-approach .content .content_box .cta-button{
-                  margin: 0 auto;
-                }
-                                .over-approach .content .layout .image img{
-                                  width: 310px;
-                                }
-                                                                .over-approach .content .layout .cards .card .card-title{
-                                                                  line-height: 10px;
-                                                                }
-                                                                                                                                .over-approach .content .title{
-                                                                                                                                  margin-top: -50px;
-                                                                                                                                }
+  .over-approach #approach_card .ourApproach h4 {
+    margin: 0 auto;
+  }
+  .over-approach .content .title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .over-approach .content .content_box .cta-button {
+    margin: 0 auto;
+  }
+  .over-approach .content .layout .image img {
+    width: 310px;
+  }
+  .over-approach .content .layout .cards .card .card-title {
+    line-height: 10px;
+  }
+  .over-approach .content .title {
+    margin-top: -50px;
+  }
 }

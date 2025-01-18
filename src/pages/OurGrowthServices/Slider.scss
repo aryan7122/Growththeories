@@ -1,4 +1,4 @@
-@import "../../styles//Variables/variables.scss";
+@use "../../styles//Variables/variables.scss" as *;
 
 .slider-container {
   background-color: #ffffff;
@@ -143,8 +143,6 @@
     }
   }
 }
-
-// border: 1px solid red !important;
 
 @media (max-width: 1360px) {
   .slider-container .containerTop h2 {
@@ -291,6 +289,7 @@
     }
   }
 }
+
 @media (max-width: 740px) {
   .slider-container .slider .slider-track .slider-card img {
     // display: none;

@@ -129,6 +129,7 @@
         backdrop-filter: blur(50px);
         background: #34276070;
         box-shadow: $box-shadow-sm;
+       
         &:hover {
           transform: translateY(-10px);
         }
@@ -380,6 +381,9 @@
   }
   .Overview_3_card .advantages-section .cards-container .card {
     width: 330px;
+    @media (max-width: 400px) {
+        width: 320px;
+      }
     h3 {
       font-size: 20px;
       line-height: 20px;

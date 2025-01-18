@@ -3,7 +3,14 @@ import './Navbar.scss';
 import logo from '../assets/logo.png';
 import { OutsideClick } from '../utils/common/OutsideClick';
 import CustomDropdown from '../utils/common/CustomDropdown';
-
+import BlogImg from '../assets/Navbar/vecteezy_3d-male-character-sitting-onsofa-andtvuggj (3).svg'
+import CareerImg from '../assets/Navbar/vecteezy_3d-male-character-sitting-onsofa-andtvuggj (2).svg'
+import ContactImg from '../assets/Navbar/vecteezy_3d-male-character-sitting-onsofa-andtvuggj (1).svg'
+import aboutImg from '../assets/Navbar/vecteezy_3d-male-character-sitting-onsofa-andtvuggj (4).svg'
+import grothImg from '../assets/Navbar/Growth Tracks.svg'
+import gpmImg from '../assets/Navbar/Creative experiment-bro 1.svg'
+import vaImg from '../assets/Navbar/Consulting-cuate 2.svg'
+import gtImg from '../assets/Navbar/Environmental audit-rafiki 1.svg'
 const languageOptions = [
     'English', 'Spanish', 'French', 'German',
     'Hindi', 'Italian', 'Arabian', 'Roman',
@@ -81,12 +88,48 @@ const Navbar = () => {
                             </svg>
                         )}
                     </a>
+
                     {servicesDropdown.isOpen && (
-                        <div className="dropdown">
-                            <div className="dropdown__item">Growth Tracks</div>
-                            <div className="dropdown__item">Prediction Modelling</div>
-                            <div className="dropdown__item">Validation Service</div>
-                            <div className="dropdown__item">Growth Audit</div>
+                        <div className="dropdown dropdownS">
+
+                            <div className="right_drop">
+                                <div className="dropdown__item">
+                                    <div className='oneNavBar'>
+                                        <div>
+                                            <h4>Growth Tracks</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <img src={grothImg} alt="" />
+                                    </div>
+                                </div>
+                                <div className="dropdown__item">
+                                    <div className='oneNavBar'>
+                                        <div>
+                                            <h4>Growth Prediction Modelling</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <img className='imgAbout' src={gpmImg} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="dropdown__item">
+                                <div className="two_list">
+                                    <div className="firstNavbar">
+                                        <div>
+                                            <h4>Validation As A Servivce</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <img src={vaImg} alt="" />
+                                    </div>
+                                    <div className="firstNavbar">
+                                        <div>
+                                            <h4>Growth Audit</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <img src={gtImg} alt="" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     )}
                 </li>
@@ -104,14 +147,14 @@ const Navbar = () => {
                             </svg>
                         )}
                     </a>
-                    {productsDropdown.isOpen && (
+                    {/* {productsDropdown.isOpen && (
                         <div className="dropdown">
                             <div className="dropdown__item">Blog</div>
                             <div className="dropdown__item">Contact Us</div>
                             <div className="dropdown__item">About Us</div>
                             <div className="dropdown__item">Career</div>
                         </div>
-                    )}
+                    )} */}
                 </li>
                 <li><a href="#customer">Customer</a></li>
                 <li className="navbar__dropdown" ref={companyDropdown.ref}>
@@ -130,10 +173,44 @@ const Navbar = () => {
                     </a>
                     {companyDropdown.isOpen && (
                         <div className="dropdown">
-                            <div className="dropdown__item">Blog</div>
-                            <div className="dropdown__item">Contact Us</div>
-                            <div className="dropdown__item">About Us</div>
-                            <div className="dropdown__item">Career</div>
+                            <div className="dropdown__item">
+                                <div className="two_list">
+                                    <div className="firstNavbar">
+                                        <div>
+                                            <h4>Blog</h4>
+                                            <p>Read Recent Blogs</p>
+                                        </div>
+                                        <img src={BlogImg} alt="" />
+                                    </div>
+                                    <div className="firstNavbar">
+                                        <div>
+                                            <h4>Career</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <img src={CareerImg} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="right_drop">
+                                <div className="dropdown__item">
+                                    <div className='oneNavBar'>
+                                        <div>
+                                            <h4>Contact us</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <img src={ContactImg} alt="" />
+                                    </div>
+                                </div>
+                                <div className="dropdown__item">
+                                    <div className='oneNavBar'>
+                                        <div>
+                                            <h4>About us</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <img className='imgAbout' src={aboutImg} alt="" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     )}
                 </li>
