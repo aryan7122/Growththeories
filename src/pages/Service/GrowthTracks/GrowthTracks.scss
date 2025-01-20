@@ -1,0 +1,250 @@
+@use "../../../styles//Variables/variables.scss" as *;
+.growth-tracks {
+  padding: 40px;
+  //   color: #333;
+  background: #f8f6f2;
+  .box-content-growth-service {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0px 4px 24px 0px #00000014;
+    border-radius: 20px;
+
+    .content_box_header {
+      display: flex;
+      //   border: 1px solid red !important;
+      padding: 20px;
+      align-items: center;
+      justify-content: space-between;
+
+      .cta_button {
+        border: none;
+        width: fit-content;
+        padding: 0 20px;
+        height: 54px;
+        border-radius: 100px;
+        opacity: 0px;
+        cursor: pointer;
+        font-size: $font-size-14;
+        color: #fff;
+        background: $primary-500;
+        font-weight: 500;
+        line-height: 20px;
+
+        &:hover {
+          background-color: #fff;
+          color: $primary-500;
+          transition: 0.3s linear;
+          border: 1px solid $primary-500;
+          scale: 1.02;
+          box-shadow: 0 0px 10px rgba(255, 0, 0, 0.4);
+        }
+      }
+      .title {
+        font-weight: 500px;
+        font-size: $font-size-48;
+        transition: 0.3s linear;
+        color: $neutral-600;
+        line-height: 57px;
+      }
+
+      .description {
+        max-width: 710px;
+        font-size: $font-size-18;
+        line-height: 27px;
+        font-weight: 400;
+        color: $neutral-900;
+        //   text-transform: capitalize;
+        opacity: 0.5;
+        text-align: left;
+        margin-top: -10px;
+      }
+    }
+
+    .features {
+      background: #fff;
+      .title_top_h2 {
+        background: #b8b8b833;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+        text-align: center;
+
+        width: fit-content;
+        padding: 3px 10px;
+        border-radius: 100px;
+        color: #1b3e9f;
+      }
+      h2 {
+        color: $primary-900;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: -1px;
+        text-align: left;
+      }
+
+      p {
+        max-width: 1020px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        text-underline-position: from-font;
+        color: #000;
+        opacity: 0.6;
+        margin-top: -10px;
+        text-decoration-skip-ink: none;
+      }
+      .features-content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap; // Makes the layout flexible for smaller screens
+
+        .illustration {
+          background: #432081;
+          flex: 1;
+          max-width: 50%;
+          border-radius: 10px;
+          width: 100%; // Ensures full width on small screens
+        }
+
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          flex: 1;
+          width: 100%; // Ensures proper alignment on small screens
+
+          .card {
+            // max-width: 285px;
+            height: 308px;
+            background: linear-gradient(
+              90deg,
+              rgba(161, 196, 253, 0.4) 0%,
+              #c2e9fb 64.35%
+            );
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease;
+
+            &:hover {
+              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+              transform: translateY(-5px);
+            }
+
+            .icon {
+              // font-size: 2rem;
+              // color: #2f80ed;
+              // margin-bottom: 1rem;
+            }
+            .card_box_ {
+              h3 {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 25.2px;
+                text-align: left;
+              }
+
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                text-align: left;
+                color: #000;
+                opacity: 0.65;
+              }
+            }
+
+            .button_card {
+                width: 190px;
+                height: 36px;
+              background-color: $primary-500;
+              color: #fff;
+              padding: 8px;
+              border: none;
+              border-radius: 100px;
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 500;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              justify-content: center;
+              transition: background-color 0.4s ease;
+              position: relative;
+              border: 1px solid transparent;
+
+              span {
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 6px;
+                border-radius: 50%;
+                right: 4px;
+                position: absolute;
+                transition: right 0.4s ease; // Add transition for smooth movement
+              }
+
+              &:hover {
+                background: #fff;
+                color: $primary-500;
+                //    border: 1px solid $primary-500;
+
+                span {
+                  right: 83.5%;
+                  background: $primary-500;
+
+                  svg {
+                    color: #fff;
+                  }
+                }
+              }
+
+              // Adding the animation for moving from right to left
+              @keyframes moveSpan {
+                0% {
+                  right: 4px;
+                }
+
+                100% {
+                  right: 88%;
+                }
+              }
+            }
+          }
+          .card:last-child{
+            grid-column: span 2;
+            height: 200px;
+            flex-direction: row;
+            align-items: center;
+            .card_box_{
+                width: 40%;
+            }
+          }
+          
+        }
+      }
+
+      @media (max-width: 768px) {
+        .features-content {
+          flex-direction: column;
+
+          .illustration {
+            max-width: 100%; // Full width for smaller screens
+          }
+
+          .cards {
+            grid-template-columns: 1fr; // Stacks cards vertically on small screens
+          }
+        }
+      }
+    }
+  }
+}

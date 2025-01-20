@@ -1,0 +1,182 @@
+@use "../../../styles//Variables/variables.scss" as *;
+.main_service_container{
+  background: #F8F6F2;
+  padding: 10px 20px 20px 20px;
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(159.37deg, #060649 38.68%, #0f0faf 145.23%);
+  position: relative;
+  border-radius: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 400px; // Adjust size as needed
+    height: 400px;
+    background-color: #c06474;
+    border-radius: 50%;
+    bottom: 20px; // Half outside the view for aesthetic look
+    left: 150px; // Adjust left position for visibility
+    opacity: 0.4;
+    filter: blur(80px);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: #c06474;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 100px;
+    opacity: 0.4;
+    filter: blur(80px);
+  }
+  .box_service_content {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    .content {
+      padding: 50px;
+      // max-width: 600px;
+      
+      .badge {
+        background: #ffffff35;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 12px;
+      }
+
+      h1 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 52px;
+        letter-spacing: -1px;
+        text-align: center;
+        margin-bottom: 10px;
+        background: linear-gradient(
+          91.84deg,
+          #aeaeff 3.67%,
+          rgba(241, 176, 187, 0.9) 41.03%,
+          #5bd170 85.65%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        .highlight {
+          color: #71e5ac;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        opacity: 0.8;
+      }
+      
+      .buttons {
+        // border: 1px solid red !important;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+
+      .btn {
+          width: 237px;
+          height: 54px;
+          gap: 0px;
+          border-radius: 100px;
+          border: 1px solid #ffffff00;
+          opacity: 0.9;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20px;
+          transition: 0.3s ease;
+          /* Smoother transition for all properties */
+      
+          &.btn-primary {
+            background: $primary-500;
+            color: #fff;
+            transition: 0.3s ease;
+      
+            &:hover {
+              color: $primary-500;
+              background:transparent;
+              border: 1px solid $primary-500;
+              transform: scale(1.05);
+              /* Slightly increase size */
+              box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+              /* Soft shadow on hover */
+            }
+          }
+      
+          &.btn-secondary {
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            transition: 0.3s ease;
+      
+            &:hover {
+              color: #060649;
+              transform: scale(1.05);
+              background: #ffff;
+              box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+              /* Soft shadow on hover */
+            }
+          }
+        }
+      }
+    }
+    
+    .image-container {
+      margin-top: 90px;
+      background: url("../../../assets/service/Perspective\ Grid.svg") no-repeat
+        center top/cover;
+     margin: 0 auto;
+      // border: 1px solid red;
+      margin-top: 70px;
+      height: 504px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      img {
+        // max-width: 300px;
+        scale:1;
+        // margin-top: 200px;
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+      }
+      .round-shape {
+        // width: 250px;
+        height: 250px;
+        background-color: #c06474;
+        border-radius: 50%;
+        top: 10%;
+        left: 80%;
+        opacity: 0.3;
+        filter: blur(50px);
+      }
+    }
+  }
+}
+
+}
+
+
+
+
+
+
+
+

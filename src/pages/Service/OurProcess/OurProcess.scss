@@ -1,0 +1,218 @@
+/* OurProcess.scss */
+
+.our-process-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #13131f;
+  color: #fff;
+  padding: 40px;
+  position: relative;
+  overflow-y: auto;
+  .process-step {
+    // border: 1px solid red;
+    margin-top: 40px;
+    // max-width: 600px;
+    margin-bottom: 3rem;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+    height: 400px;
+    .process-header {
+      margin-bottom: 1.5rem;
+      width: 40%;
+      .process-number {
+        font-size: 14px;
+        color: #ffffff;
+        opacity: 0.4;
+        text-transform: uppercase;
+      }
+
+      .process-phase {
+        font-size: 40px;
+        line-height: 60px;
+        color: #5c64ff;
+        margin: 0.5rem 0;
+      }
+
+      .process-title {
+        font-size: 50px;
+        line-height: 52px;
+        font-weight: 800;
+        color: #fff;
+        margin-top: -1px;
+      }
+      .keep_scrolling {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .circular-progress-container {
+          
+          svg {
+            transform: rotate(-90deg);
+            
+          }
+
+          
+        }
+        h4{
+          position: relative;
+        font-family: Syne;
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 39.2px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          opacity: 0.4;
+          
+        }
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 7px;
+      /* Set width of scrollbar */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #5c64ff;
+      cursor: pointer;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      &:hover {
+        background-color: #000dff;
+      }
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #292929;
+      /* Light background for the scrollbar track */
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      /* Rounded corners for the track */
+    }
+    .process-content {
+      height: 300px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 60%;
+      padding-right: 10px;
+      /* Optional: to prevent content being hidden behind the scrollbar */
+      /* Temporary for debugging */
+
+      p {
+        width: 70%;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36.4px;
+        text-align: left;
+        white-space: pre-line;
+      }
+      // border: 1px solid red;
+
+      /* Custom Scrollbar Styles */
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .process-step {
+    // flex-direction: column;
+    // align-items: center;
+    // text-align: center;
+    // height: auto;
+
+    .process-header {
+      width: 100%;
+
+      .process-phase {
+        font-size: 35px;
+        line-height: 50px;
+      }
+
+      .process-title {
+        font-size: 40px;
+      }
+    }
+
+    .process-content {
+      width: 100%;
+      height: auto;
+
+      p {
+        width: 90%;
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // padding: 20px;
+
+  .process-step {
+    .process-header {
+      .process-phase {
+        font-size: 28px;
+        line-height: 40px;
+      }
+
+      .process-title {
+        font-size: 32px;
+      }
+    }
+
+    .process-content {
+      p {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .process-step {
+    gap: 20px;
+
+    .process-header {
+      .process-phase {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      .process-title {
+        font-size: 28px;
+      }
+    }
+
+    .process-content {
+      p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+}
