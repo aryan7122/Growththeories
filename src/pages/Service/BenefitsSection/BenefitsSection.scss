@@ -196,23 +196,37 @@
     }
 
     .cta-button {
+    width: 200px;
+      height: 48px;
+      top: 458.08px;
+      left: 54.07px;
+      padding: 10px 16px 10px 16px;
+      gap: 0px;
+      border-radius: 100px;
+      opacity: 0px;
+       
       background-color: $primary-500;
       color: #fff;
       border: none;
       padding: 15px 30px;
-      border-radius: 30px;
-      font-size: 18px;
+      font-weight: 600;
+      font-size: 15px;
       cursor: pointer;
       transition: 0.3s;
 
       &:hover {
-        background-color: darken($primary-500, 10%);
+      background-color: #fff;
+        border: 1px solid $primary-500;
+        color: $primary-500;
+        transition: 0.3s ease;
+        box-shadow: 0 0 4px 1px rgb(180, 3, 3);
       }
     }
   }
 
   .image-section {
     position: relative;
+    margin-bottom: -90px;
 
     img {
       width: 550px;
