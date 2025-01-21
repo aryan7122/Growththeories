@@ -1,15 +1,15 @@
-@use "../../../styles//Variables/variables.scss" as *;
+@use "../../../../styles//Variables/variables.scss" as *;
 
-.faq-container {
+.faq-container-FAQValid {
   font-family: "Arial", sans-serif;
   background-color: #DEDEFF;
   margin: 0 auto;
   display: flex;
-  .title_header_- {
+  .title_header_FAQValid {
     background: #dedefa;
     width: 100%;
     padding: 40px 0;
-    width: 570px;
+    width: 560px;
     .badge {
       margin: 0 40px;
       display: inline-block;

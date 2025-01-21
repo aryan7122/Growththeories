@@ -1,36 +1,36 @@
 import React, { useState } from 'react';
-import './FAQAccordion.scss';
+import './FAQValid.scss';
 
 import { motion } from 'framer-motion';
 
 const faqs = [
     {
-        question: 'What is growth marketing, and how is it different from traditional marketing?',
+        question: 'What makes growth hacking different from traditional marketing?',
         answer: 'Growth hacking focuses on rapid experimentation and unconventional strategies to drive business growth, often relying on data analysis, creativity, and technology. Traditional marketing, on the other hand, typically involves more long-term branding and customer acquisition strategies using established channels.'
     },
     {
-        question: 'How long does it take to see results from a growth track?',
+        question: 'How can TikTok advertising help my business grow?',
         answer: 'TikTok advertising can expand your brand reach by engaging a younger audience, driving higher engagement through creative short videos, and utilizing data-driven targeting features to boost conversion rates.'
     },
     {
-        question: 'Are growth tracks suitable for small businesses?',
+        question: 'What is a growth audit and how does it benefit my business?',
         answer: 'A growth audit evaluates your business processes and identifies opportunities for improvement, ensuring your strategies align with business goals and market trends.'
     },
     {
-        question: 'What does your growth audit service involve?',
+        question: 'How does growth prediction modeling work?',
         answer: 'Growth prediction modeling uses historical data and machine learning algorithms to forecast future growth trends, helping businesses make data-driven decisions.'
     },
     {
-        question: 'How does your data-driven approach help in growth prediction modeling?',
+        question: 'Can growth strategies be customized for small businesses?',
         answer: 'Yes, growth strategies can be tailored to fit the unique needs and budgets of small businesses, ensuring scalability and sustainable development.'
     },
     {
-        question: 'Do I need a large budget to benefit from your services?',
+        question: 'What’s the advantage of using a marketplace strategy for growth?',
         answer: 'A marketplace strategy provides access to a larger customer base, reduces operational costs, and leverages network effects for accelerated growth.'
     }
 ];
 
-const FAQFreq = () => {
+const FAQValid = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const toggleFAQ = (index) => {
@@ -56,8 +56,8 @@ const FAQFreq = () => {
         }
     };
     return (
-        <div className="faq-container">
-            <div className="title_header_-">
+        <div className="faq-container-FAQValid">
+            <div className="title_header_FAQValid">
                 <span className="badge">FAQs</span>
                 <h2 className="faq-title">Frequently Asked Questions</h2>
                 <p>We have got all The answers</p>
@@ -94,4 +94,4 @@ const FAQFreq = () => {
     );
 };
 
-export default FAQFreq;
+export default FAQValid;

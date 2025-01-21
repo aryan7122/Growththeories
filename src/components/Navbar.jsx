@@ -11,12 +11,15 @@ import grothImg from '../assets/Navbar/Growth Tracks.svg'
 import gpmImg from '../assets/Navbar/Creative experiment-bro 1.svg'
 import vaImg from '../assets/Navbar/Consulting-cuate 2.svg'
 import gtImg from '../assets/Navbar/Environmental audit-rafiki 1.svg'
+import { useLocation, useNavigate } from 'react-router-dom';
+
 const languageOptions = [
     'English', 'Spanish', 'French', 'German',
     'Hindi', 'Italian', 'Arabian', 'Roman',
     'Portuguese', 'Dutch'
 ];
 const Navbar = () => {
+    const navigate = useNavigate();
     const servicesDropdown = OutsideClick();
     const companyDropdown = OutsideClick();
     const productsDropdown = OutsideClick();
@@ -56,15 +59,30 @@ const Navbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const closeMobileMenu = () => {
-        setIsMobileMenuOpen(false);
+    const HandleNavigation = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+        const element = document.getElementById([path]);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        servicesDropdown.handleToggle();
     };
 
+
+    const location = useLocation();
+
+    // Check if pathname includes specific keywords
+    const specialPaths = ['/validation-service',];
+    const isSpecialPath = specialPaths.some((path) => location.pathname.includes(path));
+    console.log('isSpecialPath', isSpecialPath)
     return (
-        <nav className={`navbar ${isFixed ? 'isFixedNav' : ''}`} >
+        <nav className={`navbar ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}`} >
             <div className={`mobile_flex_toggle`} >
                 <div className="navbar__logo">
-                    <img src={logo} alt="GrowthTheories Logo" />
+                    <img
+                        onClick={() => HandleNavigation('/')}
+                        src={logo} alt="GrowthTheories Logo" />
                 </div>
                 <button
                     className="navbar__toggle"
@@ -98,7 +116,7 @@ const Navbar = () => {
                                     <div className="dropdown__item">
                                         <div className='oneNavBar'>
                                             <div>
-                                                <h4>Growth Tracks</h4>
+                                                <h4 onClick={() => HandleNavigation('/growth-tracks')}>Growth Tracks</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                                             </div>
                                             <img src={grothImg} alt="" />
@@ -107,7 +125,7 @@ const Navbar = () => {
                                     <div className="dropdown__item">
                                         <div className='oneNavBar'>
                                             <div>
-                                                <h4>Growth Prediction Modelling</h4>
+                                                <h4 onClick={() => HandleNavigation('/predict-growth')}>Growth Prediction Modelling</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                                             </div>
                                             <img className='imgAbout' src={gpmImg} alt="" />
@@ -118,7 +136,7 @@ const Navbar = () => {
                                     <div className="two_list">
                                         <div className="firstNavbar">
                                             <div>
-                                                <h4>Validation As A Servivce</h4>
+                                                <h4 onClick={() => HandleNavigation('/validation-service')}>Validation As A Servivce</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                                             </div>
                                             <img src={vaImg} alt="" />
@@ -134,9 +152,9 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <div className="mobile_dropdown">
-                                <div className="div_item_m">Growth Tracks</div>
-                                <div className="div_item_m">Growth Prediction Modelling</div>
-                                <div className="div_item_m">Validation As A Servivce</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('/growth-tracks')}>Growth Tracks</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('/predict-growth')}>Growth Prediction Modelling</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('validation-service')}>Validation As A Servivce</div>
                                 <div className="div_item_m">Growth Audit</div>
                             </div>
                         </>

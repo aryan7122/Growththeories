@@ -1,0 +1,128 @@
+// src/components/ValidationPage.scss
+@use "../../../../styles//Variables/variables.scss" as *;
+.validation-page {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 40px 0px 40px;
+  background: #ededff;
+  .content {
+    // max-width: 600px;
+
+    .badge {
+        background: #fff;
+      width: 268px;
+      height: 30px;
+      top: 115px;
+      left: 60.27px;
+      padding: 8px 10px 8px 10px;
+      gap: 10px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14.4px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: #4e4eff;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 59.4px;
+      letter-spacing: -0.015em;
+      text-align: left;
+      color: #4242cd;
+
+      .highlight {
+        font-weight: bold;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+      color: #000;
+      opacity: 0.6;
+      width: 1011px;
+      margin-top: -20px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 30px;
+      .start-btn {
+        width: 237px;
+        height: 54px;
+        padding: 10px 20px 10px 20px;
+        gap: 0px;
+        border-radius: 100px;
+        opacity: 0px;
+        background: $primary-500;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid transparent;
+        transition: 0.3s ease;
+        &:hover {
+          background: transparent;
+          border: 1px solid $primary-500;
+          color: $primary-500;
+          box-shadow: 0px 0px 6px 0.1px red;
+        }
+      }
+
+      .see-btn {
+        width: 169px;
+        height: 54px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #2b2a2a;
+        border: 1px solid $primary-500;
+        cursor: pointer;
+        transition: 0.3s ease;
+        &:hover {
+          background: $primary-500;
+          border: 1px solid transparent;
+          color: #fff;
+          box-shadow: 0px 0px 6px 0.1px red;
+        }
+      }
+    }
+  }
+
+  .image-container {
+    // margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    background: $secondary-200;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    justify-content: center;
+    height: 555.74px;
+
+    position: relative;
+    img {
+      width: 809px;
+      margin-top: -75px;
+      gap: 0px;
+      opacity: 0px;
+      position: absolute;
+    }
+  }
+}

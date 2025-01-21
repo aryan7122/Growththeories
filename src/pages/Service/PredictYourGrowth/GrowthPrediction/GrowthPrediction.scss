@@ -1,12 +1,12 @@
-@use "../../../styles//Variables/variables.scss" as *;
-.growth-tracks {
+@use "../../../../styles//Variables/variables.scss" as *;
+.growth-Prediction {
   padding: 40px;
   //   color: #333;
   background: #f8f6f2;
   .box-content-growth-service {
-    background: #fff;
-    padding: 10px;
-    box-shadow: 0px 4px 24px 0px #00000014;
+    // background: #fff;
+    // padding: 10px;
+    // box-shadow: 0px 4px 24px 0px #00000014;
     border-radius: 20px;
 
     .content_box_header {
@@ -61,7 +61,7 @@
     }
 
     .features {
-      background: #fff;
+      // background: #fff;
       .title_top_h2 {
         background: #b8b8b833;
         font-size: 14px;
@@ -95,12 +95,12 @@
         margin-top: -10px;
         text-decoration-skip-ink: none;
       }
-      .features-content {
+      .Prediction-content {
         display: flex;
         align-items: center;
         gap: 2rem;
         flex-wrap: wrap; // Makes the layout flexible for smaller screens
-        
+
         .illustration {
           background: #432081;
           flex: 1;
@@ -108,24 +108,26 @@
           height: 622px;
           border-radius: 10px;
           width: 100%; // Ensures full width on small screens
-         
         }
-        
+
         .cards {
+          margin-top: 60px;
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 20px;
           flex: 1;
           width: 100%; // Ensures proper alignment on small screens
 
           .card {
+            background: #fff;
             // max-width: 285px;
-            height: 308px;
-            background: linear-gradient(
-              90deg,
-              rgba(161, 196, 253, 0.4) 0%,
-              #c2e9fb 64.35%
-            );
+            height: 258px;
+            // background: linear-gradient(
+            //   90deg,
+            //   rgba(161, 196, 253, 0.4) 0%,
+            //   #c2e9fb 64.35%
+            // );
+            box-shadow: 0 0 19px 0.6px rgba(66, 66, 66, 0.1);
             padding: 1.5rem;
             border-radius: 12px;
             text-align: left;
@@ -135,8 +137,8 @@
             transition: transform 0.2s ease;
 
             &:hover {
-              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-              transform: translateY(-5px);
+            box-shadow: 0 0 19px 0.6px rgba(0, 0, 0, 0.157);
+                          transform: translateY(-5px);
             }
 
             .icon {
@@ -150,6 +152,7 @@
                 font-weight: 500;
                 line-height: 25.2px;
                 text-align: left;
+                color: #3737B5;
               }
 
               p {
@@ -163,8 +166,8 @@
             }
 
             .button_card {
-                width: 190px;
-                height: 36px;
+              width: 190px;
+              height: 36px;
               background-color: $primary-500;
               color: #fff;
               padding: 8px;
@@ -221,16 +224,15 @@
               }
             }
           }
-          .card:last-child{
-            grid-column: span 2;
-            height: 200px;
-            flex-direction: row;
-            align-items: center;
-            .card_box_{
-                width: 40%;
-            }
-          }
-          
+          // .card:last-child{
+          //   grid-column: span 2;
+          //   height: 200px;
+          //   flex-direction: row;
+          //   align-items: center;
+          //   .card_box_{
+          //       width: 40%;
+          //   }
+          // }
         }
       }
 

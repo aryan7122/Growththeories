@@ -1,5 +1,6 @@
 @use "../styles/Variables/variables.scss" as *;
 
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -151,6 +152,8 @@
                   color: $secondary-700;
                   text-align: left;
                   padding-left: 20px;
+                  // border: 1px solid red !important;
+                  cursor: pointer;
                 }
 
                 p {
@@ -184,6 +187,7 @@
             .two_list .firstNavbar {
               h4 {
                 position: absolute;
+                cursor: pointer;
               }
               p {
                 // position: absolute;
@@ -268,6 +272,9 @@
       }
     }
   }
+}
+.specialPath {
+  background: #EDEDFF;
 }
 //
 .isFixedNav {
@@ -373,7 +380,6 @@
     }
 
     &__links {
-      // border: 1px solid red;
       display: flex;
       list-style: none;
       gap: 1.5rem;

@@ -18,6 +18,15 @@ import OurProcess from './pages/Service/OurProcess/OurProcess';
 import BenefitsSection from './pages/Service/BenefitsSection/BenefitsSection';
 import FAQFreq from './pages/Service/FAQAccordion/FAQFreq';
 import BusinessGrowth from './pages/Service/BusinessGrowth/BusinessGrowth';
+import ValidationPage from './pages/Service/Validation/Headers/ValidationPage';
+import ValidationTracks from './pages/Service/Validation/ValidationTracks/ValidationTracks';
+import OurProcessValidation from './pages/Service/Validation/OurProcessValidation/OurProcessValidation';
+import CustomerStories from './pages/Service/Validation/CustomerStories/CustomerStories';
+import ValidationServices from './pages/Service/Validation/ValidationServices/ValidationServices';
+import FAQValid from './pages/Service/Validation/FAQValid/FAQValid';
+import PredictYourGrowth from './pages/Service/PredictYourGrowth/Header/PredictYourGrowth';
+import GrowthPrediction from './pages/Service/PredictYourGrowth/GrowthPrediction/GrowthPrediction';
+import PredictOurProcess from './pages/Service/PredictYourGrowth/OurProcess/PredictOurProcess';
 
 function App() {
   return (
@@ -42,7 +51,7 @@ function App() {
             }
 
           />
-          <Route path="/service"
+          <Route path="/growth-tracks"
             element={
               <>
                 <Service />
@@ -50,7 +59,31 @@ function App() {
                 <OurProcess />
                 <BenefitsSection />
                 <FAQFreq />
-                <BusinessGrowth/>
+                <BusinessGrowth />
+                <Footer />
+              </>
+            } />
+          <Route path="/validation-service"
+            element={
+              <>
+                <ValidationPage />
+                <ValidationTracks />
+                <OurProcessValidation/>
+                <CustomerStories />
+                <ValidationServices />
+                <FAQValid />
+                <BusinessGrowth />
+                <Footer />
+              </>
+            } />
+          <Route path="/predict-growth"
+            element={
+              <>
+                <PredictYourGrowth />
+                <GrowthPrediction />
+                <PredictOurProcess />
+                <FAQValid />
+                <BusinessGrowth />
                 <Footer />
               </>
             } />

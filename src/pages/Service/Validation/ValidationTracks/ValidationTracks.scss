@@ -1,20 +1,20 @@
-@use "../../../styles//Variables/variables.scss" as *;
-.growth-tracks {
+@use "../../../../styles//Variables/variables.scss" as *;
+.ValidationTracks {
   padding: 40px;
   //   color: #333;
   background: #f8f6f2;
-  .box-content-growth-service {
+  .box-content-ValidationTracks {
     background: #fff;
     padding: 10px;
     box-shadow: 0px 4px 24px 0px #00000014;
     border-radius: 20px;
 
-    .content_box_header {
+    .box-content-ValidationTracks-content_box_header {
       display: flex;
-      //   border: 1px solid red !important;
       padding: 20px;
       align-items: center;
       justify-content: space-between;
+      flex-direction: column;
 
       .cta_button {
         border: none;
@@ -40,11 +40,12 @@
         }
       }
       .title {
+        text-align: center;
         font-weight: 500px;
-        font-size: $font-size-48;
+        font-size: $font-size-34;
+        color: #440A14;
         transition: 0.3s linear;
-        color: $neutral-600;
-        line-height: 57px;
+        line-height: 40px;
       }
 
       .description {
@@ -57,6 +58,7 @@
         opacity: 0.5;
         text-align: left;
         margin-top: -10px;
+        text-align: center;
       }
     }
 
@@ -74,46 +76,25 @@
         border-radius: 100px;
         color: #1b3e9f;
       }
-      h2 {
-        color: $primary-900;
-        font-size: 34px;
-        font-weight: 500;
-        line-height: 40px;
-        letter-spacing: -1px;
-        text-align: left;
-      }
-
-      p {
-        max-width: 1020px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 27px;
-        text-align: left;
-        text-underline-position: from-font;
-        color: #000;
-        opacity: 0.6;
-        margin-top: -10px;
-        text-decoration-skip-ink: none;
-      }
+    
       .features-content {
+        // border: 1px solid red !important;
         display: flex;
         align-items: center;
         gap: 2rem;
         flex-wrap: wrap; // Makes the layout flexible for smaller screens
-        
+
         .illustration {
           background: #432081;
           flex: 1;
           max-width: 50%;
-          height: 622px;
           border-radius: 10px;
           width: 100%; // Ensures full width on small screens
-         
         }
-        
+
         .cards {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           gap: 20px;
           flex: 1;
           width: 100%; // Ensures proper alignment on small screens
@@ -221,13 +202,25 @@
               }
             }
           }
-          .card:last-child{
+          .card:nth-child(2){
+            background: linear-gradient(90deg, rgba(161, 196, 253, 0.16) 0%, rgba(194, 233, 251, 0.4) 45.5%);
+          }
+          .card:nth-child(3){
+          background: linear-gradient(90deg, rgba(161, 196, 253, 0.24) 0%, rgba(194, 233, 251, 0.6) 45.5%);
+          }
+          .card:nth-child(4){
+            background: #F9E4A6;
             grid-column: span 2;
-            height: 200px;
-            flex-direction: row;
-            align-items: center;
+            height: 250px;
+          }
+          .card:last-child{
+            background: #F9E575;
+            grid-column: span 1;
+            height: 250px;
+            // flex-direction: row;
+            // align-items: center;
             .card_box_{
-                width: 40%;
+                // width: 40%;
             }
           }
           

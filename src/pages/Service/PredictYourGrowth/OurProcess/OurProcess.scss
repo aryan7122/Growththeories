@@ -1,0 +1,166 @@
+/* OurProcess.scss */
+@use "../../../../styles//Variables/variables.scss" as *;
+.our-process {
+  background-color: #13131f;
+  .process_top_card {
+    padding: 40px 0px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    .left-content {
+      flex: 1;
+      text-align: left;
+
+      .subtitle {
+        width: fit-content;
+        padding: 5px 10px;
+        background: #b8b8b833;
+        border-radius: 50px;
+        font-size: 12px;
+        color: #b5b5b5;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        width: 370px;
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        span {
+          color: #aeaeff;
+        }
+      }
+
+      .description {
+        color: #fff;
+        opacity: 0.7;
+        width: 270px;
+        margin-top: -10px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+      }
+    }
+
+    .right-content {
+      flex: 2;
+      position: relative;
+
+      .cards {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+
+        .card {
+          flex: 0 0 45%;
+          height: 380px;
+          margin-right: 5%;
+          // background: #24243e;
+          border: 1px solid #c06474;
+          border-radius: 10px;
+          padding: 20px;
+          transform: translateX(0);
+          transition: transform 0.5s ease;
+          &:nth-child(2){
+            opacity: 0.4;
+          }
+          .card-header {
+            // display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .step-number {
+              font-family: $font-secondary;
+              width: 60px;
+              height: 60px;
+              border: 1px solid #c06474;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 37px;
+              color: $primary-300;
+            }
+
+            .card-title {
+              font-size: 28px;
+              font-weight: 700;
+              line-height: 39.2px;
+              text-align: left;
+              color: $secondary-100;
+            }
+          }
+
+          .card-content {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .steps-navigation {
+    padding: 40px 0 60px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    .das_lineOur {
+      margin-top: 30px;
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px dashed #fff;
+    }
+    .step-indicator {
+      // position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      cursor: pointer;
+      margin: 0 15px;
+      color: #b5b5b5;
+      z-index: 9;
+      &.active {
+        color: #7a73ff;
+        .circle {
+          background: #fff;
+          border: #fff;
+          color: #590D1A;
+        }
+                .step-title {
+                    color: #c8c8ff;
+                    font-size: 28px;
+                }
+      }
+
+      // border: 1px solid red !important;
+      .circle {
+        width: 60px;
+        height: 60px;
+        font-size: 37px;
+        background: #13131f;
+        border: 2px solid #c8c8ff80;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background: #fff;
+        color: #c8c8ff80;
+        margin-bottom: 5px;
+      }
+
+      .step-title {
+        color: #c8c8ff80;
+        font-size: 28px;
+      }
+    }
+  }
+}
