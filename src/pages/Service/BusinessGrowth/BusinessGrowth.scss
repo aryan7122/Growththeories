@@ -1,0 +1,95 @@
+@use "../../../styles//Variables/variables.scss" as *;
+.business-growth-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 40px;
+    background: #4c4cff;
+    border-radius: 20px;
+    color: #fff;
+
+    .content {
+        max-width: 50%;
+
+        h1 {
+            font-family: $font-secondary;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 64.8px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        .contact-btn {
+        width: 237px;
+            height :54px;
+            padding: 10px 20px 10px 20px;
+            gap: 0px;
+            border-radius: 100px ;
+            opacity: 0px;
+            cursor: pointer;
+            color: #fff;
+           background-color: $primary-500;
+           outline: none;
+           border: 1px solid transparent;
+            &:hover {
+                transition: 0.3s linear;
+                box-shadow: 0px 0px 6px 0.1px red;
+                background: #fff;
+                border: 1px solid $primary-500;
+                color: $primary-500;
+            }
+        }
+    }
+
+    .images {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+
+            img{
+                &:nth-child(2){
+                    width: 375.19px;
+                        height: 450.9px;
+                        top: 32.05px;
+                        left: 868.12px;
+                        gap: 0px;
+                        opacity: 0px;
+                }
+                                 &:nth-child(3) {
+                                    position: absolute;
+                                    width: 140.75px;
+                                        height: 204.8px;
+                                       top: 250px;
+                                       left: 250px;
+                                        gap: 0px;
+                                        opacity: 0px;
+                                        // angle: -12.04 deg;
+                                 }
+                                 &:nth-child(1) {
+                                    position: absolute;
+                                    width: 135px;
+                                        height: 217px;
+                                       top: 170px;
+                                       left: -60px;
+                                        gap: 0px;
+                                        border-radius: 40px 0px 0px 0px;
+                                        opacity: 0px;
+                                        // angle: 15.68 deg;
+                                 }
+            }
+       
+    }
+}

@@ -16,6 +16,8 @@ import Service from './pages/Service/Header/Service';
 import GrowthTracks from './pages/Service/GrowthTracks/GrowthTracks';
 import OurProcess from './pages/Service/OurProcess/OurProcess';
 import BenefitsSection from './pages/Service/BenefitsSection/BenefitsSection';
+import FAQFreq from './pages/Service/FAQAccordion/FAQFreq';
+import BusinessGrowth from './pages/Service/BusinessGrowth/BusinessGrowth';
 
 function App() {
   return (
@@ -47,6 +49,9 @@ function App() {
                 <GrowthTracks />
                 <OurProcess />
                 <BenefitsSection />
+                <FAQFreq />
+                <BusinessGrowth/>
+                <Footer />
               </>
             } />
         </Routes>
