@@ -27,6 +27,15 @@ import FAQValid from './pages/Service/Validation/FAQValid/FAQValid';
 import PredictYourGrowth from './pages/Service/PredictYourGrowth/Header/PredictYourGrowth';
 import GrowthPrediction from './pages/Service/PredictYourGrowth/GrowthPrediction/GrowthPrediction';
 import PredictOurProcess from './pages/Service/PredictYourGrowth/OurProcess/PredictOurProcess';
+import FullCustomize from './pages/Service/PredictYourGrowth/FullCustomize/FullCustomize';
+import AuditHeroSection from './pages/Service/Audit/AuditHeroSection/AuditHeroSection';
+import GrowthAudit from './pages/Service/Audit/WhatIs/GrowthAudit';
+import GrowthGains from './pages/Service/Audit/GrowthGains/GrowthGains';
+import AuditProcess from './pages/Service/Audit/AuditProcess/AuditProcess';
+import Process2 from './pages/Service/Audit/Process2/Process2';
+import AuditCustomerStories from './pages/Service/Audit/AuditCustomerStories/AuditCustomerStories';
+import AuditFullCustomize from './pages/Service/Audit/AuditFullCustomize/AuditFullCustomize';
+import AuditBusinessGrowth from './pages/Service/Audit/AuditBusinessGrowth/AuditBusinessGrowth';
 
 function App() {
   return (
@@ -82,8 +91,25 @@ function App() {
                 <PredictYourGrowth />
                 <GrowthPrediction />
                 <PredictOurProcess />
+                <CustomerStories />
+                <FullCustomize />
                 <FAQValid />
                 <BusinessGrowth />
+                <Footer />
+              </>
+            } />
+          <Route path="/growth-Audit"
+            element={
+              <>
+                <AuditHeroSection />
+                <GrowthAudit />
+                <GrowthGains />
+                <AuditProcess />
+                <Process2 />
+                <AuditCustomerStories />
+                <AuditFullCustomize />
+                <FAQValid />
+                <AuditBusinessGrowth />
                 <Footer />
               </>
             } />

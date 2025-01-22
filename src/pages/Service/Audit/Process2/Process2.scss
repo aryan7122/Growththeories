@@ -1,0 +1,116 @@
+.process2 {
+  background-color: #051132;
+  color: white;
+  padding: 60px 40px;
+  .p2_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .badge {
+      border-radius: 100px;
+      background-color: #b8b8b833;
+      padding: 5px 15px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin: 20px 0;
+      font-family: inter;
+    }
+
+    .subtext {
+      width: 300px;
+      opacity: 0.7;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: right;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    // margin: 0 auto;
+    margin-top: 60px;
+    text-align: left;
+
+    .step {
+      h2 {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: #ededff;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #fff;
+        opacity: 0.6;
+      }
+         .p2_p1{
+            text-align: left;
+         }
+         .p2_p2{
+            text-align: center;
+         }
+         .p2_p3{
+            text-align: center;
+         }
+         .p2_p4{
+            text-align: end;
+         }
+    }
+  }
+
+  .timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
+
+    // border: 1px solid red !important;
+    // width: 100%;
+    .dotP2 {
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 50%;
+      position: relative;
+      z-index: 2;
+    }
+    .das_p2{
+    width: 100%;
+    position: absolute;
+    border-top: 3px dashed #b9e6f1d9;
+    }
+
+
+    .response {
+        border: 1px solid #fff;
+    z-index: 2;
+      background-color: #516f78;
+      padding: 5px 10px;
+      border-radius: 100px;
+   
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+       
+      color: #ffffff;
+    //   position: absolute;
+    }
+  }
+}

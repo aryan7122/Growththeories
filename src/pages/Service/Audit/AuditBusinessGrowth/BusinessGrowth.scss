@@ -1,0 +1,71 @@
+@use "../../../../styles//Variables/variables.scss" as *;
+.audit_business-growth-container {
+ background: #fff;
+ padding: 40px;
+  .box_conent_growth {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+     
+        padding: 40px;
+        background: #4c4cff;
+        border-radius: 20px;
+        color: #fff;
+    .content {
+      max-width: 50%;
+
+      h1 {
+        font-family: $font-secondary;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 64.8px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+
+      .contact-btn {
+        width: 237px;
+        height: 54px;
+        padding: 10px 20px 10px 20px;
+        gap: 0px;
+        border-radius: 100px;
+        opacity: 0px;
+        cursor: pointer;
+        color: #fff;
+        background-color: $primary-500;
+        outline: none;
+        border: 1px solid transparent;
+        &:hover {
+          transition: 0.3s linear;
+          box-shadow: 0px 0px 6px 0.1px red;
+          background: #fff;
+          border: 1px solid $primary-500;
+          color: $primary-500;
+        }
+      }
+    }
+
+    .images_A {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+
+      img {
+        scale: 1.6;
+        margin-right: 50px;
+       rotate: 15deg;
+      }
+    }
+  }
+}

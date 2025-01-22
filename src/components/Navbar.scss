@@ -276,12 +276,16 @@
 .specialPath {
   background: #EDEDFF;
 }
+.isAuditPath{
+  background: linear-gradient(343.83deg, rgba(49, 54, 131, 0.886) -13.74%, rgba(36, 41, 133, 0.271) 52.03%, rgba(221, 121, 55, 0.2) 131.18%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.432), rgba(59, 47, 47, 0.164));
+}
 //
 .isFixedNav {
   // background-color: #676560;
   //
   box-shadow: $box-shadow-md;
-
+  
   // backdrop-filter: blur(12px);
   // -webkit-backdrop-filter: blur(12px);
   width: 96%;
