@@ -127,6 +127,7 @@
                   font-size: $font-size-16;
                   margin-bottom: 0.5rem;
                   color: $secondary-700;
+                  cursor: pointer;
                 }
                 p {
                   font-family: $font-primary;
@@ -187,7 +188,7 @@
             .two_list .firstNavbar {
               h4 {
                 position: absolute;
-                cursor: pointer;
+                cursor: pointer !important;
               }
               p {
                 // position: absolute;
@@ -279,6 +280,33 @@
 .isAuditPath{
   background: linear-gradient(343.83deg, rgba(49, 54, 131, 0.886) -13.74%, rgba(36, 41, 133, 0.271) 52.03%, rgba(221, 121, 55, 0.2) 131.18%),
       linear-gradient(0deg, rgba(0, 0, 0, 0.432), rgba(59, 47, 47, 0.164));
+}
+.isContact{
+  background: #161620;
+  .custom-dropdown{
+    background: transparent;
+    border: 1px solid #fff;
+  }
+    .navbar__logo img{
+      filter: brightness(0) invert(1);
+    }
+  .custom-dropdown__selected{
+      color: #fff ;
+      svg{
+        color: #fff ;
+
+      }
+    }
+  .navbar__links{
+    background: #ffffff1f;
+    li a{
+      color: #fff;
+      svg{
+        color: #fff;
+
+      }
+    }
+  }
 }
 //
 .isFixedNav {
@@ -439,7 +467,6 @@
             display: none;
           }
           .mobile_dropdown {
-            // border: 1px solid red;
             display: block;
             margin-left: 17px;
             margin-top: 10px;

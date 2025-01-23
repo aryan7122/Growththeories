@@ -1,8 +1,19 @@
 import React from 'react';
 import './Footer.scss';
 import GrowTheories from '../assets/card/Growtheories.svg'
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+    const navigate = useNavigate();
+    const HandleNavigation = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+        const element = document.getElementById([path]);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+      
+    };
     return (
         <footer className="footer">
             <div className="footer-container">
@@ -28,6 +39,8 @@ const Footer = () => {
                     <ul>
                         <li>Live Chat</li>
                         <li>Customer Support</li>
+                        <li onClick={() => HandleNavigation('/terms-service')}>Terms Service</li>
+                        <li onClick={() => HandleNavigation('/privacy-policy')}>Privacy Policy</li>
                     </ul>
                 </div>
                 <div className="footer-section">

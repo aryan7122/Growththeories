@@ -1,12 +1,14 @@
 // src/components/CustomerStories.jsx
 import React, { useState } from "react";
 import "./customerStories.scss";
+import logoPreso from '../../../../assets/service/logo/Logopreso.svg'
 
 const storiesData = [
     {
         id: 1,
         name: "Preso",
         image: "https://s3-alpha-sig.figma.com/img/bace/804b/cc72f716482ab553bc0e4e8a27f94010?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LzLsj-Gnl9MouA6vnweMi63M3rmiXagKzdrUUtdACzrrk-JLi9MF5eHlxxxxFLAbgoLIeWB0eyYyaOPiECxuMvTFPL4VSkFU000ybo1vp0uBVc7ehzxwe15whltdGvyKwzjr9ApQJe~20qpH49krxY755ubffEElg33gemhkLzSVd0N0A0m-8asG-f2RoC4~5phXaEHJlNM1g7QUX~r6dmK78EAUt8kc49UJjR3xT-ekPjTGKZtu~t1~kUXPO9trB-D3SsCUtbLNs8IMnXjnEowofKvXzJ7S~t18-yGkIAYCJQw7koblgYfN5XG1jZBRVRINTQBhUb7Ae0Np51yGrg__",
+        logo: logoPreso,
         title: "Real-time Analytics",
         description: "We refined the roughly drafted value proposition further to give them a commercial wrap designed for the targeted personas and DMU’s",
         detail:'“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus.”',
@@ -86,6 +88,7 @@ const CustomerStories = () => {
 
             <div className="content">
                 <img src={storiesData[activeIndex].image} alt={storiesData[activeIndex].name} />
+                <img className="logoCom--" src={storiesData[activeIndex].logo} alt={storiesData[activeIndex].name} />
                 <div className="details">
                     <h3>{storiesData[activeIndex].title}</h3>
                     <h2>{storiesData[activeIndex].description}</h2>

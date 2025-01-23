@@ -36,6 +36,13 @@ import Process2 from './pages/Service/Audit/Process2/Process2';
 import AuditCustomerStories from './pages/Service/Audit/AuditCustomerStories/AuditCustomerStories';
 import AuditFullCustomize from './pages/Service/Audit/AuditFullCustomize/AuditFullCustomize';
 import AuditBusinessGrowth from './pages/Service/Audit/AuditBusinessGrowth/AuditBusinessGrowth';
+import AboutUs from './pages/Service/AboutUs/AboutUs';
+import About2 from './pages/Service/AboutUs/About2';
+import AboutSection from './pages/Service/AboutUs/AboutSection/AboutSection';
+import TeamSection from './pages/Service/AboutUs/TeamSection/TeamSection';
+import ContactForm from './pages/Company/ContactForm/ContactForm';
+import BlogSection from './pages/Company/Blog/OurBlog/BlogSection';
+import TermsOfService from './pages/TermsOfService/TermsOfService';
 
 function App() {
   return (
@@ -77,7 +84,7 @@ function App() {
               <>
                 <ValidationPage />
                 <ValidationTracks />
-                <OurProcessValidation/>
+                <OurProcessValidation />
                 <CustomerStories />
                 <ValidationServices />
                 <FAQValid />
@@ -110,6 +117,40 @@ function App() {
                 <AuditFullCustomize />
                 <FAQValid />
                 <AuditBusinessGrowth />
+                <Footer />
+              </>
+            } />
+          <Route path="/about"
+            element={
+              <>
+                <AboutUs />
+                <About2 />
+                <AboutSection />
+                <TeamSection />
+                <FAQValid />
+                <BusinessGrowth />
+                <Footer />
+              </>
+            } />
+          <Route path="/contact"
+            element={
+              <>
+                <ContactForm />
+                <Footer />
+              </>
+            } />
+          <Route path="/blog"
+            element={
+              <>
+                <BlogSection />
+                <AuditBusinessGrowth />
+                <Footer />
+              </>
+            } />
+          <Route path="/terms-service"
+            element={
+              <>
+                <TermsOfService />
                 <Footer />
               </>
             } />

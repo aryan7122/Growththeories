@@ -71,12 +71,20 @@
     display: flex;
     align-items: safe;
     gap: 40px;
-
+ position: relative;
     img {
       width: 598px;
       height: 541px;
       object-fit: cover;
       border-radius: 10px;
+    }
+    .logoCom--{
+      width: 100px;
+      margin-top: 490px;
+      margin-left: 490px;
+      height: 40px;
+      position: absolute;
+      z-index: 9;
     }
 
     .details {

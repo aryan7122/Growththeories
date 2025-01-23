@@ -67,6 +67,7 @@ const Navbar = () => {
             element.scrollIntoView({ behavior: 'smooth' });
         }
         servicesDropdown.handleToggle();
+        companyDropdown.handleToggle();
     };
 
 
@@ -78,10 +79,13 @@ const Navbar = () => {
     // audit
     const audit = ['growth-Audit'];
     const isAudit = audit.some((path) => location.pathname.includes(path));
+    // audit
+    const contact = ['contact'];
+    const isContact = contact.some((path) => location.pathname.includes(path));
     console.log('isSpecialPath', isSpecialPath)
 
     return (
-        <nav className={`navbar ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}`} >
+        <nav className={`navbar ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}  ${isContact ? 'isContact' : ''}`} >
             <div className={`mobile_flex_toggle`} >
                 <div className="navbar__logo">
                     <img
@@ -147,7 +151,7 @@ const Navbar = () => {
                                         </div>
                                         <div className="firstNavbar">
                                             <div>
-                                                <h4 onClick={() => HandleNavigation('growth-Audit')}>Growth Audit</h4>
+                                                <h4 onClick={() => HandleNavigation('/growth-Audit')}>Growth Audit</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                                             </div>
                                             <img src={gtImg} alt="" />
@@ -158,8 +162,8 @@ const Navbar = () => {
                             <div className="mobile_dropdown">
                                 <div className="div_item_m" onClick={() => HandleNavigation('/growth-tracks')}>Growth Tracks</div>
                                 <div className="div_item_m" onClick={() => HandleNavigation('/predict-growth')}>Growth Prediction Modelling</div>
-                                <div className="div_item_m" onClick={() => HandleNavigation('validation-service')}>Validation As A Servivce</div>
-                                <div className="div_item_m" onClick={() => HandleNavigation('growth-Audit')}>Growth Audit</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('/validation-service')}>Validation As A Servivce</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('/growth-Audit')}>Growth Audit</div>
                             </div>
                         </>
                     )}
@@ -211,7 +215,7 @@ const Navbar = () => {
                                     <div className="two_list">
                                         <div className="firstNavbar">
                                             <div>
-                                                <h4>Blog</h4>
+                                                <h4 onClick={() => HandleNavigation('/blog')}>Blog</h4>
                                                 <p>Read Recent Blogs</p>
                                             </div>
                                             <img src={BlogImg} alt="" />
@@ -229,7 +233,7 @@ const Navbar = () => {
                                     <div className="dropdown__item">
                                         <div className='oneNavBar'>
                                             <div>
-                                                <h4>Contact us</h4>
+                                                <h4 onClick={() => HandleNavigation('/contact')}>Contact us</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
                                             </div>
                                             <img src={ContactImg} alt="" />
@@ -238,7 +242,7 @@ const Navbar = () => {
                                     <div className="dropdown__item">
                                         <div className='oneNavBar'>
                                             <div>
-                                                <h4>About us</h4>
+                                                <h4 onClick={() => HandleNavigation('/about')}>About us</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
                                             </div>
                                             <img className='imgAbout' src={aboutImg} alt="" />
@@ -247,10 +251,10 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <div className="mobile_dropdown">
-                                <div className="div_item_m">Blog</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('/blog')}>Blog</div>
                                 <div className="div_item_m">Career</div>
-                                <div className="div_item_m">Contact us</div>
-                                <div className="div_item_m">About us</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('/contact')}>Contact us</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('/about')}>About us</div>
                             </div>
                         </>
                     )}

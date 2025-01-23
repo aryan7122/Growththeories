@@ -1,0 +1,217 @@
+// @import 'variables';
+
+.team-section {
+  color: #fff;
+  background-color: #13131f;
+  padding: 40px;
+
+  .banner {
+    border-bottom: 1px solid #7272727d;
+    padding-bottom: 20px;
+    .team_title {
+      width: fit-content;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: #fff;
+      background: #b8b8b833;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+  }
+
+  .quality-section {
+    display: flex;
+    // align-items: center;
+    padding: 2rem;
+
+    .text {
+      flex: 1;
+
+      h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        text-align: left;
+        color: #ededff;
+        width: 600px;
+      }
+
+      p {
+        font-size: 20px;
+        opacity: 0.7;
+        width: 600px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+      opacity: 0.6;
+    }
+    .image {
+      flex: 0.5;
+
+      img {
+        width: 650px;
+        height: 465.62px;
+        object-fit: cover;
+
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .team {
+    text-align: center;
+    padding: 2rem;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 52px;
+      text-align: center;
+    }
+
+    p {
+      width: 630px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      margin: -30px auto 50px auto;
+      opacity: 0.6;
+      color: #fff;
+      margin-bottom: 60px;
+    }
+
+    .team-members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+
+      .team-member {
+        text-align: center;
+
+        img {
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border: 2px solid transparent;
+          outline: 2px solid transparent;
+          background: linear-gradient(320deg, #ffffff, #a091e4);
+        }
+
+        h3 {
+          font-size: 22.64px;
+          font-weight: 400;
+          line-height: 33.95px;
+          text-align: center;
+          margin-top: 10px;
+          color: #fff;
+        }
+
+        h4 {
+          margin-top: -20px;
+          font-size: 22.64px;
+          color: #aeaeff;
+          font-weight: 500;
+          line-height: 33.95px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .blogs {
+    padding: 2rem;
+
+    .team_title {
+    width: fit-content;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;
+        background: #b8b8b833;
+        padding: 4px 10px;
+        border-radius: 100px;
+    }
+
+    ul {
+        border-top: 1px solid #727272;
+        padding-top: 30px;
+        padding-left: 0;
+      list-style: none;
+    //   padding: 0;
+
+      .blog-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 015px 0;
+
+        .blog-title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        .blog-author {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            opacity: 0.5;
+        }
+
+        .blog-read-time {
+        font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            opacity: 0.5;
+            cursor: pointer;
+            border: 1px dashed transparent;
+            &:hover{
+                border-bottom: 1px dashed ;
+                opacity: 0.7;
+
+            }
+        }
+      }
+    }
+
+    .see-all-blogs {
+    width: 210.61px;
+        height: 45.98px;
+        gap: 0px;
+        border-radius: 100px ;
+        opacity: 0px;
+        cursor: pointer;
+        border: 1px solid transparent;
+
+      &:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        box-shadow: 0px 0px 4px 0.1px #ffff;
+      }
+    }
+  }
+}

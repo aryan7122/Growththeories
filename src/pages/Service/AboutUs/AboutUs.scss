@@ -1,0 +1,118 @@
+.about-us {
+  text-align: center;
+  padding: 50px;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #F8F6F2;
+  &__tag {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0.05em;
+    text-align: center;
+ background: #B8B8B833;
+ padding: 4px 10px;
+ border-radius: 100px;
+    color: #1B3E9F;
+  }
+
+  &__title {
+    margin-top: -15px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: -1px;
+    text-align: center;
+   color: #2B2A2A;
+  }
+  
+  &__description {
+    margin-top: -15px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: #555555;
+        opacity: 0.8;
+        width: 800px;
+  }
+
+  &__stats {
+    margin-top: 30px;
+    background: #d4d4ff;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 1017.25px;
+    height: 423.73px;
+
+    border-radius: 20px;
+
+    // border: 1px solid red !important;
+    .about-us__image {
+      width: 796.64px;
+      height: 557.69px;
+    }
+
+    .about-us__data {
+      position: absolute;
+      display: flex;
+      margin-top: 330px;
+      justify-content: space-around;
+      width: 1097px;
+      height: 173.6px;
+
+      border-radius: 0px 0px 20px 20px;
+
+      text-align: center;
+      backdrop-filter: blur(5px);
+      background: linear-gradient(
+        348.42deg,
+        rgba(0, 0, 0, 0.2) 56.4%,
+        rgba(102, 102, 102, 0.02) 118.44%
+      );
+      .about-us__item {
+          .about-us__number {
+              font-size: 90px;
+            font-weight: 400;
+            line-height: 100px;
+            text-align: center;
+            margin-top: -20px;
+            color: #fff;
+        }
+
+        .about-us__label {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+            text-align: left;
+            color: #fff;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__stats {
+      flex-direction: column;
+
+      .about-us__image {
+        width: 100%;
+      }
+
+      .about-us__data {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+
+
+
