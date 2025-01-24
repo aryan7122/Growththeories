@@ -88,8 +88,8 @@ const TermsOfService = () => {
                 <div className="section">
                     <h2>10. Contact Information</h2>
                     <p>If you have any questions or concerns about these Terms or the Services provided by Mega Automotives, please contact us at:</p>
-                    <p>Megaautomotive Support<br />
-                        hello@megaautomotive.com<br />
+                    <p>Growththeories Support<br />
+                        hello@theories.com<br />
                         +91-9764310125</p>
                 </div>
 

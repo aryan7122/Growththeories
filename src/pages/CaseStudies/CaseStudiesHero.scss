@@ -1,0 +1,130 @@
+// CaseStudy.scss
+.case-study {
+  padding: 40px;
+  background-color: #f9fafb;
+  .content {
+    margin: 0 auto;
+
+    .section-title {
+      width: fit-content;
+      padding: 4px 10px;
+      border-radius: 100px;
+      background: #f6e8ea66;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14.4px;
+      letter-spacing: 0.05em;
+      text-align: center;
+     
+    }
+
+    .main-title {
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 67.2px;
+      text-align: left;
+      width: 930px;
+      color: #2b2b8c;
+    }
+
+    .description {
+      color: #555555;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.2px;
+      text-align: left;
+      margin-top: -20px;
+      width: 944px;
+    }
+
+    .case-card {
+      margin-top: 40px;
+      display: flex;
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      position: relative;
+
+      .image-container {
+        flex: 1;
+        position: relative;
+        img {
+          width: 660px;
+          height: 555.5px;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+        .logo-container {
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+
+          img {
+            border-radius: 5px;
+            width: 80px;
+            height: auto;
+          }
+        }
+      }
+
+      .text-content {
+        flex: 2;
+        padding: 1.5rem;
+
+        .meta {
+          display: flex;
+          gap: 20px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 21px;
+          text-align: left;
+          align-items: center;
+          color: #000000;
+
+          .category {
+            background: #f4f4f4;
+            padding: 4px 7px;
+            font-weight: bold;
+          }
+        }
+
+        .card-title {
+          //   border: 1px solid red;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 52px;
+          letter-spacing: -1px;
+          text-align: left;
+          color: #000000;
+        }
+
+        .card-description {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          text-align: left;
+          color: #18181b;
+        }
+
+        .read-more {
+            margin-top: 30px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+
+          color: #000000;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

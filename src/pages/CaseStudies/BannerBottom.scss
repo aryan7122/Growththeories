@@ -1,0 +1,70 @@
+.banner-BannerBottom {
+  position: relative;
+  background: #2563eb;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .content {
+    max-width: 700px;
+    padding: 50px;
+    h1 {
+      font-size: 46px;
+      font-weight: 600;
+      line-height: 59.8px;
+      letter-spacing: -1.7999999523162842px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .reviews {
+    }
+  }
+  .buttons {
+    width: 30%;
+    height: 400px;
+    background: url("../../assets/company/Group\ 1000007709.png") no-repeat
+      right center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .contact-btn {
+      background-color: #fff;
+      color: #b81d24;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: center;
+      text-underline-position: from-font;
+      margin-left: -50px;
+      text-decoration-skip-ink: none;
+    }
+
+    .demo-btn {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+}

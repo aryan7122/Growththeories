@@ -82,10 +82,13 @@ const Navbar = () => {
     // audit
     const contact = ['contact'];
     const isContact = contact.some((path) => location.pathname.includes(path));
+    // white bg
+    const whiteBg = ['case-studies'];
+    const isWhite = whiteBg.some((path) => location.pathname.includes(path));
     console.log('isSpecialPath', isSpecialPath)
 
     return (
-        <nav className={`navbar ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}  ${isContact ? 'isContact' : ''}`} >
+        <nav className={`navbar ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}  ${isContact ? 'isContact' : ''}  ${isWhite ? 'isWhite' : ''}`} >
             <div className={`mobile_flex_toggle`} >
                 <div className="navbar__logo">
                     <img

@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Features from './components/Features';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -43,11 +43,25 @@ import TeamSection from './pages/Service/AboutUs/TeamSection/TeamSection';
 import ContactForm from './pages/Company/ContactForm/ContactForm';
 import BlogSection from './pages/Company/Blog/OurBlog/BlogSection';
 import TermsOfService from './pages/TermsOfService/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import CaseStudiesHero from './pages/CaseStudies/CaseStudiesHero';
+import CaseStudiesCard from './pages/CaseStudies/CaseStudiesCard';
+import CaseStudyDetail from './pages/CaseStudies/CaseStudyDetail';
+import CaseStudiesGrowth from './pages/CaseStudies/CaseGrowth/CaseStudiesGrowth';
+import BannerBottom from './pages/CaseStudies/BannerBottom';
+function LocationTracker() {
+  const location = useLocation();
+  console.log('Current Location:', location.pathname);
+  return null;  // This component will just track the location, no UI needed
+}
 
 function App() {
+  
   return (
     <Router>
+    
       <Navbar />
+      <LocationTracker />
       <div className="app">
         <Routes>
           <Route path="/"
@@ -151,6 +165,30 @@ function App() {
             element={
               <>
                 <TermsOfService />
+                <Footer />
+              </>
+            } />
+          <Route path="/privacy-policy"
+            element={
+              <>
+                <PrivacyPolicy />
+                <Footer />
+              </>
+            } />
+          <Route path="/case-studies"
+            element={
+              <>
+                <CaseStudiesHero />
+                <CaseStudiesCard />
+                <BannerBottom/>
+                <Footer />
+              </>
+            } />
+          <Route path="/blog-detail"
+            element={
+              <>
+                <CaseStudyDetail />
+                <CaseStudiesGrowth />
                 <Footer />
               </>
             } />
