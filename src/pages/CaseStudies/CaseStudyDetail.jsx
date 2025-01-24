@@ -107,7 +107,7 @@ const CaseStudyDetail = () => {
                     <div className="case-card">
                         <div className="image-container">
                             <img src='https://s3-alpha-sig.figma.com/img/bace/804b/cc72f716482ab553bc0e4e8a27f94010?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LzLsj-Gnl9MouA6vnweMi63M3rmiXagKzdrUUtdACzrrk-JLi9MF5eHlxxxxFLAbgoLIeWB0eyYyaOPiECxuMvTFPL4VSkFU000ybo1vp0uBVc7ehzxwe15whltdGvyKwzjr9ApQJe~20qpH49krxY755ubffEElg33gemhkLzSVd0N0A0m-8asG-f2RoC4~5phXaEHJlNM1g7QUX~r6dmK78EAUt8kc49UJjR3xT-ekPjTGKZtu~t1~kUXPO9trB-D3SsCUtbLNs8IMnXjnEowofKvXzJ7S~t18-yGkIAYCJQw7koblgYfN5XG1jZBRVRINTQBhUb7Ae0Np51yGrg__' alt="Case Study" />
-                            <div className="logo-container">
+                            <div className="logo-containers0">
                                 <img src={companyLogo} alt="Company Logo" />
                             </div>
                         </div>
@@ -217,7 +217,7 @@ const CaseStudyDetail = () => {
                 <div className="carousel-content">
                     {stories.slice(currentIndex, currentIndex + 3).map((story, index) => (
                         <div className="card" key={index}>
-                            <img src={story.image} alt="story" className="card-image" />
+                            <img src={story.image} alt="story" className="card-image-" />
                             <h3 className="card-title">{story.title}</h3>
                             <div className="card-tags">
                                 {story.tags.map((tag, idx) => (
