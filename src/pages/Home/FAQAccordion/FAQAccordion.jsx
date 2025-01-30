@@ -51,7 +51,7 @@ const FAQAccordion = () => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2  // Row delay
+                staggerChildren: 0.2  
             }
         }
     };
