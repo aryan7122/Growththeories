@@ -56,7 +56,7 @@ const FAQAccordion = () => {
         }
     };
     return (
-        <div className="faq-container">
+        <div className="faq-container007">
             <div className="title_header">
                 <span className="badge">FAQs</span>
                 <h2 className="faq-title">We Have Got All The Answers <h4>(007)</h4></h2>

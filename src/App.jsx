@@ -49,6 +49,11 @@ import CaseStudiesCard from './pages/CaseStudies/CaseStudiesCard';
 import CaseStudyDetail from './pages/CaseStudies/CaseStudyDetail';
 import CaseStudiesGrowth from './pages/CaseStudies/CaseGrowth/CaseStudiesGrowth';
 import BannerBottom from './pages/CaseStudies/BannerBottom';
+import Careers from './pages/Careers/Careers';
+import ApplicationForm from './pages/Careers/ApplicationForm';
+import CareersTeamSection from './pages/Careers/CareersTeamSection';
+import PerksBenefits from './pages/Careers/PerksBenefits';
+import JobOpenings from './pages/Careers/JobOpenings';
 function LocationTracker() {
   const location = useLocation();
   console.log('Current Location:', location.pathname);
@@ -56,10 +61,10 @@ function LocationTracker() {
 }
 
 function App() {
-  
+
   return (
     <Router>
-    
+
       <Navbar />
       <LocationTracker />
       <div className="app">
@@ -180,7 +185,7 @@ function App() {
               <>
                 <CaseStudiesHero />
                 <CaseStudiesCard />
-                <BannerBottom/>
+                <BannerBottom />
                 <Footer />
               </>
             } />
@@ -189,6 +194,23 @@ function App() {
               <>
                 <CaseStudyDetail />
                 <CaseStudiesGrowth />
+                <Footer />
+              </>
+            } />
+          <Route path="/careers"
+            element={
+              <>
+                <Careers />
+                <CareersTeamSection />
+                <PerksBenefits />
+                <JobOpenings />
+                <Footer />
+              </>
+            } />
+          <Route path="/application-form"
+            element={
+              <>
+                <ApplicationForm />
                 <Footer />
               </>
             } />

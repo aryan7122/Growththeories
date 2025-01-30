@@ -1,0 +1,54 @@
+.perks-benefits-section {
+    background-color: #030C26;
+    color: white;
+    padding: 50px;
+    // text-align: center;
+    h2 {
+        font-family: Mona Sans;
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 55.2px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #C8C8FF;
+    }
+    
+    .perks-benefits-grid {
+        display: flex;
+        justify-content :left;
+        gap: 40px;
+        flex-wrap: wrap;
+        
+        .perks-list,
+        .benefits-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            .perk-item,
+            .benefit-item {
+                // border: 1px solid red;
+                display: flex;
+                align-items: center;
+                background-color: #ffffff05;
+                padding: 10px 15px;
+                border: 1px solid #5F5F5F;
+                border-radius: 25px;
+                width: fit-content;
+                &:hover{
+                    border: 1px solid #aaa7a7;
+                    box-shadow: 0px 0px 4px 0.1px #6a6868;
+                }
+                .icon {
+                    font-size: 1.5rem;
+                    color: #a3b2ff;
+                    margin-right: 10px;
+                }
+
+                .text {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

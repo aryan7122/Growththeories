@@ -225,7 +225,7 @@ const Navbar = () => {
                                         </div>
                                         <div className="firstNavbar">
                                             <div>
-                                                <h4>Career</h4>
+                                                <h4 onClick={() => HandleNavigation('/careers')}>Career</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                                             </div>
                                             <img src={CareerImg} alt="" />

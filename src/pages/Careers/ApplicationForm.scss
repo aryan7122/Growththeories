@@ -1,0 +1,159 @@
+.ApplicationForm {
+  background: #f8f6f2;
+  margin: 0 auto;
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: center;
+    color: #1d1d1e;
+  }
+  h2 {
+    font-family: Syne;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.8px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: -130px;
+    color: #7a8297;
+  }
+  padding: 20px;
+  .application-form {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px 10px;
+    text-align: center;
+    background: #ededff99;
+    border-radius: 10px;
+
+    .form-container {
+      margin-top: 20px;
+    }
+    h3 {
+      font-family: Mona Sans;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 22.4px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #1d1d1e;
+    }
+
+    h4 {
+      font-family: Mona Sans;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 22.4px;
+      letter-spacing: 1px;
+      text-align: left !important;
+      color: #1d1d1e;
+      padding: 0px 100px;
+    }
+    .form-group {
+      position: relative;
+      //   width: 700px;
+      margin: 0 auto;
+      padding: 15px 100px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 100px;
+      label {
+        //   border: 1px solid red !important;
+        min-width: 200px;
+        color: #2c2c2c;
+        font-size: 18px;
+        font-weight: 400;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="url"],
+      input[type="file"],
+      textarea {
+        min-width: 474px;
+        height: 40px;
+        border-radius: 10px;
+        opacity: 0px;
+        padding: 0px 10px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        margin-top: 5px;
+        outline: none;
+        &:hover {
+          border: 1px solid #ce0101ca;
+          box-shadow: 0px 0px 4px 0.1px rgba(255, 0, 0, 0.338);
+        }
+        &:focus {
+          border: 1px solid #ce0101ca;
+          box-shadow: 0px 0px 4px 0.1px rgb(255, 0, 0);
+        }
+      }
+      input[type="file"] {
+        opacity: 0;
+        background: #000;
+        min-width: 130px !important;
+        // margin-left: -400px !important;
+        position: absolute;
+    }
+    .label_cv {
+          position: absolute;
+        margin-left:300px;
+        background: #b1b7bb;
+        height: 40px;
+        min-width: 230px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid #737577;
+        gap: 20px;
+        &:hover {
+          border: 1px solid #ce0101ca !important;
+          box-shadow: 0px 0px 4px 0.1px #ff000056;
+        }
+        &:active {
+          border: 1px solid #ce0101ca !important;
+          box-shadow: 0px 0px 4px 0.1px #ff0000f9;
+        }
+      }
+      textarea {
+        height: 100px;
+        width: 100% !important;
+        padding: 8px 5px;
+        resize: none;
+      }
+    }
+
+    .submit-btn {
+      background-color: #a1182f;
+      color: white;
+      border: none;
+      width: 186px;
+      height: 54px;
+margin-top: 50px;
+      padding: 10px 20px 10px 20px;
+      border-radius: 100px;
+
+      cursor: pointer;
+      font-family: Mona Sans;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: center;
+      transition: 0.3s linear;
+      &:hover {
+        background: none;
+        border: 1px solid #a1182f;
+        color: #a1182f;
+        box-shadow: 0px 0px 4px 0.1px red;
+      }
+    }
+  }
+}

@@ -59,7 +59,7 @@ const Footer = () => {
                     <ul>
                         <li><a href="" onClick={() => HandleNavigation('/about-us')}>About Us</a></li>
                         <li><a href="" onClick={() => HandleNavigation('/careers')}>Careers</a></li>
-                        <li><a href="" onClick={() => HandleNavigation('/contact-us')}>Contact Us</a></li>
+                        <li><a href="" onClick={() => HandleNavigation('/contact')}>Contact Us</a></li>
                     </ul>
                 </div>
             </div>

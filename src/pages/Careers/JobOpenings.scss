@@ -1,0 +1,157 @@
+$primary-color: #051132;
+$card-bg: rgba(28, 34, 58, 0.9);
+$button-color: #A1182F;
+$text-color: white;
+
+.job-openings-section {
+  background-color: $primary-color;
+  color: $text-color;
+  padding-top: 90px;
+  text-align: center;
+  background-image: url("../../assets/company/Container.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  object-fit: contain;
+  height: 980px;
+  .head_job_title {
+    margin-top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    h2 {
+      font-family: Mona Sans;
+      font-size: 46px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #c8c8ff;
+      width: 630px;
+    }
+
+    p {
+      margin-top: -10px;
+      font-family: Mona Sans;
+      font-size: 21.13px;
+      font-weight: 400;
+      line-height: 30.43px;
+      text-align: left;
+      color: #8a8f98;
+      width: 820px;
+    }
+    .contact-btn {
+      background-color: $button-color;
+      color: $text-color;
+      border: 1px solid rgba(255, 0, 0, 0);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 240px;
+      height: 54px;
+      border-radius: 100px;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #a1182f;
+        box-shadow: 0px 0px 4px 0.1px red;
+        color: #a1182f;
+      }
+    }
+  }
+
+  .job-cards-container {
+    display: flex;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-direction: column;
+    gap: 30px;
+    // margin-top: 30px;
+    padding: 40px;
+
+    .job-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      background: #ffffff0a;
+      backdrop-filter: blur(15px);
+
+      -webkit-backdrop-filter: blur(15px);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: left;
+      position: relative;
+      color: $text-color;
+
+      h3 {
+        font-family: Mona Sans;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 33.6px;
+        letter-spacing: -1px;
+        text-align: left;
+        color: #c8c8ff;
+        margin-bottom: 8px;
+      }
+
+      .work-type {
+        font-family: Syne;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.8px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #ffff;
+        opacity: 0.5;
+      }
+
+      .role {
+        margin: 30px 0;
+        font-family: Syne;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        color: #ffffff;
+        opacity: 0.8;
+
+        strong {
+          margin-left: 5px;
+        }
+
+        p {
+          width: 800px;
+          height: 4.8em;
+          /* Approx 4 lines (line-height ke hisaab se adjust karen) */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          /* 4 lines tak hi text dikhaye */
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      .apply-btn {
+        margin-right: 50px;
+        background-color: transparent;
+        border: 2px solid $button-color;
+        padding: 15px 30px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        color: $text-color;
+        
+        &:hover {
+            color: $text-color;
+          background-color: $button-color;
+          box-shadow: 0px 0px 4px 0.1px red;
+        }
+      }
+    }
+  }
+}
