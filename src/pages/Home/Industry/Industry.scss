@@ -34,7 +34,7 @@ $text-color: #ffffff;
         rgba(153, 153, 153, 0.2) 84.26%
       );
     }
-
+    
     h1 {
       font-size: $font-size-50;
       line-height: 57px;
@@ -43,7 +43,7 @@ $text-color: #ffffff;
       text-transform: capitalize;
       // color: $neutral-500;
     }
-
+    
     p {
       font-size: $font-size-20;
       text-transform: capitalize;
@@ -54,6 +54,12 @@ $text-color: #ffffff;
       margin-top: -20px;
       // color: $neutral-900;
       opacity: 0.5;
+      @media (max-width: 490px) {
+        width: 100%;
+        margin-top: -10px;
+        
+      }
+      
     }
     .btn-btn-secondary {
       position: relative;
@@ -87,7 +93,7 @@ $text-color: #ffffff;
     margin-bottom: 20px;
     justify-content: center;
     // border: 1px solid red;
-    width: 802px;
+    min-width: 802px;
     border-radius: 100px;
     background-color: #21216b66;
     margin: 0 auto;
@@ -95,7 +101,11 @@ $text-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 490px) {
+      min-width: 550px;
+    }
   }
+  // border: 1px solid red !important;
 
   .tab {
     padding: 10px 20px;

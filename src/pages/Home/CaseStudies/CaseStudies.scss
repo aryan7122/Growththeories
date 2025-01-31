@@ -79,7 +79,6 @@
         .All_Studies_btn {
           border: 1px solid rgb(0, 0, 0);
           width: 197px;
-          // border: 1px solid red;
           height: 54px;
           cursor: pointer;
           left: 1190.61px;
@@ -565,9 +564,9 @@
     }
     margin-top: 0 auto;
   }
-    .case-studies-reviews .reviews-section{
-      margin: 0px;
-    }
+  .case-studies-reviews .reviews-section {
+    margin: 0px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -580,8 +579,8 @@
     .prev {
       left: 5px;
     }
- 
-      .next {
+
+    .next {
       right: 5px;
     }
   }
@@ -589,13 +588,13 @@
     padding: 10px;
   }
   .case-studies-reviews .reviews-section .reviews {
-
     .testimonial {
       width: 340px;
       height: 280px;
 
       .testimonial-slider {
         width: 340px;
+        // border: 1px solid red !important;
         height: 280px;
         .slider-content .quote {
           width: 70%;
@@ -608,41 +607,122 @@
     .award {
       img {
         width: 340px;
-          height: 280px;
-        }
+        height: 280px;
       }
     }
-    .CaseStudies_3_card .CaseStudies-section{
-      padding: 20px;
-      align-items: center;
-      
+  }
+  .CaseStudies_3_card .CaseStudies-section {
+    padding: 20px;
+    align-items: center;
+  }
+  .CaseStudies_3_card .CaseStudies-section .content {
+    h1 {
+      font-size: 22px;
+      line-height: 20px;
     }
-    .CaseStudies_3_card .CaseStudies-section .content {
-      h1{
-        font-size: 22px;
-        line-height: 20px;
-      }
-            .h1-2{
-              font-size: 22px;
-            }
+    .h1-2 {
+      font-size: 22px;
     }
-        .case-studies-reviews .case-studies .case-study-card .content {
-          h3{
+  }
+  .case-studies-reviews .case-studies .case-study-card .content {
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .hart_cards {
+      font-size: 13px;
+    }
+  }
+  .case-studies-reviews .reviews-section h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .case-studies-reviews .reviews-section p {
+    font-size: 17px;
+  }
+}
 
-            font-size: 16px;
-          }
-          p{
-            font-size: 14px;
-          }
-                    .hart_cards{
-                      font-size: 13px;
-                    }
+
+
+@media (max-width: 340px) {
+  .case-studies-reviews .reviews-section .reviews .testimonial .testimonial-slider .slider-content {
+    .prev {
+      left: 5px;
+    }
+
+    .next {
+      right: 5px;
+    }
+  }
+
+  .case-studies-reviews .reviews-section p {
+    padding: 10px;
+  }
+
+  .case-studies-reviews .reviews-section .reviews {
+    .testimonial {
+      width: 300px;
+      height: 280px;
+
+      .testimonial-slider {
+        width: 300px;
+        height: 280px;
+
+        .slider-content .quote {
+          width: 70%;
+          line-height: 14px;
+          font-size: 9px;
         }
-                .case-studies-reviews .reviews-section h2{
-                  font-size: 30px;
-                  line-height: 30px;
-                }
-                                .case-studies-reviews .reviews-section p{
-                                  font-size: 17px;
-                                }
+      }
+    }
+
+    .award {
+      img {
+        // border: 1px solid red !important;
+        width: 300px;
+        height: 240px;
+      }
+    }
+  }
+
+  .CaseStudies_3_card .CaseStudies-section {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .CaseStudies_3_card .CaseStudies-section .content {
+    h1 {
+      font-size: 22px;
+      line-height: 20px;
+    }
+
+    .h1-2 {
+      font-size: 22px;
+    }
+  }
+
+  .case-studies-reviews .case-studies .case-study-card .content {
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .hart_cards {
+      font-size: 13px;
+    }
+  }
+
+  .case-studies-reviews .reviews-section h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .case-studies-reviews .reviews-section p {
+    font-size: 17px;
+  }
 }

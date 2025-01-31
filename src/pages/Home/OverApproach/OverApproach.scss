@@ -8,11 +8,15 @@ $button-active-color: #fff;
   font-family: "Arial", sans-serif;
   background-color: $bg-color;
   padding: 40px;
+  @media (max-width: 350px) {
+    padding: 0px !important;
+    
   #approach_card {
     background: #fff;
     padding: 20px 40px;
     border-radius: 20px;
     scroll-behavior: smooth;
+    }
     .ourApproach {
       border-bottom: 1px dashed $neutral-100;
       h4 {
