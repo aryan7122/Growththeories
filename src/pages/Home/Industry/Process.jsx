@@ -46,18 +46,18 @@ const Process = () => {
     };
     return (
         <section className="process">
-            <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                whileHover={{ scale: 1.01, }}
-                className="process-header">
+            <div
+                // initial={{ opacity: 0, scale: 0.8 }}
+                // whileInView={{ opacity: 1, scale: 1 }}
+                // viewport={{ once: true, amount: 0.4 }}
+                // transition={{ duration: 0.6, ease: "easeOut" }}
+                // whileHover={{ scale: 1.01, }}
+                className="process_header">
                 {/* <h1>
                     <span className="highlight">oh</span> & the process <br /> is simple.
                 </h1>
                 <p className="swear">We Swear!</p> */}
-            </motion.div>
+            </div>
 
             <div className='card-processes'>
 

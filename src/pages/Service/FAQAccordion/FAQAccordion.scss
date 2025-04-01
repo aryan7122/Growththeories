@@ -1,15 +1,22 @@
 @use "../../../styles//Variables/variables.scss" as *;
 
-.faq-container {
+.faq-container0101 {
   font-family: "Arial", sans-serif;
   background-color: #DEDEFF;
   margin: 0 auto;
   display: flex;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    }
   .title_header_- {
     background: #dedefa;
     width: 100%;
     padding: 40px 0;
     width: 570px;
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding: 20px 0;
+      }
     .badge {
       margin: 0 40px;
       display: inline-block;
@@ -57,6 +64,11 @@
   padding-top: 30px;
   padding-bottom: 80px;
   // border: 1px solid red !important;
+  // border: 1px solid red;
+  @media (max-width: 1000px) {
+    padding-top: 0px !important;
+    width: 100% !important;
+    }
   .hr-line {
     width: 100%;
     height: 1px;
@@ -144,7 +156,10 @@
 
 @media (max-width: 1000px) {
   .faq-list {
-    max-width: 700px;
+    margin: 0 20px;
+    // max-width: 700px;
+    max-width: 90% !important;
+    // border: 1px solid red !important;
   }
 }
 

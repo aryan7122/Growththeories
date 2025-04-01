@@ -14,10 +14,18 @@
     align-items: center;
     justify-content: space-between;
     h2 {
-      width: 30%;
+    font-family: 'Open Sans';
+    width: 560px;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -2px;
+      text-transform: capitalize;
       text-align: left;
-      font-size: $font-size-40;
       color: $primary-900;
+      .highlight{
+        color: $secondary-600;
+      }
     }
     .slideBtn {
       display: flex;

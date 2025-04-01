@@ -54,6 +54,7 @@ import ApplicationForm from './pages/Careers/ApplicationForm';
 import CareersTeamSection from './pages/Careers/CareersTeamSection';
 import PerksBenefits from './pages/Careers/PerksBenefits';
 import JobOpenings from './pages/Careers/JobOpenings';
+import MathematicalLawsPage from './pages/Home/MathematicalLaws/MathematicalLaws';
 function LocationTracker() {
   const location = useLocation();
   console.log('Current Location:', location.pathname);
@@ -73,9 +74,10 @@ function App() {
             element={
               <>
                 <Header />
-                <Overview />
-                <Slider />
                 <OverApproach />
+                <Slider />
+                <MathematicalLawsPage/>
+                <Overview />
                 <Suitability />
                 <Industry />
                 <ImpactsBenefits />

@@ -56,7 +56,7 @@ const FAQFreq = () => {
         }
     };
     return (
-        <div className="faq-container">
+        <div className="faq-container0101">
             <div className="title_header_-">
                 <span className="badge">FAQs</span>
                 <h2 className="faq-title">Frequently Asked Questions</h2>

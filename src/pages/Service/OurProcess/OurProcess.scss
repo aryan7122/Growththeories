@@ -10,7 +10,7 @@
   position: relative;
   overflow-y: auto;
   .process-step {
-    // border: 1px solid red;
+    // border: 1px solid red !important;
     margin-top: 40px;
     // max-width: 600px;
     margin-bottom: 3rem;
@@ -35,6 +35,14 @@
         line-height: 60px;
         color: #5c64ff;
         margin: 0.5rem 0;
+        @media (max-width: 930px) {
+          font-size: 36px !important;
+          line-height: 50px !important;
+        }
+                 @media (max-width: 730px) {
+                   font-size: 30px !important;
+                   line-height: 40px !important;
+                 }
       }
 
       .process-title {
@@ -43,25 +51,37 @@
         font-weight: 800;
         color: #fff;
         margin-top: -1px;
+        @media (max-width: 930px) {
+          font-size: 42px !important;
+          line-height: 46px !important;
+        }
+        @media (max-width: 730px) {
+          font-size: 36px !important;
+          line-height: 40px !important;
+        }
       }
       .keep_scrolling {
-          position: absolute;
-          bottom: 0;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          .circular-progress-container {
-          
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        @media (max-width: 930px) {
+          scale: 0.8;
+            margin-left: -25px;
+          }
+        @media (max-width: 730px) {
+          scale: 0.6;
+            margin-left: -45px;
+          }
+        .circular-progress-container {
           svg {
             transform: rotate(-90deg);
-            
           }
-
-          
         }
-        h4{
+        h4 {
           position: relative;
-        font-family: Syne;
+          font-family: Syne;
           font-size: 28px;
           font-weight: 600;
           line-height: 39.2px;
@@ -69,7 +89,6 @@
           text-underline-position: from-font;
           text-decoration-skip-ink: none;
           opacity: 0.4;
-          
         }
       }
     }
@@ -116,6 +135,10 @@
         line-height: 36.4px;
         text-align: left;
         white-space: pre-line;
+        // border: 1px solid red;
+        @media (max-width: 930px) {
+          width: 90% !important;
+          }
       }
       // border: 1px solid red;
 
@@ -123,17 +146,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Responsive Design */
 @media (max-width: 1200px) {

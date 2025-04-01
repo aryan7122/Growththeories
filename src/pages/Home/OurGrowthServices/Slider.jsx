@@ -15,41 +15,41 @@ const Slider = () => {
         {
             title: 'Growth Tracks: Your Blueprint For Success',
             description:
-                "Companies Are Always On The Lookout For 'new Tactics'. Growth However, Has Nothing To Do With Tactics. Good Growth Comes From Implementing A Structured Process Of Rapid Experimentation. The Key Is In Institutionalizing What Works And Dropping What Doesn't ASAP.",
-            bgColor: '#eaf7fe',
+                "Companies are always on the lookout for ‘new tactics’. Growth however, has nothing to do with tactics. Good growth comes from implementing a structured process of rapid experimentation. The key is in institutionalizing what works and dropping what doesn’t ASAP.",
+            bgColor: '#D9D9D9',
             img: SliderImg1,
             button: 'Learn More About Growth Tracks'
         },
         {
             title: 'Validation Services',
             description:
-                "Companies Are Always On The Lookout For 'new Tactics'. Growth However, Has Nothing To Do With Tactics. Good Growth Comes From Implementing A Structured Process Of Rapid Experimentation.",
+                "Companies are always on the lookout for ‘new tactics’. Growth however, has nothing to do with tactics. Good growth comes from implementing a structured process of rapid experimentation. The key is in institutionalizing what works and dropping what doesn’t ASAP.",
             bgColor: '#f5E7Bc',
             img: SliderImg2,
             button: 'Learn More About Growth Tracks'
 
         },
         {
-            title: 'Validation Services',
+            title: 'Growth Prediction modelling',
             description:
-                "Companies Are Always On The Lookout For 'new Tactics'. Growth However, Has Nothing To Do With Tactics. Good Growth Comes From Implementing A Structured Process Of Rapid Experimentation.",
+                "Are you already in experiment mode? Is your team already working according the growth marketing methodology? In that case prediction modeling can lift you to the next level by infusing your growth experiments with a data science layer",
             bgColor: '#F5CDBC',
             img: SliderImg3,
             button: 'Learn More About Growth Prediction'
 
         },
         {
-            title: 'Validation Services',
+            title: 'Growth Audit',
             description:
-                "Companies Are Always On The Lookout For 'new Tactics'. Growth However, Has Nothing To Do With Tactics. Good Growth Comes From Implementing A Structured Process Of Rapid Experimentation.",
+                "With a growth audit, our aim is to identify new growth potential very fast. In only five days we make an analysis of your market, your techstack, your audience, etc. The main deliverable of such an audit is a shortlist of experiments to unlock new growth levers",
             bgColor: '#BCEBF5',
             img: SliderImg4,
             button: "Learn More About Growth Audit"
         },
         {
-            title: 'Validation Services',
+            title: 'Tiktok Advertising',
             description:
-                "Companies Are Always On The Lookout For 'new Tactics'. Growth However, Has Nothing To Do With Tactics. Good Growth Comes From Implementing A Structured Process Of Rapid Experimentation.",
+                "The days of slow content are numbered. TikTok advertising is perfect for reaching your young and growing audience with creative and engaging content. Conquer a place in the hearts of your audience with a massive brand engagement at never seen before CPMs!",
             bgColor: '#F9E575',
             img: SliderImg5,
             button: "Learn More About Growth Audit"
@@ -110,7 +110,7 @@ const Slider = () => {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}
             >
-                <h2>Our Comprehensive Growth Services</h2>
+                <h2>What does our  <span className='highlight'>growth marketing </span>services include?</h2>
                 <div className='slideBtn'>
                     <button
                         className={`slider-btn ${currentIndex === 0 ? 'inactive' : ''}`}
