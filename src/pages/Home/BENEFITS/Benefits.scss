@@ -82,7 +82,12 @@
       //   border-bottom: 1px solid #ddd;
       text-align: left;
       //   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-
+  @media (max-width: 900px) {
+    padding: 30px;
+  }
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
       .number {
         font-family: "Open Sans";
         font-weight: 400;
