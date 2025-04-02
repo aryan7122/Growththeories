@@ -55,6 +55,8 @@ import CareersTeamSection from './pages/Careers/CareersTeamSection';
 import PerksBenefits from './pages/Careers/PerksBenefits';
 import JobOpenings from './pages/Careers/JobOpenings';
 import MathematicalLawsPage from './pages/Home/MathematicalLaws/MathematicalLaws';
+import Benefits from './pages/Home/BENEFITS/Benefits';
+import ComparisonTable from './pages/Home/COMPARISON/ComparisonTable';
 function LocationTracker() {
   const location = useLocation();
   console.log('Current Location:', location.pathname);
@@ -76,12 +78,14 @@ function App() {
                 <Header />
                 <OverApproach />
                 <Slider />
+                <ComparisonTable/>
+                <Benefits/>
                 <MathematicalLawsPage/>
-                <Overview />
+                {/* <Overview /> */}
                 <Suitability />
-                <Industry />
-                <ImpactsBenefits />
-                <CaseStudies />
+                {/* <Industry /> */}
+                {/* <ImpactsBenefits /> */}
+                {/* <CaseStudies /> */}
                 <FAQAccordion />
                 <Footer />
               </>

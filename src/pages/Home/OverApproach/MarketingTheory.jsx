@@ -108,6 +108,19 @@ const MarketingTheory = () => {
 
     return (
         <div className="marketing-container">
+            <div className="tabs_Mobile">
+                <div className="tabSro">
+                    {marketingData.map((item) => (
+                        <button
+                            key={item.key}
+                            className={selected.key === item.key ? "active" : ""}
+                            onMouseEnter={() => setSelected(item)}
+                        >
+                            {item.title}
+                        </button>
+                    ))}
+               </div>
+            </div>
             <div className="left-tabs">
                 {marketingData.slice(0, 7).map((item) => (
                     <button

@@ -12,10 +12,14 @@
   width: 100%;
   padding-bottom: 50px;
   &__content {
-    padding-left: 40px;
+    // padding-left: 40px;
+    
     text-align: center;
     margin-top: 15px;
     margin-bottom: 60px;
+    @media (max-width: 900px) {
+          padding: 20px;
+        }
     h3 {
       animation: slideLeft 1s ease-out forwards;
       font-family: "Oxanium", sans-serif;
@@ -44,7 +48,16 @@
       color: $primary-800;
       font-size: $font-size-50;
       letter-spacing: -4%;
-
+    @media (max-width: 900px) {
+      width: 100%;
+        font-size: 40px !important;
+        line-height: 52.6px !important;
+      }
+    
+      @media (max-width: 760px) {
+        font-size: 36px !important;
+        line-height: 42.6px !important;
+      }
       span {
         font-weight: 700;
         line-height: 64px;
@@ -53,6 +66,7 @@
         color: $secondary-800;
         font-family: "Open Sans", sans-serif !important;
       }
+      
     }
   }
 
@@ -68,6 +82,9 @@
     text-transform: capitalize;
     margin-top: -12px;
     // border: 1px solid $primary-500;
+        @media (max-width: 900px) {
+          width: 100%;
+        }
   }
 
   .header__buttons {
@@ -147,7 +164,7 @@
     padding: 40px;
     border-radius: 20px;
     text-align: center;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 
@@ -161,6 +178,18 @@
       text-align: center;
       margin: 0 auto;
       text-transform: capitalize;
+      @media (max-width: 1080px) {
+        width: 100%;
+
+      }
+                        @media (max-width: 1000px) {
+                          font-size: 40px;
+                            line-height: 52.6px;
+                        }
+                        @media (max-width: 760px) {
+                          font-size: 36px;
+                            line-height: 42.6px;
+                        }
       .highlight {
         font-family: "Open Sans", sans-serif;
         color: $neutral-100;
@@ -183,6 +212,11 @@
       color: #555555;
       width: 784px;
       margin: 10px auto;
+      @media (max-width: 1000px) {
+          width: 100%;
+      
+        }
+
     
     }
 
@@ -311,22 +345,16 @@
 
 @media (max-width: 1145px) {
   .header {
-    flex-direction: column-reverse;
+    // flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
   .features {
     display: none;
   }
-  .header__content h1 {
-    font-size: $font-size-50;
-    line-height: 56px;
-  }
+ 
 
-  .header__content h1 span {
-    font-size: $font-size-56;
-    line-height: 60px;
-  }
+  
 }
 
 @media (max-width: 890px) {

@@ -7,6 +7,10 @@ $text-color: #ffffff;
 
 .Industry_content {
   background: #1a1a26;
+  padding: 0 80px;
+  @media (max-width: 1400px) {
+      padding: 30px 60px;
+    }
   .header-Industry {
     // background: #fff;
     // margin-bottom: 40px;
@@ -15,7 +19,7 @@ $text-color: #ffffff;
     align-items: center;
     justify-content: center;
     color: $neutral-50;
-    padding: 40px;
+    padding: 40px ;
     .suitability-INDUSTRY {
       margin-top: 10px;
       width: 113px;

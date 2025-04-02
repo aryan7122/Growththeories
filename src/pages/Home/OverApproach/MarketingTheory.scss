@@ -2,16 +2,55 @@
 .marketing-container {
   display: flex;
   justify-content: space-between;
-//   padding: 2rem;
-margin-top: 50px;
-margin-bottom: 40px;
+  //   padding: 2rem;
+  margin-top: 50px;
+  margin-bottom: 40px;
   // background-color: #f5f7fa;
-
+  @media (max-width: 1250px) {
+    flex-direction: column;
+  }
   .left-tabs,
   .right-tabs {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    @media (max-width: 1250px) {
+      display: none;
+    }
+  }
+  .tabs_Mobile {
+    display: none;
+    margin-bottom: 30px;
+    @media (max-width: 1250px) {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      gap: 5px;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      width: 90vw;
+      .tabSro {
+        // min-width: 111010px;
+        // padding-left: 3560px !important;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+        @media (max-width: 1180px) {
+          // padding-left: 3590px !important;
+        }
+        @media (max-width: 1140px) {
+          // padding-left: 3200px !important;
+          button {
+            font-size: 14px;
+            width: 200px;
+          }
+        }
+      }
+      button {
+        min-width: 290px !important;
+      }
+    }
   }
 
   button {
@@ -50,30 +89,30 @@ margin-bottom: 40px;
     text-align: center;
 
     h2 {
-    font-family: 'Open Sans';
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 47.6px;
-        letter-spacing: -1px;
-        text-transform: capitalize;
-        color: #272626;
-        margin-top: -10px;
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 47.6px;
+      letter-spacing: -1px;
+      text-transform: capitalize;
+      color: #272626;
+      margin-top: -10px;
     }
 
     p {
-    font-family: 'Open Sans';
-    color: #000;
-    opacity: 0.5;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
-        margin-top: -10px;
-        // width: 465px;
-        margin: 0 auto;
-        letter-spacing: 0px;
-        text-align: center;
-        vertical-align: middle;
-        text-transform: capitalize;
+      font-family: "Open Sans";
+      color: #000;
+      opacity: 0.5;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      margin-top: -10px;
+      // width: 465px;
+      margin: 0 auto;
+      letter-spacing: 0px;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: capitalize;
     }
 
     img {

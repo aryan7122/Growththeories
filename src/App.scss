@@ -15,30 +15,30 @@
     }
 }
 
- ::selection {
-     background: #8400ff; // Background color of the selected text
-     color: rgb(255, 255, 255); // Text color of the selected text
- }
+//  ::selection {
+//      background: #8400ff; // Background color of the selected text
+//      color: rgb(255, 255, 255); // Text color of the selected text
+//  }
 
-   ::-webkit-scrollbar {
-       width: 6px;
-       height: 6px;
-   }
+//    ::-webkit-scrollbar {
+//        width: 6px;
+//        height: 6px;
+//    }
 
-   /* Track */
-   ::-webkit-scrollbar-track {
-       background: #ab81d33b;
-   }
+//    /* Track */
+//    ::-webkit-scrollbar-track {
+//        background: #ab81d33b;
+//    }
 
-   /* Handle */
-   ::-webkit-scrollbar-thumb {
-       background: #440A14;
-   }
+//    /* Handle */
+//    ::-webkit-scrollbar-thumb {
+//        background: #440A14;
+//    }
 
-   /* Handle on hover */
-   ::-webkit-scrollbar-thumb:hover {
-       background: #720315;
-   }
+//    /* Handle on hover */
+//    ::-webkit-scrollbar-thumb:hover {
+//        background: #720315;
+//    }
 
 
 

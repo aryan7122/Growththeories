@@ -265,11 +265,11 @@ const Navbar = () => {
             </ul>
             {/* {!isMobileMenuOpen && */}
             <div className="navbar__actions">
-                <CustomDropdown
+                {/* <CustomDropdown
                     options={languageOptions}
                     defaultValue="Language"
                     onChange={handleLanguageChange}
-                />
+                /> */}
                 <button className="btn btn-secondary">Contact Us</button>
             </div>
             {/* } */}
