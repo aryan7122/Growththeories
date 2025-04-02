@@ -13,13 +13,13 @@
   padding-bottom: 50px;
   &__content {
     // padding-left: 40px;
-    
+
     text-align: center;
     margin-top: 15px;
     margin-bottom: 60px;
     @media (max-width: 900px) {
-          padding: 20px;
-        }
+      padding: 20px;
+    }
     h3 {
       animation: slideLeft 1s ease-out forwards;
       font-family: "Oxanium", sans-serif;
@@ -48,15 +48,22 @@
       color: $primary-800;
       font-size: $font-size-50;
       letter-spacing: -4%;
-    @media (max-width: 900px) {
-      width: 100%;
+      @media (max-width: 900px) {
+        width: 100%;
         font-size: 40px !important;
         line-height: 52.6px !important;
       }
-    
+
       @media (max-width: 760px) {
         font-size: 36px !important;
         line-height: 42.6px !important;
+      }
+      @media (max-width: 660px) {
+        font-size: 30px !important;
+        line-height: 30.6px !important;
+        span {
+          // line-height: 30px;
+        }
       }
       span {
         font-weight: 700;
@@ -66,7 +73,6 @@
         color: $secondary-800;
         font-family: "Open Sans", sans-serif !important;
       }
-      
     }
   }
 
@@ -82,9 +88,9 @@
     text-transform: capitalize;
     margin-top: -12px;
     // border: 1px solid $primary-500;
-        @media (max-width: 900px) {
-          width: 100%;
-        }
+    @media (max-width: 900px) {
+      width: 100%;
+    }
   }
 
   .header__buttons {
@@ -167,9 +173,13 @@
     width: 85%;
     margin: 0 auto;
     // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-
+@media (max-width: 660px) {
+    width: fit-content;
+    border-radius: 0px;
+    padding: 20px;
+  }
     h2 {
-            font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       width: 900px;
       font-size: 48px;
       line-height: 61.6px;
@@ -180,19 +190,30 @@
       text-transform: capitalize;
       @media (max-width: 1080px) {
         width: 100%;
-
       }
-                        @media (max-width: 1000px) {
-                          font-size: 40px;
-                            line-height: 52.6px;
-                        }
-                        @media (max-width: 760px) {
-                          font-size: 36px;
-                            line-height: 42.6px;
-                        }
+      @media (max-width: 1000px) {
+        font-size: 40px;
+        line-height: 52.6px;
+      }
+      @media (max-width: 760px) {
+        font-size: 36px;
+        line-height: 42.6px;
+       
+      }
+      @media (max-width: 660px) {
+        font-size: 30px;
+        line-height: 30.6px;
+              letter-spacing: -1px;
+      }
+      @media (max-width: 400px) {
+        font-size: 27px;
+        line-height: 30.6px;
+              letter-spacing: -1px;
+      }
+
       .highlight {
         font-family: "Open Sans", sans-serif;
-        color: $neutral-100;
+        color: #2B2A2AA6;
       }
 
       .bold {
@@ -207,21 +228,17 @@
       line-height: 24px;
       letter-spacing: -0.5px;
       text-align: center;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       text-transform: capitalize;
       color: #555555;
       width: 784px;
       margin: 10px auto;
       @media (max-width: 1000px) {
-          width: 100%;
-      
-        }
-
-    
+        width: 100% !important;
+      }
     }
 
     .cta-button {
-      
       background-color: $primary-500;
       color: #fff;
       background: $primary-500;
@@ -234,7 +251,7 @@
       box-shadow: $box-shadow-md;
       border-radius: 100px;
       font-size: $font-size-16;
-     
+
       cursor: pointer;
       line-height: 20px;
       letter-spacing: 0%;
@@ -352,9 +369,6 @@
   .features {
     display: none;
   }
- 
-
-  
 }
 
 @media (max-width: 890px) {
