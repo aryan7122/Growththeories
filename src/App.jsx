@@ -57,6 +57,11 @@ import JobOpenings from './pages/Careers/JobOpenings';
 import MathematicalLawsPage from './pages/Home/MathematicalLaws/MathematicalLaws';
 import Benefits from './pages/Home/BENEFITS/Benefits';
 import ComparisonTable from './pages/Home/COMPARISON/ComparisonTable';
+import { HelmetProvider } from 'react-helmet-async';
+import SEO from './components/SEO';
+import { useEffect, useState } from 'react';
+
+
 function LocationTracker() {
   const location = useLocation();
   console.log('Current Location:', location.pathname);
@@ -64,164 +69,216 @@ function LocationTracker() {
 }
 
 function App() {
+  const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin;
+  // ssr
+  // const [html, setHtml] = useState("");
 
+  // useEffect(() => {
+  //   fetch("/api/ssr?url=https://my-app.vercel.app") // ✅ Vercel SSR API
+  //     .then((res) => res.text())
+  //     .then((data) => {
+  //       setHtml(data);
+  //       document.documentElement.innerHTML = data; // ✅ Replace Full HTML
+  //     });
+  // }, []);
+  // // ssr
   return (
-    <Router>
-      <Navbar />
-      <LocationTracker />
-      <div className="app">
-        <Routes>
-          <Route path="/"
-            element={
-              <>
-                <Header />
-                <OverApproach />
-                <Slider />
-                <ComparisonTable />
-                <Benefits />
-                <MathematicalLawsPage />
-                {/* <Overview /> */}
-                <Suitability />
-                {/* <Industry /> */}
-                {/* <ImpactsBenefits /> */}
-                {/* <CaseStudies /> */}
-                <FAQAccordion />
-                <Footer />
-              </>
-            }
+    <HelmetProvider>
+      <Router>
+        <Navbar />
+        <LocationTracker />
+        <div className="app">
+          <Routes>
+            <Route path="/"
+              element={
+                <>
+                  <SEO
+                    title="Growth Theories | Proven Growth Marketing & Business Strategies"
+                    description="Boost your business growth with data-driven marketing strategies, growth hacking, SEO optimization, and revenue-focused frameworks. Learn proven business scaling techniques."
+                    keywords={[
+                      "growth marketing strategies",
+                      "business growth hacking",
+                      "SEO for startups",
+                      "digital marketing growth",
+                      "customer acquisition",
+                      "revenue optimization",
+                      "business expansion tips",
+                      "scalable marketing techniques",
+                      "brand positioning strategies"
+                    ]}
+                    canonicalPath="/"
+                    ogImage="images/home-banner.jpg"
+                    jsonLd={{
+                      "@context": "https://schema.org",
+                      "@type": "WebSite",
+                      "name": "Growth Theories",
+                      "url": siteUrl,
+                      "description": "Growth Theories offers expert business strategies, marketing frameworks, and customer acquisition techniques to help startups and enterprises scale sustainably.",
+                      "publisher": {
+                        "@type": "Organization",
+                        "name": "Growth Theories",
+                        "url": siteUrl,
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": siteUrl + "/images/logo.png"
+                        }
+                      },
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": siteUrl
+                      }
+                    }}
+                  />
 
-          />
-          <Route path="/growth-tracks"
-            element={
-              <>
-                <Service />
-                <GrowthTracks />
-                <OurProcess />
-                <BenefitsSection />
-                <FAQFreq />
-                <BusinessGrowth />
-                <Footer />
-              </>
-            } />
-          <Route path="/validation-service"
-            element={
-              <>
-                <ValidationPage />
-                <ValidationTracks />
-                <OurProcessValidation />
-                <CustomerStories />
-                <ValidationServices />
-                <FAQValid />
-                <BusinessGrowth />
-                <Footer />
-              </>
-            } />
-          <Route path="/predict-growth"
-            element={
-              <>
-                <PredictYourGrowth />
-                <GrowthPrediction />
-                <PredictOurProcess />
-                <CustomerStories />
-                <FullCustomize />
-                <FAQValid />
-                <BusinessGrowth />
-                <Footer />
-              </>
-            } />
-          <Route path="/growth-Audit"
-            element={
-              <>
-                <AuditHeroSection />
-                <GrowthAudit />
-                <GrowthGains />
-                <AuditProcess />
-                <Process2 />
-                <AuditCustomerStories />
-                <AuditFullCustomize />
-                <FAQValid />
-                <AuditBusinessGrowth />
-                <Footer />
-              </>
-            } />
-          <Route path="/about"
-            element={
-              <>
-                <AboutUs />
-                <About2 />
-                <AboutSection />
-                <TeamSection />
-                <FAQValid />
-                <BusinessGrowth />
-                <Footer />
-              </>
-            } />
-          <Route path="/contact"
-            element={
-              <>
-                <ContactForm />
-                <Footer />
-              </>
-            } />
-          <Route path="/blog"
-            element={
-              <>
-                <BlogSection />
-                <AuditBusinessGrowth />
-                <Footer />
-              </>
-            } />
-          <Route path="/terms-service"
-            element={
-              <>
-                <TermsOfService />
-                <Footer />
-              </>
-            } />
-          <Route path="/privacy-policy"
-            element={
-              <>
-                <PrivacyPolicy />
-                <Footer />
-              </>
-            } />
-          <Route path="/case-studies"
-            element={
-              <>
-                <CaseStudiesHero />
-                <CaseStudiesCard />
-                <BannerBottom />
-                <Footer />
-              </>
-            } />
-          <Route path="/blog-detail"
-            element={
-              <>
-                <CaseStudyDetail />
-                <CaseStudiesGrowth />
-                <Footer />
-              </>
-            } />
-          <Route path="/careers"
-            element={
-              <>
-                <Careers />
-                <CareersTeamSection />
-                <PerksBenefits />
-                <JobOpenings />
-                <Footer />
-              </>
-            } />
-          <Route path="/application-form"
-            element={
-              <>
-                <ApplicationForm />
-                <Footer />
-              </>
-            } />
-        </Routes>
-      </div>
-    </Router>
+                  <Header />
+                  <OverApproach />
+                  <Slider />
+                  <ComparisonTable />
+                  <Benefits />
+                  <MathematicalLawsPage />
+                  {/* <Overview /> */}
+                  <Suitability />
+                  {/* <Industry /> */}
+                  {/* <ImpactsBenefits /> */}
+                  {/* <CaseStudies /> */}
+                  <FAQAccordion />
+                  <Footer />
+                </>
+              }
+            />
+            <Route path="/growth-tracks"
+              element={
+                <>
+                  <Service />
+                  <GrowthTracks />
+                  <OurProcess />
+                  <BenefitsSection />
+                  <FAQFreq />
+                  <BusinessGrowth />
+                  <Footer />
+                </>
+              } />
+            <Route path="/validation-service"
+              element={
+                <>
+                  <ValidationPage />
+                  <ValidationTracks />
+                  <OurProcessValidation />
+                  <CustomerStories />
+                  <ValidationServices />
+                  <FAQValid />
+                  <BusinessGrowth />
+                  <Footer />
+                </>
+              } />
+            <Route path="/predict-growth"
+              element={
+                <>
+                  <PredictYourGrowth />
+                  <GrowthPrediction />
+                  <PredictOurProcess />
+                  <CustomerStories />
+                  <FullCustomize />
+                  <FAQValid />
+                  <BusinessGrowth />
+                  <Footer />
+                </>
+              } />
+            <Route path="/growth-Audit"
+              element={
+                <>
+                  <AuditHeroSection />
+                  <GrowthAudit />
+                  <GrowthGains />
+                  <AuditProcess />
+                  <Process2 />
+                  <AuditCustomerStories />
+                  <AuditFullCustomize />
+                  <FAQValid />
+                  <AuditBusinessGrowth />
+                  <Footer />
+                </>
+              } />
+            <Route path="/about"
+              element={
+                <>
+                  <AboutUs />
+                  <About2 />
+                  <AboutSection />
+                  <TeamSection />
+                  <FAQValid />
+                  <BusinessGrowth />
+                  <Footer />
+                </>
+              } />
+            <Route path="/contact"
+              element={
+                <>
+                  <ContactForm />
+                  <Footer />
+                </>
+              } />
+            <Route path="/blog"
+              element={
+                <>
+                  <BlogSection />
+                  <AuditBusinessGrowth />
+                  <Footer />
+                </>
+              } />
+            <Route path="/terms-service"
+              element={
+                <>
+                  <TermsOfService />
+                  <Footer />
+                </>
+              } />
+            <Route path="/privacy-policy"
+              element={
+                <>
+                  <PrivacyPolicy />
+                  <Footer />
+                </>
+              } />
+            <Route path="/case-studies"
+              element={
+                <>
+                  <CaseStudiesHero />
+                  <CaseStudiesCard />
+                  <BannerBottom />
+                  <Footer />
+                </>
+              } />
+            <Route path="/blog-detail"
+              element={
+                <>
+                  <CaseStudyDetail />
+                  <CaseStudiesGrowth />
+                  <Footer />
+                </>
+              } />
+            <Route path="/careers"
+              element={
+                <>
+                  <Careers />
+                  <CareersTeamSection />
+                  <PerksBenefits />
+                  <JobOpenings />
+                  <Footer />
+                </>
+              } />
+            <Route path="/application-form"
+              element={
+                <>
+                  <ApplicationForm />
+                  <Footer />
+                </>
+              } />
+          </Routes>
+        </div>
+        {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
+      </Router>
+    </HelmetProvider>
   );
 }
 

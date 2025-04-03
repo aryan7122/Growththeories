@@ -88,53 +88,56 @@ const featuresData = [
 
 const ComparisonTable = () => {
     return (
-        <div className="comparison_table">
-            <h2 className="COMPARISON">COMPARISON</h2>
-            <h2 className="title">Spot The Difference With Growth Marketing</h2>
-            <p className="subtitle">Regular Marketing vs Growth Marketing</p>
+        <>
+           
+            <div className="comparison_table">
+                <h2 className="COMPARISON">COMPARISON</h2>
+                <h2 className="title">Spot The Difference With Growth Marketing</h2>
+                <p className="subtitle">Regular Marketing vs Growth Marketing</p>
 
-            <div className="table_comparison">
-                <table>
-                    <thead>
-                        <motion.tr
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.3 }}
-                            viewport={{ once: true, amount: 0.1 }}
-                        >
-                          
-                            <th>Features</th>
-                            <th>Growth Marketing</th>
-                            <th>Regular Marketing</th>
-                        </motion.tr>
-                    </thead>
-                    <tbody>
-                        {featuresData.map((item, index) => (
+                <div className="table_comparison">
+                    <table>
+                        <thead>
                             <motion.tr
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.3 }}
                                 viewport={{ once: true, amount: 0.1 }}
-                                key={index}>
-                                {/* <td className="feature-name">
+                            >
+
+                                <th>Features</th>
+                                <th>Growth Marketing</th>
+                                <th>Regular Marketing</th>
+                            </motion.tr>
+                        </thead>
+                        <tbody>
+                            {featuresData.map((item, index) => (
+                                <motion.tr
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    viewport={{ once: true, amount: 0.1 }}
+                                    key={index}>
+                                    {/* <td className="feature-name">
                                 <span className="icon">{item.icon}</span>
                                 {item.feature}
                             </td> */}
-                                <td>
-                                    <div className="item-td">
-                                        <span className="icon">{item.icon}</span>
-                                        {item.feature}
-                                    </div>
-                                    =
-                                </td>
-                                <td>{item.growthMarketing}</td>
-                                <td>{item.regularMarketing}</td>
-                            </motion.tr>
-                        ))}
-                    </tbody>
-                </table>
+                                    <td>
+                                        <div className="item-td">
+                                            <span className="icon">{item.icon}</span>
+                                            {item.feature}
+                                        </div>
+                                        =
+                                    </td>
+                                    <td>{item.growthMarketing}</td>
+                                    <td>{item.regularMarketing}</td>
+                                </motion.tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
