@@ -125,6 +125,11 @@
       cursor: grabbing;
     }
     padding-left: 80px;
+         display: flex;
+         align-items: center;
+         overflow: hidden;
+         margin: 0 auto;
+         margin-top: -20px;
     @media (max-width: 1400px) {
       padding-left: 60px;
     }
@@ -153,11 +158,7 @@
       overflow: scroll;
     }
     // position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-top: -20px;
+   
     .slider-track {
       display: flex;
       width: 1174px;

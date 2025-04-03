@@ -6,6 +6,7 @@
   align-items: center;
   padding: 1rem 80px;
     background-color: #fafafa;
+      z-index: 9999999999999999999;
   @media (max-width: 1400px) {
     padding: 1rem 60px;
   }
@@ -31,7 +32,6 @@
 
   //
   // box-shadow: $box-shadow-md;
-  z-index: 9999999999999999999;
   //   position: fixed;
   &__logo {
     display: flex;
