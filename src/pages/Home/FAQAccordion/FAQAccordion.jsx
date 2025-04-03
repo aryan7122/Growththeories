@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FAQAccordion.scss';
+import { Helmet } from 'react-helmet-async';
 
 import { motion } from 'framer-motion';
 
@@ -30,6 +31,18 @@ const faqs = [
     }
 ];
 
+const FAQSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+        }
+    }))
+};
 const FAQAccordion = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -57,6 +70,11 @@ const FAQAccordion = () => {
     };
     return (
         <div className="faq-container007">
+            <Helmet>
+                <script type="application/ld+json">
+                    {JSON.stringify(FAQSchema)}
+                </script>
+            </Helmet>
             <div className="title_header">
                 <motion.span
                     initial={{ opacity: 0, y: 50 }}

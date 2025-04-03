@@ -7,6 +7,7 @@ import SliderImg3 from '../../../assets/slider/Creative-experiment-bro3.svg'
 import SliderImg4 from '../../../assets/slider/Environmental-audit-rafiki4.svg'
 import SliderImg5 from '../../../assets/slider/Online-ads-pana5.svg'
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const Slider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -96,7 +97,16 @@ const Slider = () => {
   
     return (
         <>
-         
+            <Helmet>
+                <title>Growth Marketing Services | Business Growth</title>
+                <meta name="description" content="Discover how our growth marketing services can help your business thrive. Explore our innovative strategies." />
+                <meta name="keywords" content="growth marketing, business growth, marketing strategies, digital marketing" />
+                <meta name="author" content="Your Company Name" />
+                <meta property="og:title" content="Growth Marketing Services" />
+                <meta property="og:description" content="Learn about our structured growth marketing process that drives success." />
+                <meta property="og:image" content="your-image-url.jpg" />
+                <meta property="og:url" content="your-website-url.com" />
+            </Helmet>
 
             <div className="slider-container">
 
@@ -173,7 +183,7 @@ const Slider = () => {
                                             className="learn-more">{card.button}</motion.button>
 
                                     </div>
-                                    <img src={card.img} alt="" />
+                                    <img src={card.img} alt={card.title} />
                                 </motion.div>
 
                             </>

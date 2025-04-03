@@ -9,6 +9,7 @@ import image6 from "../../../assets/lows/image6.svg";
 import image7 from "../../../assets/lows/image7.svg";
 import image8 from "../../../assets/lows/image8.svg";
 import { motion } from 'framer-motion';
+import { Helmet } from "react-helmet-async";
 
 const data = [
   {
@@ -64,6 +65,16 @@ const data = [
 const MathematicalLawsPage = () => {
   return (
     <div className="laws-page">
+      <Helmet>
+        <title>Mathematical Laws in Marketing | Learn Key Marketing Principles</title>
+        <meta name="description" content="Discover the fundamental mathematical laws used in marketing strategies, including Reilly’s Law, Pareto Principle, CLV, and more." />
+        <meta name="keywords" content="Marketing Laws, Pareto Principle, Double Jeopardy Law, CLV, Bass Diffusion Model, Reilly's Law, Share Of Voice, Price Elasticity, Business Strategy" />
+        <meta name="author" content="Your Website Name" />
+        <meta property="og:title" content="Mathematical Laws in Marketing" />
+        <meta property="og:description" content="Learn how mathematical laws impact marketing strategies. Explore models like Reilly’s Law, Pareto Principle, and more." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourwebsite.com/mathematical-laws" />
+      </Helmet>
       <motion.span
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

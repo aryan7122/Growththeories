@@ -3,6 +3,7 @@ import './Suitability.scss';
 import CustomDropdown from '../../../utils/common/CustomDropdown';
 import imgOk from '../../../assets/ok.svg'
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const cardsData = [
   {
@@ -98,6 +99,11 @@ const Suitability = () => {
 
   return (
     <div className="container">
+      <Helmet>
+        <title>Suitability | Best Business Growth Theories</title>
+        <meta name="description" content="Discover the best business growth theories like Lean Startup, Growth Hacking, and more. Find the right strategy for your business." />
+        <meta name="keywords" content="Lean Startup, Growth Hacking, Pirate Metrics, Growth Loops, Business Strategies" />
+      </Helmet>
       <div
         className="header">
         <motion.span initial={{ opacity: 0, y: 50 }}
@@ -211,7 +217,7 @@ const Suitability = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                     viewport={{ once: true, amount: 0.1 }}
-                    src={imgOk} alt="" />
+                    src={imgOk} alt={card.title} />
                   <motion.li initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
