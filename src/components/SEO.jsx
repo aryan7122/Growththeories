@@ -1,15 +1,24 @@
 import { Helmet } from "react-helmet-async";
 
-const SEO = ({ title, description, keywords, canonicalPath, jsonLd, ogImage }) => {
+const SEO = ({ documentProps }) => {
+    const {
+        title,
+        description,
+        keywords = [],
+        canonicalPath = "",
+        jsonLd,
+        ogImage,
+    } = documentProps || {}; // 🔹 Dynamic Props Handling
+
     const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin;
-    const fullCanonical = `${siteUrl}${canonicalPath || ""}`;
+    const fullCanonical = `${siteUrl}${canonicalPath}`;
     const ogImageUrl = ogImage ? `${siteUrl}/${ogImage}` : `${siteUrl}/default-image.jpg`;
 
     return (
         <Helmet>
             <title>{title}</title>
             <meta name="description" content={description} />
-            <meta name="keywords" content={keywords.join(", ")} />
+            {keywords.length > 0 && <meta name="keywords" content={keywords.join(", ")} />}
             <meta name="author" content="Growththeories" />
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href={fullCanonical} />
@@ -58,15 +67,15 @@ const SEO = ({ title, description, keywords, canonicalPath, jsonLd, ogImage }) =
                             "@type": "ListItem",
                             "position": 1,
                             "name": "Home",
-                            "item": `${siteUrl}`
+                            "item": `${siteUrl}`,
                         },
                         {
                             "@type": "ListItem",
                             "position": 2,
                             "name": title,
-                            "item": fullCanonical
-                        }
-                    ]
+                            "item": fullCanonical,
+                        },
+                    ],
                 })}
             </script>
         </Helmet>

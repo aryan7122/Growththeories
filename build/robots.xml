@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin
 Allow: /
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://growththeories.vercel.app/sitemap.xml

@@ -77,7 +77,7 @@ const Navbar = () => {
     const specialPaths = ['/validation-service','predict-growth'];
     const isSpecialPath = specialPaths.some((path) => location.pathname.includes(path));
     // audit
-    const audit = ['growth-Audit'];
+    const audit = ['growth-audit'];
     const isAudit = audit.some((path) => location.pathname.includes(path));
     // audit
     const contact = ['contact'];
@@ -154,7 +154,7 @@ const Navbar = () => {
                                         </div>
                                         <div className="firstNavbar">
                                             <div>
-                                                <h4 onClick={() => HandleNavigation('/growth-Audit')}>Growth Audit</h4>
+                                                <h4 onClick={() => HandleNavigation('/growth-audit')}>Growth Audit</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                                             </div>
                                             <img src={gtImg} alt="" />
@@ -166,7 +166,7 @@ const Navbar = () => {
                                 <div className="div_item_m" onClick={() => HandleNavigation('/growth-tracks')}>Growth Tracks</div>
                                 <div className="div_item_m" onClick={() => HandleNavigation('/predict-growth')}>Growth Prediction Modelling</div>
                                 <div className="div_item_m" onClick={() => HandleNavigation('/validation-service')}>Validation As A Servivce</div>
-                                <div className="div_item_m" onClick={() => HandleNavigation('/growth-Audit')}>Growth Audit</div>
+                                <div className="div_item_m" onClick={() => HandleNavigation('/growth-audit')}>Growth Audit</div>
                             </div>
                         </>
                     )}

@@ -60,7 +60,7 @@ import ComparisonTable from './pages/Home/COMPARISON/ComparisonTable';
 import { HelmetProvider } from 'react-helmet-async';
 import SEO from './components/SEO';
 import { useEffect, useState } from 'react';
-
+import GrowthTheoriesHomepage from './assets/GrowthTheoriesHomepage.png'
 
 function LocationTracker() {
   const location = useLocation();
@@ -107,7 +107,7 @@ function App() {
                       "brand positioning strategies"
                     ]}
                     canonicalPath="/"
-                    ogImage="images/home-banner.jpg"
+                    ogImage={GrowthTheoriesHomepage}
                     jsonLd={{
                       "@context": "https://schema.org",
                       "@type": "WebSite",
@@ -184,7 +184,7 @@ function App() {
                   <Footer />
                 </>
               } />
-            <Route path="/growth-Audit"
+            <Route path="/growth-audit"
               element={
                 <>
                   <AuditHeroSection />
