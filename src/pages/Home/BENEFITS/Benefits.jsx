@@ -1,5 +1,6 @@
 import React from "react";
 import "./Benefits.scss";
+import { motion } from 'framer-motion';
 
 const advantages = [
     {
@@ -43,15 +44,37 @@ const advantages = [
 const Benefits = () => {
     return (
         <div className="container">
-            <h2 className="benefits">BENEFITS</h2>
-            <h1 className="title">Advantages Of Growth Marketing</h1>
+            <motion.h2
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+                viewport={{ once: true, amount: 0.1 }}
+                className="benefits">BENEFITS</motion.h2>
+            <motion.h1
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
+                className="title">Advantages Of Growth Marketing</motion.h1>
             <div className="grid_bg">
                 <div className="grid-container">
                     {advantages.map((adv) => (
                         <div className="grid-item" key={adv.id}>
-                            <h1 className="number">{adv.id}</h1>
-                            <h3 className="adv-title">{adv.title}</h3>
-                            <p className="adv-desc">{adv.description}</p>
+                            <motion.h1 initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                                viewport={{ once: true, amount: 0.1 }}
+                                className="number">{adv.id}</motion.h1>
+                            <motion.h3 initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                                viewport={{ once: true, amount: 0.1 }} className="adv-title">{adv.title}</motion.h3>
+                            <motion.p
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                                viewport={{ once: true, amount: 0.1 }}
+                                className="adv-desc">{adv.description}</motion.p>
                         </div>
                     ))}
                 </div>

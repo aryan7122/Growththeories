@@ -58,8 +58,18 @@ const FAQAccordion = () => {
     return (
         <div className="faq-container007">
             <div className="title_header">
-                <span className="badge">FAQs</span>
-                <h2 className="faq-title">We Have Got All The Answers
+                <motion.span
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                    className="badge">FAQs</motion.span>
+                <motion.h2
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    viewport={{ once: true, amount: 0.1 }} className="faq-title">We Have Got All The Answers
+                  
                     <h4>
                         <button className="btn btn-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#ffffff" fill="none">
@@ -72,7 +82,7 @@ const FAQAccordion = () => {
                             Start Growing Today
                         </button>
                     </h4>
-                </h2>
+                </motion.h2>
             </div>
             <motion.div
                 variants={staggerTable}

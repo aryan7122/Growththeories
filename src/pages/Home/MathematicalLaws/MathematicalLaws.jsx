@@ -8,6 +8,7 @@ import image5 from "../../../assets/lows/image5.svg";
 import image6 from "../../../assets/lows/image6.svg";
 import image7 from "../../../assets/lows/image7.svg";
 import image8 from "../../../assets/lows/image8.svg";
+import { motion } from 'framer-motion';
 
 const data = [
   {
@@ -63,19 +64,44 @@ const data = [
 const MathematicalLawsPage = () => {
   return (
     <div className="laws-page">
-      <span className="LAWS">LAWS</span>
-      <h1>We Follow Mathematical Laws In Marketing</h1>
+      <motion.span
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="LAWS">LAWS</motion.span>
+      <motion.h1
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
+      >We Follow Mathematical Laws In Marketing</motion.h1>
       <div className="laws-grid ">
         <div className="grid_c_c_1">
           {data.slice(0, 2).map((card, index) => (
             <div key={index} className="card">
               <div className="content">
-                <h2>{card.title}</h2>
-                <p>{card.description}</p>
+                <motion.h2
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                >{card.title}</motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                >{card.description}</motion.p>
                 {/* {card.button && <button>Start Growing Today</button>} */}
               </div>
               <div className="img_">
-                <img src={card.image} alt={card.title} />
+                <motion.img
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                  src={card.image} alt={card.title} />
               </div>
             </div>
           ))}
@@ -84,11 +110,25 @@ const MathematicalLawsPage = () => {
           {data.slice(2, 5).map((card, index) => (
             <div key={index} className="card">
               <div className="content">
-                <h2>{card.title}</h2>
-                <p>{card.description}</p>
+                <motion.h2
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                >{card.title}</motion.h2>
+                <motion.p initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                >{card.description}</motion.p>
               </div>
               <div className="img_">
-                <img src={card.image} alt={card.title} />
+                  <motion.img
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                  src={card.image} alt={card.title} />
               </div>
             </div>
           ))}
@@ -97,12 +137,25 @@ const MathematicalLawsPage = () => {
           {data.slice(5, 7).map((card, index) => (
             <div key={index} className="card">
               <div className="content">
-                <h2>{card.title}</h2>
-                <p>{card.description}</p>
+                <motion.h2 initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                >{card.title}</motion.h2>
+                <motion.p initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                >{card.description}</motion.p>
                 {/* {card.button && <button>Start Growing Today</button>} */}
               </div>
               <div className="img_">
-                <img src={card.image} alt={card.title} />
+                <motion.img
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                  src={card.image} alt={card.title} />
               </div>
             </div>
           ))}
@@ -111,8 +164,18 @@ const MathematicalLawsPage = () => {
           {data.slice(7, 8).map((card, index) => (
             <div key={index} className="card">
               <div className="content">
-                <h2>{card.title}</h2>
-                <p>{card.description}</p>
+                <motion.h2 initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                >{card.title}</motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                >
+                  {card.description}</motion.p>
                 {card.button && (
                   <button className="btn btn-primary">
                     <svg
@@ -161,7 +224,12 @@ const MathematicalLawsPage = () => {
                 )}
               </div>
               <div className="img_">
-                <img src={card.image} alt={card.title} />
+                <motion.img
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                  src={card.image} alt={card.title} />
               </div>
             </div>
           ))}

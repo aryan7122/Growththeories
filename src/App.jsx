@@ -67,7 +67,6 @@ function App() {
 
   return (
     <Router>
-
       <Navbar />
       <LocationTracker />
       <div className="app">
@@ -78,9 +77,9 @@ function App() {
                 <Header />
                 <OverApproach />
                 <Slider />
-                <ComparisonTable/>
-                <Benefits/>
-                <MathematicalLawsPage/>
+                <ComparisonTable />
+                <Benefits />
+                <MathematicalLawsPage />
                 {/* <Overview /> */}
                 <Suitability />
                 {/* <Industry /> */}

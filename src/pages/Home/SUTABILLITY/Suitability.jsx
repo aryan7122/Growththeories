@@ -98,27 +98,42 @@ const Suitability = () => {
 
   return (
     <div className="container">
-      <motion.div
-        initial={{ opacity: 0, y: 130 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.3 }}
+      <div
         className="header">
-        <span className="suitability">SUITABILITY</span>
-        <h1>Know Theories Are Suitables In Seconds</h1>
-        <p>Just Select Your business size, industry or goals, will let you know how Helps businesses visualize the customization potential of each theory in real-time.</p>
-      </motion.div>
+        <motion.span initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
+          className="suitability">SUITABILITY</motion.span>
+        <motion.h1 initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
+        >Know Theories Are Suitables In Seconds</motion.h1>
+        <motion.p initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
+        >Just Select Your business size, industry or goals, will let you know how Helps businesses visualize the customization potential of each theory in real-time.</motion.p>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 130 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.2 }}
+      <div
+        
         className="selectors-range">
         <div className="business-size"
           style={{ '--min-val': minVal, '--max-val': maxVal }}>
-          <label>Business Size</label>
-          <div className="slider-container-range">
+          <motion.label initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
+          >Business Size</motion.label>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="slider-container-range">
+          
             <div className='slider-track-range'></div>
             <input
               type="range"
@@ -136,16 +151,25 @@ const Suitability = () => {
               onChange={handleMaxChange}
               className="slider-range slider-max"
             />
-          </div>
-          <div className="size-labels">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="size-labels">
             <span>Startup</span>
             <span>Small Scale</span>
             <span>Mid-Sized</span>
             <span>Enterprise</span>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="industry">
+        <motion.div initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
+          className="industry">
           <label>Industry</label>
           <div className="optionSelected">
             <CustomDropdown
@@ -154,8 +178,8 @@ const Suitability = () => {
               onChange={handleLanguageChange}
             />
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
       <motion.div
         variants={staggerContainer}
@@ -165,15 +189,34 @@ const Suitability = () => {
         className="cards">
         {cardsData.map((card, index) => (
           <div className="card" key={index}>
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
+            <motion.h3
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
+            >{card.title}</motion.h3>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
+            >{card.description}</motion.p>
             <motion.ul
               variants={cardVariants} 
             >
               {card.points.map((point, i) => (
                 <div className='li_okCard' key={i}>
-                  <img src={imgOk} alt="" />
-                  <li>{point}</li>
+                  <motion.img initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                    src={imgOk} alt="" />
+                  <motion.li initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                  >{point}</motion.li>
                 </div>
               ))}
             </motion.ul>

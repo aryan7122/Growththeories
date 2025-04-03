@@ -54,6 +54,10 @@
     vertical-align: middle;
     text-transform: capitalize;
     margin: 10px 0 30px;
+        @media (max-width: 600px) {
+          font-size: 36px;
+            line-height: 42px;
+        }
   }
   .grid_bg {
     background: #bdbdbd72;

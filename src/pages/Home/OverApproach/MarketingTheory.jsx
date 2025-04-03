@@ -14,6 +14,8 @@ import prospect from '../../../assets/OverApproach/marketingDataImg/prospect.svg
 import relationship_marketing from '../../../assets/OverApproach/marketingDataImg/relationship-marketing.svg'
 import retail_gravitation from '../../../assets/OverApproach/marketingDataImg/retail-gravitation.svg'
 import field from '../../../assets/OverApproach/marketingDataImg/field.svg'
+import { motion } from 'framer-motion';
+
 
 const marketingData = [
     {
@@ -109,7 +111,9 @@ const MarketingTheory = () => {
     return (
         <div className="marketing-container">
             <div className="tabs_Mobile">
-                <div className="tabSro">
+                <div className="tabSro"
+                  
+                >
                     {marketingData.map((item) => (
                         <button
                             key={item.key}
@@ -133,9 +137,24 @@ const MarketingTheory = () => {
                 ))}
             </div>
             <div className="content">
-                <h2>{selected.title}</h2>
-                <p>{selected.description}</p>
-                <img src={selected.image} alt={selected.title} />
+                <motion.h2
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                >{selected.title}</motion.h2>
+                <motion.p
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                >{selected.description}</motion.p>
+                <motion.img
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                    src={selected.image} alt={selected.title} />
             </div>
             <div className="right-tabs">
                 {marketingData.slice(7).map((item) => (

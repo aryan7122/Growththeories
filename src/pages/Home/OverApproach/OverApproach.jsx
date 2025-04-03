@@ -7,14 +7,9 @@ import MarketingTheory from "./MarketingTheory";
 
 
 const OverApproach = () => {
-
-   
-
-
     return (
         <div className="over-approach">
             <div id="approach_card">
-
                 <motion.div
                     className="ourApproach"
                     initial={{ opacity: 0, y: 130 }}

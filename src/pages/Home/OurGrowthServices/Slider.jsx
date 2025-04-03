@@ -103,16 +103,22 @@ const Slider = () => {
     return (
         <div className="slider-container">
 
-            <motion.div
+            <div
                 className='containerTop'
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true, amount: 0.3 }}
+                
             >
-                <h2>What does our  <span className='highlight'>growth marketing </span>services include?</h2>
+                <motion.h2 initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                >What does our  <span className='highlight'>growth marketing </span>services include?</motion.h2>
                 <div className='slideBtn'>
-                    <button
+                    <motion.button
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4 }}
+                        viewport={{ once: true, amount: 0.1 }}
+
                         className={`slider-btn ${currentIndex === 0 ? 'inactive' : ''}`}
                         onClick={handlePrev}
                     >
@@ -120,7 +126,7 @@ const Slider = () => {
                             <path d="M11.5 18C11.5 18 5.50001 13.5811 5.5 12C5.49999 10.4188 11.5 6 11.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M18.5 18C18.5 18 12.5 13.5811 12.5 12C12.5 10.4188 18.5 6 18.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                    </button>
+                    </motion.button>
                     <button
                         className={`slider-btn ${currentIndex === cards.length - 1 ? 'inactive' : ''}`}
                         onClick={handleNext}
@@ -131,7 +137,7 @@ const Slider = () => {
                         </svg>
                     </button>
                 </div>
-            </motion.div>
+            </div>
 
             <div className="slider"
                 ref={scrollContainerRef}
@@ -153,9 +159,22 @@ const Slider = () => {
 
                             >
                                 <div>
-                                    <h3>{card.title}</h3>
-                                    <p>{card.description}</p>
-                                    <button className="learn-more">{card.button}</button>
+                                    <motion.h3
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.3 }}
+                                        viewport={{ once: true, amount: 0.1 }}>{card.title}</motion.h3>
+                                    <motion.p initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4 }}
+                                        viewport={{ once: true, amount: 0.1 }}>{card.description}</motion.p>
+                                    <motion.button
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5 }}
+                                        viewport={{ once: true, amount: 0.1 }}
+                                        className="learn-more">{card.button}</motion.button>
+                                    
                                 </div>
                                 <img src={card.img} alt="" />
                             </motion.div>

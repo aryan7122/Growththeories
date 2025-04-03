@@ -119,7 +119,10 @@ $button-active-color: #fff;
       gap: 9px;
       border: 1px solid transparent;
       cursor: pointer;
+            @media (max-width: 520px) {
+              margin: 0 auto;
 
+            }
       &:hover {
         background-color: #fff;
         color: $primary-500;

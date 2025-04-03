@@ -8,19 +8,39 @@ const star = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="
 const starWhite = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#9B959533" stroke="#9B959533">
     <path d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z" />
 </svg>
+import { motion } from 'framer-motion';
 
 const Header = () => {
     return (
         <header className="header">
             <div className="header__content">
-                <h3>GROWTH AGENCY IN INDIA</h3>
-                <h1>
+                <motion.h3
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                >GROWTH AGENCY IN INDIA</motion.h3>
+                <motion.h1
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                >
                     Unlock Rapid, Sustainable Growth With <br /> <span>Proven Growth Marketing Strategies</span>
-                </h1>
-                <p className='header_p'>
+                </motion.h1>
+                <motion.p className='header_p'
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                >
                     Whether you're a startup or a well-established business, Growththeories delivers growth hacking solutions that fuel both immediate and enduring success & generate revenue
-                </p>
-                <div className="header__buttons">
+                </motion.p>
+                <motion.div className="header__buttons"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.2 }}>
                     <button className="btn btn-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#ffffff" fill="none">
                             <path d="M7 11.2947C12.284 1.44656 18.8635 1.333 21.4928 2.50724C22.667 5.1365 22.5534 11.716 12.7053 17C12.6031 16.4129 12.0352 14.8749 10.5801 13.4199C9.12512 11.9648 7.58712 11.3969 7 11.2947Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -37,18 +57,32 @@ const Header = () => {
                         </svg>
                         Book A Call Now
                     </button>
-                </div>
+                </motion.div>
             </div>
             <div className="banner">
-                <h2>
+                <motion.h2
+                     initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4 }}
+                    viewport={{ once: true, amount: 0.2 }}>
                     While Many<span className="highlight"> Growth Marketing Agencies </span>In
                     India Focus On Superficial Metrics, We Emphasize Metrics{" "}
                     <span className="highlight bold">That Drive Revenue.</span>
-                </h2>
-                <p>
+                </motion.h2>
+                <motion.p
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                >
                     We tailor our marketing strategies to match your business’s key performance indicators, including sales, conversion rates, customer lifetime value, and acquisition costs. Our focus on growth ensures that your marketing investments lead to genuine business expansion and deliver tangible financial results, just like we’ve helped our clients achieve .
-                </p>
-                <button className="cta-button">Contact Us Now</button>
+                </motion.p>
+                <motion.button
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    className="cta-button">Contact Us Now</motion.button>
             </div>
 
         </header>

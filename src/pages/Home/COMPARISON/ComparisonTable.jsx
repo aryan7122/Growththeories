@@ -1,5 +1,7 @@
 import React from "react";
 import "./ComparisonTable.scss"; // SCSS file ko import karein
+import { motion } from 'framer-motion';
+
 const featuresData = [
     {
         icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#4a4a4a" fill="none">
@@ -94,15 +96,26 @@ const ComparisonTable = () => {
             <div className="table_comparison">
                 <table>
                     <thead>
-                        <tr>
+                        <motion.tr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3 }}
+                            viewport={{ once: true, amount: 0.1 }}
+                        >
+                          
                             <th>Features</th>
                             <th>Growth Marketing</th>
                             <th>Regular Marketing</th>
-                        </tr>
+                        </motion.tr>
                     </thead>
                     <tbody>
                         {featuresData.map((item, index) => (
-                            <tr key={index}>
+                            <motion.tr
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                                viewport={{ once: true, amount: 0.1 }}
+                                key={index}>
                                 {/* <td className="feature-name">
                                 <span className="icon">{item.icon}</span>
                                 {item.feature}
@@ -116,7 +129,7 @@ const ComparisonTable = () => {
                                 </td>
                                 <td>{item.growthMarketing}</td>
                                 <td>{item.regularMarketing}</td>
-                            </tr>
+                            </motion.tr>
                         ))}
                     </tbody>
                 </table>

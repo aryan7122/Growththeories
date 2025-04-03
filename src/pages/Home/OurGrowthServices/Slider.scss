@@ -50,6 +50,9 @@
       text-transform: capitalize;
       text-align: left;
       color: $primary-900;
+          @media (max-width: 600px) {
+            width: 100% !important;
+          }
       .highlight {
         color: $secondary-600;
       }
@@ -59,7 +62,9 @@
       align-items: center;
       justify-content: space-between;
       width: 160px;
-
+    @media (max-width: 600px) {
+      display: none;
+    }
       .slider-btn {
         position: relative;
 
