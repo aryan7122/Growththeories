@@ -61,6 +61,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import SEO from './components/SEO';
 import { useEffect, useState } from 'react';
 import GrowthTheoriesHomepage from './assets/GrowthTheoriesHomepage.png'
+import IndustriesTabs from './pages/Home/IndustriesTabs/IndustriesTabs';
 
 function LocationTracker() {
   const location = useLocation();
@@ -137,7 +138,8 @@ function App() {
                   <Benefits />
                   <MathematicalLawsPage />
                   {/* <Overview /> */}
-                  <Suitability />
+                  {/* <Suitability /> */}
+                  <IndustriesTabs/>
                   {/* <Industry /> */}
                   {/* <ImpactsBenefits /> */}
                   {/* <CaseStudies /> */}

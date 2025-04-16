@@ -1,11 +1,11 @@
 // Import React and required libraries
 import React, { useState, useEffect, useRef } from 'react';
 import './Slider.scss';
-import SliderImg1 from '../../../assets/slider/Business-inequality-cuate1.svg'
+import SliderImg1 from '../../../assets/slider/Generating new leads-rafik.svg'
 import SliderImg2 from '../../../assets/slider/Consulting-cuate2.svg'
-import SliderImg3 from '../../../assets/slider/Creative-experiment-bro3.svg'
-import SliderImg4 from '../../../assets/slider/Environmental-audit-rafiki4.svg'
-import SliderImg5 from '../../../assets/slider/Online-ads-pana5.svg'
+import SliderImg3 from '../../../assets/slider/Refund-bro 1.svg'
+import SliderImg4 from '../../../assets/slider/Marketing consulting-bro 1.svg'
+import SliderImg5 from '../../../assets/slider/Browser stats-bro 1.svg'
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 
@@ -14,46 +14,49 @@ const Slider = () => {
 
     const cards = [
         {
-            title: 'Growth Tracks: Your Blueprint For Success',
-            description:
-                "Companies are always on the lookout for ‘new tactics’. Growth however, has nothing to do with tactics. Good growth comes from implementing a structured process of rapid experimentation. The key is in institutionalizing what works and dropping what doesn’t ASAP.",
-            bgColor: '#D9D9D9',
+            title: 'Acquisition',
+            title2: '(Getting new customer)',
+            description: "Acquisition is all about attracting new customers to your business. Instead of relying on random tactics, focus on a systematic approach that encourages quick testing of ideas. The secret to successful growth lies in figuring out what strategies resonate with your audience and quickly letting go of those that don't.",
+            bgColor: '#F6E8EA66',
             img: SliderImg1,
-            button: 'Learn More About Growth Tracks'
+            button: 'Learn More About Acquisition'
         },
         {
-            title: 'Validation Services',
+            title: 'Activation & Conversion optimization',
             description:
-                "Companies are always on the lookout for ‘new tactics’. Growth however, has nothing to do with tactics. Good growth comes from implementing a structured process of rapid experimentation. The key is in institutionalizing what works and dropping what doesn’t ASAP.",
+                "Businesses are constantly searching for fresh strategies. Yet, true growth isn't just about tactics. It stems from a well-organized approach to quick experimentation. The secret lies in making successful methods a standard practice while swiftly discarding those that fall flat.",
             bgColor: '#f5E7Bc',
             img: SliderImg2,
-            button: 'Learn More About Growth Tracks'
+            button: 'Learn More About Activation & Conversion optimization'
 
         },
         {
-            title: 'Growth Prediction modelling',
+            title: 'Retention & Engagement',
+            title2: '(Keeping Users Active & Loyal)',
             description:
-                "Are you already in experiment mode? Is your team already working according the growth marketing methodology? In that case prediction modeling can lift you to the next level by infusing your growth experiments with a data science layer",
+                "Retention and Engagement focus on keeping users active, satisfied, and loyal to your brand. By delivering personalized experiences, fostering long-term relationships, and consistently adding value, businesses can boost customer lifetime value and reduce churn.",
             bgColor: '#F5CDBC',
             img: SliderImg3,
-            button: 'Learn More About Growth Prediction'
+            button: 'Learn More About Retention & Engagement'
 
         },
         {
-            title: 'Growth Audit',
+            title: 'Monetization & Revenue Growth',
+            title2: '(Maximizing Sales & Revenue)',
             description:
-                "With a growth audit, our aim is to identify new growth potential very fast. In only five days we make an analysis of your market, your techstack, your audience, etc. The main deliverable of such an audit is a shortlist of experiments to unlock new growth levers",
-            bgColor: '#BCEBF5',
+                "Monetization & Revenue Growth focuses on optimizing sales and increasing revenue through effective strategies. By leveraging data-driven insights, personalized experiences, and scalable solutions, businesses can unlock new income streams and drive sustainable growth.",
+            bgColor: '#E3FAFF',
             img: SliderImg4,
-            button: "Learn More About Growth Audit"
+            button: "Learn More About Monetization &  Revenue"
         },
         {
-            title: 'Tiktok Advertising',
+            title: 'Analytics & Optimization',
+            title2: '(Tracking, Measuring, and Scaling Growth)',
             description:
-                "The days of slow content are numbered. TikTok advertising is perfect for reaching your young and growing audience with creative and engaging content. Conquer a place in the hearts of your audience with a massive brand engagement at never seen before CPMs!",
+                "Tracking, measuring, and scaling growth through data-driven insights. Our approach ensures continuous improvement by identifying what works, optimizing performance, and driving sustainable business growth.",
             bgColor: '#F9E575',
             img: SliderImg5,
-            button: "Learn More About Growth Audit"
+            button: "Learn More About Analytics & Optimization"
         },
         // Add more cards here with different bgColor
     ];
@@ -94,7 +97,7 @@ const Slider = () => {
         const container = scrollContainerRef.current;
         container.isDragging = false;
     };
-  
+
     return (
         <>
             <Helmet>
@@ -170,7 +173,7 @@ const Slider = () => {
                                             initial={{ opacity: 0, y: 50 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.3 }}
-                                            viewport={{ once: true, amount: 0.1 }}>{card.title}</motion.h3>
+                                            viewport={{ once: true, amount: 0.1 }}>{card.title} <span className="title2_h3">{card.title2}</span></motion.h3>
                                         <motion.p initial={{ opacity: 0, y: 50 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.4 }}
@@ -183,7 +186,7 @@ const Slider = () => {
                                             className="learn-more">{card.button}</motion.button>
 
                                     </div>
-                                    <img src={card.img} alt={card.title} />
+                                    <img src={card.img} alt={`Image of ${card.title}`} title={card.title} />
                                 </motion.div>
 
                             </>

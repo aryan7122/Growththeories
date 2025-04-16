@@ -76,9 +76,9 @@
     }
 
     &.active {
-      background-color: $secondary-800;
+      background-color: $primary-800;
       color: white;
-      border-color: $secondary-800;
+      border-color: $primary-800;
       box-shadow: 0 0 10px rgba(42, 77, 180, 0.3);
     }
   }
