@@ -1,17 +1,17 @@
 import './App.scss';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Features from './components/Features';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Features from './components/Features';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import CaseStudies from './pages/Home/CaseStudies/CaseStudies';
+// import CaseStudies from './pages/Home/CaseStudies/CaseStudies';
 import FAQAccordion from './pages/Home/FAQAccordion/FAQAccordion';
-import ImpactsBenefits from './pages/Home/Impactsandbenefits/ImpactsBenefits';
-import Industry from './pages/Home/Industry/Industry';
+// import ImpactsBenefits from './pages/Home/Impactsandbenefits/ImpactsBenefits';
+// import Industry from './pages/Home/Industry/Industry';
 import Slider from './pages/Home/OurGrowthServices/Slider';
 import OverApproach from './pages/Home/OverApproach/OverApproach';
-import Overview from './pages/Home/Overview/Overview';
-import Suitability from './pages/Home/SUTABILLITY/Suitability';
+// import Overview from './pages/Home/Overview/Overview';
+// import Suitability from './pages/Home/SUTABILLITY/Suitability';
 import Service from './pages/Service/Header/Service';
 import GrowthTracks from './pages/Service/GrowthTracks/GrowthTracks';
 import OurProcess from './pages/Service/OurProcess/OurProcess';
@@ -59,7 +59,7 @@ import Benefits from './pages/Home/BENEFITS/Benefits';
 import ComparisonTable from './pages/Home/COMPARISON/ComparisonTable';
 import { HelmetProvider } from 'react-helmet-async';
 import SEO from './components/SEO';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import GrowthTheoriesHomepage from './assets/GrowthTheoriesHomepage.png'
 import IndustriesTabs from './pages/Home/IndustriesTabs/IndustriesTabs';
 import BlogSlider from './pages/Home/BlogSlider/BlogSlider';
@@ -67,11 +67,7 @@ import HeroSection from './pages/AllService/HeroSection/HeroSection';
 import ServicesSection from './pages/AllService/ServicesSection/ServicesSection';
 import Acquisition from './pages/AllService/ServicesSection/Acquisition.jsx';
 import GrowthSection from './pages/AllService/GrowthSection/GrowthSection/GrowthSection.jsx';
-function LocationTracker() {
-  const location = useLocation();
-  console.log('Current Location:', location.pathname);
-  return null;  // This component will just track the location, no UI needed
-}
+
 
 function App() {
   const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin;
@@ -93,9 +89,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
-        {/* <PageWrapper> */}
         <Navbar />
-        <LocationTracker />
         <div className="app" >
           <Routes>
             <Route path="/"
@@ -339,7 +333,7 @@ function App() {
           </Routes>
         </div>
         {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
-        {/* </PageWrapper> */}
+    
       </Router>
     </HelmetProvider>
   );
