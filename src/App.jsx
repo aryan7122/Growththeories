@@ -65,7 +65,6 @@ import IndustriesTabs from './pages/Home/IndustriesTabs/IndustriesTabs';
 import BlogSlider from './pages/Home/BlogSlider/BlogSlider';
 import HeroSection from './pages/AllService/HeroSection/HeroSection';
 import ServicesSection from './pages/AllService/ServicesSection/ServicesSection';
-import Loader from "./Components/Loading/Loader.jsx";
 import Acquisition from './pages/AllService/ServicesSection/Acquisition.jsx';
 import GrowthSection from './pages/AllService/GrowthSection/GrowthSection/GrowthSection.jsx';
 function LocationTracker() {
