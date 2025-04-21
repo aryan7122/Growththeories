@@ -73,6 +73,7 @@ import AcquisitionServices from './pages/Acquisition/AcquisitionServices/Acquisi
 import AcquisitionToolsSection from './pages/Acquisition/AcquisitionToolsSection/AcquisitionToolsSection.jsx';
 import ActivationHero from './pages/Activation/hero/ActivationHero.jsx';
 import AcquisitionSections from './pages/Activation/AcquisitionSections/AcquisitionSections.jsx';
+import AnalyticsHero from './pages/Analytics/hero/AnalyticsHero.jsx';
 
 
 function App() {
@@ -323,6 +324,61 @@ function App() {
 
                   <ActivationHero />
                   <AcquisitionSections />
+                 
+                  <GrowthSection />
+
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/analytics-optimization"
+              element={
+                <>
+                  <SEO
+                    title="Growth Theories Services | Growth Marketing Agency in India"
+                    description="Discover Growth Theories’ expert services in research, design, development, and growth marketing. We help businesses scale with SEO, user acquisition, retention, monetization, and analytics."
+                    keywords={[
+                      "growth marketing agency India",
+                      "digital product studio",
+                      "user acquisition strategies",
+                      "SEO services India",
+                      "conversion rate optimization",
+                      "customer retention services",
+                      "digital marketing for startups",
+                      "business scaling services",
+                      "growth hacking agency India",
+                      "monetization strategies"
+                    ]}
+                    canonicalPath="/services"
+                    ogImage={GrowthTheoriesHomepage}
+                    jsonLd={{
+                      "@context": "https://schema.org",
+                      "@type": "Service",
+                      "name": "Growth Theories - Growth Marketing Services",
+                      "url": siteUrl + "/services",
+                      "description": "Explore comprehensive growth services from Growth Theories including insightful research, user-centered design, agile development, and strategic marketing. Designed to boost startups and established businesses in India and globally.",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "Growth Theories",
+                        "url": siteUrl,
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": siteUrl + "/images/logo.png"
+                        }
+                      },
+                      "areaServed": {
+                        "@type": "Country",
+                        "name": "India"
+                      },
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": siteUrl + "/services"
+                      }
+                    }}
+                  />
+
+                  <AnalyticsHero />
                  
                   <GrowthSection />
 
