@@ -1,0 +1,127 @@
+@use "../../../styles//Variables/variables.scss" as *;
+.ActivationHero-section {
+  text-align: center;
+  padding: 60px 20px;
+   @media (max-width: 1400px) {
+    padding: 30px 60px;
+  }
+  @media (max-width: 1200px) {
+    padding: 40px 50px;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 35px 40px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 30px 35px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px 30px;
+  }
+
+  @media (max-width: 700px) {
+    padding: 30px 25px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 30px;
+  }
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
+  background-color: #fff;
+
+  .subheading {
+    margin-top: 30px;
+    margin-bottom: -30px;
+    font-family: "Oxanium";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    opacity: 0.4;
+  }
+
+  .main-heading {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76.8px;
+    letter-spacing: -3px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #472525;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  .description {
+    font-family: 'Open Sans';
+    margin-top: -20px;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+margin-bottom: 50px;
+
+  }
+
+  .cta-button {
+    margin-top: 30px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    // border-radius: $border-radius;
+    border: none;
+    cursor: pointer;
+    background-color: $primary-500;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    // margin: 30px auto;
+    color: #fff;
+
+    // width: 240px;
+    //   height: 54px;
+    border-radius: 100px;
+    box-shadow: $box-shadow-md;
+    border-radius: 100px;
+    font-size: $font-size-16;
+
+    gap: 8px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+    &:hover {
+      background-color: #fff;
+      color: $primary-500;
+      transition: 0.3s linear;
+      border: 1px solid $primary-500;
+      svg {
+        color: $primary-500;
+      }
+    }
+  }
+  .banner_florImg{
+    margin-top: -480px;
+}
+.img_{
+      position: relative;
+    z-index: 99;
+  }
+}

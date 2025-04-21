@@ -3,7 +3,7 @@
 
 .main_growth-section {
   background: #fafafa;
-  padding: 30px 80px;
+  padding: 50px 80px;
 
   @media (max-width: 1400px) {
     padding: 30px 60px;
@@ -47,7 +47,7 @@ border: 1px solid #BDBDBD;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
+    padding: 10px;
     .left {
       //   flex: 1;
       //   min-width: 280px;

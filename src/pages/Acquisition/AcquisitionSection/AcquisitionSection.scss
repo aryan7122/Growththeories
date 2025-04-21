@@ -1,0 +1,87 @@
+@use "../../../styles//Variables/variables.scss" as *;
+.acquisition-section {
+  background-color: #f7f7fd;
+  text-align: center;
+  border-radius: 20px;
+  width: 85%;
+  margin-top: -220px !important;
+  box-shadow: 0px 0px 11px 0.1px rgba(0, 0, 0, 0.016);
+  margin: 0 auto;
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 64px;
+    letter-spacing: -3px;
+    text-align: center;
+    text-transform: capitalize;
+margin-top: -10px;
+    color: #2B2A2A;
+
+    span {
+      color: #2B2A2A;
+      font-weight: 600 !important;
+    }
+  }
+
+  p {
+   font-family: 'Open Sans';
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.5px;
+text-align: center;
+text-transform: capitalize;
+color: #555555;
+margin-top: -20px;
+margin-bottom: 40px;
+
+  }
+
+  .contact-btn {
+   margin-top: 30px;
+   margin: 20px auto;
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
+      // border-radius: $border-radius;
+      border: none;
+      cursor: pointer;
+      background-color: $primary-500;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+      // margin: 30px auto;
+      color: #fff;
+   
+      // width: 240px;
+      //   height: 54px;
+      border-radius: 100px;
+      box-shadow: $box-shadow-md;
+      border-radius: 100px;
+      font-size: $font-size-16;
+
+      gap: 8px;
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+
+      &:hover {
+        background-color: #fff;
+        color: $primary-500;
+        transition: 0.3s linear;
+        border: 1px solid $primary-500;
+        svg {
+          color: $primary-500;
+        }
+      }
+  }
+}

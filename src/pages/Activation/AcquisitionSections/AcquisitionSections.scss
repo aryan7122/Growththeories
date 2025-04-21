@@ -1,0 +1,311 @@
+// AcquisitionSections.scss
+@use "../../../styles//Variables/variables.scss" as *;
+
+.AcquisitionSections-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 30px 80px;
+  @media (max-width: 1400px) {
+    padding: 30px 60px;
+  }
+  @media (max-width: 1200px) {
+    padding: 40px 50px;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 35px 40px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 30px 35px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px 30px;
+  }
+
+  @media (max-width: 700px) {
+    padding: 30px 25px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 30px;
+  }
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
+  background: #fff;
+
+  .Acquisition-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: -0.5px;
+      vertical-align: middle;
+      text-transform: capitalize;
+      width: 947px;
+      color: #171717;
+
+      span {
+        color: #2b2a2a;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      max-width: 770px;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 15.99px;
+      line-height: 23.98px;
+      letter-spacing: 0px;
+      text-transform: capitalize;
+      color: #555555;
+      width: 80%;
+      color: #666;
+      margin-top: -20px;
+    }
+    .cta_btn {
+      background-color: $primary-500;
+      padding: 0.75rem 1.5rem;
+      // border-radius: $border-radius;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s;
+      // margin: 30px auto;
+      color: #fff;
+      background: $primary-500;
+      font-weight: 500;
+      // width: 240px;
+      height: 54px;
+      border-radius: 100px;
+      box-shadow: $box-shadow-md;
+      border-radius: 100px;
+      font-size: $font-size-16;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+
+      &:hover {
+        background-color: #fff;
+        color: $primary-500;
+        transition: 0.3s linear;
+        border: 1px solid $primary-500;
+        svg {
+          color: $primary-500;
+        }
+      }
+    }
+  }
+
+  .section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    &.right {
+      flex-direction: row-reverse;
+    }
+
+    .text-content {
+      flex: 1;
+      align-items: start;
+      h2 {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+
+        color: #171717;
+        margin-top: -40px;
+      }
+
+      h3 {
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        letter-spacing: -1px;
+        vertical-align: middle;
+        text-transform: capitalize;
+      }
+
+      p {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        vertical-align: middle;
+        text-transform: capitalize;
+        color: #717070;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 0.5rem;
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 21.6px;
+          letter-spacing: 0px;
+          vertical-align: middle;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .image-content {
+      flex: 1;
+      img {
+        width: 90%;
+        // max-width: 400px;
+      }
+    }
+  }
+   .tools-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    .cards:nth-child(13) {
+      opacity: 0;
+      border: 1px solid red !important;
+    }
+    .tool-card {
+      background: #eae5ff66;
+      border-radius: 4px;
+      width: 194px;
+      height: 102px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // padding: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //   gap: 10px;
+      .cards {
+      }
+
+      .p {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        text-transform: capitalize;
+        margin-top: -30px;
+      }
+      span {
+        font-weight: 500;
+        font-size: 0.95rem;
+        color: #333;
+      }
+    }
+  }
+//   
+.activation-wrapper {
+ 
+  text-align: center;
+
+  h2 {
+    color: #4b2b2b;
+  font-family: 'Open Sans';
+font-weight: 600;
+font-size: 42px;
+line-height: 42px;
+letter-spacing: -2px;
+vertical-align: middle;
+text-transform: capitalize;
+margin-top: -30px;
+
+  }
+
+  .activation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+
+    .activation-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+     box-shadow: 0px 3.88px 19.39px 0px #00000010;
+
+      text-align: left;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .card-id {
+          color: #272626;
+      font-family: 'Open Sans';
+font-weight: 400;
+font-size: 23.27px;
+line-height: 140%;
+letter-spacing: -0.48px;
+
+      }
+
+      h3 {
+       font-family: 'Open Sans';
+font-weight: 600;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: -0.5px;
+text-transform: capitalize;
+
+        color: #2b2b2b;
+      }
+
+      p {
+        font-family: 'Open Sans';
+font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+letter-spacing: -0.29px;
+
+        color: #555;
+      }
+    }
+  }
+}
+
+}

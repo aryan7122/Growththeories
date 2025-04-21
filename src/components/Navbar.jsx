@@ -23,6 +23,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const [scrolled, setScrolled] = useState(false);
     const [isWhite, setIsWhite] = useState(false);
+    const [isWhite2, setIsWhite2] = useState(false);
     const servicesDropdown = OutsideClick();
     const companyDropdown = OutsideClick();
     const productsDropdown = OutsideClick();
@@ -76,7 +77,7 @@ const Navbar = () => {
     };
 
 
-   
+
 
     // Check if pathname includes specific keywords
     const specialPaths = ['/validation-service', 'predict-growth',];
@@ -89,17 +90,21 @@ const Navbar = () => {
     const isContact = contact.some((path) => location.pathname.includes(path));
     // white bg
     const whiteBg = ['services'];
+    const whiteBg2 = ['acquisition'];
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = document.documentElement.scrollTop || window.pageYOffset;
             console.log("Scroll position:", scrollTop);
 
             const matchedPath = whiteBg.some((path) => location.pathname.includes(path));
+            const matchedPath2 = whiteBg2.some((path) => location.pathname.includes(path));
 
             if (scrollTop > 50) {
                 setIsWhite(false);
+                setIsWhite2(false);
             } else {
                 setIsWhite(matchedPath);
+                setIsWhite2(matchedPath2);
             }
         };
 
@@ -114,7 +119,7 @@ const Navbar = () => {
     console.log('isFixed', isFixed)
 
     return (
-        <nav className={`navbar   ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}  ${isContact ? 'isContact' : ''}  ${isWhite ? 'isWhite' : ''}`} >
+        <nav className={`navbar   ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}  ${isContact ? 'isContact' : ''}  ${isWhite || isWhite2 ? 'isWhite' : ''}`} >
             <div className={`mobile_flex_toggle`} >
                 <div className="navbar__logo">
                     <img
@@ -132,7 +137,7 @@ const Navbar = () => {
 
             {/* {!isMobileMenuOpen && */}
             <div className="navbar__actions">
-                <ul className={`navbar__links ${isMobileMenuOpen ? "open" : ""} ${isWhite ? 'isWhiteUl' : ''}`}>
+                <ul className={`navbar__links ${isMobileMenuOpen ? "open" : ""} ${isWhite ? 'isWhiteUl' : ''} ${isWhite2 ? 'isWhiteUl2' : ''}`}>
                     <li
                         className="navbar__dropdown" ref={servicesDropdown.ref}>
                         <a className={` ${servicesDropdown.isOpen ? "a_openClass" : ""}`}
@@ -311,8 +316,8 @@ const Navbar = () => {
                             </>
                         )}
                     </li>
+                    <button className="btn btn-secondary">Contact Us</button>
                 </ul>
-                <button className="btn btn-secondary">Contact Us</button>
             </div>
             {/* } */}
 
