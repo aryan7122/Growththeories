@@ -1,12 +1,14 @@
 @use "../styles/Variables/variables.scss" as *;
 
 .navbar {
+  // position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 80px;
-    background-color: #fafafa;
-      z-index: 9999999999999999999;
+  background-color: #fafafa;
+  z-index: 9999999999999999999;
+
   @media (max-width: 1400px) {
     padding: 1rem 60px;
   }
@@ -27,6 +29,9 @@
   }
   @media (max-width: 600px) {
     padding: 1rem 20px;
+  }
+  @media (max-width: 500px) {
+    padding: 20px;
   }
   //
 
@@ -87,6 +92,13 @@
       }
 
       &.navbar__dropdown {
+        .dropdown_services {
+          // border: 1px solid red !important;
+          // position: absolute;
+          display: flex;
+          gap: 1rem;
+          padding: 1rem;
+        }
         .dropdown {
           position: absolute;
           background: #fff !important;
@@ -94,9 +106,9 @@
           left: 50%;
           top: 50%;
           transform: translateX(-50%);
-          display: flex;
-          gap: 1rem;
-          padding: 1rem;
+          // display: flex;
+          // gap: 1rem;
+          // padding: 1rem;
           background-color: $neutral-50;
           box-shadow: $box-shadow-lg;
           border-radius: $border-radius-lg;
@@ -110,6 +122,29 @@
           @media (max-width: 1050px) {
             display: grid;
             grid-template-columns: 1fr;
+          }
+          .btn_services {
+            border: 1px solid $primary-700;
+            color: $primary-700;
+            width: fit-content;
+            padding: 10px 20px;
+            border-radius: 100px;
+            cursor: pointer;
+            margin-top: 0px;
+            // margin-bottom: -1px;
+            margin-left: 20px;
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            transition: 0.3s linear;
+            &:hover {
+              background: $primary-700;
+              color: #fff;
+            }
           }
           .right_drop {
             display: flex;
@@ -131,7 +166,7 @@
               }
               .firstNavbar {
                 border-radius: 16px;
-                background-color: $secondary-50;
+                background-color: $primary-50;
                 width: 300px;
                 height: 140px;
                 display: flex;
@@ -146,7 +181,7 @@
                   font-family: $font-secondary;
                   font-size: $font-size-16;
                   margin-bottom: 0.5rem;
-                  color: $secondary-700;
+                  color: $primary-700;
                   cursor: pointer;
                 }
                 p {
@@ -160,7 +195,7 @@
               width: 302px;
               height: 295px;
               display: flex;
-              background-color: $secondary-50;
+              background-color: $primary-50;
               justify-content: space-between;
               // border: 1px solid red;
               border-radius: 16px;
@@ -170,7 +205,7 @@
                   font-family: $font-secondary;
                   font-size: $font-size-16;
                   margin-bottom: 0.5rem;
-                  color: $secondary-700;
+                  color: $primary-700;
                   text-align: left;
                   padding-left: 20px;
                   // border: 1px solid red !important;
@@ -192,7 +227,7 @@
                 position: absolute;
                 margin-left: 180px;
                 margin-top: 20px;
-                bottom: 16px;
+                // bottom: 16px;
                 border-bottom-right-radius: 16px;
                 z-index: 1;
               }
@@ -204,6 +239,8 @@
         }
 
         .dropdownS {
+          display: flex;
+          flex-direction: column;
           .dropdown__item {
             .two_list .firstNavbar {
               h4 {
@@ -218,16 +255,16 @@
             }
             .oneNavBar {
               img {
-                height: 190px;
+                // height: 190px;
                 // border: 1px solid red;
-                position: absolute;
-                margin-left: 41px;
-                margin-top: 20px;
-                bottom: 16px;
+                // position: absolute;
+                margin-left: 84px;
+                margin-top: 103px !important;
+                // bottom: 16px;
                 border-bottom-right-radius: 16px;
-                z-index: 1;
+                // z-index: 1;
                 @media (max-width: 1050px) {
-                  bottom: 172px;
+                  // bottom: 172px;
                 }
               }
               .imgAbout {
@@ -240,7 +277,6 @@
           @media (max-width: 1450px) {
             left: 200%;
           }
-
           @media (max-width: 1200px) {
             left: 292%;
           }
@@ -297,9 +333,7 @@
 .specialPath {
   background: #ededff;
 }
-.isWhite {
-  background: #fff;
-}
+
 .isAuditPath {
   background: linear-gradient(
       343.83deg,
@@ -342,7 +376,7 @@
 
   // backdrop-filter: blur(12px);
   // -webkit-backdrop-filter: blur(12px);
-  width: 96%;
+  width: 89.5%;
   position: fixed;
   transition: 0.3s linear;
 }
@@ -373,7 +407,7 @@
       transition: color 0.3s;
 
       &:hover {
-        color: #007bff;
+        color: $primary-700;
       }
     }
   }
@@ -453,7 +487,7 @@
           transition: color 0.3s;
 
           &:hover {
-            color: #007bff;
+            color: $primary-700;
           }
         }
       }
@@ -500,7 +534,7 @@
               font-size: 22px;
               line-height: 36px;
               &:hover {
-                color: #007bff;
+                color: $primary-700;
               }
             }
           }
@@ -510,9 +544,9 @@
   }
 }
 .a_openClass {
-  color: #007bff !important;
+  color: $primary-700 !important;
   svg {
-    color: #007bff !important;
+    color: $primary-700 !important;
   }
 }
 @media (max-width: 890px) {
@@ -522,3 +556,47 @@
 }
 
 // mobile drop
+
+.isWhite {
+  background: transparent;
+  z-index: 99;
+  // background-image: url('../assets/allService/bgService.svg ') !important;
+  // border: 1px solid red;
+  position: fixed;
+  width: 88.5%;
+}
+
+.isWhiteUl {
+  background: transparent;
+  &:hover {
+    background-color: #fff;
+    li {
+      a {
+        color: #333;
+        &:hover {
+          color: $primary-700;
+        }
+      }
+      svg {
+        color: #333;
+        &:hover {
+          color: $primary-700;
+        }
+      }
+    }
+  }
+  li {
+    a {
+      color: #fff;
+    }
+    svg {
+      color: #fff;
+    }
+  }
+}
+
+.navbar-scrolled{
+    background-color: #fafafa ;
+    position: relative;
+    border: 1px solid red !important;
+}

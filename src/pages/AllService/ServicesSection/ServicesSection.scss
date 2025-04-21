@@ -1,0 +1,205 @@
+@use "../../../styles//Variables/variables.scss" as *;
+
+.services-section {
+  padding: 50px 80px;
+  @media (max-width: 1400px) {
+    padding: 30px 60px;
+  }
+  @media (max-width: 1200px) {
+    padding: 40px 50px;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 35px 40px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 30px 35px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px 30px;
+  }
+
+  @media (max-width: 700px) {
+    padding: 30px 25px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 30px;
+  }
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
+  background: #fafafa;
+  // padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  // width: 100%;
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // padding-bottom: 100px;
+  .container {
+    background: #f7f7ff;
+    border-radius: 20px;
+    margin: auto;
+    // position: absolute;
+    margin-top: -200px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -3px;
+    text-align: center;
+    text-transform: capitalize;
+    // margin-top: -10px;
+    color: #2b2a2a;
+
+    span {
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 64px;
+      letter-spacing: -3px;
+      text-align: center;
+      text-transform: capitalize;
+
+      color: $primary-800;
+    }
+  }
+
+  p {
+    color: #555555;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: -20px;
+  }
+
+  .cta {
+    background-color: $primary-500;
+    padding: 0.75rem 1.5rem;
+    // border-radius: $border-radius;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    margin: 30px auto;
+    color: #fff;
+    background: $primary-500;
+    font-weight: 500;
+    width: 240px;
+    height: 54px;
+    border-radius: 100px;
+    box-shadow: $box-shadow-md;
+    border-radius: 100px;
+    font-size: $font-size-16;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+    &:hover {
+      background-color: #fff;
+      color: $primary-500;
+      transition: 0.3s linear;
+      border: 1px solid $primary-500;
+      svg {
+        color: $primary-500;
+      }
+    }
+  }
+
+  .grid {
+    background: #e0e0e0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin-top: 40px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
+    .card {
+      // border-radius: 10px;
+      background: #f7f7ff;
+
+      padding: 25px;
+      text-align: left;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+      }
+
+      .icon {
+        color: #9d2235;
+        // margin-bottom: 10px;
+      }
+
+      h4 {
+        // margin-top: 0px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 29px;
+        line-height: 130%;
+        letter-spacing: -1.5px;
+        vertical-align: middle;
+        text-transform: capitalize;
+
+        color: $primary-900;
+
+        span {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 29px;
+          line-height: 40px;
+          letter-spacing: 0%;
+          vertical-align: middle;
+          text-transform: uppercase;
+          color: #2b2a2a;
+        }
+      }
+
+      p {
+        color: #2b2a2a;
+        // margin-top: -10px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: capitalize;
+        text-align: left;
+      }
+    }
+  }
+}

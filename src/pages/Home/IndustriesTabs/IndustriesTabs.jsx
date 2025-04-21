@@ -4,6 +4,10 @@ import img1 from "../../../assets/IndustriesTabs/Beauty salon-bro.svg";
 import img2 from "../../../assets/IndustriesTabs/Travelers-pana.svg";
 import img3 from "../../../assets/IndustriesTabs/Blood donation-cuate.svg";
 //  
+import { Helmet } from "react-helmet-async";
+
+import { motion } from 'framer-motion';
+
 const industryData = {
     salon: {
         icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#000000" fill="none">
@@ -271,102 +275,201 @@ export default function IndustriesTabs() {
     const data = industryData[activeTab];
 
     return (
-        <div className="industries-section">
-            <div className="card_title">
-                <h4 className="subheading">Industries</h4>
-                <h2 className="main-heading">Industries We Served In India & Abroad</h2>
-            </div>
-            <div className="card_industries">
-                <p className="desc-text">
-                    We Enthusiastically Back <span className="gray">A Range Of Sectors</span>, Consistently Dedicated To <strong> <br />Outstanding Service And Top-Notch Quality</strong>.
-                </p>
-                <p className="desc-small">
-                    Delving Into The Diverse Industries We Proudly Support, While Maintaining Our Commitment To Excellence And Quality In All We Do.
-                </p>
-                <button className="cta-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
-                    <path d="M11.8013 6.48949L13.2869 5.00392C14.9596 3.3312 17.1495 2.63737 19.4671 2.52399C20.3686 2.47989 20.8193 2.45784 21.1807 2.81928C21.5422 3.18071 21.5201 3.63143 21.476 4.53289C21.3626 6.8505 20.6688 9.04042 18.9961 10.7131L17.5105 12.1987C16.2871 13.4221 15.9393 13.77 16.1961 15.097C16.4496 16.1107 16.6949 17.0923 15.9578 17.8294C15.0637 18.7235 14.2481 18.7235 13.354 17.8294L6.17058 10.646C5.27649 9.75188 5.27646 8.9363 6.17058 8.04219C6.90767 7.30509 7.88929 7.55044 8.90297 7.80389C10.23 8.06073 10.5779 7.71289 11.8013 6.48949Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                    <path d="M16.9959 7H17.0049" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M2.5 21.5L7.5 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M8.5 21.5L10.5 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M2.5 15.5L4.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                </svg> Start Growing Today</button>
+        <>
+            <Helmet>
+                {/* General Page SEO */}
+                <title>Industries We Serve | Salon, Clinical & Travel Industry Marketing Experts</title>
+                <meta name="description" content="We empower salon, clinical, and travel industries in India and abroad with data-driven marketing, digital transformation, and industry-specific growth strategies." />
+                <meta name="keywords" content="Salon marketing, Clinical marketing, Travel marketing, Digital marketing for salons, Clinic growth strategies, Travel agency SEO, Industry-specific marketing" />
 
-                <div className="tabs_">
-                    {Object.keys(industryData).map((key) => (
-                        <button
-                            key={key}
-                            className={`tab_btn ${activeTab === key ? "active" : ""}`}
-                            onClick={() => setActiveTab(key)}
-                        >
-                            {key.charAt(0).toUpperCase() + key.slice(1)} Industry
-                        </button>
-                    ))}
+                {/* Open Graph / Facebook */}
+                <meta property="og:title" content="Industries We Serve | Digital Marketing Experts for Salon, Clinical & Travel" />
+                <meta property="og:description" content="Discover how we help salons, clinics, and travel brands grow through AI-driven strategies, patient acquisition, customer engagement, and end-to-end marketing support." />
+              
+
+                {/* Twitter */}
+                <meta name="twitter:title" content="Industries We Serve | Empowering Salon, Clinical & Travel Sectors" />
+                <meta name="twitter:description" content="Explore our impact in the salon, clinical, and travel industries using smart marketing strategies, digital tools, and expert-driven insights." />
+             
+            </Helmet>
+            <div className="industries-section">
+                <div className="card_title">
+                    <motion.h4
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3 }}
+                        viewport={{ once: true, amount: 0.1 }}
+                        className="subheading">Industries</motion.h4>
+                    <h2 className="main-heading">Industries We Served In India & Abroad</h2>
                 </div>
+                <div className="card_industries">
+                    <motion.p
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3 }}
+                        viewport={{ once: true, amount: 0.1 }}
+                        className="desc-text">
+                        We Enthusiastically Back <span className="gray">A Range Of Sectors</span>, Consistently Dedicated To <strong> <br />Outstanding Service And Top-Notch Quality</strong>.
+                    </motion.p>
+                    <motion.p
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3 }}
+                        viewport={{ once: true, amount: 0.1 }}
+                        className="desc-small">
+                        Delving Into The Diverse Industries We Proudly Support, While Maintaining Our Commitment To Excellence And Quality In All We Do.
+                    </motion.p>
+                    <motion.button
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3 }}
+                        viewport={{ once: true, amount: 0.1 }}
+                        className="cta-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                            <path d="M11.8013 6.48949L13.2869 5.00392C14.9596 3.3312 17.1495 2.63737 19.4671 2.52399C20.3686 2.47989 20.8193 2.45784 21.1807 2.81928C21.5422 3.18071 21.5201 3.63143 21.476 4.53289C21.3626 6.8505 20.6688 9.04042 18.9961 10.7131L17.5105 12.1987C16.2871 13.4221 15.9393 13.77 16.1961 15.097C16.4496 16.1107 16.6949 17.0923 15.9578 17.8294C15.0637 18.7235 14.2481 18.7235 13.354 17.8294L6.17058 10.646C5.27649 9.75188 5.27646 8.9363 6.17058 8.04219C6.90767 7.30509 7.88929 7.55044 8.90297 7.80389C10.23 8.06073 10.5779 7.71289 11.8013 6.48949Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M16.9959 7H17.0049" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.5 21.5L7.5 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M8.5 21.5L10.5 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M2.5 15.5L4.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg> Start Growing Today</motion.button>
 
-                <div className="industry-content">
-                    <div className="cardInfo_indus">
-                        <div className="Industry_main_content">
-                            <div>
-                                <h3 className="industry-title"><span>{data.icon}</span> {data.title}</h3>
-                                <p className="industry-desc">{data.description}</p>
-                                <img className="img2" src={data.imgBanner} alt={`Image of ${data.title}`} title={data.title} />
-                                <div className="stats">
-                                    {data.stats.map((item, index) => (
-                                        <div className="stat-item" key={index}>
-                                            <h2>{item.value}</h2>
-                                            <p>{item.label}</p>
+                    <div className="tabs_">
+                        {Object.keys(industryData).map((key) => (
+                            <motion.button
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                                viewport={{ once: true, amount: 0.1 }}
+                                key={key}
+                                className={`tab_btn ${activeTab === key ? "active" : ""}`}
+                                onClick={() => setActiveTab(key)}
+                            >
+                                {key.charAt(0).toUpperCase() + key.slice(1)} Industry
+                            </motion.button>
+                        ))}
+                    </div>
+
+                    <div className="industry-content">
+                        <div className="cardInfo_indus">
+                            <div className="Industry_main_content">
+                                <div>
+                                    <motion.h3
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.1 }}
+                                        viewport={{ once: true, amount: 0.1 }}
+                                        className="industry-title"><span>{data.icon}</span> {data.title}</motion.h3>
+                                    <motion.p
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.2 }}
+                                        viewport={{ once: true, amount: 0.1 }}
+                                        className="industry-desc">{data.description}</motion.p>
+                                    <motion.img
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.3 }}
+                                        viewport={{ once: true, amount: 0.1 }}
+                                        className="img2" src={data.imgBanner} alt={`Image of ${data.title}`} title={data.title} />
+                                    <div className="stats">
+                                        {data.stats.map((item, index) => (
+                                            <div className="stat-item" key={index}>
+                                                <motion.h2
+                                                    initial={{ opacity: 0, y: 50 }}
+                                                    whileInView={{ opacity: 1, y: 0 }}
+                                                    transition={{ duration: 0.2 }}
+                                                    viewport={{ once: true, amount: 0.1 }}>{item.value}</motion.h2>
+                                                <motion.p
+                                                    initial={{ opacity: 0, y: 50 }}
+                                                    whileInView={{ opacity: 1, y: 0 }}
+                                                    transition={{ duration: 0.3 }}
+                                                    viewport={{ once: true, amount: 0.1 }}
+                                                >{item.label}</motion.p>
+                                            </div>
+                                        ))}
+                                        <div className="BG">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <motion.img
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.2 }}
+                                    viewport={{ once: true, amount: 0.1 }} className="img" src={data.imgBanner} alt={`Image of ${data.title}`} title={data.title} />
+                            </div>
+                        </div>
+
+
+                        <div className="bottom-section">
+                            <div className="why-choose">
+                                <div className="section-title">
+                                    <div className="line"></div>
+                                    <motion.h4
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.2 }}
+                                        viewport={{ once: true, amount: 0.1 }}
+                                    >
+                                        <span className="icon">{data.whyChooseUsIcon}</span>
+                                        Why They Choose Us
+                                    </motion.h4>
+                                    <div className="line2"></div>
+                                </div>
+
+                                <div className="choose-grid">
+                                    {data.whyChooseUs.map((item, index) => (
+                                        <div className="choose-item" key={index}>
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 50 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                transition={{ duration: 0.2 }}
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                className="icon_item">{item.icon}</motion.div>
+                                            <div>
+                                                <motion.h5
+                                                    initial={{ opacity: 0, y: 50 }}
+                                                    whileInView={{ opacity: 1, y: 0 }}
+                                                    transition={{ duration: 0.3 }}
+                                                    viewport={{ once: true, amount: 0.1 }}>{item.title}</motion.h5>
+                                                <motion.p
+                                                    initial={{ opacity: 0, y: 50 }}
+                                                    whileInView={{ opacity: 1, y: 0 }}
+                                                    transition={{ duration: 0.4 }}
+                                                    viewport={{ once: true, amount: 0.1 }}
+                                                >{item.desc}</motion.p>
+                                            </div>
                                         </div>
                                     ))}
-                                    <div className="BG">
+                                </div>
+                            </div>
 
+                            <div className="how-help">
+
+                                <h4 className="h4_help">{data.howWeHelp.icon} {data.howWeHelp.title}</h4>
+                                <div className="help-box">
+                                    <motion.p
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.2 }}
+                                        viewport={{ once: true, amount: 0.1 }}
+                                    >{data.howWeHelp.desc}</motion.p>
+                                    <div className="tags">
+                                        {data.howWeHelp.tags.map((tag, idx) => (
+                                            <motion.span
+                                                initial={{ opacity: 0, y: 50 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                transition={{ duration: 0.3 }}
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                className="tag" key={idx}>{tag}</motion.span>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
-                            <img className="img" src={data.imgBanner} alt={`Image of ${data.title}`} title={data.title} />
                         </div>
+
                     </div>
-
-
-                    <div className="bottom-section">
-                        <div className="why-choose">
-                            <div className="section-title">
-                                <div className="line"></div>
-                                <h4>
-                                    <span className="icon">{data.whyChooseUsIcon}</span>
-                                    Why They Choose Us
-                                </h4>
-                                <div className="line2"></div>
-                            </div>
-
-                            <div className="choose-grid">
-                                {data.whyChooseUs.map((item, index) => (
-                                    <div className="choose-item" key={index}>
-                                        <div className="icon_item">{item.icon}</div>
-                                        <div>
-                                            <h5>{item.title}</h5>
-                                            <p>{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="how-help">
-
-                            <h4 className="h4_help">{data.howWeHelp.icon} {data.howWeHelp.title}</h4>
-                            <div className="help-box">
-                                <p>{data.howWeHelp.desc}</p>
-                                <div className="tags">
-                                    {data.howWeHelp.tags.map((tag, idx) => (
-                                        <span className="tag" key={idx}>{tag}</span>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
+        </>
     );
 }

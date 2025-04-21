@@ -62,7 +62,12 @@ import SEO from './components/SEO';
 import { useEffect, useState } from 'react';
 import GrowthTheoriesHomepage from './assets/GrowthTheoriesHomepage.png'
 import IndustriesTabs from './pages/Home/IndustriesTabs/IndustriesTabs';
-
+import BlogSlider from './pages/Home/BlogSlider/BlogSlider';
+import HeroSection from './pages/AllService/HeroSection/HeroSection';
+import ServicesSection from './pages/AllService/ServicesSection/ServicesSection';
+import Loader from "./Components/Loading/Loader.jsx";
+import Acquisition from './pages/AllService/ServicesSection/Acquisition.jsx';
+import GrowthSection from './pages/AllService/GrowthSection/GrowthSection/GrowthSection.jsx';
 function LocationTracker() {
   const location = useLocation();
   console.log('Current Location:', location.pathname);
@@ -83,12 +88,16 @@ function App() {
   //     });
   // }, []);
   // // ssr
+
+
+
   return (
     <HelmetProvider>
       <Router>
+        {/* <PageWrapper> */}
         <Navbar />
         <LocationTracker />
-        <div className="app">
+        <div className="app" >
           <Routes>
             <Route path="/"
               element={
@@ -139,10 +148,62 @@ function App() {
                   <MathematicalLawsPage />
                   {/* <Overview /> */}
                   {/* <Suitability /> */}
-                  <IndustriesTabs/>
+                  <IndustriesTabs />
                   {/* <Industry /> */}
                   {/* <ImpactsBenefits /> */}
                   {/* <CaseStudies /> */}
+                  <BlogSlider />
+                  <FAQAccordion />
+                  <Footer />
+                </>
+              }
+            />
+            <Route path="/services"
+              element={
+                <>
+                  <SEO
+                    title="Growth Theories | Proven Growth Marketing & Business Strategies"
+                    description="Boost your business growth with data-driven marketing strategies, growth hacking, SEO optimization, and revenue-focused frameworks. Learn proven business scaling techniques."
+                    keywords={[
+                      "growth marketing strategies",
+                      "business growth hacking",
+                      "SEO for startups",
+                      "digital marketing growth",
+                      "customer acquisition",
+                      "revenue optimization",
+                      "business expansion tips",
+                      "scalable marketing techniques",
+                      "brand positioning strategies"
+                    ]}
+                    canonicalPath="/"
+                    ogImage={GrowthTheoriesHomepage}
+                    jsonLd={{
+                      "@context": "https://schema.org",
+                      "@type": "WebSite",
+                      "name": "Growth Theories",
+                      "url": siteUrl,
+                      "description": "Growth Theories offers expert business strategies, marketing frameworks, and customer acquisition techniques to help startups and enterprises scale sustainably.",
+                      "publisher": {
+                        "@type": "Organization",
+                        "name": "Growth Theories",
+                        "url": siteUrl,
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": siteUrl + "/images/logo.png"
+                        }
+                      },
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": siteUrl
+                      }
+                    }}
+                  />
+
+                  <HeroSection />
+                  <ServicesSection />
+                  <Acquisition />
+                  <GrowthSection />
+
                   <FAQAccordion />
                   <Footer />
                 </>
@@ -279,6 +340,7 @@ function App() {
           </Routes>
         </div>
         {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
+        {/* </PageWrapper> */}
       </Router>
     </HelmetProvider>
   );
