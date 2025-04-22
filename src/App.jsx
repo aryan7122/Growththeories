@@ -81,6 +81,7 @@ import AnalyticsSection from './pages/Analytics/AnalyticsSection/AnalyticsSectio
 import MonetizationHeroSection from './pages/Monetization/MonetizationHeroSection/MonetizationHeroSection.jsx';
 import MonetizationSection from './pages/Monetization/MonetizationSection/MonetizationSection.jsx';
 import CompanyLogo from './pages/Analytics/TechnologyMonetization/TechnologyMonetization.jsx';
+import WhyChoose from './pages/Monetization/WhyChoose/WhyChoose.jsx';
 
 
 function App() {
@@ -444,6 +445,7 @@ function App() {
                   <MonetizationHeroSection />
                   <MonetizationSection />
                   <CompanyLogo />
+                  <WhyChoose />
                   
                   <GrowthSection />
 

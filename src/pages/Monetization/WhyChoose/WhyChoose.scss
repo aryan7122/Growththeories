@@ -1,0 +1,49 @@
+.whychoose {
+//   max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 80px;
+  text-align: center;
+ background: #fff;
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+
+    .card {
+      border-top: 1px solid #eee;
+      padding: 2rem 1rem;
+      text-align: center;
+
+      .icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+      }
+    }
+  }
+}
