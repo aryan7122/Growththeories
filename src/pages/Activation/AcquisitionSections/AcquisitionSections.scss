@@ -192,7 +192,7 @@
       }
     }
   }
-   .tools-grid {
+  .tools-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
@@ -237,75 +237,71 @@
       }
     }
   }
-//   
-.activation-wrapper {
- 
-  text-align: center;
+  //
+  .activation-wrapper {
+    text-align: center;
 
-  h2 {
-    color: #4b2b2b;
-  font-family: 'Open Sans';
-font-weight: 600;
-font-size: 42px;
-line-height: 42px;
-letter-spacing: -2px;
-vertical-align: middle;
-text-transform: capitalize;
-margin-top: -30px;
+    h2 {
+      color: #4b2b2b;
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: -2px;
+      vertical-align: middle;
+      text-transform: capitalize;
+      margin-top: -30px;
+    }
 
-  }
+    .activation-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1.5rem;
 
-  .activation-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
+      .activation-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0px 3.88px 19.39px 0px #00000010;
 
-    .activation-card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-     box-shadow: 0px 3.88px 19.39px 0px #00000010;
+        text-align: left;
+        transition: all 0.3s ease;
 
-      text-align: left;
-      transition: all 0.3s ease;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
 
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      }
-
-      .card-id {
+        .card-id {
           color: #272626;
-      font-family: 'Open Sans';
-font-weight: 400;
-font-size: 23.27px;
-line-height: 140%;
-letter-spacing: -0.48px;
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 23.27px;
+          line-height: 140%;
+          letter-spacing: -0.48px;
+        }
 
-      }
+        h3 {
+          font-family: "Open Sans";
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: -0.5px;
+          text-transform: capitalize;
 
-      h3 {
-       font-family: 'Open Sans';
-font-weight: 600;
-font-size: 20px;
-line-height: 100%;
-letter-spacing: -0.5px;
-text-transform: capitalize;
+          color: #2b2b2b;
+        }
 
-        color: #2b2b2b;
-      }
+        p {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 21px;
+          letter-spacing: -0.29px;
 
-      p {
-        font-family: 'Open Sans';
-font-weight: 400;
-font-size: 15px;
-line-height: 21px;
-letter-spacing: -0.29px;
-
-        color: #555;
+          color: #555;
+        }
       }
     }
   }
-}
-
 }

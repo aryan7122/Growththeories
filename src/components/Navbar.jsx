@@ -90,7 +90,7 @@ const Navbar = () => {
     const isContact = contact.some((path) => location.pathname.includes(path));
     // white bg
     const whiteBg = ['services'];
-    const whiteBg2 = ['acquisition','analytics-optimization'];
+    const whiteBg2 = ['acquisition', 'analytics-optimization','monetization'];
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = document.documentElement.scrollTop || window.pageYOffset;

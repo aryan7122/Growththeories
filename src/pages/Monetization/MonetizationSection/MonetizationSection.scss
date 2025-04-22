@@ -1,0 +1,106 @@
+.monetization {
+  padding: 3rem 2rem;
+  background: #fff;
+  font-family: 'Inter', sans-serif;
+
+  .top {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .cta {
+      margin-top: 1.5rem;
+      background-color: #7a001a;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #5c0014;
+      }
+    }
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    .service-card {
+      display: flex;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 2rem;
+      background: #fafafa;
+
+      .number {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #aaa;
+        margin-right: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      .content {
+        h2 {
+          font-size: 1.2rem;
+          color: #222;
+          margin-bottom: 0.7rem;
+        }
+
+        .description {
+          font-size: 0.92rem;
+          color: #555;
+          margin-bottom: 1rem;
+          line-height: 1.5;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: #333;
+
+            .icon {
+              margin-right: 0.5rem;
+              color: #7a001a;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .top h1 {
+      font-size: 2rem;
+    }
+  }
+}

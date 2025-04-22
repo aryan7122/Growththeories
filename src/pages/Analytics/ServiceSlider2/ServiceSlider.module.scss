@@ -1,0 +1,329 @@
+@use "../../../styles//Variables/variables.scss" as *;
+
+.ServiceSlider2  {
+  background: #fff;
+ padding-top: 80px;
+ margin-bottom: -20px;
+  .head_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: start;
+    }
+    @media (max-width: 1400px) {
+      padding: 30px 60px;
+    }
+    @media (max-width: 1200px) {
+      padding: 40px 50px;
+    }
+
+    @media (max-width: 1100px) {
+      padding: 35px 40px;
+    }
+
+    @media (max-width: 900px) {
+      padding: 30px 35px;
+    }
+
+    @media (max-width: 800px) {
+      padding: 30px 30px;
+    }
+
+    @media (max-width: 700px) {
+      padding: 30px 25px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 30px;
+    }
+    @media (max-width: 500px) {
+      padding: 20px;
+    }
+  }
+  .blogLabel {
+    background: #b8b8b833;
+    width: fit-content;
+    // margin: 0 auto;
+    padding: 4px 14px;
+    border-radius: 100px;
+    font-family: "Open Sans";
+    color: $primary-500;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 3px;
+    text-align: start;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-top: 0px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52.8px;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    text-align: start;
+    color: $neutral-500;
+    width: 684px;
+    margin-bottom: 0px;
+    strong {
+      font-weight: 600;
+    }
+    @media (max-width: 1080px) {
+      font-size: 38px;
+      line-height: 42.8px;
+    }
+    @media (max-width: 800px) {
+      font-size: 30px;
+      line-height: 32.8px;
+    }
+    @media (max-width: 600px) {
+      font-size: 28px;
+      line-height: 30.8px;
+    }
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: $neutral-400;
+    width: 907px;
+    // margin-top: -20px;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  .blogButton {
+    background-color: $primary-500;
+    color: #fff;
+    background: $primary-500;
+    font-weight: 500;
+    width: 240px;
+    height: 54px;
+    border-radius: 100px;
+    box-shadow: $box-shadow-md;
+    border-radius: 100px;
+    font-size: $font-size-16;
+
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      color: $primary-500;
+      transition: 0.3s linear;
+      border: 1px solid $primary-500;
+
+      svg {
+        color: $primary-500;
+      }
+    }
+  }
+}
+
+.sliderContainers {
+  position: relative;
+  padding-left: 60px;
+ overflow: visible;
+  @media (max-width: 1400px) {
+    padding-left: 30px;
+  }
+  @media (max-width: 1200px) {
+    padding-left: 50px;
+  }
+  @media (max-width: 1100px) {
+    padding-left: 40px;
+  }
+  @media (max-width: 900px) {
+    padding-left: 35px;
+  }
+  @media (max-width: 800px) {
+    padding-left: 30px;
+  }
+  @media (max-width: 700px) {
+    padding-left: 25px;
+  }
+  @media (max-width: 600px) {
+    padding-left: 30px;
+  }
+  @media (max-width: 500px) {
+    padding-left: 20px;
+  }
+
+  .sliders {
+    display: grid;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .cardss {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+    .card_lr {
+      display: flex;
+      flex-direction: column;
+
+      .card_top{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        img{
+          margin-top: -120px;
+          z-index: 99;
+        }
+      }
+      .dataLR{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .data_l{
+          width: 55%;
+        }
+      }
+      .icon {
+        border: 10.67px solid #f9f5ff;
+        background: #fbf8ff;
+        border-radius: 100px;
+        min-width: 50px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      margin: 0 10px;
+    }
+
+    h3 {
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 130%;
+      letter-spacing: -1.5px;
+      vertical-align: middle;
+      text-transform: capitalize;
+      margin-top: -20px;
+      color: #2b2a2a;
+      margin: 0;
+    }
+
+    p {
+      font-family: "Open Sans";
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 0.5rem;
+      width: 100%;
+    }
+
+    ul {
+      padding-left: 15px;
+      margin-top: 0.5rem;
+
+      li {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: -0.5px;
+        vertical-align: middle;
+        text-transform: capitalize;
+        margin: 15px 0;
+        color: #171717;
+        position: relative;
+        margin-bottom: 0.3rem;
+        list-style: none;
+        // padding-left: 1.2rem;
+      }
+    }
+  }
+
+  .navLeftRightButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 40px;
+  }
+
+  .navButtons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    
+    button {
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 0.3rem;
+      margin: 0 0.3rem;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+    span {
+      height: 10px;
+      width: 10px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 4px;
+      cursor: pointer;
+
+      &.activeDot {
+        background-color: #93162B;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blogWrapper h2 {
+    font-size: 1.6rem;
+  }
+
+  .blogWrapper p {
+    font-size: 0.9rem;
+  }
+
+  .blogWrapper .blogButton {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
