@@ -48,10 +48,12 @@ const MonetizationSection = () => {
     return (
         <section className="monetization">
             <div className="top">
-                <h1>What Services Does Our<br />Monetization Offer?</h1>
-                <p>
-                    Our Monetization Services Provide A Comprehensive Suite Of Tools Designed To Help You Maximize Revenue From Your Content. We Offer Advanced Analytics To Track Performance, Flexible Ad Placements To Suit Your Audience, And Seamless Integration With Various Payment Systems. Whether You’re A Creator Or A Business, Our Platform Empowers You To Optimize Your Monetization Strategy Effectively.
-                </p>
+                <div className='top_setion'>
+                    <h1>What Services Does Our<br /><span>Monetization Offer?</span></h1>
+                    <p>
+                        Our Monetization Services Provide A Comprehensive Suite Of Tools Designed To Help You Maximize Revenue From Your Content. We Offer Advanced Analytics To Track Performance, Flexible Ad Placements To Suit Your Audience, And Seamless Integration With Various Payment Systems. Whether You’re A Creator Or A Business, Our Platform Empowers You To Optimize Your Monetization Strategy Effectively.
+                    </p>
+                </div>
                 <button className="cta">Contact Us Now</button>
             </div>
 

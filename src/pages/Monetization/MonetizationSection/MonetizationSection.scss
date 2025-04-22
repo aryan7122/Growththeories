@@ -1,21 +1,39 @@
 .monetization {
-  padding: 3rem 2rem;
+  padding: 30px 80px;
   background: #fff;
   font-family: 'Inter', sans-serif;
 
   .top {
-    text-align: center;
-    max-width: 800px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
-
+    .top_setion{
+      width: 810px;
+    }
     h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
+     font-family: 'Open Sans';
+font-weight: 400;
+font-size: 60px;
+line-height: 72px;
+letter-spacing: -3px;
+text-transform: capitalize;
+
+      span{
+        font-weight: 600;
+      }
     }
 
     p {
-      font-size: 0.95rem;
+     font-family: 'Open Sans';
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.5px;
+text-transform: capitalize;
+margin-top: -30px;
+
       color: #555;
       line-height: 1.6;
     }
