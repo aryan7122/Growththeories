@@ -82,6 +82,9 @@ import MonetizationHeroSection from './pages/Monetization/MonetizationHeroSectio
 import MonetizationSection from './pages/Monetization/MonetizationSection/MonetizationSection.jsx';
 import CompanyLogo from './pages/Analytics/TechnologyMonetization/TechnologyMonetization.jsx';
 import WhyChoose from './pages/Monetization/WhyChoose/WhyChoose.jsx';
+import Retention from './pages/Retention/Retention.jsx';
+import RetentionServices from './pages/Retention/RetentionServices/RetentionServices.jsx';
+import RetentionEngagement from './pages/Retention/RetentionEngagement/RetentionEngagement.jsx';
 
 
 function App() {
@@ -449,6 +452,64 @@ function App() {
                   
                   <GrowthSection />
 
+                  <Footer />
+                </>
+              }
+            />
+
+            <Route
+              path="/retention-engagement"
+              element={
+                <>
+                  <SEO
+                    title="Growth Theories Services | Growth Marketing Agency in India"
+                    description="Discover Growth Theories’ expert services in research, design, development, and growth marketing. We help businesses scale with SEO, user acquisition, retention, monetization, and analytics."
+                    keywords={[
+                      "growth marketing agency India",
+                      "digital product studio",
+                      "user acquisition strategies",
+                      "SEO services India",
+                      "conversion rate optimization",
+                      "customer retention services",
+                      "digital marketing for startups",
+                      "business scaling services",
+                      "growth hacking agency India",
+                      "monetization strategies"
+                    ]}
+                    canonicalPath="/services"
+                    ogImage={GrowthTheoriesHomepage}
+                    jsonLd={{
+                      "@context": "https://schema.org",
+                      "@type": "Service",
+                      "name": "Growth Theories - Growth Marketing Services",
+                      "url": siteUrl + "/services",
+                      "description": "Explore comprehensive growth services from Growth Theories including insightful research, user-centered design, agile development, and strategic marketing. Designed to boost startups and established businesses in India and globally.",
+                      "provider": {
+                        "@type": "Organization",
+                        "name": "Growth Theories",
+                        "url": siteUrl,
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": siteUrl + "/images/logo.png"
+                        }
+                      },
+                      "areaServed": {
+                        "@type": "Country",
+                        "name": "India"
+                      },
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": siteUrl + "/services"
+                      }
+                    }}
+                  />
+
+                  <Retention />
+                  <RetentionServices />
+                  <RetentionEngagement />
+                  
+
+                  <GrowthSection />
                   <Footer />
                 </>
               }

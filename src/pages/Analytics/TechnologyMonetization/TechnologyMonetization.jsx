@@ -9,22 +9,31 @@ import OptimizelyImg from '../../../assets/Analytics/Optimizely.svg'
 import HotjarImg from '../../../assets/Analytics/Hotjar.png'
 import SEMrushImg from '../../../assets/Analytics/SEMrush.png'
 import MailchimpImg from '../../../assets/Analytics/Mailchimp.png'
+import googleadspeciaImg from '../../../assets/monetization/googleadspecialist_icon.png'
+import ReferralCandyIMg from '../../../assets/monetization/Referral Candy.png'
+import ActiveCampaignIMg from '../../../assets/monetization/Active Campaign.png'
+import AdmobIMg from '../../../assets/monetization/Admob.png'
+import OptimizelyIMg from '../../../assets/monetization/Optimizely.png'
+import StripeIMg from '../../../assets/monetization/Stripe.png'
+import OptinMonsterIMg from '../../../assets/monetization/OptinMonster.png'
+import hubspot_logoImg from '../../../assets/Acquisition/hubspot_logo.png'
 
 
 import "./TechnologyMonetization.scss";
 
 const toolsData = [
-    { name: 'RevenueCat', logo: RevenueCatImg },
-    { name: 'Razorpay', logo: RazorpayImg },
-    { name: 'Refersion', logo: RefersionImg },
-    { name: 'Google Analytics 4', logo: GoogleAnalyticsImg },
+    { name: 'Google Ads', logo: googleadspeciaImg },
+    { name: 'CRM Integration', logo: hubspot_logoImg },
+    { name: 'Referral Candy', logo: ReferralCandyIMg },
+    { name: 'Active Campaign', logo: ActiveCampaignIMg },
+    { name: 'Admob', logo: AdmobIMg },
     { name: 'Chargebee', logo: ChargebeeImg },
-    { name: 'MixpanelImg', logo: MixpanelImg },
-    { name: '', logo: '' },
-    { name: 'Optimizely', logo: OptimizelyImg },
+    { name: 'Optimizely', logo: OptimizelyIMg },
     { name: 'Hotjar', logo: HotjarImg },
     { name: 'SEMrush', logo: SEMrushImg },
-    { name: 'Mailchimp', logo: MailchimpImg },
+    { name: 'Google Analytics 4', logo: GoogleAnalyticsImg },
+    { name: 'Stripe', logo: StripeIMg },
+    { name: 'OptinMonster', logo: OptinMonsterIMg },
 ];
 
 const CompanyLogo = () => {
