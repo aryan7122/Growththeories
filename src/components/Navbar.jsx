@@ -48,16 +48,16 @@ const Navbar = () => {
         }
     });
 
-    // const scrollToSection = (sectionId) => {
-    //     const element = document.getElementById(sectionId);
-    //     if (element) {
-    //         element.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-    // const handleLanguageChange = (selected) => {
-    //     console.log("Selected Language:", selected);
-    // };
+    const handleLanguageChange = (selected) => {
+        console.log("Selected Language:", selected);
+    };
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -67,6 +67,7 @@ const Navbar = () => {
 
     const HandleNavigation = (path) => {
         navigate(path);
+        setIsMobileMenuOpen(!isMobileMenuOpen);
         window.scrollTo(0, 0);
         const element = document.getElementById([path]);
         if (element) {
@@ -90,7 +91,7 @@ const Navbar = () => {
     const isContact = contact.some((path) => location.pathname.includes(path));
     // white bg
     const whiteBg = ['services'];
-    const whiteBg2 = ['acquisition', 'analytics-optimization', 'monetization','retention-engagement'];
+    const whiteBg2 = ['acquisition', 'analytics-optimization', 'monetization', 'retention-engagement'];
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = document.documentElement.scrollTop || window.pageYOffset;
@@ -119,7 +120,7 @@ const Navbar = () => {
     console.log('isFixed', isFixed)
 
     return (
-        <nav className={`navbar   ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}  ${isContact ? 'isContact' : ''}  ${isWhite || isWhite2 ? 'isWhite' : ''}`} >
+        <nav className={`navbar ${isMobileMenuOpen ? "openBg" : ""}  ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}  ${isContact ? 'isContact' : ''}  ${isWhite || isWhite2 ? 'isWhite' : ''}`} >
             <div className={`mobile_flex_toggle`} >
                 <div className="navbar__logo">
                     <img
@@ -169,7 +170,7 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                             <div className="dropdown__item">
-                                                <div className="two_list">
+                                                <div className="two_list two_list1">
                                                     <div className="firstNavbar">
                                                         <div>
                                                             <h4 onClick={() => HandleNavigation('/activation-conversion')}>Activation & Conversion</h4>
@@ -188,7 +189,7 @@ const Navbar = () => {
                                             </div>
                                         </div>
                                         <div className="dropdown__item">
-                                            <div className="two_list">
+                                            <div className="two_list two_list2">
                                                 <div className="firstNavbar">
 
                                                     <div>
@@ -264,9 +265,7 @@ const Navbar = () => {
                         {companyDropdown.isOpen && (
                             <>
                                 <div className="dropdown">
-                                    <div className="dropdown_services">
-
-
+                                    <div className="dropdown_services dropdown_services_Company">
                                         <div className="dropdown__item">
                                             <div className="two_list">
                                                 <div className="firstNavbar">

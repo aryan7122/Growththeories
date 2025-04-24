@@ -1,3 +1,4 @@
+@use "../../../styles//Variables/variables.scss" as *;
 .about-us {
   text-align: center;
   padding: 50px;
@@ -6,39 +7,79 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #F8F6F2;
+  background: #f8f6f2;
   &__tag {
     font-size: 14px;
     font-weight: 500;
     line-height: 16.8px;
     letter-spacing: 0.05em;
     text-align: center;
- background: #B8B8B833;
- padding: 4px 10px;
- border-radius: 100px;
-    color: #1B3E9F;
+    background: #b8b8b833;
+    padding: 4px 10px;
+    border-radius: 100px;
+    color: #1b3e9f;
+  }
+  &__title {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #2b2a2a;
+    margin-top: -10px;
   }
 
-  &__title {
-    margin-top: -15px;
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 54px;
-    letter-spacing: -1px;
-    text-align: center;
-   color: #2B2A2A;
-  }
-  
   &__description {
-    margin-top: -15px;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 30px;
-        text-align: center;
-        color: #555555;
-        opacity: 0.8;
-        width: 800px;
+   font-family: 'Open Sans';
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+    width: 900px;
+    margin-top: -20px;
+    color: #555555;
   }
+  &__BTN{
+     padding: 0.75rem 1.5rem;
+      // border-radius: $border-radius;
+      border: none;
+      cursor: pointer;
+    background-color: $primary-500;
+    border: 1px solid transparent;
+      transition: all 0.3s;
+      // margin: 30px auto;
+      color: #fff;
+     
+      // width: 240px;
+    //   height: 54px;
+      border-radius: 100px;
+      box-shadow: $box-shadow-md;
+      border-radius: 100px;
+      font-size: $font-size-16;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+
+      &:hover {
+        background-color: #fff;
+        color: $primary-500;
+        transition: 0.3s linear;
+        border: 1px solid $primary-500;
+        svg {
+          color: $primary-500;
+        }
+      }
+  }
+
 
   &__stats {
     margin-top: 30px;
@@ -78,21 +119,21 @@
         rgba(102, 102, 102, 0.02) 118.44%
       );
       .about-us__item {
-          .about-us__number {
-              font-size: 90px;
-            font-weight: 400;
-            line-height: 100px;
-            text-align: center;
-            margin-top: -20px;
-            color: #fff;
+        .about-us__number {
+          font-size: 90px;
+          font-weight: 400;
+          line-height: 100px;
+          text-align: center;
+          margin-top: -20px;
+          color: #fff;
         }
 
         .about-us__label {
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 28px;
-            text-align: left;
-            color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 28px;
+          text-align: left;
+          color: #fff;
         }
       }
     }
@@ -112,7 +153,3 @@
     }
   }
 }
-
-
-
-

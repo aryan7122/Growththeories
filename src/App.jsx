@@ -150,7 +150,6 @@ function App() {
                       }
                     }}
                   />
-
                   <Header />
                   <OverApproach />
                   <Slider />
@@ -333,7 +332,7 @@ function App() {
 
                   <ActivationHero />
                   <AcquisitionSections />
-                 
+
                   <GrowthSection />
 
                   <Footer />
@@ -449,7 +448,7 @@ function App() {
                   <MonetizationSection />
                   <CompanyLogo />
                   <WhyChoose />
-                  
+
                   <GrowthSection />
 
                   <Footer />
@@ -507,7 +506,7 @@ function App() {
                   <Retention />
                   <RetentionServices />
                   <RetentionEngagement />
-                  
+
 
                   <GrowthSection />
                   <Footer />
@@ -574,9 +573,10 @@ function App() {
                   <AboutUs />
                   <About2 />
                   <AboutSection />
-                  <TeamSection />
-                  <FAQValid />
-                  <BusinessGrowth />
+                  {/* <TeamSection /> */}
+                  {/* <FAQValid /> */}
+                  {/* <BusinessGrowth /> */}
+                  <GrowthSection />
                   <Footer />
                 </>
               } />
@@ -646,7 +646,7 @@ function App() {
           </Routes>
         </div>
         {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
-    
+
       </Router>
     </HelmetProvider>
   );
