@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import GrowthTheoriesHomepage from '../assets/GrowthTheoriesHomepage.png'
 
 const SEO = ({
     title,
@@ -7,12 +6,11 @@ const SEO = ({
     keywords = [],
     canonicalPath = "",
     jsonLd,
-    ogImage, }
-) => {
+    ogImage, }) => {
 
     const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin;
     const fullCanonical = `${siteUrl}${canonicalPath}` || window.location.href;
-    const ogImageUrl = ogImage // ? `${siteUrl}/${ogImage}` : 'https://growththeories.vercel.app/assets/rocket-g1xUn_Ej.png'; // `${siteUrl}/default-image.jpg`;
+    const ogImageUrl = ogImage ? `${siteUrl}/${ogImage}` : `${siteUrl}/GrowthTheoriesHomepage.png`;
     console.log('ogImageUrl', ogImageUrl)
     return (
         <Helmet>

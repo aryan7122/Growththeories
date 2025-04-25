@@ -60,7 +60,7 @@ import ComparisonTable from './pages/Home/COMPARISON/ComparisonTable';
 import { HelmetProvider } from 'react-helmet-async';
 import SEO from './components/SEO';
 // import { useEffect, useState } from 'react';
-import GrowthTheoriesHomepage from './assets/GrowthTheoriesHomepage.png'
+import GrowthTheoriesHomepage from '../public/GrowthTheoriesHomepage.png'
 import IndustriesTabs from './pages/Home/IndustriesTabs/IndustriesTabs';
 import BlogSlider from './pages/Home/BlogSlider/BlogSlider';
 import HeroSection from './pages/AllService/HeroSection/HeroSection';
@@ -128,7 +128,7 @@ function App() {
                       "brand positioning strategies"
                     ]}
                     canonicalPath="/"
-                    ogImage='https://github.com/aryan7122/Growththeories/blob/main/src/assets/GrowthTheoriesHomepage.png?raw=true'
+                    ogImage={GrowthTheoriesHomepage}
                     jsonLd={{
                       "@context": "https://schema.org",
                       "@type": "WebSite",
