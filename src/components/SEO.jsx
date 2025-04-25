@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import GrowthTheoriesHomepage from '../assets/GrowthTheoriesHomepage.png'
 
 const SEO = ({ documentProps }) => {
     const {
@@ -12,8 +13,8 @@ const SEO = ({ documentProps }) => {
 
     const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin;
     const fullCanonical = `${siteUrl}${canonicalPath}`;
-    const ogImageUrl = ogImage ? `${siteUrl}/${ogImage}` : ''; // `${siteUrl}/default-image.jpg`;
-
+    const ogImageUrl = ogImage; //? `${siteUrl}/${ogImage}` : ''; // `${siteUrl}/default-image.jpg`;
+    console.log('ogImageUrl', ogImage)
     return (
         <Helmet>
             <title>{title}</title>
@@ -27,14 +28,14 @@ const SEO = ({ documentProps }) => {
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:url" content={fullCanonical} />
-            <meta property="og:image" content={ogImageUrl} />
+            <meta property="og:image" content={GrowthTheoriesHomepage} />
             <meta property="og:type" content="website" />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={ogImageUrl} />
+            <meta name="twitter:image" content={GrowthTheoriesHomepage} />
             <meta name="twitter:site" content="@YourTwitterHandle" />
 
             {/* Language & Mobile Optimization */}
