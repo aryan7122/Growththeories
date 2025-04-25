@@ -13,11 +13,43 @@
   margin-top: -80px;
   padding-top: 170px;
   padding-bottom: 300px;
+  @media (max-width: 1400px) {
+    padding: 230px 60px;
+    margin-top: -100px;
+  }
+  @media (max-width: 1200px) {
+    padding: 230px 50px;
+    margin-top: -100px;
+  }
 
+  @media (max-width: 1100px) {
+    padding: 230px 40px;
+    margin-top: -100px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 230px 30px;
+    margin-top: -100px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px 30px;
+  }
+
+  @media (max-width: 700px) {
+    padding: 30px 25px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 30px;
+  }
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
   .hero-left {
     flex: 1;
-    min-width: 300px;
-
+    // min-width: 300px;
+    // border: 1px solid red;
     .tag {
       background-color: #ffffff14;
       backdrop-filter: blur(24px);
@@ -35,6 +67,11 @@
       font-weight: bold;
       border: none;
       margin-bottom: 20px;
+       @media (max-width: 1400px) {
+          font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 1%;
+       }
     }
 
     h1 {
@@ -52,6 +89,21 @@
         padding: 5px 10px;
         margin-top: 10px;
         border-radius: 5px;
+      }
+      @media (max-width: 1400px) {
+        font-size: 60px;
+        line-height: 105%;
+        letter-spacing: -4px;
+      }
+      @media (max-width: 1130px) {
+        font-size: 54px;
+        line-height: 105%;
+        letter-spacing: -2px;
+      }
+      @media (max-width: 1066px) {
+        font-size: 50px;
+        line-height: 105%;
+        letter-spacing: -2px;
       }
     }
 
@@ -143,12 +195,27 @@
   }
 
   .hero-right {
-    flex: 1;
+    // flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    min-width: 300px;
-
+    width: 50%;
+    // border: 1px solid red;
+    @media (max-width: 1400px) {
+      max-width: 45%;
+    }
+    @media (max-width: 1354px) {
+      max-width: 40%;
+    }
+    @media (max-width: 1000px) {
+      max-width: 35%;
+    }
+     @media (max-width: 900px){
+      display: none;
+     }
     img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       filter: brightness(0) invert(1);
     }

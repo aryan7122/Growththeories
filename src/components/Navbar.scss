@@ -418,6 +418,12 @@
   width: 89.5%;
   position: fixed;
   transition: 0.2s linear;
+   @media (max-width: 1400px){
+    width: 91.3%;
+   }
+   @media (max-width: 1200px){
+    width: 92.6%;
+   }
 }
 
 // mobile
