@@ -128,7 +128,7 @@ function App() {
                       "brand positioning strategies"
                     ]}
                     canonicalPath="/"
-                    ogImage={GrowthTheoriesHomepage}
+                    ogImage='https://github.com/aryan7122/Growththeories/blob/main/src/assets/GrowthTheoriesHomepage.png?raw=true'
                     jsonLd={{
                       "@context": "https://schema.org",
                       "@type": "WebSite",
