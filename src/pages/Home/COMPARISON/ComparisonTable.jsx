@@ -90,12 +90,12 @@ const featuresData = [
 const ComparisonTable = () => {
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Comparison Table - Growth vs Regular Marketing</title>
                 <meta name="description" content="Compare Growth Marketing and Regular Marketing approaches with key differences in customization, strategies, and execution." />
                 <meta property="og:title" content="Comparison Table - Growth vs Regular Marketing" />
                 <meta property="og:description" content="Compare Growth Marketing and Regular Marketing approaches with key differences in customization, strategies, and execution." />
-            </Helmet>
+            </Helmet> */}
             <div className="comparison_table">
                 <h2 className="COMPARISON">COMPARISON</h2>
                 <h2 className="title">Spot The Difference With Growth Marketing</h2>

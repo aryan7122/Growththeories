@@ -100,7 +100,7 @@ const Slider = () => {
 
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Growth Marketing Services | Business Growth</title>
                 <meta name="description" content="Discover how our growth marketing services can help your business thrive. Explore our innovative strategies." />
                 <meta name="keywords" content="growth marketing, business growth, marketing strategies, digital marketing" />
@@ -109,7 +109,7 @@ const Slider = () => {
                 <meta property="og:description" content="Learn about our structured growth marketing process that drives success." />
                 <meta property="og:image" content="your-image-url.jpg" />
                 <meta property="og:url" content="your-website-url.com" />
-            </Helmet>
+            </Helmet> */}
 
             <div className="slider-container">
 

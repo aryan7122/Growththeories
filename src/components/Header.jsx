@@ -13,34 +13,34 @@ import SEO from './SEO';
 
 
 const Header = () => {
-    const seoData = {
-        title: "Growth Marketing Services | Your Blueprint for Success",
-        description:
-            "Explore our growth marketing services, including growth tracks, validation services, prediction modeling, and more!",
-        keywords: [
-            "growth marketing",
-            "business growth",
-            "digital marketing",
-            "marketing strategy",
-            "growth hacking",
-        ],
-        canonicalPath: "/", // ✅ Only path, base URL will be dynamic
-        jsonLd: {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Growth Marketing Services",
-            "description":
-                "Our services include Growth Tracks, Validation Services, and more to enhance your business growth.",
-            "provider": {
-                "@type": "Organization",
-                "name": "Your Company Name",
-            },
-        },
-    };
+    // const seoData = {
+    //     title: "Growth Marketing Services | Your Blueprint for Success",
+    //     description:
+    //         "Explore our growth marketing services, including growth tracks, validation services, prediction modeling, and more!",
+    //     keywords: [
+    //         "growth marketing",
+    //         "business growth",
+    //         "digital marketing",
+    //         "marketing strategy",
+    //         "growth hacking",
+    //     ],
+    //     canonicalPath: "/", // ✅ Only path, base URL will be dynamic
+    //     jsonLd: {
+    //         "@context": "https://schema.org",
+    //         "@type": "Service",
+    //         "name": "Growth Marketing Services",
+    //         "description":
+    //             "Our services include Growth Tracks, Validation Services, and more to enhance your business growth.",
+    //         "provider": {
+    //             "@type": "Organization",
+    //             "name": "Your Company Name",
+    //         },
+    //     },
+    // };
 
     return (
         <>
-            <SEO {...seoData} />
+            {/* <SEO {...seoData} /> */}
             <header className="header">
                 <div className="header__content">
                     <motion.h3

@@ -70,11 +70,11 @@ const FAQAccordion = () => {
     };
     return (
         <div className="faq-container007">
-            <Helmet>
+            {/* <Helmet>
                 <script type="application/ld+json">
                     {JSON.stringify(FAQSchema)}
                 </script>
-            </Helmet>
+            </Helmet> */}
             <div className="title_header">
                 <motion.span
                     initial={{ opacity: 0, y: 50 }}

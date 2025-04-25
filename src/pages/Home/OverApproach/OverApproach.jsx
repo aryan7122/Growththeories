@@ -11,13 +11,13 @@ const OverApproach = () => {
     return (
         <>
             <Helmet>
-                <title>Our Approach - Tailored Growth Strategies for Success</title>
+                {/* <title>Our Approach - Tailored Growth Strategies for Success</title>
                 <meta name="description" content="Discover proven growth strategies that adapt to your business needs for scalable, sustainable success." />
                 <meta name="keywords" content="growth strategies, business growth, marketing, tailored approach" />
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Our Approach - Tailored Growth Strategies for Success" />
                 <meta property="og:description" content="Discover proven growth strategies that adapt to your business needs for scalable, sustainable success." />
-                <meta property="og:type" content="website" />
+                <meta property="og:type" content="website" /> */}
                 {/* <meta property="og:url" content="https://yourwebsite.com/our-approach" />
                 <meta property="og:image" content="https://yourwebsite.com/images/our-approach.jpg" /> */}
             </Helmet>

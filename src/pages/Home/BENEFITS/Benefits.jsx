@@ -45,10 +45,10 @@ const advantages = [
 const Benefits = () => {
     return (
         <div className="container">
-            <Helmet>
+            {/* <Helmet>
                 <title>Benefits of Growth Marketing</title>
                 <meta name="description" content="Explore the key benefits of growth marketing, including speed to market, significant ROI, time-saving results, data-driven decisions, and more." />
-            </Helmet>
+            </Helmet> */}
             <motion.h2
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

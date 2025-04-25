@@ -276,22 +276,13 @@ export default function IndustriesTabs() {
 
     return (
         <>
-            <Helmet>
-                {/* General Page SEO */}
+            {/* <Helmet>
                 <title>Industries We Serve | Salon, Clinical & Travel Industry Marketing Experts</title>
                 <meta name="description" content="We empower salon, clinical, and travel industries in India and abroad with data-driven marketing, digital transformation, and industry-specific growth strategies." />
                 <meta name="keywords" content="Salon marketing, Clinical marketing, Travel marketing, Digital marketing for salons, Clinic growth strategies, Travel agency SEO, Industry-specific marketing" />
 
-                {/* Open Graph / Facebook */}
-                <meta property="og:title" content="Industries We Serve | Digital Marketing Experts for Salon, Clinical & Travel" />
-                <meta property="og:description" content="Discover how we help salons, clinics, and travel brands grow through AI-driven strategies, patient acquisition, customer engagement, and end-to-end marketing support." />
-              
-
-                {/* Twitter */}
-                <meta name="twitter:title" content="Industries We Serve | Empowering Salon, Clinical & Travel Sectors" />
-                <meta name="twitter:description" content="Explore our impact in the salon, clinical, and travel industries using smart marketing strategies, digital tools, and expert-driven insights." />
-             
-            </Helmet>
+            
+            </Helmet> */}
             <div className="industries-section">
                 <div className="card_title">
                     <motion.h4

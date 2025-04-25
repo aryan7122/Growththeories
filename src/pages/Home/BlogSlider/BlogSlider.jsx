@@ -60,24 +60,13 @@ const BlogSlider = () => {
 
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Unlock Tailored Growth Strategies | Boost Business with Smart Blogs</title>
                 <meta name="description" content="Explore expert insights on business growth, revenue boosting, and budget-friendly strategies. Read blogs crafted to accelerate your success." />
                 <meta name="keywords" content="Business Growth, Data-Driven Strategies, Revenue Boost, Budget Marketing, Growth Solutions, Blogs, Business Tips" />
-                {/* <meta name="author" content="Your Company Name" />
-                <link rel="canonical" href="https://yourdomain.com/blogs" /> */}
-
-                {/* Open Graph / Facebook */}
-                <meta property="og:title" content="Unlock Tailored Growth Strategies | Smart Business Blogs" />
-                <meta property="og:description" content="Explore our collection of expert blogs to grow your business using data-driven, cost-effective strategies." />
-
-
-                {/* Twitter */}
-                <meta name="twitter:title" content="Unlock Tailored Growth Strategies | Smart Business Blogs" />
-                <meta name="twitter:description" content="Explore expert blogs to boost your business growth and revenue using data and smart insights." />
-                {/* <meta name="twitter:image" content="https://yourdomain.com/path-to-featured-image.jpg" />
-                <meta name="twitter:card" content="summary_large_image" /> */}
-            </Helmet>
+                
+                
+            </Helmet> */}
 
             <div className={styles.blogWrapper}>
                 <div className={styles.head_top}>
