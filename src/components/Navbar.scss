@@ -262,7 +262,7 @@
           // border: 1px solid red !important;
           transform: translateX(-70%);
           @media (max-width: 1070px) {
-            width:670px !important;
+            width: 670px !important;
             .right_drop {
               flex-direction: column;
             }
@@ -418,12 +418,12 @@
   width: 89.5%;
   position: fixed;
   transition: 0.2s linear;
-   @media (max-width: 1400px){
+  @media (max-width: 1400px) {
     width: 91.3%;
-   }
-   @media (max-width: 1200px){
+  }
+  @media (max-width: 1200px) {
     width: 92.6%;
-   }
+  }
 }
 
 // mobile
@@ -559,7 +559,7 @@
         // padding: 1rem;
         gap: 40px;
         // border: 1px solid red !important;
-        margin-left:70px;
+        margin-left: 70px;
         // margin-top: 30px;
         .navbar__dropdown {
           // width: fit-content;
@@ -592,8 +592,8 @@
       }
     }
   }
-  .isWhite{
-    .navbar__toggle{
+  .isWhite {
+    .navbar__toggle {
       color: #fff;
     }
   }
@@ -605,20 +605,20 @@
   }
 }
 @media (max-width: 890px) {
-  .navbar .navbar__actions .navbar__links  {
+  .navbar .navbar__actions .navbar__links {
     display: none !important;
     // border: 1px solid red !important;
   }
-  .navbar__links.open .navbar__dropdown{
+  .navbar__links.open .navbar__dropdown {
     margin: 10px 0;
   }
-  .navbar__links.open .navbar__dropdown a{
+  .navbar__links.open .navbar__dropdown a {
     display: flex;
     align-items: center;
     justify-content: space-between !important;
     width: 100%;
   }
-  .navbar .navbar__actions .open  {
+  .navbar .navbar__actions .open {
     display: block !important;
     // border: 1px solid red !important;
   }
@@ -649,12 +649,12 @@
   // border: 1px solid red;
   position: fixed;
   width: 89.5%;
-          @media only screen and (max-width: 888px) {
-            width: 93%;
-          }
-          @media only screen and (max-width: 700px) {
-            width: 90%;
-          }
+  @media only screen and (max-width: 888px) {
+    width: 93%;
+  }
+  @media only screen and (max-width: 700px) {
+    width: 90%;
+  }
 }
 
 // .navbar__toggle{
