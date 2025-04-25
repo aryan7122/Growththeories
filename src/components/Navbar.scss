@@ -411,7 +411,7 @@
 .isFixedNav {
   // background-color: #676560;
   //
-  box-shadow: $box-shadow-md;
+  box-shadow: 0px 10px 15px 0.1px #0000000a;
 
   // backdrop-filter: blur(12px);
   // -webkit-backdrop-filter: blur(12px);
@@ -643,7 +643,7 @@
   // background-image: url('../assets/allService/bgService.svg ') !important;
   // border: 1px solid red;
   position: fixed;
-  width: 88.5%;
+  width: 89.5%;
           @media only screen and (max-width: 888px) {
             width: 93%;
           }
@@ -652,9 +652,9 @@
 // .navbar__toggle{
 //   color: #fff !important;
 // }
-.openBg{
-  background-color: #f8f6f2;
-}
+// .openBg{
+//   background-color: #f8f6f2;
+// }
 .isWhiteUl {
   background: transparent;
   &:hover {

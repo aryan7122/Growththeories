@@ -229,19 +229,19 @@ function App() {
               element={
                 <>
                   <SEO
-                    title="Customer Acquisition Services | Growth Marketing Agency in India"
-                    description="Boost customer acquisition with Growth Theories' data-driven strategies in SEO, paid ads, social media, influencer marketing, landing page optimization, and more."
+                    title="Customer Acquisition Services | SEO, Ads, Social & Influencer Marketing India"
+                    description="Drive growth with Growth Theories' top customer acquisition services in India. Boost ROI with SEO, paid ads, social media growth, influencer campaigns, referral marketing, landing page optimization & more."
                     keywords={[
-                      "customer acquisition services",
+                      "customer acquisition services India",
                       "growth marketing agency India",
-                      "SEO and content marketing",
-                      "paid advertising agency",
+                      "SEO and content marketing agency",
+                      "paid advertising and PPC agency",
                       "social media growth services",
-                      "influencer marketing agency India",
-                      "affiliate marketing for startups",
-                      "referral and viral marketing",
-                      "landing page optimization services",
-                      "digital acquisition strategy"
+                      "influencer and affiliate marketing agency",
+                      "referral and viral marketing campaigns",
+                      "landing page optimization agency",
+                      "digital growth strategy India",
+                      "data-driven acquisition strategies"
                     ]}
                     canonicalPath="/acquisition"
                     ogImage={GrowthTheoriesHomepage}
@@ -251,7 +251,7 @@ function App() {
                       "name": "Growth Theories - Customer Acquisition Services",
                       "url": siteUrl + "/acquisition",
                       "description":
-                        "Explore customer acquisition services from Growth Theories, a leading growth marketing agency in India. We offer SEO, paid advertising, influencer campaigns, social media growth, referral marketing, and landing page optimization to scale your business effectively.",
+                        "Get premium customer acquisition services with Growth Theories. We specialize in SEO, paid advertising, social media engagement, influencer and affiliate marketing, referral campaigns, and landing page optimization to help businesses scale.",
                       "provider": {
                         "@type": "Organization",
                         "name": "Growth Theories",
@@ -265,12 +265,21 @@ function App() {
                         "@type": "Country",
                         "name": "India"
                       },
+                      "serviceType": [
+                        "SEO & Content Marketing",
+                        "Paid Advertising",
+                        "Social Media Growth",
+                        "Influencer & Affiliate Marketing",
+                        "Referral & Viral Marketing",
+                        "Landing Page Optimization"
+                      ],
                       "mainEntityOfPage": {
                         "@type": "WebPage",
                         "@id": siteUrl + "/acquisition"
                       }
                     }}
                   />
+
 
 
                   <AcquisitionHeroSection />
@@ -288,28 +297,28 @@ function App() {
               element={
                 <>
                   <SEO
-                    title="Growth Theories Services | Growth Marketing Agency in India"
-                    description="Discover Growth Theories’ expert services in research, design, development, and growth marketing. We help businesses scale with SEO, user acquisition, retention, monetization, and analytics."
+                    title="Customer Activation Services | Growth Marketing by Growth Theories"
+                    description="Boost user engagement with Growth Theories' activation services. From onboarding to personalized experiences, discover strategies to enhance customer satisfaction and retention."
                     keywords={[
-                      "growth marketing agency India",
-                      "digital product studio",
-                      "user acquisition strategies",
-                      "SEO services India",
-                      "conversion rate optimization",
-                      "customer retention services",
-                      "digital marketing for startups",
-                      "business scaling services",
-                      "growth hacking agency India",
-                      "monetization strategies"
+                      "customer activation services",
+                      "user onboarding strategies",
+                      "growth marketing India",
+                      "user engagement tools",
+                      "conversion optimization",
+                      "personalized user journeys",
+                      "A/B testing and experimentation",
+                      "digital growth agency India",
+                      "activation funnel optimization",
+                      "behavioral targeting marketing"
                     ]}
-                    canonicalPath="/services"
+                    canonicalPath="/activation-conversion"
                     ogImage={GrowthTheoriesHomepage}
                     jsonLd={{
                       "@context": "https://schema.org",
                       "@type": "Service",
-                      "name": "Growth Theories - Growth Marketing Services",
-                      "url": siteUrl + "/services",
-                      "description": "Explore comprehensive growth services from Growth Theories including insightful research, user-centered design, agile development, and strategic marketing. Designed to boost startups and established businesses in India and globally.",
+                      "name": "Customer Activation - Growth Theories",
+                      "url": siteUrl + "/activation-conversion",
+                      "description": "Explore Growth Theories’ powerful customer activation strategies, including onboarding, funnel optimization, personalization, and behavioral targeting. Maximize engagement and satisfaction.",
                       "provider": {
                         "@type": "Organization",
                         "name": "Growth Theories",
@@ -325,10 +334,11 @@ function App() {
                       },
                       "mainEntityOfPage": {
                         "@type": "WebPage",
-                        "@id": siteUrl + "/services"
+                        "@id": siteUrl + "/activation-conversion"
                       }
                     }}
                   />
+
 
                   <ActivationHero />
                   <AcquisitionSections />
@@ -344,28 +354,28 @@ function App() {
               element={
                 <>
                   <SEO
-                    title="Growth Theories Services | Growth Marketing Agency in India"
-                    description="Discover Growth Theories’ expert services in research, design, development, and growth marketing. We help businesses scale with SEO, user acquisition, retention, monetization, and analytics."
+                    title="Analytics & Optimization Services | Growth Theories India"
+                    description="Boost your business growth with Growth Theories’ Analytics & Optimization services. We specialize in data tracking, attribution, customer segmentation, and monetization strategies."
                     keywords={[
-                      "growth marketing agency India",
-                      "digital product studio",
-                      "user acquisition strategies",
-                      "SEO services India",
-                      "conversion rate optimization",
-                      "customer retention services",
-                      "digital marketing for startups",
-                      "business scaling services",
-                      "growth hacking agency India",
-                      "monetization strategies"
+                      "analytics services India",
+                      "data tracking services",
+                      "attribution modeling agency",
+                      "customer segmentation agency",
+                      "retargeting strategies India",
+                      "marketing optimization",
+                      "conversion optimization",
+                      "monetization technology stack",
+                      "growth analytics",
+                      "performance marketing"
                     ]}
-                    canonicalPath="/services"
+                    canonicalPath="/analytics-optimization"
                     ogImage={GrowthTheoriesHomepage}
                     jsonLd={{
                       "@context": "https://schema.org",
                       "@type": "Service",
-                      "name": "Growth Theories - Growth Marketing Services",
-                      "url": siteUrl + "/services",
-                      "description": "Explore comprehensive growth services from Growth Theories including insightful research, user-centered design, agile development, and strategic marketing. Designed to boost startups and established businesses in India and globally.",
+                      "name": "Analytics & Optimization Services - Growth Theories",
+                      "url": siteUrl + "/analytics-optimization",
+                      "description": "Leverage Growth Theories’ expertise in analytics, tracking, segmentation, and monetization to improve your digital performance and drive ROI.",
                       "provider": {
                         "@type": "Organization",
                         "name": "Growth Theories",
@@ -381,11 +391,15 @@ function App() {
                       },
                       "mainEntityOfPage": {
                         "@type": "WebPage",
-                        "@id": siteUrl + "/services"
+                        "@id": siteUrl + "/analytics-optimization"
+                      },
+                      "serviceType": "Analytics, Optimization, and Monetization",
+                      "audience": {
+                        "@type": "Audience",
+                        "audienceType": "Startups, SMBs, Enterprises"
                       }
                     }}
                   />
-
                   <AnalyticsHero />
                   <ServiceSlider />
                   <ServiceSlider2 />
@@ -402,28 +416,28 @@ function App() {
               element={
                 <>
                   <SEO
-                    title="Growth Theories Services | Growth Marketing Agency in India"
-                    description="Discover Growth Theories’ expert services in research, design, development, and growth marketing. We help businesses scale with SEO, user acquisition, retention, monetization, and analytics."
+                    title="Monetization & Revenue Growth Services | Growth Theories India"
+                    description="Maximize your revenue with Growth Theories' expert monetization services. From pricing strategies to affiliate marketing, we help scale your business sustainably."
                     keywords={[
-                      "growth marketing agency India",
-                      "digital product studio",
-                      "user acquisition strategies",
-                      "SEO services India",
-                      "conversion rate optimization",
-                      "customer retention services",
-                      "digital marketing for startups",
-                      "business scaling services",
-                      "growth hacking agency India",
-                      "monetization strategies"
+                      "monetization services India",
+                      "revenue growth strategies",
+                      "pricing optimization",
+                      "subscription growth services",
+                      "upselling strategies",
+                      "cross-selling techniques",
+                      "affiliate marketing India",
+                      "growth marketing monetization",
+                      "business revenue optimization",
+                      "scalable monetization strategies"
                     ]}
-                    canonicalPath="/services"
+                    canonicalPath="/monetization"
                     ogImage={GrowthTheoriesHomepage}
                     jsonLd={{
                       "@context": "https://schema.org",
                       "@type": "Service",
-                      "name": "Growth Theories - Growth Marketing Services",
-                      "url": siteUrl + "/services",
-                      "description": "Explore comprehensive growth services from Growth Theories including insightful research, user-centered design, agile development, and strategic marketing. Designed to boost startups and established businesses in India and globally.",
+                      "name": "Growth Theories - Monetization & Revenue Growth Services",
+                      "url": siteUrl + "/monetization",
+                      "description": "Explore our comprehensive monetization and revenue growth services. Leverage data-driven strategies, dynamic pricing models, affiliate marketing, and more to increase business income.",
                       "provider": {
                         "@type": "Organization",
                         "name": "Growth Theories",
@@ -439,10 +453,16 @@ function App() {
                       },
                       "mainEntityOfPage": {
                         "@type": "WebPage",
-                        "@id": siteUrl + "/services"
+                        "@id": siteUrl + "/monetization"
+                      },
+                      "serviceType": "Monetization & Revenue Growth Strategy",
+                      "audience": {
+                        "@type": "Audience",
+                        "audienceType": "Startups, Businesses, Entrepreneurs"
                       }
                     }}
                   />
+
 
                   <MonetizationHeroSection />
                   <MonetizationSection />
@@ -461,28 +481,28 @@ function App() {
               element={
                 <>
                   <SEO
-                    title="Growth Theories Services | Growth Marketing Agency in India"
-                    description="Discover Growth Theories’ expert services in research, design, development, and growth marketing. We help businesses scale with SEO, user acquisition, retention, monetization, and analytics."
+                    title="Customer Retention & Engagement Services | Growth Marketing Agency India"
+                    description="Boost user loyalty and engagement with Growth Theories' expert retention strategies. Personalized email marketing, gamification, SMS campaigns, and more to reduce churn and increase lifetime value."
                     keywords={[
-                      "growth marketing agency India",
-                      "digital product studio",
-                      "user acquisition strategies",
-                      "SEO services India",
-                      "conversion rate optimization",
-                      "customer retention services",
-                      "digital marketing for startups",
-                      "business scaling services",
-                      "growth hacking agency India",
-                      "monetization strategies"
+                      "customer retention strategies",
+                      "engagement marketing services",
+                      "email lifecycle campaigns India",
+                      "gamification marketing",
+                      "user retention agency India",
+                      "push notifications marketing",
+                      "sms marketing for engagement",
+                      "growth marketing retention services",
+                      "customer loyalty programs",
+                      "reduce churn rate strategies"
                     ]}
-                    canonicalPath="/services"
+                    canonicalPath="/retention-engagement"
                     ogImage={GrowthTheoriesHomepage}
                     jsonLd={{
                       "@context": "https://schema.org",
                       "@type": "Service",
-                      "name": "Growth Theories - Growth Marketing Services",
-                      "url": siteUrl + "/services",
-                      "description": "Explore comprehensive growth services from Growth Theories including insightful research, user-centered design, agile development, and strategic marketing. Designed to boost startups and established businesses in India and globally.",
+                      "name": "Retention & Engagement Services - Growth Theories",
+                      "url": siteUrl + "/retention-engagement",
+                      "description": "Discover advanced customer retention and engagement strategies with Growth Theories. From lifecycle marketing to gamification and real-time analytics, we help businesses reduce churn and boost loyalty.",
                       "provider": {
                         "@type": "Organization",
                         "name": "Growth Theories",
@@ -498,7 +518,12 @@ function App() {
                       },
                       "mainEntityOfPage": {
                         "@type": "WebPage",
-                        "@id": siteUrl + "/services"
+                        "@id": siteUrl + "/retention-engagement"
+                      },
+                      "serviceType": "Customer Retention & Engagement",
+                      "audience": {
+                        "@type": "Audience",
+                        "audienceType": "Businesses, Startups, Enterprises"
                       }
                     }}
                   />
@@ -514,7 +539,7 @@ function App() {
               }
             />
 
-            <Route path="/growth-tracks"
+            {/* <Route path="/growth-tracks"
               element={
                 <>
                   <Service />
@@ -566,10 +591,61 @@ function App() {
                   <AuditBusinessGrowth />
                   <Footer />
                 </>
-              } />
-            <Route path="/about"
+              } /> */}
+            <Route
+              path="/about"
               element={
                 <>
+                  <SEO
+                    title="About Us | Growth Theories - Top Growth Marketing Agency in India"
+                    description="Learn about Growth Theories, India's top growth marketing agency. Our mission is to provide scalable, affordable, and results-driven strategies to help businesses achieve sustainable growth."
+                    keywords={[
+                      "about growth theories",
+                      "growth marketing agency India",
+                      "about us digital marketing agency",
+                      "scalable marketing solutions India",
+                      "digital growth agency",
+                      "growth strategy experts India",
+                      "marketing company values",
+                      "data-driven growth agency",
+                      "mission driven marketing agency",
+                      "cost-effective marketing strategies"
+                    ]}
+                    canonicalPath="/about"
+                    ogImage={GrowthTheoriesHomepage}
+                    jsonLd={{
+                      "@context": "https://schema.org",
+                      "@type": "Organization",
+                      "name": "Growth Theories",
+                      "url": siteUrl + "/about",
+                      "logo": {
+                        "@type": "ImageObject",
+                        "url": siteUrl + "/images/logo.png"
+                      },
+                      "description": "Growth Theories is a premier growth marketing agency helping businesses scale through budget-friendly and impactful marketing strategies. Our core values are innovation, empathy, and collaboration.",
+                      "address": {
+                        "@type": "PostalAddress",
+                        "addressCountry": "IN"
+                      },
+                      "sameAs": [
+                        "https://www.linkedin.com/company/growththeories",
+                        "https://www.instagram.com/growththeories",
+                        "https://www.twitter.com/growththeories"
+                      ],
+                      "foundingDate": "2020",
+                      "founders": [
+                        {
+                          "@type": "Person",
+                          "name": "Aryan Kushwaha"
+                        }
+                      ],
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": siteUrl + "/about"
+                      }
+                    }}
+                  />
+
                   <AboutUs />
                   <About2 />
                   <AboutSection />
@@ -579,7 +655,9 @@ function App() {
                   <GrowthSection />
                   <Footer />
                 </>
-              } />
+              }
+            />
+
             <Route path="/contact"
               element={
                 <>
