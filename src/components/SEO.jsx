@@ -12,7 +12,7 @@ const SEO = ({ documentProps }) => {
 
     const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin;
     const fullCanonical = `${siteUrl}${canonicalPath}`;
-    const ogImageUrl = ogImage ? `${siteUrl}/${ogImage}` : `${siteUrl}/default-image.jpg`;
+    const ogImageUrl = ogImage ? `${siteUrl}/${ogImage}` : ''; // `${siteUrl}/default-image.jpg`;
 
     return (
         <Helmet>
