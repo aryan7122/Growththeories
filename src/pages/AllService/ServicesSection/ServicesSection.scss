@@ -49,6 +49,13 @@
     // position: absolute;
     margin-top: -200px;
     padding: 20px;
+    @media (max-width: 900px) {
+      padding: 0px;
+    }
+    @media (max-width: 730px) {
+      margin-top: 0;
+      background: transparent;
+    }
   }
 
   h2 {
@@ -72,6 +79,17 @@
 
       color: $primary-800;
     }
+    @media (max-width: 900px) {
+      font-size: 40px;
+      line-height: 60px;
+      letter-spacing: -2px;
+      margin-top: 10px;
+      span {
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: -2px;
+      }
+    }
   }
 
   p {
@@ -84,6 +102,9 @@
     text-align: center;
     text-transform: capitalize;
     margin-top: -20px;
+    @media (max-width: 900px) {
+      margin-top: -25px;
+    }
   }
 
   .cta {
@@ -134,21 +155,23 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     margin-top: 40px;
-    @media (max-width: 1260px){
+    @media (max-width: 1260px) {
       grid-template-columns: repeat(2, 1fr);
-     }
+    }
     @media (max-width: 900px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 725px) {
       grid-template-columns: 1fr;
     }
 
     .card {
       // border-radius: 10px;
       background: #f7f7ff;
-
+      @media (max-width: 730px) {
+        background: #fafafa;
+      }
       padding: 25px;
       text-align: left;
       transition: 0.3s;
@@ -187,6 +210,10 @@
           vertical-align: middle;
           text-transform: uppercase;
           color: #2b2a2a;
+        }
+        @media (max-width: 900px) {
+          font-size: 26px;
+          gap: 7px;
         }
       }
 
