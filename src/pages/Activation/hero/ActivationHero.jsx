@@ -9,11 +9,11 @@ const ActivationHero = () => {
         <div className="ActivationHero-section">
             <p className="subheading">LEADING AGENCY</p>
             <h1 className="main-heading">
-                Essential Strategies For Customer <br /> Activation And Enhanced Satisfaction
+                Essential Strategies For Customer Activation And Enhanced Satisfaction
             </h1>
             <p className="description">
-                Unlocking Potential: Discover Proven Techniques To Deeply Engage Customers And Significantly <br />
-                Enhance Their Overall Experience. Explore Innovative Strategies That Not Only Capture Attention But <br />
+                Unlocking Potential: Discover Proven Techniques To Deeply Engage Customers And Significantly 
+                Enhance Their Overall Experience. Explore Innovative Strategies That Not Only Capture Attention But 
                 Also Foster Lasting Relationships, Ensuring Your Customers Feel Valued And Understood.
             </p>
             <button className="cta-button">

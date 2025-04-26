@@ -4,47 +4,62 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 70px 80px;
-  padding-bottom: 200px;
-  background: #EDEDFF;
+  padding: 80px 80px;
+  padding-bottom: 240px;
+  background: #ededff;
   @media (max-width: 1400px) {
-    padding: 30px 60px;
+    padding: 80px 60px;
+    padding-bottom: 240px;
   }
   @media (max-width: 1200px) {
-    padding: 40px 50px;
+    padding: 80px 50px;
+    padding-bottom: 240px;
   }
 
   @media (max-width: 1100px) {
-    padding: 35px 40px;
+    padding: 75px 40px;
+    padding-bottom: 240px;
   }
-
+  
   @media (max-width: 900px) {
-    padding: 30px 35px;
+    padding: 70px 35px;
+    padding-bottom: 240px;
   }
 
   @media (max-width: 800px) {
-    padding: 30px 30px;
+    padding: 70px 30px;
+     padding-bottom: 240px;
   }
 
   @media (max-width: 700px) {
-    padding: 30px 25px;
+    padding: 70px 25px;
+     padding-bottom: 240px;
   }
 
   @media (max-width: 600px) {
-    padding: 30px;
+    padding:70px 30px;
+     padding-bottom: 240px;
   }
   @media (max-width: 500px) {
-    padding: 20px;
+    padding: 70px 20px;
+     padding-bottom: 240px;
   }
 
   background-color: #f2f1fc;
 
   .hero-content {
     // max-width: 900px;
-
+    @media (max-width: 1000px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
     .subtitle {
-        margin-top: 30px;
-        margin-bottom: -30px;
+      margin-top: 30px;
+      margin-bottom: -30px;
       font-family: "Oxanium";
       font-weight: 600;
       font-size: 24px;
@@ -63,12 +78,41 @@
       letter-spacing: -3px;
       vertical-align: middle;
       text-transform: capitalize;
-        width: 811px;
+      width: 811px;
       color: $primary-900;
 
       span {
         color: $primary-500;
       }
+      @media (max-width: 1360px) {
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 64.8px;
+        letter-spacing: -3px;
+        width: 711px;
+      }
+      @media (max-width: 1200px) {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 57.8px;
+        letter-spacing: -3px;
+        width: 570px;
+        margin-top: 40px;
+      }
+        @media (max-width: 1000px){
+          font-weight: 600;
+        font-size: 46px;
+        line-height: 52.8px;
+        letter-spacing: -3px;
+        width: 100%;
+        }
+        @media (max-width: 600px){
+          font-weight: 600;
+        font-size: 40px;
+        line-height: 47.8px;
+        letter-spacing: -3px;
+        width: 100%;
+        }
     }
 
     .description {
@@ -83,10 +127,16 @@
       width: 711px;
 
       color: #333;
+      @media (max-width: 1200px) {
+        width: 620px;
+      }
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
     }
 
     .cta-button {
-        margin-top: 30px;
+      margin-top: 30px;
       display: flex;
       align-items: center;
       padding: 0.75rem 1.5rem;
@@ -128,9 +178,15 @@
   }
 
   .hero-image {
+    @media (max-width: 1000px) {
+      display: none;
+    }
     img {
-    //   max-width: 300px;
-    //   height: auto;
+      @media screen and (max-width: 1468px) {
+        width: 97%;
+      }
+      // max-width: 300px;
+      //   height: auto;
     }
   }
 

@@ -67,10 +67,28 @@
     gap: 1.5rem;
     justify-items: center;
     gap: 1.5rem;
+    border: 1px solid red !important;
     margin-bottom: 3rem;
+     @media (max-width: 1400px) {
+      gap: 18px;
+    }
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    @media (max-width: 1100px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media (max-width: 860px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr 1fr ;
+    }
+    @media (max-width: 1030px) {
+      gap: 10px;
+    }
     .cards:nth-child(7) {
       opacity: 0;
-      border: 1px solid red !important;
     }
     .tool-card {
       background: #eae5ff66;
@@ -85,6 +103,74 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+       @media (max-width: 1400px) {
+        width: 180px;
+        height: 100px;
+      }
+      @media (max-width: 1100px) {
+        width: 220px;
+        height: 105px;
+      }
+      @media (max-width: 1030px) {
+        width: 200px;
+        height: 105px;
+      }
+      @media (max-width: 900px) {
+        width: 190px;
+        height: 102px;
+      }
+      @media (max-width: 860px) {
+        width: 220px;
+        height: 105px;
+      }
+      @media (max-width: 780px) {
+        width: 200px;
+        height: 102px;
+      }
+      @media (max-width: 680px) {
+        width: 260px;
+        height: 102px;
+      }
+      @media (max-width: 590px) {
+        width: 230px;
+        height: 102px;
+      }
+      @media (max-width: 520px) {
+        width: 200px;
+        height: 102px;
+      }
+      @media (max-width: 450px) {
+        width: 190px;
+        height: 102px;
+      }
+      @media (max-width: 430px) {
+        width: 170px;
+        height: 90px;
+        img{
+          scale: 0.8;
+        }
+      }
+      @media (max-width: 390px) {
+        width: 160px;
+        height: 90px;
+        img{
+          scale: 0.8;
+        }
+      }
+      @media (max-width: 380px) {
+        width: 150px;
+        height: 80px;
+        img{
+          scale: 0.7;
+        }
+      }
+      @media (max-width: 350px) {
+        width: 140px;
+        height: 80px;
+        img{
+          scale: 0.7;
+        }
+      }
       //   gap: 10px;
       .cards {
       }

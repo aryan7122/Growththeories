@@ -8,15 +8,19 @@
   padding-bottom: 200px;
   background: #ededff;
   @media (max-width: 1400px) {
-    padding: 30px 60px;
+    padding: 70px 60px;
   }
   @media (max-width: 1200px) {
-    padding: 40px 50px;
+    padding: 70px 50px;
+  }
+@media (max-width: 1030px){
+  justify-content: center;
+  text-align: center;
+}
+  @media (max-width: 1100px) {
+    padding: 70px 40px;
   }
 
-  @media (max-width: 1100px) {
-    padding: 35px 40px;
-  }
 
   @media (max-width: 900px) {
     padding: 30px 35px;
@@ -53,11 +57,15 @@
       text-align: left;
       vertical-align: middle;
       text-transform: uppercase;
-      color: #B44659;
+      color: #b44659;
       width: fit-content;
       padding: 8px 15px;
       background: #fff;
       border-radius: 100px;
+      @media (max-width: 1030px){
+        margin: 0 auto;
+        margin-top: 40px;
+      }
     }
 
     h1 {
@@ -70,6 +78,33 @@
       text-transform: capitalize;
       width: 811px;
       color: $neutral-700;
+      @media (max-width: 1400px) {
+        width: 780px;
+        font-size: 60px;
+        line-height: 70.8px;
+        letter-spacing: -3px;
+      }
+      @media (max-width: 1300px) {
+        width: 680px;
+        font-size: 52px;
+        line-height: 60.8px;
+        letter-spacing: -3px;
+      }
+      @media (max-width: 1200px) {
+        width: 600px;
+        font-size: 48px;
+        line-height: 54.8px;
+        letter-spacing: -3px;
+      }
+      @media (max-width: 1030px){
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+      @media (max-width: 900px){
+        width: 100%;
+      }
 
       span {
         color: $neutral-800;
@@ -89,6 +124,17 @@
       width: 711px;
 
       color: #333;
+      @media (max-width: 1200px){
+        width: 570px;
+      }
+      @media (max-width: 1030px){
+        width: 80%;
+        margin: 10px auto;
+      }
+      @media (max-width: 900px){
+        width: 100%;
+        margin: 10px auto;
+      }
     }
 
     .cta-button {
@@ -130,11 +176,23 @@
           color: $primary-500;
         }
       }
+      @media (max-width: 1030px){
+        margin: 20px auto;
+      }
+      
     }
   }
 
   .hero-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+     @media (max-width: 1030px){
+      display: none;
+    }
     img {
+      width: 80%;
       //   max-width: 300px;
       //   height: auto;
     }

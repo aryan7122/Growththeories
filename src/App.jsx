@@ -279,9 +279,6 @@ function App() {
                       }
                     }}
                   />
-
-
-
                   <AcquisitionHeroSection />
                   {/* <AcquisitionSection /> */}
                   <AcquisitionServices />
