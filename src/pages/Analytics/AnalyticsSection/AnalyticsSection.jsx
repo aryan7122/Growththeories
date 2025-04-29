@@ -69,7 +69,7 @@ const AnalyticsSection = () => {
                 <div className="top_content">
                     <div className="left_content">
                         <h1>
-                            Why Choose <span>Growththeories India</span> <br /> For Analytics & Optimization?
+                            Why Choose <span>Growththeories India</span>  For Analytics & Optimization?
                         </h1>
                         <p>
                             Partnering with Growththeories India means collaborating with a dedicated team focused on your growth. Our analysts leverage advanced tools to transform data into actionable insights, addressing your unique challenges to boost efficiency and maximize ROI.

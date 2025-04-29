@@ -57,6 +57,12 @@
       align-items: center;
       justify-content: space-between;
       // width: 90%;
+      @media (max-width: 1230px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
       .right {
         display: flex;
         flex-direction: column;
@@ -79,6 +85,10 @@
         padding: 8px 15px;
         background: #fff;
         border-radius: 100px;
+        @media (max-width: 1230px) {
+          margin: 0 auto;
+          margin-top: 50px;
+        }
       }
 
       h1 {
@@ -96,6 +106,32 @@
           color: $neutral-800;
           font-weight: 600;
         }
+        @media (max-width: 1230px) {
+          font-weight: 600;
+          font-size: 50px;
+          line-height: 60.8px;
+          letter-spacing: -2px;
+          margin-top: 10px;
+          width: 80%;
+          margin: 10px auto;
+        }
+        @media (max-width: 960px) {
+          width: 100%;
+          font-size: 46px;
+          line-height: 54.8px;
+        }
+        @media (max-width: 870px) {
+          font-size: 40px;
+          line-height: 50.8px;
+        }
+        @media (max-width: 760px) {
+          font-size: 37px;
+          line-height: 42.8px;
+        }
+        @media (max-width: 460px) {
+          font-size: 32px;
+          line-height: 40.8px;
+        }
       }
 
       .description {
@@ -111,6 +147,17 @@
         // width: 711px;
 
         color: #333;
+        @media (max-width: 1360px) {
+          margin-top: 50px;
+        }
+        @media (max-width: 1230px) {
+          text-align: center;
+          width: 80%;
+          margin: 0 auto;
+        }
+        @media (max-width: 960px) {
+          width: 100%;
+        }
       }
 
       .cta-button {
@@ -152,6 +199,9 @@
             color: $primary-500;
           }
         }
+        @media (max-width: 1230px) {
+          margin: 30px auto;
+        }
       }
     }
 
@@ -165,6 +215,9 @@
         margin: 0 auto !important;
         //   max-width: 300px;
         //   height: auto;'
+        @media (max-width: 960px) {
+          width: 100%;
+        }
       }
     }
 
@@ -186,7 +239,7 @@
     background-color: white;
     opacity: 0.2; /* 15% opacity */
     // z-index: 2;
-      background-image: url("../../assets/Retention/473d549a0b01371b608ce239fa408b85c9f19eed_11zon\ \(1\).png");
+    background-image: url("../../assets/Retention/473d549a0b01371b608ce239fa408b85c9f19eed_11zon\ \(1\).png");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;

@@ -45,7 +45,7 @@ const ServiceSlider2 = () => {
 
     const updateCardCount = () => {
         const width = window.innerWidth;
-        if (width < 640) setCardsToShow(1);
+        if (width < 860) setCardsToShow(1);
         else if (width < 1024) setCardsToShow(1.8);
         else setCardsToShow(1.8);
     };

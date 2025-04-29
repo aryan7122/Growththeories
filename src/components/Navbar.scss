@@ -593,8 +593,8 @@
     }
   }
   .isWhite {
-    .navbar__toggle {
-      color: #fff;
+    .isWhite_navbar__toggle {
+      // color: #fff;
     }
   }
 }
@@ -655,6 +655,9 @@
   @media only screen and (max-width: 700px) {
     width: 90%;
   }
+}
+.openBg{
+  background-color: #f8f6f2;
 }
 
 // .navbar__toggle{

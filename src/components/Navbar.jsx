@@ -128,7 +128,7 @@ const Navbar = () => {
                         src={logo} alt="GrowthTheories Logo" />
                 </div>
                 <button
-                    className="navbar__toggle"
+                    className={`navbar__toggle ${isWhite || isWhite2 ? 'isWhite_navbar__toggle ' : ''}`}
                     onClick={toggleMobileMenu}
                     aria-label="Toggle menu"
                 >
@@ -154,7 +154,6 @@ const Navbar = () => {
                                 </svg>
                             )}
                         </a>
-
                         {servicesDropdown.isOpen && (
                             <>
                                 <div className="dropdown dropdownS">
@@ -213,10 +212,11 @@ const Navbar = () => {
                                     <h4 className='btn_services' onClick={() => HandleNavigation('/services')}>All services</h4>
                                 </div>
                                 <div className="mobile_dropdown">
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/growth-tracks')}>Growth Tracks</div>
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/predict-growth')}>Growth Prediction Modelling</div>
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/validation-service')}>Validation As A Servivce</div>
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/growth-audit')}>Growth Audit</div>
+                                    <div className="div_item_m" onClick={() => HandleNavigation('/acquisition')}>Acquisition</div>
+                                    <div className="div_item_m" onClick={() => HandleNavigation('/activation-conversion')}>Activation & Conversion</div>
+                                    <div className="div_item_m" onClick={() => HandleNavigation('/monetization')}>Monetization</div>
+                                    <div className="div_item_m" onClick={() => HandleNavigation('/retention-engagement')}>Retention & Engagement</div>
+                                    <div className="div_item_m" onClick={() => HandleNavigation('/analytics-optimization')}>Analytics & Optimization</div>
                                     <div className="div_item_m" onClick={() => HandleNavigation('/services')}>All services</div>
                                 </div>
                             </>

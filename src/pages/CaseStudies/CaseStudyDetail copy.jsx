@@ -176,54 +176,97 @@ const CaseStudyDetail = () => {
                 </div>
             </div>
 
-            <div className="growth-track-container">
-                {/* <img src={growthImage} alt="Growth Track" className="growth-image" /> */}
-
-                <div className="growth-content">
-                    <h2>Introduction</h2>
-                    <p>
-                        In today’s fast-paced business environment, achieving sustainable growth is more challenging than ever...
-                    </p>
-
-                    <h2>What Are Growth Tracks?</h2>
-                    <p>
-                        Growth Tracks are structured paths that businesses can follow to achieve specific goals...
-                    </p>
-
-                    <h2>How Do Growth Tracks Work?</h2>
-                    <ul>
-                        <li><strong>1. Assessment Phase:</strong> The first stage of a growth track begins with...</li>
-                        <li><strong>2. Strategy Development:</strong> Once your business’s strengths and weaknesses have been analyzed...</li>
-                        <li><strong>3. Implementation:</strong> The third phase involves putting the strategy into action...</li>
-                        <li><strong>4. Optimization & Scaling:</strong> Once the strategy has been successfully implemented...</li>
-                    </ul>
-
-                    <h2>Why Growth Tracks Are Essential for Success</h2>
-                    <ul>
-                        <li><strong>1. Clarity and Focus:</strong> Growth Tracks eliminate the guesswork from scaling...</li>
-                        <li><strong>2. Efficiency:</strong> By following a Growth Track, businesses can avoid...</li>
-                        <li><strong>3. Tailored to Your Business:</strong> Growth Tracks are not one-size-fits-all...</li>
-                        <li><strong>4. Scalability:</strong> One of the key benefits of Growth Tracks...</li>
-                    </ul>
-
-                    <h2>Real-World Examples of Growth Tracks in Action</h2>
-                    <ul>
-                        <li><strong>E-commerce Growth Track:</strong> An e-commerce company looking to scale may follow...</li>
-                        <li><strong>SaaS Growth Track:</strong> For a SaaS company, a Growth Track might focus on...</li>
-                    </ul>
-
-                    <h2>Key Takeaways</h2>
-                    <ul>
-                        <li>Growth Tracks provide structure and clarity for businesses looking to scale quickly.</li>
-                        <li>They are efficient, helping businesses avoid wasting resources on ineffective strategies.</li>
-                        <li>Each Growth Track is customized to meet specific needs of the business.</li>
-                        <li>The structured, step-by-step method ensures every action is data-driven.</li>
-                    </ul>
-                </div>
+            {/* <div className="CaseStudyDetail-container">
+                <main className="CaseStudyDetail-content">
+                    {data.map((section) => (
+                        <div key={section.id} className="section">
+                            <div className="section-title">
+                                <h3> {section.id}</h3>
+                                <h2> {section.title}</h2>
+                            </div>
+                            <p className="section-description">{section.description}</p>
+                            <h3 className="key-points-title">{section.keyPointsTitle}</h3>
+                            <ul className="key-points-list">
+                                {section.keyPoints.map((point, index) => (
+                                    <li key={index} className="key-point">
+                                        {point}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </main>
+                <aside className="sidebar-jsf">
+                    <img src="https://s3-alpha-sig.figma.com/img/6be0/02d7/a94be69a39ad25512776ee85f36701d5?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=id1gT7lJBtrRAeyPoHci5hACUJCwNiDcgL4qcJ5HNcnxV9FikLoLgYETLc~iyZkfr3f71stJJnN0W-SJoSldM48Ip3ZA9m1b-ct1pMdYp6iFHVAN8tArM15wT0JO271h788WLnGRKPhe6QRl0Mh1pHpIsdawO03-O144lBss75EmNaxT3FHC5WU9-QuzO~pkSMyMrSOCUib4gJDdrwHw94Ng47~UcUWD31Pm0XqiLom6BI6kkyC5bHKklGyWX8XL44bwaJPdQwW2FHJ8MThSOJ~~02OL7cGAmDNW9xu6GYCJjOZR2JwhZrDLnMuJrQmMSoXqAiZLRmU5Lgl0Wa~YBg__" alt="" />
+                    <div className="sidebar-header">
+                        <h3>Jadhav Consultancy</h3>
+                        <a href="https://jadconsultancy.com" target="_blank" rel="noopener noreferrer">
+                            jadconsultancy.com
+                        </a>
+                    </div>
+                    <div className="sidebar-info">
+                        <div className="content_info_2">
+                            <p>Founder</p>
+                            <h4>Gaurav Jadhav</h4>
+                        </div>
+                        <div className="content_info_2">
+                            <p>Location</p>
+                            <h4>Pune, Maharashtra</h4>
+                        </div>
+                        <div className="content_info_2">
+                            <p>Industry</p>
+                            <h4>Real estate</h4>
+                        </div>
+                        <div className="content_info_2">
+                            <p>Company Size</p>
+                            <h4>Mid Size (50-250)</h4>
+                        </div>
+                        <div className="content_info_2">
+                            <p>Attached Theories</p>
+                            <h4>Pirate Metrics, Viral Loops</h4>
+                        </div>
+                    </div>
+                </aside>
             </div>
 
           
-            
+            <div className="carousel-stories">
+                <div className="top2lr">
+                    <h2>Explore Similar Stories</h2>
+                    <div className="carousel-buttons">
+                        <button
+                            className={`left-arrow ${currentIndex === 0 ? 'inactive' : ''}`}
+                            onClick={handlePrev}
+                            disabled={currentIndex === 0}
+                        >
+                            &#8592;
+                        </button>
+                        <button
+                            className={`right-arrow ${currentIndex >= stories.length - 3 ? 'inactive' : ''}`}
+                            onClick={handleNext}
+                            disabled={currentIndex >= stories.length - 3}
+                        >
+                            &#8594;
+                        </button>
+                    </div>
+                </div>
+                <div className="carousel-content">
+                    {stories.slice(currentIndex, currentIndex + 3).map((story, index) => (
+                        <div className="card" key={index}>
+                            <img src={story.image} alt="story" className="card-image-" />
+                            <h3 className="card-title">{story.title}</h3>
+                            <div className="card-tags">
+                                {story.tags.map((tag, idx) => (
+                                    <span key={idx} className="tag">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                            <p className="card-date">| {story.date}</p>
+                        </div>
+                    ))}
+                </div>
+            </div> */}
         </div>
     );
 };

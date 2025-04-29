@@ -666,7 +666,8 @@ function App() {
               element={
                 <>
                   <BlogSection />
-                  <AuditBusinessGrowth />
+                  {/* <AuditBusinessGrowth /> */}
+                  <GrowthSection />
                   <Footer />
                 </>
               } />
@@ -697,7 +698,7 @@ function App() {
               element={
                 <>
                   <CaseStudyDetail />
-                  <CaseStudiesGrowth />
+                  <GrowthSection />
                   <Footer />
                 </>
               } />
