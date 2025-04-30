@@ -1,0 +1,63 @@
+/* components/Loader.css */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: bgFade 2s forwards;
+  cursor: progress;
+}
+@keyframes bgFade {
+  0% {
+    background-color: #000000;
+  }
+  50% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+.loader-text {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(
+    120deg,
+    #a1182f,
+    #ffffff,
+    #ea6804,
+    #a1182f
+  );
+  background-size: 500% 500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 3s ease infinite, typewriter 1.5s steps(20, end) 0.1s 1 normal both, blink-caret 0.7s step-end infinite;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #a1182f; /* Typing cursor */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Gradient animation */
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Typing animation */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 15ch; } /* Adjust based on text length */
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #a1182f; }
+}
