@@ -1,51 +1,43 @@
 import React from "react";
 import "./ContactForm.scss";
+import icon from '../../../assets/done.svg'
 
 const ContactForm = () => {
     return (
         <div className="contact-form">
             <div className="contact-btn">CONTACT US</div>
-            <h1>
-                <span className="highlight-text">Let’s Discuss</span>
-            </h1>
-            <div className="h2p">
-                <h2>Your Business</h2>
-                <p>
-                    Or Reach out via email <br /> <span>hr@theories.com</span>
-                </p>
-            </div>
+            <h1>Connect With us for <span> extraordinary business growth</span></h1>
+            <ul>
+                <li><img src={icon} /> Get a hands-on experience with our intuitive our platforms</li>
+                <li> <img src={icon} /> See how customizable workflows can streamline your  processes</li>
+                <li><img src={icon} /> Get answers to your specific questions from experts during the demo</li>
+            </ul>
             <div className="form-container">
-                <div className="info-text">
-                    <dov className="dot">●</dov>
-                    <p>
-                        Begin your treatment with consultation. We will reach out to you
-                        during working hours
-                    </p>
-                </div>
+                <h3>Ready for Your Digital Journey?<span> Fill This Form</span></h3>
                 <div className="form_contact">
                     <div className="left">
-                        <label>Business Type </label>
-                        <input type="text" placeholder="Dummy@exapmple.com" />
+                        <label>Name<span className="star">*</span> </label>
+                        <input type="text" placeholder="Enter Name" />
                         <label>
-                            Work Email<span className="star">*</span>
+                             Email<span className="star">*</span>
                         </label>
-                        <input type="email" placeholder="Dummy@exapmple.com" />
+                        <input type="email" placeholder="Enter Email address" />
                         <label>Message</label>
                     </div>
                     <div className="right">
                         <label>
-                            Phone<span className="star">*</span>
+                            Mobile Number<span className="star">*</span>
                         </label>
-                        <input type="text" placeholder="Eg. 50" />
+                        <input type="text" placeholder="Enter mobile number" />
                         <label>
-                            Company Size<span className="star">*</span>
+                            Company Name<span className="star">*</span>
                         </label>
-                        <input type="text" placeholder="Eg. 50" />
+                        <input type="text" placeholder="Enter Company Name" />
                     </div>
                     <textarea placeholder="Enter the message..."></textarea>
                 </div>
-            </div>
             <button className="submit-btn">Submit</button>
+            </div>
         </div>
     );
 };

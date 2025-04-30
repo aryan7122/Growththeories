@@ -87,7 +87,7 @@ const Navbar = () => {
     const audit = ['growth-audit'];
     const isAudit = audit.some((path) => location.pathname.includes(path));
     // audit
-    const contact = ['contact'];
+    const contact = [',,,'];
     const isContact = contact.some((path) => location.pathname.includes(path));
     // white bg
     const whiteBg = ['services'];
