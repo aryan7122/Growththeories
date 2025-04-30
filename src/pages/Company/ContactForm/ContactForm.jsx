@@ -22,7 +22,7 @@ const ContactForm = () => {
                              Email<span className="star">*</span>
                         </label>
                         <input type="email" placeholder="Enter Email address" />
-                        <label>Message</label>
+                       
                     </div>
                     <div className="right">
                         <label>
@@ -34,7 +34,10 @@ const ContactForm = () => {
                         </label>
                         <input type="text" placeholder="Enter Company Name" />
                     </div>
-                    <textarea placeholder="Enter the message..."></textarea>
+                    <div className="bottom">
+                        <label>Message</label>
+                        <textarea placeholder="Enter the message..."></textarea>
+                   </div>
                 </div>
             <button className="submit-btn">Submit</button>
             </div>

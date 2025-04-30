@@ -5,33 +5,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 80px;
+  padding: 0 80px;
   background-color: #fafafa;
   z-index: 9999999999999999999;
-
+  width: calc(100% - 160px);
+  height: 59px;
+// position: fixed;
+// width: 90% !important;
   @media (max-width: 1400px) {
-    padding: 1rem 60px;
+    padding: 0 60px;
+    width: calc(100% - 120px);
   }
   @media (max-width: 1200px) {
-    padding: 1rem 50px;
+    padding: 0 50px;
+    width: calc(100% - 100px);
   }
   @media (max-width: 1100px) {
-    padding: 1rem 40px;
+    padding: 0 40px;
+    width: calc(100% - 80px);
   }
   @media (max-width: 900px) {
-    padding: 1rem 35px;
+    padding: 0 35px;
+    width: calc(100% - 70px);
   }
   @media (max-width: 800px) {
-    padding: 1rem 30px;
+    padding: 0 30px;
+    width: calc(100% - 60px);
   }
   @media (max-width: 700px) {
-    padding: 1rem 25px;
+    padding: 0 25px;
+    width: calc(100% - 50px);
   }
   @media (max-width: 600px) {
-    padding: 1rem 20px;
+    padding: 0 20px;
+    width: calc(100% - 40px);
   }
   @media (max-width: 500px) {
-    padding: 20px;
+    padding: 0;
   }
   //
 
@@ -415,6 +425,7 @@
 
   // backdrop-filter: blur(12px);
   // -webkit-backdrop-filter: blur(12px);
+  transition: 0.3s linear;
   width: 89.5%;
   position: fixed;
   transition: 0.2s linear;
@@ -648,16 +659,16 @@
   // background-image: url('../assets/allService/bgService.svg ') !important;
   // border: 1px solid red;
   position: fixed;
-  width: 89.5%;
+  // width: 89.5%;
   @media only screen and (max-width: 888px) {
-    width: 93%;
+    // width: 93%;
   }
   @media only screen and (max-width: 700px) {
-    width: 90%;
+    // width: 90%;
   }
 }
 .openBg{
-  background-color: #f8f6f2;
+  // background-color: #f8f6f2;
 }
 
 // .navbar__toggle{

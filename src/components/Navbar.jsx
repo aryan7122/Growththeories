@@ -224,7 +224,7 @@ const Navbar = () => {
                     </li>
                     <li className="navbar__dropdown" ref={productsDropdown.ref}>
                         <a href="" ref={productsDropdown.buttonRef} onClick={productsDropdown.handleToggle}>
-                            Products
+                            Theories
                             {/* {productsDropdown.isOpen ? (
 
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000" fill="none">
@@ -245,7 +245,7 @@ const Navbar = () => {
                         </div>
                     )} */}
                     </li>
-                    <li className="navbar__dropdown"><a href="">Customer</a></li>
+                    {/* <li className="navbar__dropdown"><a href="">Customer</a></li> */}
                     <li className="navbar__dropdown" ref={companyDropdown.ref}>
                         <a
                             className={` ${companyDropdown.isOpen ? "a_openClass" : ""}`}
@@ -315,7 +315,7 @@ const Navbar = () => {
                             </>
                         )}
                     </li>
-                    <button className="btn btn-secondary">Contact Us</button>
+                    <button className="btn btn-secondary" onClick={() => HandleNavigation('/contact')}>Contact Us</button>
                 </ul>
             </div>
             {/* } */}
