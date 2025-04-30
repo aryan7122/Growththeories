@@ -87,6 +87,8 @@ import RetentionServices from './pages/Retention/RetentionServices/RetentionServ
 import RetentionEngagement from './pages/Retention/RetentionEngagement/RetentionEngagement.jsx';
 import { useEffect, useState } from 'react';
 import Loader from './components/Loading/Loader.jsx';
+import NotFoundPage from './components/404Page/NotFoundPage.jsx';
+import SupportSection from './pages/SupportSection/SupportSection.jsx';
 
 
 function App() {
@@ -108,7 +110,7 @@ function App() {
 
   useEffect(() => {
     // Simulate loading time (2.5 seconds)
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 2300);
     return () => clearTimeout(timer);
   }, []);
 
@@ -119,7 +121,8 @@ function App() {
           <Loader />
         ) : (
           <Router>
-            <Navbar />
+              <Navbar />
+              
             <div className="app" >
               <Routes>
                 <Route path="/"
@@ -176,7 +179,7 @@ function App() {
                       {/* <CaseStudies /> */}
                       <BlogSlider />
                       <FAQAccordion />
-                      <Footer />
+                     
                     </>
                   }
                 />
@@ -232,7 +235,7 @@ function App() {
                       <Acquisition />
                       <GrowthSection />
                       <FAQAccordion />
-                      <Footer />
+                     
                     </>
                   }
                 />
@@ -297,7 +300,7 @@ function App() {
                       <AcquisitionToolsSection />
                       <GrowthSection />
 
-                      <Footer />
+                     
                     </>
                   }
                 />
@@ -354,7 +357,7 @@ function App() {
 
                       <GrowthSection />
 
-                      <Footer />
+                     
                     </>
                   }
                 />
@@ -416,7 +419,7 @@ function App() {
                       <AnalyticsSection />
                       <GrowthSection />
 
-                      <Footer />
+                     
                     </>
                   }
                 />
@@ -480,7 +483,7 @@ function App() {
 
                       <GrowthSection />
 
-                      <Footer />
+                     
                     </>
                   }
                 />
@@ -543,7 +546,7 @@ function App() {
 
 
                       <GrowthSection />
-                      <Footer />
+                     
                     </>
                   }
                 />
@@ -557,7 +560,7 @@ function App() {
                   <BenefitsSection />
                   <FAQFreq />
                   <BusinessGrowth />
-                  <Footer />
+                 
                 </>
               } />
             <Route path="/validation-service"
@@ -570,7 +573,7 @@ function App() {
                   <ValidationServices />
                   <FAQValid />
                   <BusinessGrowth />
-                  <Footer />
+                 
                 </>
               } />
             <Route path="/predict-growth"
@@ -583,7 +586,7 @@ function App() {
                   <FullCustomize />
                   <FAQValid />
                   <BusinessGrowth />
-                  <Footer />
+                 
                 </>
               } />
             <Route path="/growth-audit"
@@ -598,7 +601,7 @@ function App() {
                   <AuditFullCustomize />
                   <FAQValid />
                   <AuditBusinessGrowth />
-                  <Footer />
+                 
                 </>
               } /> */}
                 <Route
@@ -662,7 +665,7 @@ function App() {
                       {/* <FAQValid /> */}
                       {/* <BusinessGrowth /> */}
                       <GrowthSection />
-                      <Footer />
+                     
                     </>
                   }
                 />
@@ -671,7 +674,7 @@ function App() {
                   element={
                     <>
                       <ContactForm />
-                      <Footer />
+                     
                     </>
                   } />
                 <Route path="/blog"
@@ -680,21 +683,21 @@ function App() {
                       <BlogSection />
                       {/* <AuditBusinessGrowth /> */}
                       <GrowthSection />
-                      <Footer />
+                     
                     </>
                   } />
                 <Route path="/terms-service"
                   element={
                     <>
                       <TermsOfService />
-                      <Footer />
+                     
                     </>
                   } />
                 <Route path="/privacy-policy"
                   element={
                     <>
                       <PrivacyPolicy />
-                      <Footer />
+                     
                     </>
                   } />
                 <Route path="/case-studies"
@@ -703,15 +706,17 @@ function App() {
                       <CaseStudiesHero />
                       <CaseStudiesCard />
                       <BannerBottom />
-                      <Footer />
+                     
                     </>
                   } />
+                  <Route path="*" element={<NotFoundPage />} />
+
                 <Route path="/blog-detail"
                   element={
                     <>
                       <CaseStudyDetail />
                       <GrowthSection />
-                      <Footer />
+                     
                     </>
                   } />
                 <Route path="/careers"
@@ -721,20 +726,27 @@ function App() {
                       <CareersTeamSection />
                       <PerksBenefits />
                       <JobOpenings />
-                      <Footer />
+                    
                     </>
                   } />
                 <Route path="/application-form"
                   element={
                     <>
                       <ApplicationForm />
-                      <Footer />
+
+                    </>
+                  } />
+                  <Route path="/customer-support"
+                  element={
+                    <>
+                      <SupportSection />
+
                     </>
                   } />
               </Routes>
             </div>
             {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
-
+              <Footer />
           </Router>
         )}
       </>
