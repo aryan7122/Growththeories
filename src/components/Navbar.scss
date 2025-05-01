@@ -213,6 +213,13 @@
                   color: $primary-700;
                   cursor: pointer;
                 }
+                 .active {
+                  width: fit-content;
+                  // color: #000000;
+                  font-weight: bold;
+                  width: fit-content;
+                  text-decoration: underline;
+                }
                 p {
                   font-family: $font-primary;
                   font-size: $font-size-14;
@@ -245,7 +252,7 @@
                   // color: #000000;
                   font-weight: bold;
                   width: fit-content;
-                  border-bottom: 2px solid ;
+                  text-decoration: underline;
                 }
 
                 p {
@@ -631,7 +638,7 @@
                   // color: #000000;
                   font-weight: bold;
                   width: fit-content;
-                  border-bottom: 2px solid ;
+                  text-decoration: underline;
                 }
           }
         }

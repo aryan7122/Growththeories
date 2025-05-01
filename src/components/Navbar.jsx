@@ -184,14 +184,14 @@ const Navbar = () => {
                                                 <div className="two_list two_list1">
                                                     <div className="firstNavbar">
                                                         <div>
-                                                            <h4 onClick={() => HandleNavigation('/activation-conversion')}>Activation & Conversion</h4>
+                                                            <h4 className={getActiveClass("/activation-conversion")} onClick={() => HandleNavigation('/activation-conversion')}>Activation & Conversion</h4>
                                                             <p>Activate new and existing customers</p>
                                                         </div>
                                                         <img src={ActivationConversionImg} alt="" />
                                                     </div>
                                                     <div className="firstNavbar">
                                                         <div>
-                                                            <h4 onClick={() => HandleNavigation('/monetization')}>Monetization</h4>
+                                                            <h4 className={getActiveClass("/monetization")} onClick={() => HandleNavigation('/monetization')}>Monetization</h4>
                                                             <p>Maximizing sales & revenue growth</p>
                                                         </div>
                                                         <img src={MonetizationImg} alt="" />
@@ -204,14 +204,14 @@ const Navbar = () => {
                                                 <div className="firstNavbar">
 
                                                     <div>
-                                                        <h4 onClick={() => HandleNavigation('/retention-engagement')}>Retention & Engagement</h4>
+                                                        <h4 className={getActiveClass("/retention-engagement")} onClick={() => HandleNavigation('/retention-engagement')}>Retention & Engagement</h4>
                                                         <p>Keeping users active and loyal</p>
                                                     </div>
                                                     <img src={RetentionEngagementImg} alt="" />
                                                 </div>
                                                 <div className="firstNavbar">
                                                     <div>
-                                                        <h4 onClick={() => HandleNavigation('/analytics-optimization')}>Analytics & Optimization</h4>
+                                                        <h4 className={getActiveClass("/analytics-optimization")} onClick={() => HandleNavigation('/analytics-optimization')}>Analytics & Optimization</h4>
                                                         <p>Tracking, measuring and scaling growth</p>
                                                     </div>
                                                     <img src={AnalyticsOptimizationImg} alt="" />
