@@ -63,6 +63,8 @@ const Navbar = () => {
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
+        setIsWhite(false);
+        setIsWhite2(false);
     };
 
     const HandleNavigation = (path) => {
@@ -117,7 +119,11 @@ const Navbar = () => {
         };
     }, [location.pathname]);
 
-    console.log('isFixed', isFixed)
+    // console.log('isFixed', isFixed)
+
+    const getActiveClass = (path) => {
+        return location.pathname === path ? "active" : "";
+    };
 
     return (
         <nav className={`navbar ${isMobileMenuOpen ? "openBg" : ""}  ${isFixed ? 'isFixedNav' : ''} ${isSpecialPath ? 'specialPath' : ''}  ${isAudit ? 'isAuditPath' : ''}  ${isContact ? 'isContact' : ''}  ${isWhite || isWhite2 ? 'isWhite' : ''}`} >
@@ -162,7 +168,7 @@ const Navbar = () => {
                                             <div className="dropdown__item">
                                                 <div className='oneNavBar'>
                                                     <div>
-                                                        <h4 onClick={() => HandleNavigation('/acquisition')}>Acquisition</h4>
+                                                        <h4 className={getActiveClass("/acquisition")} onClick={() => HandleNavigation('/acquisition')}>Acquisition</h4>
                                                         <p>Getting New Customers</p>
                                                     </div>
                                                     <img src={AcquisitionImg} alt="" />
@@ -212,18 +218,18 @@ const Navbar = () => {
                                     <h4 className='btn_services' onClick={() => HandleNavigation('/services')}>All services</h4>
                                 </div>
                                 <div className="mobile_dropdown">
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/acquisition')}>Acquisition</div>
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/activation-conversion')}>Activation & Conversion</div>
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/monetization')}>Monetization</div>
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/retention-engagement')}>Retention & Engagement</div>
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/analytics-optimization')}>Analytics & Optimization</div>
-                                    <div className="div_item_m" onClick={() => HandleNavigation('/services')}>All services</div>
+                                    <div className={getActiveClass("/acquisition")} onClick={() => HandleNavigation('/acquisition')}>Acquisition</div>
+                                    <div className={getActiveClass("/activation-conversion")} onClick={() => HandleNavigation('/activation-conversion')}>Activation & Conversion</div>
+                                    <div className={getActiveClass("/monetization")} onClick={() => HandleNavigation('/monetization')}>Monetization</div>
+                                    <div className={getActiveClass("/retention-engagement")} onClick={() => HandleNavigation('/retention-engagement')}>Retention & Engagement</div>
+                                    <div className={getActiveClass("/analytics-optimization")} onClick={() => HandleNavigation('/analytics-optimization')}>Analytics & Optimization</div>
+                                    <div className={getActiveClass("/services")} onClick={() => HandleNavigation('/services')}>All services</div>
                                 </div>
                             </>
                         )}
                     </li>
                     <li className="navbar__dropdown" ref={productsDropdown.ref}>
-                        <a href="" ref={productsDropdown.buttonRef} onClick={productsDropdown.handleToggle}>
+                        <a href="#Theories" ref={productsDropdown.buttonRef} onClick={productsDropdown.handleToggle}>
                             Theories
                             {/* {productsDropdown.isOpen ? (
 

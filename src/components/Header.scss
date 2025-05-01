@@ -22,7 +22,7 @@
     }
     h3 {
       // animation: slideLeft 1s ease-out forwards;
-      font-family: "Oxanium", sans-serif;
+      font-family: "Oxanium";
       // background: #fff;
       color: $primary-500;
       top: 123px;
@@ -34,7 +34,7 @@
       font-size: 24px;
       font-weight: 600;
       line-height: 14.4px;
-      letter-spacing: 0.02em;
+      letter-spacing: -0.03em;
       text-align: center;
       text-decoration-skip-ink: none;
       margin-bottom: -20px;
@@ -42,15 +42,26 @@
           @media (max-width: 690px) {
             margin-top: 40px !important;
           }
+          @media (max-width: 390px) {
+           font-size: 20px;
+          }
     }
     h1 {
-      font-family: "Open Sans", sans-serif;
+      font-family: "Open Sans";
       // animation: slideLeft 1s ease-out forwards;
       font-weight: 400;
       line-height: 59.4px;
       color: $primary-800;
       font-size: $font-size-50;
-      letter-spacing: -4%;
+      letter-spacing: -1.8px;
+       span {
+        font-weight: 700;
+        letter-spacing: -1.5%;
+        line-height: 64px;
+        font-size: $font-size-54;
+        color: $primary-800;
+        font-family: "Open Sans",;
+      }
       @media (max-width: 900px) {
         width: 100%;
         font-size: 40px !important;
@@ -64,18 +75,26 @@
       @media (max-width: 660px) {
         font-size: 30px !important;
         line-height: 42.6px !important;
-        span {
-          // line-height: 30px;
+         span{
+          font-size: 38px !important;
+          line-height: 43px;
         }
       }
-      span {
-        font-weight: 700;
-        line-height: 64px;
-        letter-spacing: -1.5%;
-        font-size: $font-size-54;
-        color: $primary-800;
-        font-family: "Open Sans", sans-serif !important;
+      @media (max-width: 410px) {
+        font-size: 28px !important;
+        line-height: 32.6px !important;
+        letter-spacing: -1px;
+        span{
+          font-size: 32px !important;
+          line-height: 34px;
+        }
       }
+      @media (max-width: 375px) {
+        // font-size: 20px !important;
+        line-height: 32.6px !important;
+        letter-spacing: -1px;
+      }
+     
     }
   }
 
@@ -209,9 +228,10 @@
               letter-spacing: -1px;
       }
       @media (max-width: 400px) {
-        font-size: 27px;
+        font-size: 24px;
         line-height: 30.6px;
               letter-spacing: -1px;
+              
       }
 
       .highlight {
@@ -239,6 +259,9 @@
       @media (max-width: 1000px) {
         width: 100% !important;
       }
+       @media (max-width: 400px){
+       text-align: justify;
+       }
     }
 
     .cta-button {
