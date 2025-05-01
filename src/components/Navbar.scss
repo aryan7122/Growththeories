@@ -511,7 +511,7 @@
       height: 20px;
       cursor: pointer;
     }
-    .navbar__actions,
+    // .navbar__actions,
     .open {
       position: absolute;
       // text-align: center;
@@ -519,10 +519,11 @@
       height: 100vh;
       left: 0;
       // background: #000;
-      top: 55px;
+      // top: 35px;
+      margin-top: 55px;
       // border: 1px solid red;
       // width: calc(100% + 70px);
-      margin: 0 auto !important;
+      // margin: 0 auto !important;
       display: flex;
       align-items: center;
       justify-content: end;
