@@ -63,10 +63,10 @@ const Process = () => {
 
 
                 <motion.div
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    // initial={{ opacity: 0, x: -100 }}
+                    // whileInView={{ opacity: 1, x: 0 }}
+                    // viewport={{ once: true, amount: 0.4 }}
+                    // transition={{ duration: 0.2, ease: "easeOut" }}
                     className="process-navigation">
                     <p>DRAG OR SWIPE TO GO THROUGH THE PROCESS.</p>
                     <div>
@@ -75,10 +75,10 @@ const Process = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    // initial={{ opacity: 0, x: -100 }}
+                    // whileInView={{ opacity: 1, x: 0 }}
+                    // viewport={{ once: true, amount: 0.4 }}
+                    // transition={{ duration: 0.2, ease: "easeOut" }}
                     className="process-steps"
                     ref={scrollContainerRef}
                     onMouseDown={handleMouseDown}
@@ -98,10 +98,10 @@ const Process = () => {
 
             </div>
             <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                // initial={{ opacity: 0, scale: 0.8 }}
+                // whileInView={{ opacity: 1, scale: 1 }}
+                // viewport={{ once: true, amount: 0.4 }}
+                // transition={{ duration: 0.6, ease: "easeOut" }}
                 className="process-footer">
                 <p>A PROCESS THAT LEAVES OUT POTENTIAL MISTAKES.</p>
                 <button className="btn-start">Start your project here</button>

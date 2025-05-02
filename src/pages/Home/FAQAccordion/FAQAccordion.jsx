@@ -77,15 +77,15 @@ const FAQAccordion = () => {
             </Helmet> */}
             <div className="title_header">
                 <motion.span
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                    viewport={{ once: true, amount: 0.1 }}
+                    // initial={{ opacity: 0, y: 50 }}
+                    // whileInView={{ opacity: 1, y: 0 }}
+                    // transition={{ duration: 0.3 }}
+                    // viewport={{ once: true, amount: 0.1 }}
                     className="badge">FAQs</motion.span>
                 <motion.h2
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
+                    // initial={{ opacity: 0, y: 50 }}
+                    // whileInView={{ opacity: 1, y: 0 }}
+                    // transition={{ duration: 0.3 }}
                     viewport={{ once: true, amount: 0.1 }} className="faq-title">We Have Got All The Answers
                   
                     <h4>

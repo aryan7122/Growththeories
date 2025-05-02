@@ -50,13 +50,13 @@ const Benefits = () => {
                 <meta name="description" content="Explore the key benefits of growth marketing, including speed to market, significant ROI, time-saving results, data-driven decisions, and more." />
             </Helmet> */}
             <motion.h2
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0,y: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2 }}
                 viewport={{ once: true, amount: 0.1 }}
                 className="benefits">BENEFITS</motion.h2>
             <motion.h1
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0,y: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 viewport={{ once: true, amount: 0.1 }}
@@ -65,17 +65,17 @@ const Benefits = () => {
                 <div className="grid-container">
                     {advantages.map((adv) => (
                         <div className="grid-item" key={adv.id}>
-                            <motion.h1 initial={{ opacity: 0, y: 50 }}
+                            <motion.h1 initial={{ opacity: 0,y: 0 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.3 }}
                                 viewport={{ once: true, amount: 0.1 }}
                                 className="number">{adv.id}</motion.h1>
-                            <motion.h3 initial={{ opacity: 0, y: 50 }}
+                            <motion.h3 initial={{ opacity: 0,y: 0 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.3 }}
                                 viewport={{ once: true, amount: 0.1 }} className="adv-title">{adv.title}</motion.h3>
                             <motion.p
-                                initial={{ opacity: 0, y: 50 }}
+                                initial={{ opacity: 0,y: 0 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.3 }}
                                 viewport={{ once: true, amount: 0.1 }}

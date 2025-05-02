@@ -105,10 +105,10 @@ const ComparisonTable = () => {
                     <table>
                         <thead>
                             <motion.tr
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.3 }}
-                                viewport={{ once: true, amount: 0.1 }}
+                                // initial={{ opacity: 0, y: 50 }}
+                                // whileInView={{ opacity: 1, y: 0 }}
+                                // transition={{ duration: 0.3 }}
+                                // viewport={{ once: true, amount: 0.1 }}
                             >
 
                                 <th>Features</th>
@@ -119,10 +119,10 @@ const ComparisonTable = () => {
                         <tbody>
                             {featuresData.map((item, index) => (
                                 <motion.tr
-                                    initial={{ opacity: 0, y: 50 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.3 }}
-                                    viewport={{ once: true, amount: 0.1 }}
+                                    // initial={{ opacity: 0, y: 50 }}
+                                    // whileInView={{ opacity: 1, y: 0 }}
+                                    // transition={{ duration: 0.3 }}
+                                    // viewport={{ once: true, amount: 0.1 }}
                                     key={index}>
                                     {/* <td className="feature-name">
                                 <span className="icon">{item.icon}</span>

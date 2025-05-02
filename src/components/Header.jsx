@@ -44,32 +44,33 @@ const Header = () => {
             <header className="header">
                 <div className="header__content">
                     <motion.h3
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3 }}
-                        viewport={{ once: true, amount: 0.2 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.3 }}
+                        // viewport={{ once: true, amount: 0.2 }}
                     >GROWTH AGENCY IN INDIA</motion.h3>
                     <motion.h1
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4 }}
-                        viewport={{ once: true, amount: 0.2 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.4 }}
+                        // viewport={{ once: true, amount: 0.2 }}
                     >
                         Unlock Rapid, Sustainable Growth With <br /> <span>Proven Growth Marketing Strategies</span>
                     </motion.h1>
                     <motion.p className='header_p'
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: true, amount: 0.2 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.5 }}
+                        // viewport={{ once: true, amount: 0.2 }}
                     >
                         Whether you're a startup or a well-established business, Growththeories delivers growth hacking solutions that fuel both immediate and enduring success & generate revenue
                     </motion.p>
                     <motion.div className="header__buttons"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true, amount: 0.2 }}>
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.6 }}
+                        // viewport={{ once: true, amount: 0.2 }}
+                    >
                         <button className="btn btn-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#ffffff" fill="none">
                                 <path d="M7 11.2947C12.284 1.44656 18.8635 1.333 21.4928 2.50724C22.667 5.1365 22.5534 11.716 12.7053 17C12.6031 16.4129 12.0352 14.8749 10.5801 13.4199C9.12512 11.9648 7.58712 11.3969 7 11.2947Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -90,27 +91,28 @@ const Header = () => {
                 </div>
                 <div className="banner">
                     <motion.h2
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4 }}
-                        viewport={{ once: true, amount: 0.2 }}>
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.4 }}
+                        // viewport={{ once: true, amount: 0.2 }}
+                    >
                         While Many<span className="highlight"> Growth Marketing Agencies </span>In
                         India Focus On Superficial Metrics, We Emphasize Metrics{" "}
                         <span className="highlight bold">That Drive Revenue.</span>
                     </motion.h2>
                     <motion.p
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true, amount: 0.2 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.6 }}
+                        // viewport={{ once: true, amount: 0.2 }}
                     >
                         We tailor our marketing strategies to match your business’s key performance indicators, including sales, conversion rates, customer lifetime value, and acquisition costs. Our focus on growth ensures that your marketing investments lead to genuine business expansion and deliver tangible financial results, just like we’ve helped our clients achieve .
                     </motion.p>
                     <motion.button
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true, amount: 0.2 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.6 }}
+                        // viewport={{ once: true, amount: 0.2 }}
                         className="cta-button">Contact Us Now</motion.button>
                 </div>
 

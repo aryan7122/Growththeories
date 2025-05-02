@@ -55,29 +55,29 @@ const ImpactsBenefits = () => {
     return (
         <div className="ImpactsBenefits-container">
             <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.2, ease: "easeOut" }}
+                // initial={{ opacity: 0, y: 100 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // viewport={{ once: true, amount: 0.5 }}
+                // transition={{ duration: 0.2, ease: "easeOut" }}
                 className="header">
                 <span className="suitability">IMPACTS & BENEFITS</span>
                 <h1 className='h1-1'>Maximize Your Growth Potential with Proven Strategies</h1>
                 <p>Discover how our tailored growth strategies deliver results. From rapid testing to scalable solutions, we help you achieve sustainable growth—without breaking the bank. Whether it's boosting retention, increasing revenue, or scaling fast, our data-driven approach optimizes every stage for maximum impact.</p>
             </motion.div>
             <motion.img
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                whileHover={{ scale: 1.02 }}
+                // initial={{ opacity: 0, scale: 0.8 }}
+                // whileInView={{ opacity: 1, scale: 1 }}
+                // viewport={{ once: true, amount: 0.4 }}
+                // transition={{ duration: 0.6, ease: "easeOut" }}
+                // whileHover={{ scale: 1.02 }}
                 src={bannerImg} alt="" />
             <div className="features-grid">
                 {featuresData.map((feature, index) => (
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true, amount: 0.4 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        // initial={{ opacity: 0, scale: 0.8 }}
+                        // whileInView={{ opacity: 1, scale: 1 }}
+                        // viewport={{ once: true, amount: 0.4 }}
+                        // transition={{ duration: 0.6, ease: "easeOut" }}
                         className="feature-card" key={index}>
                         <div className="icon-container">
                             {feature.icon}

@@ -224,10 +224,14 @@
       .icon {
         color: #9d2235;
         // margin-bottom: 10px;
+        img{
+          width: 49px;
+          height: 49px;
+        }
       }
 
       h4 {
-        // margin-top: 0px;
+        margin-top: 15px;
         display: flex;
         align-items: center;
         gap: 10px;

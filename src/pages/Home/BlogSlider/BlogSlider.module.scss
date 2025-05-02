@@ -249,6 +249,15 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+        padding-right: 60px;
+        @media (max-width: 768px){
+      padding-right: 30px;
+
+    }
+        @media (max-width: 428px){
+      padding-right: 10px;
+
+    }
   }
   .navButtons {
     display: flex;
@@ -262,7 +271,17 @@
       margin: 0 0.3rem;
       border-radius: 50%;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      &:active{
+        scale: 0.95;
+        transition: 0.1s linear;
+      }
+      @media (max-width: 628px){
+        scale: 0.8;
+      }
     }
   }
 

@@ -77,7 +77,6 @@
   }
   .card_industries {
     background: #f5f5f5;
-
     padding: 30px 80px;
     text-align: center;
     @media (max-width: 1400px) {
@@ -201,7 +200,7 @@
         background: #f6f6f6;
         border: 1px solid #bdbdbd;
         cursor: pointer;
-        transition: 0.3s;
+        transition: 0.4s linear;
         font-family: "Open Sans";
         font-weight: 600;
         font-size: 27.55px;
@@ -225,6 +224,7 @@
           background: #f3efff;
           color: $primary-800;
           border: 1px solid $primary-800;
+          border-bottom: 3px solid $primary-900;
         }
       }
       .tab_btn:nth-child(1) {

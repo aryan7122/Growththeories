@@ -53,10 +53,10 @@ const Industry = () => {
     return (
         <div className="Industry_content">
             <motion.div
-                initial={{ opacity: 0, y: -130 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true, amount: 0.5 }}
+                // initial={{ opacity: 0, y: -130 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // transition={{ duration: 0.6 }}
+                // viewport={{ once: true, amount: 0.5 }}
                 className="header-Industry">
                 <span className="suitability-INDUSTRY">INDUSTRY</span>
                 <h1>Meet the teams who build the future</h1>

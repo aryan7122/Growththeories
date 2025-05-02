@@ -14,10 +14,10 @@ const CaseStudies = () => {
                     <span className="badge">Case Studies</span>
                     <div className='Marketing_card_2_flex'>
                         <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
-                            viewport={{ once: true, amount: 0.3 }}
+                            // initial={{ opacity: 0, y: 30 }}
+                            // whileInView={{ opacity: 1, y: 0 }}
+                            // transition={{ duration: 0.6 }}
+                            // viewport={{ once: true, amount: 0.3 }}
                         >
 
                             <div>
@@ -29,19 +29,19 @@ const CaseStudies = () => {
 
                         <div className='CaseStudies_right_top'>
                             <motion.p
-                                initial={{ opacity: 0, x: -130 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.6 }}
-                                viewport={{ once: true, amount: 0.3 }}
+                                // initial={{ opacity: 0, x: -130 }}
+                                // whileInView={{ opacity: 1, x: 0 }}
+                                // transition={{ duration: 0.6 }}
+                                // viewport={{ once: true, amount: 0.3 }}
                                 className='right_p'
                             >
                                 See how our tailored strategies helped businesses achieve rapid growth. Each case study highlights our approach and real-world results
                             </motion.p>
                             <motion.button
-                                initial={{ opacity: 0, y: -130 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
-                                viewport={{ once: true, amount: 0.3 }}
+                                // initial={{ opacity: 0, y: -130 }}
+                                // whileInView={{ opacity: 1, y: 0 }}
+                                // transition={{ duration: 0.6 }}
+                                // viewport={{ once: true, amount: 0.3 }}
                                 className='All_Studies_btn'
                             >
                                 See All Case Studies

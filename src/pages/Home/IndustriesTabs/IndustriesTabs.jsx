@@ -286,35 +286,35 @@ export default function IndustriesTabs() {
             <div className="industries-section">
                 <div className="card_title">
                     <motion.h4
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3 }}
-                        viewport={{ once: true, amount: 0.1 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.3 }}
+                        // viewport={{ once: true, amount: 0.1 }}
                         className="subheading">Industries</motion.h4>
                     <h2 className="main-heading">Industries We Served In India & Abroad</h2>
                 </div>
                 <div className="card_industries">
                     <motion.p
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3 }}
-                        viewport={{ once: true, amount: 0.1 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.3 }}
+                        // viewport={{ once: true, amount: 0.1 }}
                         className="desc-text">
                         We Enthusiastically Back <span className="gray">A Range Of Sectors</span>, Consistently Dedicated To <strong> <br />Outstanding Service And Top-Notch Quality</strong>.
                     </motion.p>
                     <motion.p
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3 }}
-                        viewport={{ once: true, amount: 0.1 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.3 }}
+                        // viewport={{ once: true, amount: 0.1 }}
                         className="desc-small">
                         Delving Into The Diverse Industries We Proudly Support, While Maintaining Our Commitment To Excellence And Quality In All We Do.
                     </motion.p>
                     <motion.button
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3 }}
-                        viewport={{ once: true, amount: 0.1 }}
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.3 }}
+                        // viewport={{ once: true, amount: 0.1 }}
                         className="cta-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
                             <path d="M11.8013 6.48949L13.2869 5.00392C14.9596 3.3312 17.1495 2.63737 19.4671 2.52399C20.3686 2.47989 20.8193 2.45784 21.1807 2.81928C21.5422 3.18071 21.5201 3.63143 21.476 4.53289C21.3626 6.8505 20.6688 9.04042 18.9961 10.7131L17.5105 12.1987C16.2871 13.4221 15.9393 13.77 16.1961 15.097C16.4496 16.1107 16.6949 17.0923 15.9578 17.8294C15.0637 18.7235 14.2481 18.7235 13.354 17.8294L6.17058 10.646C5.27649 9.75188 5.27646 8.9363 6.17058 8.04219C6.90767 7.30509 7.88929 7.55044 8.90297 7.80389C10.23 8.06073 10.5779 7.71289 11.8013 6.48949Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
                             <path d="M16.9959 7H17.0049" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -326,10 +326,10 @@ export default function IndustriesTabs() {
                     <div className="tabs_">
                         {Object.keys(industryData).map((key) => (
                             <motion.button
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.3 }}
-                                viewport={{ once: true, amount: 0.1 }}
+                                // initial={{ opacity: 0, y: 50 }}
+                                // whileInView={{ opacity: 1, y: 0 }}
+                                // transition={{ duration: 0.3 }}
+                                // viewport={{ once: true, amount: 0.1 }}
                                 key={key}
                                 className={`tab_btn ${activeTab === key ? "active" : ""}`}
                                 onClick={() => setActiveTab(key)}
@@ -344,36 +344,37 @@ export default function IndustriesTabs() {
                             <div className="Industry_main_content">
                                 <div>
                                     <motion.h3
-                                        initial={{ opacity: 0, y: 50 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.1 }}
-                                        viewport={{ once: true, amount: 0.1 }}
+                                        // initial={{ opacity: 0, y: 50 }}
+                                        // whileInView={{ opacity: 1, y: 0 }}
+                                        // transition={{ duration: 0.1 }}
+                                        // viewport={{ once: true, amount: 0.1 }}
                                         className="industry-title"><span>{data.icon}</span> {data.title}</motion.h3>
                                     <motion.p
-                                        initial={{ opacity: 0, y: 50 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.2 }}
-                                        viewport={{ once: true, amount: 0.1 }}
+                                        // initial={{ opacity: 0, y: 50 }}
+                                        // whileInView={{ opacity: 1, y: 0 }}
+                                        // transition={{ duration: 0.2 }}
+                                        // viewport={{ once: true, amount: 0.1 }}
                                         className="industry-desc">{data.description}</motion.p>
                                     <motion.img
-                                        initial={{ opacity: 0, y: 50 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.3 }}
-                                        viewport={{ once: true, amount: 0.1 }}
+                                        // initial={{ opacity: 0, y: 50 }}
+                                        // whileInView={{ opacity: 1, y: 0 }}
+                                        // transition={{ duration: 0.3 }}
+                                        // viewport={{ once: true, amount: 0.1 }}
                                         className="img2" src={data.imgBanner} alt={`Image of ${data.title}`} title={data.title} />
                                     <div className="stats">
                                         {data.stats.map((item, index) => (
                                             <div className="stat-item" key={index}>
                                                 <motion.h2
-                                                    initial={{ opacity: 0, y: 50 }}
-                                                    whileInView={{ opacity: 1, y: 0 }}
-                                                    transition={{ duration: 0.2 }}
-                                                    viewport={{ once: true, amount: 0.1 }}>{item.value}</motion.h2>
+                                                    // initial={{ opacity: 0, y: 50 }}
+                                                    // whileInView={{ opacity: 1, y: 0 }}
+                                                    // transition={{ duration: 0.2 }}
+                                                    // viewport={{ once: true, amount: 0.1 }}
+                                                >{item.value}</motion.h2>
                                                 <motion.p
-                                                    initial={{ opacity: 0, y: 50 }}
-                                                    whileInView={{ opacity: 1, y: 0 }}
-                                                    transition={{ duration: 0.3 }}
-                                                    viewport={{ once: true, amount: 0.1 }}
+                                                    // initial={{ opacity: 0, y: 50 }}
+                                                    // whileInView={{ opacity: 1, y: 0 }}
+                                                    // transition={{ duration: 0.3 }}
+                                                    // viewport={{ once: true, amount: 0.1 }}
                                                 >{item.label}</motion.p>
                                             </div>
                                         ))}
@@ -383,10 +384,11 @@ export default function IndustriesTabs() {
                                     </div>
                                 </div>
                                 <motion.img
-                                    initial={{ opacity: 0, y: 50 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.2 }}
-                                    viewport={{ once: true, amount: 0.1 }} className="img" src={data.imgBanner} alt={`Image of ${data.title}`} title={data.title} />
+                                    // initial={{ opacity: 0, y: 50 }}
+                                    // whileInView={{ opacity: 1, y: 0 }}
+                                    // transition={{ duration: 0.2 }}
+                                    // viewport={{ once: true, amount: 0.1 }}
+                                    className="img" src={data.imgBanner} alt={`Image of ${data.title}`} title={data.title} />
                             </div>
                         </div>
 
@@ -396,10 +398,10 @@ export default function IndustriesTabs() {
                                 <div className="section-title">
                                     <div className="line"></div>
                                     <motion.h4
-                                        initial={{ opacity: 0, y: 50 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.2 }}
-                                        viewport={{ once: true, amount: 0.1 }}
+                                        // initial={{ opacity: 0, y: 50 }}
+                                        // whileInView={{ opacity: 1, y: 0 }}
+                                        // transition={{ duration: 0.2 }}
+                                        // viewport={{ once: true, amount: 0.1 }}
                                     >
                                         <span className="icon">{data.whyChooseUsIcon}</span>
                                         Why They Choose Us
@@ -411,22 +413,23 @@ export default function IndustriesTabs() {
                                     {data.whyChooseUs.map((item, index) => (
                                         <div className="choose-item" key={index}>
                                             <motion.div
-                                                initial={{ opacity: 0, y: 50 }}
-                                                whileInView={{ opacity: 1, y: 0 }}
-                                                transition={{ duration: 0.2 }}
-                                                viewport={{ once: true, amount: 0.1 }}
+                                                // initial={{ opacity: 0, y: 50 }}
+                                                // whileInView={{ opacity: 1, y: 0 }}
+                                                // transition={{ duration: 0.2 }}
+                                                // viewport={{ once: true, amount: 0.1 }}
                                                 className="icon_item">{item.icon}</motion.div>
                                             <div>
                                                 <motion.h5
-                                                    initial={{ opacity: 0, y: 50 }}
-                                                    whileInView={{ opacity: 1, y: 0 }}
-                                                    transition={{ duration: 0.3 }}
-                                                    viewport={{ once: true, amount: 0.1 }}>{item.title}</motion.h5>
+                                                    // initial={{ opacity: 0, y: 50 }}
+                                                    // whileInView={{ opacity: 1, y: 0 }}
+                                                    // transition={{ duration: 0.3 }}
+                                                    // viewport={{ once: true, amount: 0.1 }}
+                                                >{item.title}</motion.h5>
                                                 <motion.p
-                                                    initial={{ opacity: 0, y: 50 }}
-                                                    whileInView={{ opacity: 1, y: 0 }}
-                                                    transition={{ duration: 0.4 }}
-                                                    viewport={{ once: true, amount: 0.1 }}
+                                                    // initial={{ opacity: 0, y: 50 }}
+                                                    // whileInView={{ opacity: 1, y: 0 }}
+                                                    // transition={{ duration: 0.4 }}
+                                                    // viewport={{ once: true, amount: 0.1 }}
                                                 >{item.desc}</motion.p>
                                             </div>
                                         </div>
@@ -439,18 +442,18 @@ export default function IndustriesTabs() {
                                 <h4 className="h4_help">{data.howWeHelp.icon} {data.howWeHelp.title}</h4>
                                 <div className="help-box">
                                     <motion.p
-                                        initial={{ opacity: 0, y: 50 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.2 }}
-                                        viewport={{ once: true, amount: 0.1 }}
+                                        // initial={{ opacity: 0, y: 50 }}
+                                        // whileInView={{ opacity: 1, y: 0 }}
+                                        // transition={{ duration: 0.2 }}
+                                        // viewport={{ once: true, amount: 0.1 }}
                                     >{data.howWeHelp.desc}</motion.p>
                                     <div className="tags">
                                         {data.howWeHelp.tags.map((tag, idx) => (
                                             <motion.span
-                                                initial={{ opacity: 0, y: 50 }}
-                                                whileInView={{ opacity: 1, y: 0 }}
-                                                transition={{ duration: 0.3 }}
-                                                viewport={{ once: true, amount: 0.1 }}
+                                                // initial={{ opacity: 0, y: 50 }}
+                                                // whileInView={{ opacity: 1, y: 0 }}
+                                                // transition={{ duration: 0.3 }}
+                                                // viewport={{ once: true, amount: 0.1 }}
                                                 className="tag" key={idx}>{tag}</motion.span>
                                         ))}
                                     </div>

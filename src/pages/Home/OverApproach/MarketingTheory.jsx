@@ -107,7 +107,9 @@ const marketingData = [
 
 const MarketingTheory = () => {
     const [selected, setSelected] = useState(marketingData[0]);
+// auto tab 
 
+// auto tab 
     return (
         <div className="marketing-container">
             <div className="tabs_Mobile">
@@ -138,22 +140,22 @@ const MarketingTheory = () => {
             </div>
             <div className="content">
                 <motion.h2
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                    viewport={{ once: true, amount: 0.1 }}
+                    // initial={{ opacity: 0, y: 50 }}
+                    // whileInView={{ opacity: 1, y: 0 }}
+                    // transition={{ duration: 0.3 }}
+                    // viewport={{ once: true, amount: 0.1 }}
                 >{selected.title}</motion.h2>
                 <motion.p
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4 }}
-                    viewport={{ once: true, amount: 0.1 }}
+                    // initial={{ opacity: 0, y: 50 }}
+                    // whileInView={{ opacity: 1, y: 0 }}
+                    // transition={{ duration: 0.4 }}
+                    // viewport={{ once: true, amount: 0.1 }}
                 >{selected.description}</motion.p>
                 <motion.img
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    viewport={{ once: true, amount: 0.1 }}
+                    // initial={{ opacity: 0, y: 50 }}
+                    // whileInView={{ opacity: 1, y: 0 }}
+                    // transition={{ duration: 0.5 }}
+                    // viewport={{ once: true, amount: 0.1 }}
                     src={selected.image} alt={selected.title} />
             </div>
             <div className="right-tabs">

@@ -71,7 +71,7 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
+    gap: 1.5px;
     // max-width: 1000px;
     margin: auto;
     @media (max-width: 1200px) {

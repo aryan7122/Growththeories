@@ -26,10 +26,10 @@ const OverApproach = () => {
                 <div id="approach_card">
                     <motion.div
                         className="ourApproach"
-                        initial={{ opacity: 0, y: 130 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true, amount: 0.5 }}
+                        // initial={{ opacity: 0, y: 130 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.6 }}
+                        // viewport={{ once: true, amount: 0.5 }}
                     >
                         <div>
                             <h4>Our Approach</h4>

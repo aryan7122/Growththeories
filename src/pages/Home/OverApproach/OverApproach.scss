@@ -48,26 +48,27 @@ $button-active-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-          @media (max-width: 1100px) {
-            flex-direction: column;
-            align-items: start;
-            justify-content: left;
-            padding-bottom: 30px;
-          }
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: left;
+      padding-bottom: 30px;
+    }
     h4 {
-      width: 140px;
+      width: fit-content;
+      padding: 3px 12px;
       height: 25px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: $font-size-14;
-      font-weight: 500;
+      font-weight: 600;
       border-radius: 100px;
       color: $primary-500;
       text-transform: uppercase;
       background: #b8b8b833;
-      // font-family: 'Open Sans';
-      letter-spacing: 20%;
+      font-family: 'Open Sans';
+      letter-spacing: 2px;
       text-transform: uppercase;
     }
     h2 {
@@ -119,10 +120,9 @@ $button-active-color: #fff;
       gap: 9px;
       border: 1px solid transparent;
       cursor: pointer;
-            @media (max-width: 520px) {
-              margin: 0 auto;
-
-            }
+      @media (max-width: 520px) {
+        margin: 0 auto;
+      }
       &:hover {
         background-color: #fff;
         color: $primary-500;

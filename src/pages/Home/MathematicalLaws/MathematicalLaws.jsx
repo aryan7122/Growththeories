@@ -76,15 +76,15 @@ const MathematicalLawsPage = () => {
         <meta property="og:url" content="https://yourwebsite.com/mathematical-laws" />
       </Helmet> */}
       <motion.span
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
-        viewport={{ once: true, amount: 0.1 }}
+        // initial={{ opacity: 0, y: 50 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 0.3 }}
+        // viewport={{ once: true, amount: 0.1 }}
         className="LAWS">LAWS</motion.span>
       <motion.h1
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
+        // initial={{ opacity: 0, y: 50 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 0.3 }}
         viewport={{ once: true, amount: 0.1 }}
       >We Follow Mathematical Laws In Marketing</motion.h1>
       <div className="laws-grid ">
@@ -93,25 +93,25 @@ const MathematicalLawsPage = () => {
             <div key={index} className="card">
               <div className="content">
                 <motion.h2
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                 >{card.title}</motion.h2>
                 <motion.p
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                 >{card.description}</motion.p>
                 {/* {card.button && <button>Start Growing Today</button>} */}
               </div>
               <div className="img_">
                 <motion.img
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                   src={card.image} alt={card.title} />
               </div>
             </div>
@@ -122,23 +122,24 @@ const MathematicalLawsPage = () => {
             <div key={index} className="card">
               <div className="content">
                 <motion.h2
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
                   viewport={{ once: true, amount: 0.1 }}
                 >{card.title}</motion.h2>
-                <motion.p initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                <motion.p
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                 >{card.description}</motion.p>
               </div>
               <div className="img_">
                   <motion.img
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                   src={card.image} alt={card.title} />
               </div>
             </div>
@@ -148,24 +149,26 @@ const MathematicalLawsPage = () => {
           {data.slice(5, 7).map((card, index) => (
             <div key={index} className="card">
               <div className="content">
-                <motion.h2 initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                <motion.h2
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                 >{card.title}</motion.h2>
-                <motion.p initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                <motion.p
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                 >{card.description}</motion.p>
                 {/* {card.button && <button>Start Growing Today</button>} */}
               </div>
               <div className="img_">
                 <motion.img
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                   src={card.image} alt={card.title} />
               </div>
             </div>
@@ -175,16 +178,17 @@ const MathematicalLawsPage = () => {
           {data.slice(7, 8).map((card, index) => (
             <div key={index} className="card">
               <div className="content">
-                <motion.h2 initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                <motion.h2
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                 >{card.title}</motion.h2>
                 <motion.p
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                 >
                   {card.description}</motion.p>
                 {card.button && (
@@ -236,10 +240,10 @@ const MathematicalLawsPage = () => {
               </div>
               <div className="img_">
                 <motion.img
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                  // initial={{ opacity: 0, y: 50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 0.3 }}
+                  // viewport={{ once: true, amount: 0.1 }}
                   src={card.image} alt={card.title} />
               </div>
             </div>

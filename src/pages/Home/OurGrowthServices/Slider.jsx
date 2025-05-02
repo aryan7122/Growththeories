@@ -117,17 +117,18 @@ const Slider = () => {
                     className='containerTop'
 
                 >
-                    <motion.h2 initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3 }}
-                        viewport={{ once: true, amount: 0.1 }}
+                    <motion.h2
+                        // initial={{ opacity: 0, y: 50 }}
+                        // whileInView={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 0.3 }}
+                        // viewport={{ once: true, amount: 0.1 }}
                     >What does our  <span className='highlight'>growth marketing </span>services include?</motion.h2>
                     <div className='slideBtn'>
                         <motion.button
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4 }}
-                            viewport={{ once: true, amount: 0.1 }}
+                            // initial={{ opacity: 0, y: 50 }}
+                            // whileInView={{ opacity: 1, y: 0 }}
+                            // transition={{ duration: 0.4 }}
+                            // viewport={{ once: true, amount: 0.1 }}
 
                             className={`slider-btn ${currentIndex === 0 ? 'inactive' : ''}`}
                             onClick={handlePrev}
@@ -170,19 +171,22 @@ const Slider = () => {
                                 >
                                     <div>
                                         <motion.h3
-                                            initial={{ opacity: 0, y: 50 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            transition={{ duration: 0.3 }}
-                                            viewport={{ once: true, amount: 0.1 }}>{card.title} <span className="title2_h3">{card.title2}</span></motion.h3>
-                                        <motion.p initial={{ opacity: 0, y: 50 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            transition={{ duration: 0.4 }}
-                                            viewport={{ once: true, amount: 0.1 }}>{card.description}</motion.p>
+                                            // initial={{ opacity: 0, y: 50 }}
+                                            // whileInView={{ opacity: 1, y: 0 }}
+                                            // transition={{ duration: 0.3 }}
+                                            // viewport={{ once: true, amount: 0.1 }}
+                                        >{card.title} <span className="title2_h3">{card.title2}</span></motion.h3>
+                                        <motion.p
+                                            // initial={{ opacity: 0, y: 50 }}
+                                            // whileInView={{ opacity: 1, y: 0 }}
+                                            // transition={{ duration: 0.4 }}
+                                            // viewport={{ once: true, amount: 0.1 }}
+                                        >{card.description}</motion.p>
                                         <motion.button
-                                            initial={{ opacity: 0, y: 50 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            transition={{ duration: 0.5 }}
-                                            viewport={{ once: true, amount: 0.1 }}
+                                            // initial={{ opacity: 0, y: 50 }}
+                                            // whileInView={{ opacity: 1, y: 0 }}
+                                            // transition={{ duration: 0.5 }}
+                                            // viewport={{ once: true, amount: 0.1 }}
                                             className="learn-more">{card.button}</motion.button>
 
                                     </div>

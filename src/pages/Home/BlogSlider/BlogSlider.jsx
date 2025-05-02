@@ -72,19 +72,19 @@ const BlogSlider = () => {
                 <div className={styles.head_top}>
                     <div>
                         <motion.p
-                            initial={{ opacity: 0, y: 50 }}
+                            initial={{ opacity: 0,y: 0 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.1 }}
                             viewport={{ once: true, amount: 0.1 }}
                             className={styles.blogLabel}>BLOGS</motion.p>
                         <motion.h2
-                            initial={{ opacity: 0, y: 50 }}
+                            initial={{ opacity: 0,y: 0 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.2 }}
                             viewport={{ once: true, amount: 0.1 }}
                         >Unlock The Power Of Tailored Growth Solutions</motion.h2>
                         <motion.p
-                            initial={{ opacity: 0, y: 50 }}
+                            initial={{ opacity: 0,y: 0 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3 }}
                             viewport={{ once: true, amount: 0.1 }}
@@ -93,7 +93,7 @@ const BlogSlider = () => {
                         </motion.p>
                     </div>
                     <motion.button
-                        initial={{ opacity: 0, y: 50 }}
+                        initial={{ opacity: 0,y: 0 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.3 }}
                         viewport={{ once: true, amount: 0.1 }}
@@ -111,26 +111,26 @@ const BlogSlider = () => {
                         {blogData.map((blog) => (
                             <div className={styles.card} key={blog.id}>
                                 <motion.img
-                                    initial={{ opacity: 0, y: 50 }}
+                                    initial={{ opacity: 0,y: 0 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.2 }}
                                     viewport={{ once: true, amount: 0.1 }}
                                     src={blog.image} alt="Blog" />
                                 <p className={styles.meta}>{blog.time}</p>
                                 <motion.h3
-                                    initial={{ opacity: 0, y: 50 }}
+                                    initial={{ opacity: 0,y: 0 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3 }}
                                     viewport={{ once: true, amount: 0.1 }}
                                 >{blog.title}</motion.h3>
                                 <motion.p
-                                    initial={{ opacity: 0, y: 50 }}
+                                    initial={{ opacity: 0,y: 0 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3 }}
                                     viewport={{ once: true, amount: 0.1 }}
                                 >{blog.desc}</motion.p>
                                 <motion.a
-                                    initial={{ opacity: 0, y: 50 }}
+                                    initial={{ opacity: 0,y: 0 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3 }}
                                     viewport={{ once: true, amount: 0.1 }}
