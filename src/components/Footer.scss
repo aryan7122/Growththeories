@@ -62,6 +62,13 @@
         line-height: 27px;
         font-weight: 700;
       }
+       .active {
+                  width: fit-content;
+                  // color: #000000;
+                  font-weight: bold;
+                  width: fit-content;
+                  text-decoration: underline;
+                }
 
       ul {
         list-style: none;
@@ -163,6 +170,13 @@
           text-decoration: underline;
         }
       }
+      .active {
+                 width: fit-content;
+                 // color: #000000;
+                 font-weight: bold;
+                 width: fit-content;
+                 text-decoration: underline;
+               }
     }
   }
   .bgTextLast_GrowTheories {

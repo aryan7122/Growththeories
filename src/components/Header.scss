@@ -15,10 +15,14 @@
     // padding-left: 40px;
 
     text-align: center;
-    margin-top: 15px;
+    margin-top: 50px;
     margin-bottom: 60px;
     @media (max-width: 900px) {
       padding: 20px;
+      margin-top: 30px;
+    }
+    @media (max-width: 500px) {
+      margin-top: 0px;
     }
     h3 {
       // animation: slideLeft 1s ease-out forwards;
@@ -163,7 +167,7 @@
         height: 54px;
         background-color: $secondary-500;
         color: #fff;
-        margin-left: 1rem;
+        margin-left: 30px;
         font-weight: 500;
         font-size: $font-size-16;
         background: #000000;
@@ -190,7 +194,7 @@
   .banner {
     background: #ededff;
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
     text-align: center;
     width: 85%;
     margin: 0 auto;
@@ -347,7 +351,7 @@
     padding: 2rem;
   }
 
-  .header__content h1 {
+.header__content h1 {
     font-size: $font-size-42;
     line-height: 50px;
   }
@@ -460,6 +464,7 @@
     flex-direction: column;
     .btn.btn-secondary {
       margin-left: 0px !important;
+      margin-top: 15px;
     }
   }
 }
